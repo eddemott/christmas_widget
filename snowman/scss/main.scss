@@ -1,0 +1,66 @@
+@import 'placeholders';
+@import 'mixins';
+@import "compass/css3/images";
+
+.snowman {
+	width: 30%;
+
+	& > div {
+		position: relative;
+	}
+
+	.head {
+		@include pos(3);
+		@extend %margin_auto;
+		margin-bottom: -28px;
+		@include snowball(115px, 92px);
+
+		.eye {
+			@include dimensions(20px);
+			@extend %black_button;
+
+			position: absolute;
+			right: 55%;
+			top: 30%;
+			box-shadow: 36px 0px;
+			
+			background-color: #1600e2;
+			@include filter-gradient(#1600e2, #000000, horizontal);
+			@include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%));
+		}
+
+		.mouth {
+			position: absolute;
+			bottom: 10px;
+			left: calc(50% - 22px);
+			
+			@include dimensions(44px, 20px);
+			border-bottom: 20px black solid;
+			border-bottom-left-radius: 154%;
+			border-bottom-right-radius: 113%;
+		}
+	}
+
+	.body {
+		@include pos(2);
+		margin-bottom: -40px;
+		@extend %margin_auto;
+		@include snowball(160px, 130px);
+
+		.button {
+			@include dimensions(16px);
+			@extend %black_button;
+
+			position: absolute;
+			left: calc(50% - 8px);
+			top: 30%;
+			box-shadow: 0px 26px 0px, 0px 52px 0;
+		}
+	}
+
+	.legs {
+		@include pos(1);
+		@extend %margin_auto;
+		@include snowball(200px, 170px);
+	}
+}

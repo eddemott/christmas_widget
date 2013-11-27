@@ -1,0 +1,17 @@
+@mixin snowball($width, $height) {
+	@extend %snow_style;
+	@include dimensions($width, $height);
+}
+
+@mixin dimensions($width, $height : $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin pos($z-index) {
+	z-index: $z-index;
+}
+
+@mixin radius($radius) {
+	border-radius: $radius;
+}
