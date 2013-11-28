@@ -3,13 +3,90 @@ body {
   margin: 0;
 }
 
-/* line 4, ../scss/style.scss */
+/* line 5, ../scss/style.scss */
 .container {
   background-color: #1b2e33;
-  width: 11.71cm;
+  width: 50%;
+  height: 500px;
 }
-/* line 10, ../scss/style.scss */
+/* line 13, ../scss/style.scss */
 .container .snow .snowflake {
-  font-size: 3em;
+  float: left;
+  margin: auto;
   color: white;
 }
+/* line 18, ../scss/style.scss */
+.container .snow .snowflake.f1 {
+  -webkit-animation: fall1;
+  left: 50px;
+  font-size: 3em;
+  position: relative;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 27, ../scss/style.scss */
+.container .snow .snowflake.f2 {
+  -webkit-animation: fall2;
+  left: 100px;
+  font-size: 3em;
+  position: relative;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 36, ../scss/style.scss */
+.container .snow .snowflake.f3 {
+  -webkit-animation: fall3;
+  left: 150px;
+  font-size: 3em;
+  position: relative;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fall1 {
+  /* line 49, ../scss/style.scss */
+  0% {
+    top: -50px;
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  /* line 53, ../scss/style.scss */
+  100% {
+    top: 500px;
+    -webkit-transform: translate(100px, 150px) rotate(250deg);
+  }
+}
+
+@-webkit-keyframes fall2 {
+  /* line 60, ../scss/style.scss */
+  0% {
+    top: -50px;
+    -webkit-transform: rotate(-180deg) translate(0px, 0px);
+  }
+
+  /* line 64, ../scss/style.scss */
+  100% {
+    top: 500px;
+    -webkit-transform: rotate(180deg) translate(10px, 75px);
+  }
+}
+
+@-webkit-keyframes fall3 {
+  /* line 71, ../scss/style.scss */
+  0% {
+    top: -50px;
+    -webkit-transform: rotate(-180deg);
+  }
+
+  /* line 78, ../scss/style.scss */
+  100% {
+    top: 500px;
+    -webkit-transform: rotate(180deg);
+    -webkit-transform: rotateY(160deg);
+  }
+}
+
+@-webkit-keyframes fall4 {}
