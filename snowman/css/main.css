@@ -1,0 +1,85 @@
+/* line 1, ../scss/_placeholders.scss */
+.snowman .head, .snowman .body, .snowman .legs {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styles */
+/* line 16, ../scss/_placeholders.scss */
+.snowman .head, .snowman .body, .snowman .legs {
+  background: #fff;
+  border: thin solid black;
+  border-radius: 50%;
+}
+
+/* line 22, ../scss/_placeholders.scss */
+.snowman .head .eye, .snowman .body .button {
+  border-radius: 100%;
+  background-color: black;
+}
+
+/* line 5, ../scss/main.scss */
+.snowman {
+  width: 30%;
+}
+/* line 8, ../scss/main.scss */
+.snowman > div {
+  position: relative;
+}
+/* line 12, ../scss/main.scss */
+.snowman .head {
+  z-index: 3;
+  margin-bottom: -28px;
+  width: 115px;
+  height: 92px;
+}
+/* line 18, ../scss/main.scss */
+.snowman .head .eye {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 55%;
+  top: 30%;
+  box-shadow: 36px 0px;
+  background-color: #1600e2;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF1600E2', endColorstr='#FF000000');
+  background-image: -webkit-gradient(radial, 50%, 0, 50%, 62, color-stop(1%, #1600e2), color-stop(62%, #000000));
+  background-image: -webkit-radial-gradient(center, ellipse cover, #1600e2 1%, #000000 62%);
+  background-image: -moz-radial-gradient(center, ellipse cover, #1600e2 1%, #000000 62%);
+  background-image: -o-radial-gradient(center, ellipse cover, #1600e2 1%, #000000 62%);
+  background-image: radial-gradient(center, ellipse cover, #1600e2 1%, #000000 62%);
+}
+/* line 32, ../scss/main.scss */
+.snowman .head .mouth {
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 22px);
+  width: 44px;
+  height: 20px;
+  border-bottom: 20px black solid;
+  border-bottom-left-radius: 154%;
+  border-bottom-right-radius: 113%;
+}
+/* line 44, ../scss/main.scss */
+.snowman .body {
+  z-index: 2;
+  margin-bottom: -40px;
+  width: 160px;
+  height: 130px;
+}
+/* line 50, ../scss/main.scss */
+.snowman .body .button {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: calc(50% - 8px);
+  top: 30%;
+  box-shadow: 0px 26px 0px, 0px 52px 0;
+}
+/* line 61, ../scss/main.scss */
+.snowman .legs {
+  z-index: 1;
+  width: 200px;
+  height: 170px;
+}
