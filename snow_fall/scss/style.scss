@@ -1,6 +1,6 @@
-
 body {
 	margin: 0;
+	width: 100%;
 }
 
 .container {
@@ -10,7 +10,7 @@ body {
 	
 	.snow{
 		@for $i from 1 through 40 {
-			.snowflake.f#{$i}{
+			.icon-snowflake.f#{$i}{
 			float: left;
 			margin: auto;
 			color: white;
