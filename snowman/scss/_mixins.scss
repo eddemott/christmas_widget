@@ -23,6 +23,24 @@
 	}
 }
 
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-moz-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-o-keyframes $animation_name {
+        @content;
+    }
+ 
+    @keyframes $animation_name {
+        @content;
+    }
+}
+
 //@include radius(50px);
 //@include radius(bottom-left, 50px);
 //@include radius(bottom, 50px, 60px);
