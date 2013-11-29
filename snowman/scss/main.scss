@@ -2,18 +2,101 @@
 @import 'mixins';
 @import "compass/css3/images";
 
+body {
+	width: 500px;
+	height: 700px;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0px 0px 1px red;
+	background-color: rgb(27, 46, 51);
+}
+
+.timer {
+	position: relative;
+	top: 40px;
+	@include pos(1);
+
+	background-color: rgb(100, 100, 100);
+	box-shadow: 0px 0px 14px;
+	@include radius(5px);
+
+	text-align: center;
+
+	@include dimensions(300px, 200px);
+	@extend %margin_auto;
+	border: 1px solid black;
+
+	h1 {
+		font-size: 10em;
+		font-family: "sans-serif";
+		color: rgb(222, 222, 222);
+	}
+
+	h2 {
+		font-size: 2em;
+		color: floralwhite;
+	}
+}
+
 .snowman {
-	width: 30%;
+	/* width: 30%; */
+	-webkit-transform: scale(0.77);
 
 	& > div {
 		position: relative;
 	}
 
+	.hat {
+		@extend %margin_auto;
+		@include pos(5);
+		@include dimensions(160px, auto);
+		-webkit-transform-origin: bottom;
+		-webkit-transform: rotateZ(5deg);
+
+		.top {
+			position: relative;
+			@include pos(2);
+
+			@extend %margin_auto;
+			margin-bottom: -10px;
+
+			@include dimensions(70%, 20px);
+			background-color: black;
+			@include radius(100%);
+
+			@extend %snow_dusting;
+		}
+
+		.middle {
+			position: relative;
+			@include pos(1);
+
+			@extend %margin_auto;
+			margin-bottom: -10px;
+			@include dimensions(70%, 65px);
+			background-color: black;
+		}
+
+		.base {
+			position: relative;
+			@include pos(0);
+
+			@include dimensions(100%, 25px);
+			background-color: black;
+			@include radius(100%);
+			margin-bottom: -20px;
+
+			@extend %snow_dusting;
+		}
+	}
+
 	.head {
-		@include pos(3);
+		@include pos(4);
 		@extend %margin_auto;
 		margin-bottom: -28px;
 		@include snowball(115px, 92px);
+
+		box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4);
 
 		.eye {
 			@include dimensions(20px);
@@ -21,23 +104,67 @@
 
 			position: absolute;
 			right: 55%;
-			top: 30%;
+			top: 25%;
 			box-shadow: 36px 0px;
 			
-			background-color: #1600e2;
+			/* background-color: #1600e2;
 			@include filter-gradient(#1600e2, #000000, horizontal);
-			@include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%));
+			@include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%)); */
+		}
+
+		.nose {
+			position: absolute;
+			bottom: 27%;
+			left: 46%;
+			-webkit-transform: rotateZ(20deg);
+			border-style: solid;
+			@include radius(top-left, 10px);
+			@include radius(bottom-left, 10px);
+			/* border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px; */
+			border-width: 10px 0px 10px 50px;
+			border-color: transparent transparent transparent #ff8c00;
 		}
 
 		.mouth {
 			position: absolute;
-			bottom: 10px;
+			bottom: 8px;
 			left: calc(50% - 22px);
 			
 			@include dimensions(44px, 20px);
 			border-bottom: 20px black solid;
-			border-bottom-left-radius: 154%;
-			border-bottom-right-radius: 113%;
+
+			@include radius(bottom, 154%, 113%);
+			/* border-bottom-left-radius: 154%;
+			border-bottom-right-radius: 113%; */
+		}
+	}
+
+	.scarf {
+		@include pos(3);
+		@extend %margin_auto;
+		margin-bottom: -32px;
+		@include dimensions(115px, 32px);
+		@include radius(100%);
+		@extend %green_scarf;
+
+		.end {
+			position: absolute;
+			right: 10px;
+
+			@extend %green_scarf;
+			@include dimensions(15px, 75px);
+			
+			border-top-right-radius: 100%;
+
+			&:first-child {
+				right: 15px;
+			}
+
+			&:last-child {
+				box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
+				-webkit-transform: rotateZ(-25deg);
+			}
 		}
 	}
 
@@ -45,7 +172,67 @@
 		@include pos(2);
 		margin-bottom: -40px;
 		@extend %margin_auto;
-		@include snowball(160px, 130px);
+		@include snowball(185px, 130px);
+		box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);
+
+		.arm {
+			.finger {
+				left: -20px;
+
+				&:nth-child(1) {
+					-webkit-transform: rotateZ(-135deg);
+					bottom: calc(100% + 5px);
+				}
+
+				&:nth-child(2) {
+					top: 1.5px;
+				}
+
+				&:nth-child(3) {
+					-webkit-transform: rotateZ(-225deg);
+					top: calc(100% + 5px);
+				}
+			}
+
+			&:first-child {
+				position: absolute;
+				right: 94%;
+				top: 50%;
+
+				.limb {
+					-webkit-transform: rotateZ(72deg);
+				}
+			}
+
+			&:nth-child(2) {
+				position: absolute;
+				left: 94%;
+				top: 50%;
+				-webkit-transform: rotateZ(180deg);
+
+				.limb {
+					-webkit-transform: rotateZ(-72deg);
+				}
+			}
+
+			.limb {
+				position: relative;
+
+				-webkit-transform-origin: right;
+
+				@include dimensions(214px, 10px);
+				background-color: saddlebrown;
+
+				@include radius(top-right, 5px);
+				@include radius(bottom-right, 5px);
+
+				.finger {
+					position: absolute;
+					@include dimensions(30px, 6px);
+					background-color: saddlebrown;
+				}
+			}
+		}
 
 		.button {
 			@include dimensions(16px);
@@ -61,6 +248,7 @@
 	.legs {
 		@include pos(1);
 		@extend %margin_auto;
-		@include snowball(200px, 170px);
+		@include snowball(250px, 170px);
+		box-shadow: 0px 35px 120px, inset 0px -5px 15px rgba(0, 0, 0, 0.5);
 	}
 }
