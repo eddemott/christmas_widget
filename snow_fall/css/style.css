@@ -1,6 +1,7 @@
-/* line 2, ../scss/style.scss */
+/* line 1, ../scss/style.scss */
 body {
   margin: 0;
+  width: 100%;
 }
 
 /* line 6, ../scss/style.scss */
@@ -15,10 +16,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 114%;
-  left: 41%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 8s;
+  font-size: 467%;
+  left: 55%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -28,10 +29,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 100%;
-  left: 57%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 18s;
+  font-size: 1107%;
+  left: 0%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 21s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -41,10 +42,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 227%;
-  left: 85%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 12s;
+  font-size: 936%;
+  left: 50%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -54,10 +55,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 100%;
-  left: 57%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 12s;
+  font-size: 452%;
+  left: 36%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 11s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -67,10 +68,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 215%;
-  left: 4%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 19s;
+  font-size: 433%;
+  left: 81%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 16s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -80,10 +81,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 287%;
-  left: 63%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 27s;
+  font-size: 590%;
+  left: 99%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 11s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -93,10 +94,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 188%;
-  left: 49%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 21s;
+  font-size: 717%;
+  left: 17%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -106,10 +107,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 296%;
-  left: 82%;
+  font-size: 804%;
+  left: 57%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 12s;
+  -webkit-animation-duration: 21s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -119,10 +120,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 171%;
-  left: 57%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 23s;
+  font-size: 899%;
+  left: 95%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -132,10 +133,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 254%;
-  left: 2%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 18s;
+  font-size: 1146%;
+  left: 41%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 19s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -145,9 +146,9 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 191%;
-  left: 60%;
-  -webkit-animation: fall3;
+  font-size: 859%;
+  left: 31%;
+  -webkit-animation: fall4;
   -webkit-animation-duration: 11s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -158,10 +159,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 124%;
-  left: 19%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 14s;
+  font-size: 697%;
+  left: 17%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 19s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -171,10 +172,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 185%;
-  left: 81%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 22s;
+  font-size: 528%;
+  left: 15%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -184,10 +185,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 265%;
-  left: 49%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 10s;
+  font-size: 847%;
+  left: 61%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -197,10 +198,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 210%;
-  left: 1%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 26s;
+  font-size: 864%;
+  left: 47%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 17s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -210,10 +211,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 265%;
-  left: 8%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 22s;
+  font-size: 773%;
+  left: 36%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -223,10 +224,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 275%;
-  left: 7%;
+  font-size: 926%;
+  left: 69%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 8s;
+  -webkit-animation-duration: 16s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -236,10 +237,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 218%;
-  left: 31%;
+  font-size: 1008%;
+  left: 10%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 14s;
+  -webkit-animation-duration: 11s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -249,10 +250,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 150%;
-  left: 15%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 23s;
+  font-size: 544%;
+  left: 28%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -262,10 +263,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 200%;
-  left: 65%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 10s;
+  font-size: 1139%;
+  left: 76%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -275,10 +276,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 120%;
-  left: 76%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 22s;
+  font-size: 705%;
+  left: 80%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -288,10 +289,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 205%;
-  left: 45%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 14s;
+  font-size: 1125%;
+  left: 90%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -301,10 +302,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 249%;
-  left: 90%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 14s;
+  font-size: 868%;
+  left: 29%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -314,10 +315,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 181%;
-  left: 41%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 25s;
+  font-size: 1071%;
+  left: 85%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 17s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -327,10 +328,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 292%;
-  left: 54%;
+  font-size: 736%;
+  left: 47%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 15s;
+  -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -340,10 +341,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 250%;
-  left: 79%;
+  font-size: 832%;
+  left: 20%;
   -webkit-animation: fall3;
-  -webkit-animation-duration: 15s;
+  -webkit-animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -353,10 +354,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 231%;
-  left: 73%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 20s;
+  font-size: 406%;
+  left: 67%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -366,10 +367,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 197%;
-  left: 11%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 22s;
+  font-size: 971%;
+  left: 10%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -379,10 +380,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 245%;
-  left: 19%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 26s;
+  font-size: 705%;
+  left: 95%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -392,10 +393,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 161%;
-  left: 40%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 16s;
+  font-size: 1160%;
+  left: 96%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -405,10 +406,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 205%;
-  left: 72%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 9s;
+  font-size: 862%;
+  left: 62%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 21s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -418,10 +419,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 114%;
-  left: 67%;
+  font-size: 1180%;
+  left: 24%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 26s;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -431,10 +432,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 245%;
-  left: 67%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 18s;
+  font-size: 1176%;
+  left: 30%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -444,10 +445,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 107%;
-  left: 35%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 22s;
+  font-size: 769%;
+  left: 62%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -457,9 +458,9 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 277%;
-  left: 39%;
-  -webkit-animation: fall3;
+  font-size: 1017%;
+  left: 40%;
+  -webkit-animation: fall1;
   -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -470,10 +471,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 183%;
-  left: 66%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 19s;
+  font-size: 810%;
+  left: 91%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 27s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -483,10 +484,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 260%;
-  left: 40%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 13s;
+  font-size: 719%;
+  left: 8%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -496,10 +497,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 258%;
-  left: 97%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 24s;
+  font-size: 573%;
+  left: 92%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 17s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -509,10 +510,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 233%;
-  left: 97%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 17s;
+  font-size: 789%;
+  left: 85%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 26s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -522,10 +523,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 181%;
-  left: 24%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 27s;
+  font-size: 717%;
+  left: 49%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 9s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
