@@ -270,3 +270,110 @@ body {
 .end:first-child {
    @include animation(scarf 25s 5s infinite ease-in-out);
 }
+
+
+
+
+
+
+
+
+
+
+.snow{
+	@for $i from 1 through 40 {
+		.icon-snowflake.f#{$i}{
+		float: left;
+		margin: auto;
+		color: white;
+		position:absolute;
+		font-size: ((percentage(random(200))/100)+ 100);
+		left: (percentage(random())/100);
+		-webkit-animation:fall + (random(4)+1);
+		-webkit-animation-duration: (random(20)+8) + s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		}
+	}
+}
+
+
+@-webkit-keyframes fall1 {
+	0% {
+		top: -50px;
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+		@include pos(1)
+	}
+
+	100% {
+		top: 500px;
+		-webkit-transform: translate(100px,150px) rotate(250deg);
+		@include pos(1)
+	}
+}
+
+@-webkit-keyframes fall2 {
+	0% {
+		top: -50px;
+		-webkit-transform: rotate(-180deg) translate(0px, 0px);
+		@include pos(5)
+	}
+	75% {
+		opacity: 0.8;
+		@include pos(5)
+	}
+	100% {
+		top: 500px;
+		opacity: 0.0;
+		-webkit-transform: rotate(180deg) translate(10px, 75px);
+		@include pos(5)
+	}
+}
+
+@-webkit-keyframes fall3 {
+	0% { 
+		top: -50px;
+		-webkit-transform: rotate(-180deg);
+		@include pos(2)
+	}
+
+	100% { 
+		top: 500px;
+		-webkit-transform: rotate(180deg);
+		-webkit-transform: rotateY(160deg);
+		@include pos(2)
+	}
+}
+
+@-webkit-keyframes fall4 {
+	0% {
+		top: -50px;
+		-webkit-transform: rotate(-180deg) translate(0px, 0px);
+		@include pos(7)
+	}
+	70% {
+		-webkit-transform: rotate(200deg) translate(50px, 100px);
+		@include pos(7)
+	}
+	100% {
+		top: 500px;
+		-webkit-transform: rotate(380deg) translate(80px, 100px);
+		@include pos(7)
+	}
+}
+
+@-webkit-keyframes fall5 {
+  0% {
+  	top: -50px;
+  	@include pos(4)
+  }
+  10% {
+  	-webkit-transform: rotate(-180deg) translate(0px, 0px);
+  	@include pos(4)
+  }
+  100% { 
+  	top: 500px;
+  	-webkit-transform: rotate(50deg) translate(100px, 80px);
+  	@include pos(4)
+  }
+}
