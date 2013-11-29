@@ -14,33 +14,50 @@ body {
 			float: left;
 			margin: auto;
 			color: white;
+
 		}	
 		.snowflake.f1 {
-			-webkit-animation:fall1;
-			left: 50px;
+			left: 100px;
 			font-size: 3em;
+			-webkit-animation:fall1;
 			position:relative;
-			-webkit-animation-duration: 3s;
+			-webkit-animation-duration: 5s;
 			-webkit-animation-iteration-count: infinite;
 			-webkit-animation-timing-function: linear;
 		}
 		.snowflake.f2 {
-			-webkit-animation:fall2;
-			left: 100px;
 			font-size: 3em;
+			-webkit-animation:fall2;
 			position:relative;
-			-webkit-animation-duration: 3s;
+			-webkit-animation-duration: 5s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			
+		}
+		.snowflake.f3 {
+			font-size: 3em;
+			-webkit-animation:fall3;
+			position:relative;
+			-webkit-animation-duration: 5s;
 			-webkit-animation-iteration-count: infinite;
 			-webkit-animation-timing-function: linear;
 		}
-		.snowflake.f3 {
-			-webkit-animation:fall3;
-			left: 150px;
+
+		.snowflake.f4 {
 			font-size: 3em;
+			-webkit-animation:fall4;
 			position:relative;
-			-webkit-animation-duration: 3s;
+			-webkit-animation-duration: 5s;
 			-webkit-animation-iteration-count: infinite;
 			-webkit-animation-timing-function: linear;
+		}
+		.snowflake.f5 {
+			font-size: 3em;
+			-webkit-animation:fall5;
+			position:relative;
+			-webkit-animation-duration: 5s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-iteration-count: linear;
 		}
 	}
 }
@@ -50,6 +67,7 @@ body {
 		top: -50px;
 		-webkit-transform: translate(0px, 0px) rotate(0deg);
 	}
+
 	100% {
 		top: 500px;
 		-webkit-transform: translate(100px,150px) rotate(250deg);
@@ -61,8 +79,12 @@ body {
 		top: -50px;
 		-webkit-transform: rotate(-180deg) translate(0px, 0px);
 	}
+	75% {
+		opacity: 0.8;
+	}
 	100% {
 		top: 500px;
+		opacity: 0.0;
 		-webkit-transform: rotate(180deg) translate(10px, 75px);
 	}
 }
@@ -72,9 +94,7 @@ body {
 		top: -50px;
 		-webkit-transform: rotate(-180deg);
 	}
-	25% {
 
-	}
 	100% { 
 		top: 500px;
 		-webkit-transform: rotate(180deg);
@@ -83,20 +103,28 @@ body {
 }
 
 @-webkit-keyframes fall4 {
-
+	0% {
+		top: -50px;
+		-webkit-transform: rotate(-180deg) translate(0px, 0px);
+	}
+	70% {
+		-webkit-transform: rotate(200deg) translate(50px, 100px);
+	}
+	100% {
+		top: 500px;
+		-webkit-transform: rotate(380deg) translate(80px, 100px);
+	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@-webkit-keyframes fall5 {
+  0% {
+  	top: -50px;
+  }
+  10% {
+  	-webkit-transform: rotate(-180deg) translate(0px, 0px);
+  }
+  100% { 
+  	top: 500px;
+  	-webkit-transform: rotate(50deg) translate(100px, 80px);
+  }
+}
