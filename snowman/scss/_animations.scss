@@ -1,0 +1,15 @@
+@import 'compass';
+@import 'animation';
+@import 'compass/css3/transform';
+
+@include keyframes(scarf_in_wind) {
+	0%, 100% {
+		/* @include rotateZ(5deg); */
+		-webkit-transform: rotateZ(5deg);
+	}
+
+	50% {
+		/* @include rotateZ(15deg); */
+		-webkit-transform: rotateZ(15deg);
+	}
+}

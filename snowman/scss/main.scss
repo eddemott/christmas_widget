@@ -1,6 +1,9 @@
 @import 'placeholders';
 @import 'mixins';
+@import 'compass/reset';
 @import "compass/css3/images";
+@import 'animations';
+@import 'compass/css3/transition';
 
 body {
 	width: 500px;
@@ -151,6 +154,10 @@ body {
 		.end {
 			position: absolute;
 			right: 10px;
+			top: 18px;
+
+			@include apply-origin(top, false);
+			@include animation(scarf_in_wind 0.7s infinite linear);
 
 			@extend %green_scarf;
 			@include dimensions(15px, 75px);
@@ -159,11 +166,12 @@ body {
 
 			&:first-child {
 				right: 15px;
+				@include animation-delay(0.3s);
 			}
 
 			&:last-child {
 				box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
-				-webkit-transform: rotateZ(-25deg);
+				/* -webkit-transform: rotateZ(-25deg); */
 			}
 		}
 	}
