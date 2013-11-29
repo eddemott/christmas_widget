@@ -5,6 +5,8 @@
 @import 'animations';
 @import 'compass/css3/transition';
 
+$tiphat_animation_props: 2.5s 10s infinite linear;
+
 body {
 	width: 500px;
 	height: 700px;
@@ -55,6 +57,8 @@ body {
 		@include dimensions(160px, auto);
 		-webkit-transform-origin: bottom;
 		-webkit-transform: rotateZ(5deg);
+
+		@include animation(tiphat_rotate_hat $tiphat_animation_props);
 
 		.top {
 			position: relative;
@@ -209,6 +213,7 @@ body {
 
 				.limb {
 					-webkit-transform: rotateZ(72deg);
+
 				}
 			}
 
@@ -220,6 +225,7 @@ body {
 
 				.limb {
 					-webkit-transform: rotateZ(-72deg);
+					@include animation(tiphat_rotate_arm $tiphat_animation_props);
 				}
 			}
 

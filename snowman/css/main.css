@@ -164,7 +164,297 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 }
 
-/* line 8, ../scss/main.scss */
+@-moz-keyframes tiphat_rotate_hat {
+  /* line 18, ../scss/_animations.scss */
+  0%, 95%, 100% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateZ(8deg);
+  }
+
+  /* line 23, ../scss/_animations.scss */
+  4% {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  /* line 27, ../scss/_animations.scss */
+  5% {
+    -webkit-transform-origin: 150px 220px;
+  }
+
+  /* line 31, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(90deg);
+  }
+
+  /* line 35, ../scss/_animations.scss */
+  94% {
+    -webkit-transform-origin: 150px 220px;
+  }
+}
+
+@-webkit-keyframes tiphat_rotate_hat {
+  /* line 18, ../scss/_animations.scss */
+  0%, 95%, 100% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateZ(8deg);
+  }
+
+  /* line 23, ../scss/_animations.scss */
+  4% {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  /* line 27, ../scss/_animations.scss */
+  5% {
+    -webkit-transform-origin: 150px 220px;
+  }
+
+  /* line 31, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(90deg);
+  }
+
+  /* line 35, ../scss/_animations.scss */
+  94% {
+    -webkit-transform-origin: 150px 220px;
+  }
+}
+
+@-o-keyframes tiphat_rotate_hat {
+  /* line 18, ../scss/_animations.scss */
+  0%, 95%, 100% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateZ(8deg);
+  }
+
+  /* line 23, ../scss/_animations.scss */
+  4% {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  /* line 27, ../scss/_animations.scss */
+  5% {
+    -webkit-transform-origin: 150px 220px;
+  }
+
+  /* line 31, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(90deg);
+  }
+
+  /* line 35, ../scss/_animations.scss */
+  94% {
+    -webkit-transform-origin: 150px 220px;
+  }
+}
+
+@-ms-keyframes tiphat_rotate_hat {
+  /* line 18, ../scss/_animations.scss */
+  0%, 95%, 100% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateZ(8deg);
+  }
+
+  /* line 23, ../scss/_animations.scss */
+  4% {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  /* line 27, ../scss/_animations.scss */
+  5% {
+    -webkit-transform-origin: 150px 220px;
+  }
+
+  /* line 31, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(90deg);
+  }
+
+  /* line 35, ../scss/_animations.scss */
+  94% {
+    -webkit-transform-origin: 150px 220px;
+  }
+}
+
+@keyframes tiphat_rotate_hat {
+  /* line 18, ../scss/_animations.scss */
+  0%, 95%, 100% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateZ(8deg);
+  }
+
+  /* line 23, ../scss/_animations.scss */
+  4% {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  /* line 27, ../scss/_animations.scss */
+  5% {
+    -webkit-transform-origin: 150px 220px;
+  }
+
+  /* line 31, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(90deg);
+  }
+
+  /* line 35, ../scss/_animations.scss */
+  94% {
+    -webkit-transform-origin: 150px 220px;
+  }
+}
+
+@-moz-keyframes tiphat_rotate_arm {
+  /* line 41, ../scss/_animations.scss */
+  0%, 100% {
+    width: 214px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 46, ../scss/_animations.scss */
+  4% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 51, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 55, ../scss/_animations.scss */
+  94% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 60, ../scss/_animations.scss */
+  100% {
+    width: 214px;
+  }
+}
+
+@-webkit-keyframes tiphat_rotate_arm {
+  /* line 41, ../scss/_animations.scss */
+  0%, 100% {
+    width: 214px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 46, ../scss/_animations.scss */
+  4% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 51, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 55, ../scss/_animations.scss */
+  94% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 60, ../scss/_animations.scss */
+  100% {
+    width: 214px;
+  }
+}
+
+@-o-keyframes tiphat_rotate_arm {
+  /* line 41, ../scss/_animations.scss */
+  0%, 100% {
+    width: 214px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 46, ../scss/_animations.scss */
+  4% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 51, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 55, ../scss/_animations.scss */
+  94% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 60, ../scss/_animations.scss */
+  100% {
+    width: 214px;
+  }
+}
+
+@-ms-keyframes tiphat_rotate_arm {
+  /* line 41, ../scss/_animations.scss */
+  0%, 100% {
+    width: 214px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 46, ../scss/_animations.scss */
+  4% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 51, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 55, ../scss/_animations.scss */
+  94% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 60, ../scss/_animations.scss */
+  100% {
+    width: 214px;
+  }
+}
+
+@keyframes tiphat_rotate_arm {
+  /* line 41, ../scss/_animations.scss */
+  0%, 100% {
+    width: 214px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 46, ../scss/_animations.scss */
+  4% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 51, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 55, ../scss/_animations.scss */
+  94% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 60, ../scss/_animations.scss */
+  100% {
+    width: 214px;
+  }
+}
+
+/* line 10, ../scss/main.scss */
 body {
   width: 500px;
   height: 700px;
@@ -174,7 +464,7 @@ body {
   background-color: #1b2e33;
 }
 
-/* line 17, ../scss/main.scss */
+/* line 19, ../scss/main.scss */
 .timer {
   position: relative;
   top: 40px;
@@ -187,36 +477,41 @@ body {
   height: 200px;
   border: 1px solid black;
 }
-/* line 32, ../scss/main.scss */
+/* line 34, ../scss/main.scss */
 .timer h1 {
   font-size: 10em;
   font-family: "sans-serif";
   color: #dedede;
 }
-/* line 38, ../scss/main.scss */
+/* line 40, ../scss/main.scss */
 .timer h2 {
   font-size: 2em;
   color: floralwhite;
 }
 
-/* line 44, ../scss/main.scss */
+/* line 46, ../scss/main.scss */
 .snowman {
   /* width: 30%; */
   -webkit-transform: scale(0.77);
 }
-/* line 48, ../scss/main.scss */
+/* line 50, ../scss/main.scss */
 .snowman > div {
   position: relative;
 }
-/* line 52, ../scss/main.scss */
+/* line 54, ../scss/main.scss */
 .snowman .hat {
   z-index: 5;
   width: 160px;
   height: auto;
   -webkit-transform-origin: bottom;
   -webkit-transform: rotateZ(5deg);
+  -webkit-animation: tiphat_rotate_hat 2.5s 10s infinite linear;
+  -moz-animation: tiphat_rotate_hat 2.5s 10s infinite linear;
+  -ms-animation: tiphat_rotate_hat 2.5s 10s infinite linear;
+  -o-animation: tiphat_rotate_hat 2.5s 10s infinite linear;
+  animation: tiphat_rotate_hat 2.5s 10s infinite linear;
 }
-/* line 59, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 .snowman .hat .top {
   position: relative;
   z-index: 2;
@@ -226,7 +521,7 @@ body {
   background-color: black;
   border-radius: 100%;
 }
-/* line 73, ../scss/main.scss */
+/* line 77, ../scss/main.scss */
 .snowman .hat .middle {
   position: relative;
   z-index: 1;
@@ -235,7 +530,7 @@ body {
   height: 65px;
   background-color: black;
 }
-/* line 83, ../scss/main.scss */
+/* line 87, ../scss/main.scss */
 .snowman .hat .base {
   position: relative;
   z-index: 0;
@@ -245,7 +540,7 @@ body {
   border-radius: 100%;
   margin-bottom: -20px;
 }
-/* line 96, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 .snowman .head {
   z-index: 4;
   margin-bottom: -28px;
@@ -253,7 +548,7 @@ body {
   height: 92px;
   box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4);
 }
-/* line 104, ../scss/main.scss */
+/* line 108, ../scss/main.scss */
 .snowman .head .eye {
   width: 20px;
   height: 20px;
@@ -265,7 +560,7 @@ body {
   @include filter-gradient(#1600e2, #000000, horizontal);
   @include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%)); */
 }
-/* line 118, ../scss/main.scss */
+/* line 122, ../scss/main.scss */
 .snowman .head .nose {
   position: absolute;
   bottom: 27%;
@@ -279,7 +574,7 @@ body {
   border-width: 10px 0px 10px 50px;
   border-color: transparent transparent transparent #ff8c00;
 }
-/* line 132, ../scss/main.scss */
+/* line 136, ../scss/main.scss */
 .snowman .head .mouth {
   position: absolute;
   bottom: 8px;
@@ -292,7 +587,7 @@ body {
   /* border-bottom-left-radius: 154%;
   border-bottom-right-radius: 113%; */
 }
-/* line 146, ../scss/main.scss */
+/* line 150, ../scss/main.scss */
 .snowman .scarf {
   z-index: 3;
   margin-bottom: -32px;
@@ -300,7 +595,7 @@ body {
   height: 32px;
   border-radius: 100%;
 }
-/* line 154, ../scss/main.scss */
+/* line 158, ../scss/main.scss */
 .snowman .scarf .end {
   position: absolute;
   right: 10px;
@@ -319,7 +614,7 @@ body {
   height: 75px;
   border-top-right-radius: 100%;
 }
-/* line 167, ../scss/main.scss */
+/* line 171, ../scss/main.scss */
 .snowman .scarf .end:first-child {
   right: 15px;
   -webkit-animation-delay: 0.3s;
@@ -328,12 +623,12 @@ body {
   -o-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 172, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 .snowman .scarf .end:last-child {
   box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
   /* -webkit-transform: rotateZ(-25deg); */
 }
-/* line 179, ../scss/main.scss */
+/* line 183, ../scss/main.scss */
 .snowman .body {
   z-index: 2;
   margin-bottom: -40px;
@@ -341,46 +636,51 @@ body {
   height: 130px;
   box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);
 }
-/* line 187, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 .snowman .body .arm .finger {
   left: -20px;
 }
-/* line 190, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 .snowman .body .arm .finger:nth-child(1) {
   -webkit-transform: rotateZ(-135deg);
   bottom: calc(100% + 5px);
 }
-/* line 195, ../scss/main.scss */
+/* line 199, ../scss/main.scss */
 .snowman .body .arm .finger:nth-child(2) {
   top: 1.5px;
 }
-/* line 199, ../scss/main.scss */
+/* line 203, ../scss/main.scss */
 .snowman .body .arm .finger:nth-child(3) {
   -webkit-transform: rotateZ(-225deg);
   top: calc(100% + 5px);
 }
-/* line 205, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .snowman .body .arm:first-child {
   position: absolute;
   right: 94%;
   top: 50%;
 }
-/* line 210, ../scss/main.scss */
+/* line 214, ../scss/main.scss */
 .snowman .body .arm:first-child .limb {
   -webkit-transform: rotateZ(72deg);
 }
-/* line 215, ../scss/main.scss */
+/* line 220, ../scss/main.scss */
 .snowman .body .arm:nth-child(2) {
   position: absolute;
   left: 94%;
   top: 50%;
   -webkit-transform: rotateZ(180deg);
 }
-/* line 221, ../scss/main.scss */
+/* line 226, ../scss/main.scss */
 .snowman .body .arm:nth-child(2) .limb {
   -webkit-transform: rotateZ(-72deg);
+  -webkit-animation: tiphat_rotate_arm 2.5s 10s infinite linear;
+  -moz-animation: tiphat_rotate_arm 2.5s 10s infinite linear;
+  -ms-animation: tiphat_rotate_arm 2.5s 10s infinite linear;
+  -o-animation: tiphat_rotate_arm 2.5s 10s infinite linear;
+  animation: tiphat_rotate_arm 2.5s 10s infinite linear;
 }
-/* line 226, ../scss/main.scss */
+/* line 232, ../scss/main.scss */
 .snowman .body .arm .limb {
   position: relative;
   -webkit-transform-origin: right;
@@ -390,14 +690,14 @@ body {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 237, ../scss/main.scss */
+/* line 243, ../scss/main.scss */
 .snowman .body .arm .limb .finger {
   position: absolute;
   width: 30px;
   height: 6px;
   background-color: saddlebrown;
 }
-/* line 245, ../scss/main.scss */
+/* line 251, ../scss/main.scss */
 .snowman .body .button {
   width: 16px;
   height: 16px;
@@ -406,7 +706,7 @@ body {
   top: 30%;
   box-shadow: 0px 26px 0px, 0px 52px 0;
 }
-/* line 256, ../scss/main.scss */
+/* line 262, ../scss/main.scss */
 .snowman .legs {
   z-index: 1;
   width: 250px;
