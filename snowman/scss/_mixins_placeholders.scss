@@ -1,0 +1,107 @@
+/*mixins*/
+
+@mixin snowball($width, $height) {
+	@extend %snow_style;
+	@include dimensions($width, $height);
+}
+
+@mixin dimensions($width, $height : $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin pos($z-index) {
+	z-index: $z-index;
+}
+
+@mixin radius($side_0, $radius_0 : false, $radius_1 : false) {
+	@if $radius_0 == false {
+		border-radius: $side_0;
+	} @else if $radius_1 == false {
+		border-#{$side_0}-radius: $radius_0;
+	} @else {
+		border-#{$side_0}-left-radius: $radius_0;
+		border-#{$side_0}-right-radius: $radius_1;
+	}
+}
+
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-moz-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-o-keyframes $animation_name {
+        @content;
+    }
+ 
+    @keyframes $animation_name {
+        @content;
+    }
+}
+
+@mixin animation ($animation_name, $duration, $delay, $iteration : infinite, $timing : ease-in-out) {
+    -webkit-animation-name: $animation_name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-timing-function: $timing;
+ 
+    -moz-animation-name: $animation_name;
+    -moz-animation-duration: $duration;
+    -moz-animation-delay: $delay;
+    -moz-animation-iteration-count: $iteration;
+    -moz-timing-function: $timing;
+ 
+    -o-animation-name: $animation_name;
+    -o-animation-duration: $duration;
+    -o-animation-delay: $delay;
+    -o-animation-iteration-count: $iteration;
+    -o-timing-function: $timing;
+ 
+	animation-name: $animation_name;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-iteration-count: $iteration;
+	timing-function: $timing;
+}
+
+/*placeholders */
+
+%margin_auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+%shift_down {
+	margin-bottom: -35px;
+}
+
+%pos_relative {
+	position: relative;
+}
+
+/* Styles */
+
+%snow_style {
+	background: #fff;
+	@include radius(50%);
+	/* box-shadow: inset 0px 0px 10px; */
+}
+
+%snow_dusting {
+	box-shadow: inset 0px 0px 13px rgba(255, 255, 255, 0.44);
+}
+
+%green_scarf {
+	background-color: green;
+	box-shadow: 0px 3px 0px darkgreen;
+}
+
+%black_button {
+	@include radius(100%);
+	background-color: black;
+}
