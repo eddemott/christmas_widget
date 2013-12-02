@@ -15,3 +15,8 @@
        url('../fonts/light/gill_sans.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/light/gill_sans.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+@font-face {
+  font-family: 'old_press';
+  src: url('../fonts/oldpress/old_press.ttf'); 
+}

@@ -37,14 +37,19 @@ body {
 	
 
 	h1 {
-		font-size: 10em;
-		font-family: "sans-serif";
-		color: #948774;
-		text-shadow: 0px -5px 0px rgba(0, 0, 0, 0.4)
+		font-size: 150px;
+		font-family: "old_press";
+		letter-spacing: 10px;
+		color: #d5cbc3;
+		text-shadow: -3px -3px 0px rgba(0, 0, 0, 0.5), 2px 2px 0px rgba(255, 255, 255, 0.8);
 	}
 	h2 {
-		font-size: 2em;
-		color: floralwhite;
+		font-size: 40px;
+		font-family: "old_press";
+		letter-spacing: 5px;
+		color: #d5cbc3;
+		text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.5), 1px 1px 0px rgba(255, 255, 255, 0.9);
+		text-transform: uppercase;
 	}
 }
 
