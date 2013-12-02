@@ -43,7 +43,7 @@
     }
 }
 
-@mixin animation ($animation_name, $duration, $delay, $iteration : infinite, $timing : ease-in-out) {
+/* @mixin animation ($animation_name, $duration, $delay : 0s, $iteration : infinite, $timing : ease-in-out) {
     -webkit-animation-name: $animation_name;
     -webkit-animation-duration: $duration;
     -webkit-animation-delay: $delay;
@@ -67,7 +67,7 @@
 	animation-delay: $delay;
 	animation-iteration-count: $iteration;
 	timing-function: $timing;
-}
+} */
 
 /*placeholders */
 
