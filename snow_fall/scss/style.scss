@@ -10,12 +10,12 @@ body {
 	
 	.snow{
 		@for $i from 1 through 40 {
-			.snowflake.f#{$i}{
+			.icon-snowflake.f#{$i}{
 			float: left;
 			margin: auto;
 			color: white;
 			position:absolute;
-			font-size: ((percentage(random(800))/100)+ 400);
+			font-size: ((percentage(random(200))/100)+ 100);
 			left: (percentage(random())/100);
 			-webkit-animation:fall + (random(4)+1);
 			-webkit-animation-duration: (random(20)+8) + s;
