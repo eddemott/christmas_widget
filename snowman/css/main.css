@@ -1,0 +1,764 @@
+/*mixins*/
+/* @mixin animation ($animation_name, $duration, $delay : 0s, $iteration : infinite, $timing : ease-in-out) {
+    -webkit-animation-name: $animation_name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-timing-function: $timing;
+ 
+    -moz-animation-name: $animation_name;
+    -moz-animation-duration: $duration;
+    -moz-animation-delay: $delay;
+    -moz-animation-iteration-count: $iteration;
+    -moz-timing-function: $timing;
+ 
+    -o-animation-name: $animation_name;
+    -o-animation-duration: $duration;
+    -o-animation-delay: $delay;
+    -o-animation-iteration-count: $iteration;
+    -o-timing-function: $timing;
+ 
+	animation-name: $animation_name;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-iteration-count: $iteration;
+	timing-function: $timing;
+} */
+/*placeholders */
+/* line 74, ../scss/_mixins_placeholders.scss */
+.timer, .snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .scarf, .snowman .belly, .snowman .legs {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styles */
+/* line 89, ../scss/_mixins_placeholders.scss */
+.snowman .head, .snowman .belly, .snowman .legs {
+  background: #fff;
+  border-radius: 50%;
+  /* box-shadow: inset 0px 0px 10px; */
+}
+
+/* line 95, ../scss/_mixins_placeholders.scss */
+.snowman .hat .top, .snowman .hat .base {
+  box-shadow: inset 0px 0px 13px rgba(255, 255, 255, 0.44);
+}
+
+/* line 99, ../scss/_mixins_placeholders.scss */
+.snowman .scarf, .snowman .scarf .end {
+  background-color: green;
+  box-shadow: 0px 3px 0px darkgreen;
+}
+
+/* line 104, ../scss/_mixins_placeholders.scss */
+.snowman .head .eye, .snowman .belly .buttonz {
+  border-radius: 100%;
+  background-color: black;
+}
+
+/* line 17, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@-moz-keyframes scarf_in_wind {
+  /* line 6, ../scss/_animations.scss */
+  0%, 100% {
+    /* @include rotateZ(5deg); */
+    -webkit-transform: rotateZ(5deg);
+  }
+
+  /* line 11, ../scss/_animations.scss */
+  50% {
+    /* @include rotateZ(15deg); */
+    -webkit-transform: rotateZ(15deg);
+  }
+}
+
+@-webkit-keyframes scarf_in_wind {
+  /* line 6, ../scss/_animations.scss */
+  0%, 100% {
+    /* @include rotateZ(5deg); */
+    -webkit-transform: rotateZ(5deg);
+  }
+
+  /* line 11, ../scss/_animations.scss */
+  50% {
+    /* @include rotateZ(15deg); */
+    -webkit-transform: rotateZ(15deg);
+  }
+}
+
+@-o-keyframes scarf_in_wind {
+  /* line 6, ../scss/_animations.scss */
+  0%, 100% {
+    /* @include rotateZ(5deg); */
+    -webkit-transform: rotateZ(5deg);
+  }
+
+  /* line 11, ../scss/_animations.scss */
+  50% {
+    /* @include rotateZ(15deg); */
+    -webkit-transform: rotateZ(15deg);
+  }
+}
+
+@-ms-keyframes scarf_in_wind {
+  /* line 6, ../scss/_animations.scss */
+  0%, 100% {
+    /* @include rotateZ(5deg); */
+    -webkit-transform: rotateZ(5deg);
+  }
+
+  /* line 11, ../scss/_animations.scss */
+  50% {
+    /* @include rotateZ(15deg); */
+    -webkit-transform: rotateZ(15deg);
+  }
+}
+
+@keyframes scarf_in_wind {
+  /* line 6, ../scss/_animations.scss */
+  0%, 100% {
+    /* @include rotateZ(5deg); */
+    -webkit-transform: rotateZ(5deg);
+  }
+
+  /* line 11, ../scss/_animations.scss */
+  50% {
+    /* @include rotateZ(15deg); */
+    -webkit-transform: rotateZ(15deg);
+  }
+}
+
+@-moz-keyframes tiphat_rotate_hat {
+  /* line 18, ../scss/_animations.scss */
+  0%, 95%, 100% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateZ(8deg);
+  }
+
+  /* line 23, ../scss/_animations.scss */
+  4% {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  /* line 27, ../scss/_animations.scss */
+  5% {
+    -webkit-transform-origin: 150px 220px;
+  }
+
+  /* line 31, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(90deg);
+  }
+
+  /* line 35, ../scss/_animations.scss */
+  94% {
+    -webkit-transform-origin: 150px 220px;
+  }
+}
+
+@-webkit-keyframes tiphat_rotate_hat {
+  /* line 18, ../scss/_animations.scss */
+  0%, 95%, 100% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateZ(8deg);
+  }
+
+  /* line 23, ../scss/_animations.scss */
+  4% {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  /* line 27, ../scss/_animations.scss */
+  5% {
+    -webkit-transform-origin: 150px 220px;
+  }
+
+  /* line 31, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(90deg);
+  }
+
+  /* line 35, ../scss/_animations.scss */
+  94% {
+    -webkit-transform-origin: 150px 220px;
+  }
+}
+
+@-o-keyframes tiphat_rotate_hat {
+  /* line 18, ../scss/_animations.scss */
+  0%, 95%, 100% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateZ(8deg);
+  }
+
+  /* line 23, ../scss/_animations.scss */
+  4% {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  /* line 27, ../scss/_animations.scss */
+  5% {
+    -webkit-transform-origin: 150px 220px;
+  }
+
+  /* line 31, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(90deg);
+  }
+
+  /* line 35, ../scss/_animations.scss */
+  94% {
+    -webkit-transform-origin: 150px 220px;
+  }
+}
+
+@-ms-keyframes tiphat_rotate_hat {
+  /* line 18, ../scss/_animations.scss */
+  0%, 95%, 100% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateZ(8deg);
+  }
+
+  /* line 23, ../scss/_animations.scss */
+  4% {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  /* line 27, ../scss/_animations.scss */
+  5% {
+    -webkit-transform-origin: 150px 220px;
+  }
+
+  /* line 31, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(90deg);
+  }
+
+  /* line 35, ../scss/_animations.scss */
+  94% {
+    -webkit-transform-origin: 150px 220px;
+  }
+}
+
+@keyframes tiphat_rotate_hat {
+  /* line 18, ../scss/_animations.scss */
+  0%, 95%, 100% {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-transform: rotateZ(8deg);
+  }
+
+  /* line 23, ../scss/_animations.scss */
+  4% {
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  /* line 27, ../scss/_animations.scss */
+  5% {
+    -webkit-transform-origin: 150px 220px;
+  }
+
+  /* line 31, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(90deg);
+  }
+
+  /* line 35, ../scss/_animations.scss */
+  94% {
+    -webkit-transform-origin: 150px 220px;
+  }
+}
+
+@-moz-keyframes tiphat_rotate_arm {
+  /* line 41, ../scss/_animations.scss */
+  0%, 100% {
+    width: 214px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 46, ../scss/_animations.scss */
+  4% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 51, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 55, ../scss/_animations.scss */
+  94% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 60, ../scss/_animations.scss */
+  100% {
+    width: 214px;
+  }
+}
+
+@-webkit-keyframes tiphat_rotate_arm {
+  /* line 41, ../scss/_animations.scss */
+  0%, 100% {
+    width: 214px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 46, ../scss/_animations.scss */
+  4% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 51, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 55, ../scss/_animations.scss */
+  94% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 60, ../scss/_animations.scss */
+  100% {
+    width: 214px;
+  }
+}
+
+@-o-keyframes tiphat_rotate_arm {
+  /* line 41, ../scss/_animations.scss */
+  0%, 100% {
+    width: 214px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 46, ../scss/_animations.scss */
+  4% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 51, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 55, ../scss/_animations.scss */
+  94% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 60, ../scss/_animations.scss */
+  100% {
+    width: 214px;
+  }
+}
+
+@-ms-keyframes tiphat_rotate_arm {
+  /* line 41, ../scss/_animations.scss */
+  0%, 100% {
+    width: 214px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 46, ../scss/_animations.scss */
+  4% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 51, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 55, ../scss/_animations.scss */
+  94% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 60, ../scss/_animations.scss */
+  100% {
+    width: 214px;
+  }
+}
+
+@keyframes tiphat_rotate_arm {
+  /* line 41, ../scss/_animations.scss */
+  0%, 100% {
+    width: 214px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 46, ../scss/_animations.scss */
+  4% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 51, ../scss/_animations.scss */
+  50% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 55, ../scss/_animations.scss */
+  94% {
+    width: 116px;
+    -webkit-transform: rotateZ(-72deg);
+  }
+
+  /* line 60, ../scss/_animations.scss */
+  100% {
+    width: 214px;
+  }
+}
+
+/* line 10, ../scss/main.scss */
+body {
+  width: 500px;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 0px 1px red;
+  background-color: #1b2e33;
+}
+
+/* line 19, ../scss/main.scss */
+.timer {
+  position: relative;
+  top: 40px;
+  z-index: 1;
+  background: url(../images/wood.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: 0px 0px 14px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+}
+/* line 39, ../scss/main.scss */
+.timer h1 {
+  font-size: 10em;
+  font-family: "sans-serif";
+  color: #948774;
+  text-shadow: 0px -5px 0px rgba(0, 0, 0, 0.4);
+}
+/* line 45, ../scss/main.scss */
+.timer h2 {
+  font-size: 2em;
+  color: floralwhite;
+}
+
+/* line 51, ../scss/main.scss */
+.snowman {
+  /* width: 30%; */
+  -webkit-transform: scale(0.77);
+}
+/* line 55, ../scss/main.scss */
+.snowman > div {
+  position: relative;
+}
+/* line 59, ../scss/main.scss */
+.snowman .hat {
+  z-index: 5;
+  width: 160px;
+  height: auto;
+  -webkit-transform-origin: bottom;
+  -webkit-transform: rotateZ(5deg);
+  -webkit-animation: tiphat_rotate_hat 2.5s infinite linear;
+  -moz-animation: tiphat_rotate_hat 2.5s infinite linear;
+  -ms-animation: tiphat_rotate_hat 2.5s infinite linear;
+  -o-animation: tiphat_rotate_hat 2.5s infinite linear;
+  animation: tiphat_rotate_hat 2.5s infinite linear;
+  /*2.5s, 10s);*/
+}
+/* line 68, ../scss/main.scss */
+.snowman .hat .top {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -10px;
+  width: 70%;
+  height: 20px;
+  background-color: black;
+  border-radius: 100%;
+}
+/* line 82, ../scss/main.scss */
+.snowman .hat .middle {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -10px;
+  width: 70%;
+  height: 65px;
+  background-color: black;
+}
+/* line 92, ../scss/main.scss */
+.snowman .hat .base {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 25px;
+  background-color: black;
+  border-radius: 100%;
+  margin-bottom: -20px;
+}
+/* line 105, ../scss/main.scss */
+.snowman .head {
+  z-index: 4;
+  margin-bottom: -28px;
+  width: 115px;
+  height: 92px;
+  box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4);
+}
+/* line 113, ../scss/main.scss */
+.snowman .head .eye {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 55%;
+  top: 25%;
+  box-shadow: 36px 0px;
+  /* background-color: #1600e2;
+  @include filter-gradient(#1600e2, #000000, horizontal);
+  @include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%)); */
+}
+/* line 127, ../scss/main.scss */
+.snowman .head .nose {
+  position: absolute;
+  bottom: 27%;
+  left: 46%;
+  -webkit-transform: rotateZ(20deg);
+  border-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  border-width: 10px 0px 10px 50px;
+  border-color: transparent transparent transparent #ff8c00;
+}
+/* line 141, ../scss/main.scss */
+.snowman .head .mouth {
+  position: absolute;
+  bottom: 8px;
+  left: calc(50% - 22px);
+  width: 44px;
+  height: 20px;
+  border-bottom: 20px black solid;
+  border-bottom-left-radius: 154%;
+  border-bottom-right-radius: 113%;
+  /* border-bottom-left-radius: 154%;
+  border-bottom-right-radius: 113%; */
+}
+/* line 155, ../scss/main.scss */
+.snowman .scarf {
+  z-index: 3;
+  margin-bottom: -32px;
+  width: 115px;
+  height: 32px;
+  border-radius: 100%;
+}
+/* line 163, ../scss/main.scss */
+.snowman .scarf .end {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  -ms-transform-origin: top;
+  -o-transform-origin: top;
+  transform-origin: top;
+  -webkit-animation: scarf_in_wind 0.7s infinite linear;
+  -moz-animation: scarf_in_wind 0.7s infinite linear;
+  -ms-animation: scarf_in_wind 0.7s infinite linear;
+  -o-animation: scarf_in_wind 0.7s infinite linear;
+  animation: scarf_in_wind 0.7s infinite linear;
+  width: 15px;
+  height: 75px;
+  border-top-right-radius: 100%;
+}
+/* line 176, ../scss/main.scss */
+.snowman .scarf .end:first-child {
+  right: 15px;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 181, ../scss/main.scss */
+.snowman .scarf .end:last-child {
+  box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
+  /* -webkit-transform: rotateZ(-25deg); */
+}
+/* line 188, ../scss/main.scss */
+.snowman .belly {
+  z-index: 2;
+  margin-bottom: -40px;
+  width: 185px;
+  height: 130px;
+  box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);
+}
+/* line 196, ../scss/main.scss */
+.snowman .belly .arm .finger {
+  left: -20px;
+}
+/* line 199, ../scss/main.scss */
+.snowman .belly .arm .finger:nth-child(1) {
+  -webkit-transform: rotateZ(-135deg);
+  bottom: calc(100% + 5px);
+}
+/* line 204, ../scss/main.scss */
+.snowman .belly .arm .finger:nth-child(2) {
+  top: 1.5px;
+}
+/* line 208, ../scss/main.scss */
+.snowman .belly .arm .finger:nth-child(3) {
+  -webkit-transform: rotateZ(-225deg);
+  top: calc(100% + 5px);
+}
+/* line 214, ../scss/main.scss */
+.snowman .belly .arm:first-child {
+  position: absolute;
+  right: 94%;
+  top: 50%;
+}
+/* line 219, ../scss/main.scss */
+.snowman .belly .arm:first-child .limb {
+  -webkit-transform: rotateZ(72deg);
+}
+/* line 225, ../scss/main.scss */
+.snowman .belly .arm:nth-child(2) {
+  position: absolute;
+  left: 94%;
+  top: 50%;
+  -webkit-transform: rotateZ(180deg);
+}
+/* line 231, ../scss/main.scss */
+.snowman .belly .arm:nth-child(2) .limb {
+  -webkit-transform: rotateZ(-72deg);
+  -webkit-animation: tiphat_rotate_arm 2.5s infinite linear;
+  -moz-animation: tiphat_rotate_arm 2.5s infinite linear;
+  -ms-animation: tiphat_rotate_arm 2.5s infinite linear;
+  -o-animation: tiphat_rotate_arm 2.5s infinite linear;
+  animation: tiphat_rotate_arm 2.5s infinite linear;
+}
+/* line 237, ../scss/main.scss */
+.snowman .belly .arm .limb {
+  position: relative;
+  -webkit-transform-origin: right;
+  width: 214px;
+  height: 10px;
+  background-color: saddlebrown;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 248, ../scss/main.scss */
+.snowman .belly .arm .limb .finger {
+  position: absolute;
+  width: 30px;
+  height: 6px;
+  background-color: saddlebrown;
+}
+/* line 256, ../scss/main.scss */
+.snowman .belly .buttonz {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: calc(50% - 8px);
+  top: 30%;
+  box-shadow: 0px 26px 0px, 0px 52px 0;
+}
+/* line 267, ../scss/main.scss */
+.snowman .legs {
+  z-index: 1;
+  width: 250px;
+  height: 170px;
+  box-shadow: 0px 35px 120px, inset 0px -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* @include keyframe(scarf) {
+	0% { -webkit-transform: rotateZ(0deg); }
+	20% { -webkit-transform: rotateZ(-40deg); }
+	60% { -webkit-transform: rotateZ(30deg); }
+	85% { -webkit-transform: rotateZ(-30deg); }
+	100% { -webkit-transform: rotateZ(0deg); }
+}
+
+
+.end:last-child {
+   @include animation(scarf, 15s, 2s);
+}
+
+.end:first-child {
+   @include animation(scarf, 25s, 5s);
+} */
