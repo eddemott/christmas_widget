@@ -1,11 +1,7 @@
-@import 'placeholders';
-@import 'mixins';
+@import 'mixins_placeholders';
 @import 'compass/reset';
-@import "compass/css3/images";
-@import 'animations';
-@import 'compass/css3/transition';
 
-body {
+.wrapper {
 	width: 500px;
 	height: 700px;
 	margin: 0;
@@ -18,23 +14,28 @@ body {
 	position: relative;
 	top: 40px;
 	@include pos(1);
+		
+	background: url(../images/wood.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 
-	background-color: rgb(100, 100, 100);
 	box-shadow: 0px 0px 14px;
-	@include radius(5px);
+	@include radius(20px);
 
 	text-align: center;
 
 	@include dimensions(300px, 200px);
 	@extend %margin_auto;
-	border: 1px solid black;
+	
 
 	h1 {
 		font-size: 10em;
 		font-family: "sans-serif";
-		color: rgb(222, 222, 222);
+		color: #948774;
+		text-shadow: 0px -5px 0px rgba(0, 0, 0, 0.4)
 	}
-
 	h2 {
 		font-size: 2em;
 		color: floralwhite;
@@ -176,7 +177,7 @@ body {
 		}
 	}
 
-	.body {
+	.belly {
 		@include pos(2);
 		margin-bottom: -40px;
 		@extend %margin_auto;
@@ -242,7 +243,7 @@ body {
 			}
 		}
 
-		.button {
+		.buttonz {
 			@include dimensions(16px);
 			@extend %black_button;
 
@@ -260,3 +261,26 @@ body {
 		box-shadow: 0px 35px 120px, inset 0px -5px 15px rgba(0, 0, 0, 0.5);
 	}
 }
+
+@include keyframe(scarf) {
+	0% { -webkit-transform: rotateZ(0deg); }
+	20% { -webkit-transform: rotateZ(-40deg); }
+	60% { -webkit-transform: rotateZ(30deg); }
+	85% { -webkit-transform: rotateZ(-30deg); }
+	100% { -webkit-transform: rotateZ(0deg); }
+}
+
+
+.end:last-child {
+   @include animation(scarf, 15s, 2s);
+}
+
+.end:first-child {
+   @include animation(scarf, 25s, 5s);
+}
+
+
+
+
+
+
