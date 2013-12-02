@@ -272,7 +272,7 @@ body {
 	}
 }
 
-@include keyframe(scarf) {
+/* @include keyframe(scarf) {
 	0% { -webkit-transform: rotateZ(0deg); }
 	20% { -webkit-transform: rotateZ(-40deg); }
 	60% { -webkit-transform: rotateZ(30deg); }
@@ -287,7 +287,7 @@ body {
 
 .end:first-child {
    @include animation(scarf, 25s, 5s);
-}
+} */
 
 
 
