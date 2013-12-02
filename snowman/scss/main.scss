@@ -1,7 +1,9 @@
 @import 'mixins_placeholders';
 @import 'compass/reset';
 
-.wrapper {
+$tiphat_animation_props: 2.5s 10s infinite linear;
+
+body {
 	width: 500px;
 	height: 700px;
 	margin: 0;
@@ -56,6 +58,8 @@
 		@include dimensions(160px, auto);
 		-webkit-transform-origin: bottom;
 		-webkit-transform: rotateZ(5deg);
+
+		@include animation(tiphat_rotate_hat $tiphat_animation_props);
 
 		.top {
 			position: relative;
@@ -210,6 +214,7 @@
 
 				.limb {
 					-webkit-transform: rotateZ(72deg);
+
 				}
 			}
 
@@ -221,6 +226,7 @@
 
 				.limb {
 					-webkit-transform: rotateZ(-72deg);
+					@include animation(tiphat_rotate_arm $tiphat_animation_props);
 				}
 			}
 
