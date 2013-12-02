@@ -1,7 +1,11 @@
 @import 'mixins_placeholders';
 @import 'compass/reset';
+@import 'compass/css3/transform';
+@import 'animation';
+@import 'animations';
+@import 'compass/css3/transition';
 
-$tiphat_animation_props: 2.5s 10s infinite linear;
+$tiphat_animation_props: 2.5s infinite linear;
 
 body {
 	width: 500px;
@@ -59,7 +63,7 @@ body {
 		-webkit-transform-origin: bottom;
 		-webkit-transform: rotateZ(5deg);
 
-		@include animation(tiphat_rotate_hat $tiphat_animation_props);
+		@include animation(tiphat_rotate_hat $tiphat_animation_props);/*2.5s, 10s);*/
 
 		.top {
 			position: relative;
