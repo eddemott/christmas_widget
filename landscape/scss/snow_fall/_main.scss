@@ -1,26 +1,19 @@
-body {
-	margin: 0;
-	width: 100%;
-}
-
-.container {
-	background-color: #1b2e33;
-	width: 100%;
-	height: 500px;
-	
-	.snow{
-		@for $i from 1 through 40 {
-			.icon-snowflake.f#{$i}{
-			float: left;
-			margin: auto;
-			color: white;
-			position:absolute;
-			font-size: ((percentage(random(200))/100)+ 100);
-			left: (percentage(random())/100);
-			-webkit-animation:fall + (random(4)+1);
-			-webkit-animation-duration: (random(20)+8) + s;
-			-webkit-animation-iteration-count: infinite;
-			-webkit-animation-timing-function: linear;
+.widget{
+	.sky {
+		.snow{
+			@for $i from 1 through 40 {
+				.icon-snowflake.f#{$i}{
+				float: left;
+				margin: auto;
+				color: white;
+				position:absolute;
+				font-size: ((percentage(random(50))/100)+ 100);
+				left: (percentage(random())/100);
+				-webkit-animation:fall + (random(3)+1);
+				-webkit-animation-duration: (random(20)+8) + s;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: linear;
+				}
 			}
 		}
 	}
@@ -33,7 +26,7 @@ body {
 	}
 
 	100% {
-		top: 500px;
+		top: 250px;
 		-webkit-transform: translate(100px,150px) rotate(250deg);
 	}
 }
@@ -47,7 +40,7 @@ body {
 		opacity: 0.8;
 	}
 	100% {
-		top: 500px;
+		top: 250px;
 		opacity: 0.0;
 		-webkit-transform: rotate(180deg) translate(10px, 75px);
 	}
@@ -60,13 +53,13 @@ body {
 	}
 
 	100% { 
-		top: 500px;
+		top: 250px;
 		-webkit-transform: rotate(180deg);
 		-webkit-transform: rotateY(160deg);
 	}
 }
 
-@-webkit-keyframes fall4 {
+@-webkit-keyframes fall5 {
 	0% {
 		top: -50px;
 		-webkit-transform: rotate(-180deg) translate(0px, 0px);
@@ -75,12 +68,12 @@ body {
 		-webkit-transform: rotate(200deg) translate(50px, 100px);
 	}
 	100% {
-		top: 500px;
+		top: 250px;
 		-webkit-transform: rotate(380deg) translate(80px, 100px);
 	}
 }
 
-@-webkit-keyframes fall5 {
+@-webkit-keyframes fall4 {
   0% {
   	top: -50px;
   }
@@ -88,7 +81,7 @@ body {
   	-webkit-transform: rotate(-180deg) translate(0px, 0px);
   }
   100% { 
-  	top: 500px;
+  	top: 250px;
   	-webkit-transform: rotate(50deg) translate(100px, 80px);
   }
 }

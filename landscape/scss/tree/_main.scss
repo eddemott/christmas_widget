@@ -1,0 +1,59 @@
+@import "compass/reset";
+
+.ctree {
+
+	.trunk {
+	  border-color: #3b200f transparent;
+	  border-style: solid;
+	  border-width: 0 14px 160px;
+	  bottom: 0;
+	  height: 0px;
+	  width: 0;
+	  position: absolute;
+	  z-index:-1;
+	  left:85px;
+	  top: 0px;
+	}
+
+	.branch {
+		border-bottom-left-radius: 50% 50px;
+		border-bottom-right-radius: 50% 50px;
+		border-color: #336633 transparent;
+		border-style: inset;
+		height: 0;
+		width: 0;
+		position: absolute;
+		// -webkit-box-shadow: 0 4px 4px -2px #000000;
+	}
+	.branch.b1{
+		left:80px;
+		top:0px;
+		border-width: 0 20px 25px;
+		z-index:5;
+	}
+	.branch.b2{
+		left: 60px;
+		top: 8px;
+		border-width: 0 40px 45px;
+
+		z-index:4;
+	}
+	.branch.b3{
+		left: 40px;
+		top: 18px;
+	  border-width: 0 60px 65px;
+	  z-index:3;
+	}
+	.branch.b4{
+		left: 20px;
+		top: 28px;
+	  border-width: 0 80px 85px;
+	  z-index:2;
+	} 
+	.branch.b5{
+		left: 0px;
+		top: 38px;
+	  border-width: 0 100px 105px;
+	  z-index:1;
+	}
+}
