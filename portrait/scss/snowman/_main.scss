@@ -27,6 +27,8 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 
+	-webkit-transform: rotateZ(-7deg);
+
 	box-shadow: 0px 0px 14px;
 	@include radius(20px);
 
@@ -42,6 +44,7 @@ body {
 		letter-spacing: 10px;
 		color: #d5cbc3;
 		text-shadow: -3px -3px 0px rgba(0, 0, 0, 0.5), 2px 2px 0px rgba(255, 255, 255, 0.8);
+		-webkit-transform: rotateZ(4deg);
 	}
 	h2 {
 		font-size: 40px;
@@ -50,6 +53,7 @@ body {
 		color: #d5cbc3;
 		text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.5), 1px 1px 0px rgba(255, 255, 255, 0.9);
 		text-transform: uppercase;
+		-webkit-transform: rotateZ(-3deg);
 	}
 }
 
