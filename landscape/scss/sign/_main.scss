@@ -1,21 +1,6 @@
 /*various mixins-placeholders */
-
-
-@mixin radius($side_0, $radius_0 : false, $radius_1 : false) {
-	@if $radius_0 == false {
-		border-radius: $side_0;
-	} @else if $radius_1 == false {
-		border-#{$side_0}-radius: $radius_0;
-	} @else {
-		border-#{$side_0}-left-radius: $radius_0;
-		border-#{$side_0}-right-radius: $radius_1;
-	}
-}
-
-@mixin dimensions($width, $height : $width) {
-	width: $width;
-	height: $height;
-}
+@import 'chains';
+@import '../generic_mixins';
 
 %margin_auto {
 	margin-left: auto;
@@ -27,7 +12,7 @@
 .timer {
 	position: relative;
 	z-index: 5;
-	@include dimensions(480px, 300px);
+	@include dimensions(440px, 300px);
 	@include radius(20px);
 	box-shadow: 0px 0px 14px;
 	text-align: center;
@@ -40,16 +25,10 @@
 	-o-background-size: cover;
 	background-size: cover;
 
-	-webkit-transform: rotateZ(-12deg);
-	
-	
-	
-
-
-	
+	-webkit-transform: rotateZ(-12deg);	
 
 	h1 {
-		font-size: 240px;
+		font-size: 270px;
 		font-family: "old_press";
 		letter-spacing: 10px;
 		color: #d5cbc3;
@@ -64,5 +43,6 @@
 		text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.5), 1px 1px 0px rgba(255, 255, 255, 0.9);
 		text-transform: uppercase;
 		-webkit-transform: rotateZ(-3deg);
+		margin-top: -25px;
 	}
 }

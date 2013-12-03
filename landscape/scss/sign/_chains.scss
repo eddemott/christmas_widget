@@ -1,0 +1,14 @@
+.chains {
+	height: 100px;
+	width: 25px;
+	position: absolute;
+
+	div {
+		border: thin solid black;
+	}
+
+	&.five div {
+		height: calc(100% / 5);
+		width: 100%;
+	}
+}
