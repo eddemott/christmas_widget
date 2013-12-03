@@ -1,52 +1,14 @@
-// @import 'snowman/main';
-// @import 'snow_fall/main';
+@import 'snowman/main';
+@import 'snow_fall/main';
+@import 'tree/main';
+@import 'background/main';
+@import 'sign/main';
 
 @import 'generic_placeholders';
 @import 'generic_mixins';
+
 @import 'generic_fonts';
-@import 'sign/main';
+
 @import 'compass/reset';
 
 
-
-.widget {
-	height: 356px;
-	width: 1013px;
-	border: 4px solid black;
-	margin: auto;
-	margin-top: 100px;
-	overflow: hidden;
-
-	.sky {
-		background-color: #1b2e33;
-		width: 100%;
-		height: 200px;
-		
-		.moon {
-			float: right;
-			position: relative;
-			top: 20px;
-			right: 60px;
-			width: 100px;
-			height: 100px;
-			background-color: #E0E0AF;
-			border-radius: 50%;
-			-webkit-box-shadow: 0 0 60px #FFF;
-	       -moz-box-shadow: 0 0 60px #FFF;
-	            box-shadow: 0 0 60px #FFF;
-		
-			img {
-				width: 100%;
-				height: 70%;
-				position: relative;
-				top: 25px;
-			}
-		}	
-	}	 
-
-	.ground {
-		width: 100%;
-		height: 156px;
-		background-color: #fff;	
-	}     
-}
