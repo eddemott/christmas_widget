@@ -3,10 +3,16 @@
 	width: 1013px;
 	border: 4px solid black;
 	overflow:hidden;
-	.sky {
-		background-color: #1b2e33;
+
+	.scenery {
 		width: 100%;
-		height: 200px;
+		height: 100%;
+	}
+
+	.sky {
+		width: 100%;
+		background-color: #1b2e33;
+		height: 80%;
 		
 		.moon {
 			float: right;
@@ -18,9 +24,9 @@
 			background-color: #E0E0AF;
 			border-radius: 50%;
 			-webkit-box-shadow: 0 0 60px #FFF;
-	       -moz-box-shadow: 0 0 60px #FFF;
-	            box-shadow: 0 0 60px #FFF;
-		
+			-moz-box-shadow: 0 0 60px #FFF;
+			box-shadow: 0 0 60px #FFF;
+
 			img {
 				width: 100%;
 				height: 70%;
@@ -28,11 +34,9 @@
 				top: 25px;
 			}
 		}	
-	}	 
+	}
 
 	.ground {
-		width: 100%;
-		height: 156px;
-		background-color: #fff;	
-	}     
+		position: relative;
+	}	    
 }
