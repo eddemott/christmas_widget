@@ -9,6 +9,7 @@
 				position:absolute;
 				font-size: ((percentage(random(50))/100)+ 100);
 				left: (percentage(random())/100);
+				z-index: random(10);
 				-webkit-animation:fall + (random(3)+1);
 				-webkit-animation-duration: (random(20)+8) + s;
 				-webkit-animation-iteration-count: infinite;
