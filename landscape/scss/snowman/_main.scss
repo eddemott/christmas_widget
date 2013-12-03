@@ -1,8 +1,6 @@
 @import 'mixins_placeholders';
 @import 'compass/reset';
 @import 'compass/css3/transform';
-@import 'animation';
-@import 'animations';
 @import 'compass/css3/transition';
 
 $tiphat_animation_props: 2.5s infinite linear;
@@ -45,8 +43,10 @@ $tiphat_animation_props: 2.5s infinite linear;
 }
 
 .snowman {
-	/* width: 30%; */
-	-webkit-transform: scale(0.77);
+	-webkit-transform: scale(0.3);
+	position: absolute;
+	top: -222px;
+	left: 780px;
 
 	& > div {
 		position: relative;
@@ -58,8 +58,6 @@ $tiphat_animation_props: 2.5s infinite linear;
 		@include dimensions(160px, auto);
 		-webkit-transform-origin: bottom;
 		-webkit-transform: rotateZ(5deg);
-
-		@include animation(tiphat_rotate_hat $tiphat_animation_props);/*2.5s, 10s);*/
 
 		.top {
 			position: relative;
@@ -162,7 +160,7 @@ $tiphat_animation_props: 2.5s infinite linear;
 			top: 18px;
 
 			@include apply-origin(top, false);
-			@include animation(scarf_in_wind 0.7s infinite linear);
+			/* @include animation(scarf_in_wind 0.7s infinite linear); */
 
 			@extend %green_scarf;
 			@include dimensions(15px, 75px);
@@ -171,7 +169,7 @@ $tiphat_animation_props: 2.5s infinite linear;
 
 			&:first-child {
 				right: 15px;
-				@include animation-delay(0.3s);
+				/* @include animation-delay(0.3s); */
 			}
 
 			&:last-child {
@@ -226,7 +224,6 @@ $tiphat_animation_props: 2.5s infinite linear;
 
 				.limb {
 					-webkit-transform: rotateZ(-72deg);
-					@include animation(tiphat_rotate_arm $tiphat_animation_props);
 				}
 			}
 
