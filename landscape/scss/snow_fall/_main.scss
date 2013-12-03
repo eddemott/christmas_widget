@@ -7,7 +7,7 @@
 				margin: auto;
 				color: white;
 				position:absolute;
-				font-size: ((percentage(random(50))/100)+ 100);
+				font-size: ((percentage(random(80))/100)+ 30);
 				left: (percentage(random())/100);
 				z-index: random(10);
 				-webkit-animation:fall + (random(3)+1);
