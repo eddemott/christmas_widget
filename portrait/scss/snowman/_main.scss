@@ -1,9 +1,11 @@
+@import 'compass/css3/images';
 @import 'mixins_placeholders';
 @import 'compass/reset';
 @import 'compass/css3/transform';
 @import 'animation';
 @import 'animations';
 @import 'compass/css3/transition';
+
 
 $tiphat_animation_props: 2.5s infinite linear;
 
@@ -116,8 +118,9 @@ body {
 		@extend %margin_auto;
 		margin-bottom: -28px;
 		@include snowball(115px, 92px);
+		@extend %filling;
 
-		box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4);
+		/*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4); */
 
 		.eye {
 			@include dimensions(20px);
@@ -199,7 +202,8 @@ body {
 		margin-bottom: -40px;
 		@extend %margin_auto;
 		@include snowball(185px, 130px);
-		box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);
+		/*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);*/
+		@extend %filling;
 
 		.arm {
 			.finger {
@@ -276,8 +280,13 @@ body {
 	.legs {
 		@include pos(1);
 		@extend %margin_auto;
+		@extend %pos_relative;
 		@include snowball(250px, 170px);
-		box-shadow: 0px 35px 120px, inset 0px -5px 15px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 35px 120px;
+
+		@extend %filling;
+
+		
 	}
 }
 
