@@ -1,0 +1,15 @@
+@mixin radius($side_0, $radius_0 : false, $radius_1 : false) {
+	@if $radius_0 == false {
+		border-radius: $side_0;
+	} @else if $radius_1 == false {
+		border-#{$side_0}-radius: $radius_0;
+	} @else {
+		border-#{$side_0}-left-radius: $radius_0;
+		border-#{$side_0}-right-radius: $radius_1;
+	}
+}
+
+@mixin dimensions($width, $height : $width) {
+	width: $width;
+	height: $height;
+}
