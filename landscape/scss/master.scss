@@ -4,11 +4,18 @@
 @import 'generic_placeholders';
 @import 'generic_mixins';
 @import 'generic_fonts';
+@import 'sign/main';
+@import 'compass/reset';
+
+
 
 .widget {
 	height: 356px;
 	width: 1013px;
 	border: 4px solid black;
+	margin: auto;
+	margin-top: 100px;
+	overflow: hidden;
 
 	.sky {
 		background-color: #1b2e33;

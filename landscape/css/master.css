@@ -19,19 +19,127 @@
   src: url("../fonts/oldpress/old_press.ttf");
 }
 
-/* line 8, ../scss/master.scss */
+/*various mixins-placeholders */
+/* main timer part */
+/* line 31, ../scss/sign/_main.scss */
+.timer {
+  position: relative;
+  z-index: 1;
+  width: 480px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 14px;
+  text-align: center;
+  float: left;
+  margin: 20px 0px 0px -40px;
+  background: url(../images/wood.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transform: rotateZ(-12deg);
+}
+/* line 55, ../scss/sign/_main.scss */
+.timer h1 {
+  font-size: 240px;
+  font-family: "old_press";
+  letter-spacing: 10px;
+  color: #d5cbc3;
+  text-shadow: -3px -3px 0px rgba(0, 0, 0, 0.5), 2px 2px 0px rgba(255, 255, 255, 0.8);
+  -webkit-transform: rotateZ(4deg);
+}
+/* line 63, ../scss/sign/_main.scss */
+.timer h2 {
+  font-size: 40px;
+  font-family: "old_press";
+  letter-spacing: 5px;
+  color: #d5cbc3;
+  text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.5), 1px 1px 0px rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  -webkit-transform: rotateZ(-3deg);
+}
+
+/* line 17, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../scss/master.scss */
 .widget {
   height: 356px;
   width: 1013px;
   border: 4px solid black;
+  margin: auto;
+  margin-top: 100px;
+  overflow: hidden;
 }
-/* line 13, ../scss/master.scss */
+/* line 20, ../scss/master.scss */
 .widget .sky {
   background-color: #1b2e33;
   width: 100%;
   height: 200px;
 }
-/* line 18, ../scss/master.scss */
+/* line 25, ../scss/master.scss */
 .widget .sky .moon {
   float: right;
   position: relative;
@@ -45,14 +153,14 @@
   -moz-box-shadow: 0 0 60px #FFF;
   box-shadow: 0 0 60px #FFF;
 }
-/* line 31, ../scss/master.scss */
+/* line 38, ../scss/master.scss */
 .widget .sky .moon img {
   width: 100%;
   height: 70%;
   position: relative;
   top: 25px;
 }
-/* line 40, ../scss/master.scss */
+/* line 47, ../scss/master.scss */
 .widget .ground {
   width: 100%;
   height: 156px;
