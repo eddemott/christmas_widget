@@ -111,7 +111,7 @@ $tiphat_animation_props: 2.5s infinite linear;
 			position: absolute;
 			right: 55%;
 			top: 25%;
-			box-shadow: 36px 0px;
+			box-shadow: 36px 0px black;
 			
 			/* background-color: #1600e2;
 			@include filter-gradient(#1600e2, #000000, horizontal);
@@ -135,7 +135,7 @@ $tiphat_animation_props: 2.5s infinite linear;
 		.mouth {
 			position: absolute;
 			bottom: 8px;
-			left: calc(50% - 22px);
+			left: 35px;
 			
 			@include dimensions(44px, 20px);
 			border-bottom: 20px black solid;
@@ -210,10 +210,10 @@ $tiphat_animation_props: 2.5s infinite linear;
 				right: 94%;
 				top: 50%;
 
-				.limb {
+				/*.limb {
 					-webkit-transform: rotateZ(72deg);
 
-				}
+				} */
 			}
 
 			&:nth-child(2) {
@@ -222,9 +222,9 @@ $tiphat_animation_props: 2.5s infinite linear;
 				top: 50%;
 				-webkit-transform: rotateZ(180deg);
 
-				.limb {
+				/*.limb {
 					-webkit-transform: rotateZ(-72deg);
-				}
+				}*/
 			}
 
 			.limb {
@@ -232,7 +232,7 @@ $tiphat_animation_props: 2.5s infinite linear;
 
 				-webkit-transform-origin: right;
 
-				@include dimensions(214px, 10px);
+				@include dimensions(114px, 10px);
 				background-color: saddlebrown;
 
 				@include radius(top-right, 5px);
@@ -251,9 +251,9 @@ $tiphat_animation_props: 2.5s infinite linear;
 			@extend %black_button;
 
 			position: absolute;
-			left: calc(50% - 8px);
+			left: 84px;
 			top: 30%;
-			box-shadow: 0px 26px 0px, 0px 52px 0;
+			box-shadow: 0px 26px 0px black, 0px 52px 0 black;
 		}
 	}
 
