@@ -1,6 +1,9 @@
+@import 'compass/css3/images';
 @import 'mixins_placeholders';
 @import 'compass/reset';
 @import 'compass/css3/transform';
+@import 'animation';
+@import 'animations';
 @import 'compass/css3/transition';
 
 $tiphat_animation_props: 2.5s infinite linear;
@@ -52,6 +55,7 @@ $tiphat_animation_props: 2.5s infinite linear;
 		position: relative;
 	}
 
+
 	.hat {
 		@extend %margin_auto;
 		@include pos(5);
@@ -101,7 +105,7 @@ $tiphat_animation_props: 2.5s infinite linear;
 		@extend %margin_auto;
 		margin-bottom: -28px;
 		@include snowball(115px, 92px);
-
+		@extend %filling;
 		box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4);
 
 		.eye {
@@ -184,6 +188,7 @@ $tiphat_animation_props: 2.5s infinite linear;
 		margin-bottom: -40px;
 		@extend %margin_auto;
 		@include snowball(185px, 130px);
+		@extend %filling;
 		box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);
 
 		.arm {
@@ -261,6 +266,7 @@ $tiphat_animation_props: 2.5s infinite linear;
 		@include pos(1);
 		@extend %margin_auto;
 		@include snowball(250px, 170px);
+		@extend %filling;
 		box-shadow: 0px 35px 120px, inset 0px -5px 15px rgba(0, 0, 0, 0.5);
 	}
 }

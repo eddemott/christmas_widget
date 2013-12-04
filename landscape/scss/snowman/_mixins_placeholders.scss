@@ -105,3 +105,12 @@
 	@include radius(100%);
 	background-color: black;
 }
+
+%filling {
+
+// needs latest Compass, add '@import "compass"' to your scss
+background-color: #cedce7; // Old browsers
+@include filter-gradient(#cedce7, #596a72, horizontal); // IE6-9 fallback on horizontal gradient
+@include background-image(radial-gradient(top right, ellipse cover,  #cedce7 0%,#cedce7 19%,#cedce7 30%,#596a72 100%));
+
+}
