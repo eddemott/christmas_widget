@@ -1,314 +1,162 @@
 @import 'compass/css3/images';
-@import 'mixins_placeholders';
+
 @import 'compass/reset';
-@import 'compass/css3/transform';
-@import 'animation';
-@import 'animations';
-@import 'compass/css3/transition';
 
+/* ==mixins */
 
-$tiphat_animation_props: 2.5s infinite linear;
-
-body {
-	width: 500px;
-	height: 700px;
-	margin: 0;
-	padding: 0;
-	box-shadow: 0px 0px 1px red;
-	background-color: rgb(27, 46, 51);
+@mixin dimensions($width, $height : $width) {
+	width: $width;
+	height: $height;
 }
 
-.timer {
-	position: relative;
-	top: 40px;
-	@include pos(1);
+
+@mixin radius($side_0, $radius_0 : false, $radius_1 : false) {
+	@if $radius_0 == false {
+		border-radius: $side_0;
+	} @else if $radius_1 == false {
+		border-#{$side_0}-radius: $radius_0;
+	} @else {
+		border-#{$side_0}-left-radius: $radius_0;
+		border-#{$side_0}-right-radius: $radius_1;
+	}
+}
+
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-moz-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-o-keyframes $animation_name {
+        @content;
+    }
+ 
+    @keyframes $animation_name {
+        @content;
+    }
+}
+
+@mixin animation ($animation_name, $duration, $delay : 0s, $iteration : infinite, $timing : ease-in-out) {
+    -webkit-animation-name: $animation_name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-timing-function: $timing;
+ 
+    -moz-animation-name: $animation_name;
+    -moz-animation-duration: $duration;
+    -moz-animation-delay: $delay;
+    -moz-animation-iteration-count: $iteration;
+    -moz-timing-function: $timing;
+ 
+    -o-animation-name: $animation_name;
+    -o-animation-duration: $duration;
+    -o-animation-delay: $delay;
+    -o-animation-iteration-count: $iteration;
+    -o-timing-function: $timing;
+ 
+	animation-name: $animation_name;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-iteration-count: $iteration;
+	timing-function: $timing;
+}
+
+/* ==placeholders */
+
+%margin_auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.christmas-widget {
+	overflow: visible;
+}
+
+%sign-gradient{
+background-color: #d6726f; // Old browsers
+@include filter-gradient(#d6726f, #db5752, vertical); // IE6-9
+@include background-image(linear-gradient(top,  #d6726f 0%,#db5752 100%));
+}
+
+/* ==animations */
+
+@include keyframe (tilt){
+	0%, 100%{
+		-webkit-transform: rotateZ(-3deg);
+		-webkit-transform-origin: 194px 0px;
+	}
+	
+	50%{
+		-webkit-transform: rotateZ(8deg);
+		-webkit-transform-origin: 194px 0px;
+	}
+}
+
+/* ==sign styling */
+
+.sign{
+	@include dimensions(400px,300px);
+	@include animation(tilt,10s,2s);
 		
-	background: url(../images/wood.jpg) no-repeat center center; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 
-	-webkit-transform: rotateZ(-7deg);
+	.chain{
+		position: relative;
+		@include dimensions(10px, 55px);
+		background-color: #e5e696;
+		border: 1px solid black;
+		margin-bottom: -30px;
+		margin-left: 189px;
+		z-index: 6;
+		border-bottom-left-radius: 20%;
+		border-bottom-right-radius: 20%;
+		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+	}
 
-	box-shadow: 0px 0px 14px;
-	@include radius(20px);
-
-	text-align: center;
-
-	@include dimensions(300px, 200px);
-	@extend %margin_auto;
 	
 
-	h1 {
-		font-size: 150px;
-		font-family: "old_press";
-		letter-spacing: 10px;
-		color: #d5cbc3;
-		text-shadow: -3px -3px 0px rgba(0, 0, 0, 0.5), 2px 2px 0px rgba(255, 255, 255, 0.8);
-		-webkit-transform: rotateZ(4deg);
-	}
-	h2 {
-		font-size: 40px;
-		font-family: "old_press";
-		letter-spacing: 5px;
-		color: #d5cbc3;
-		text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.5), 1px 1px 0px rgba(255, 255, 255, 0.9);
-		text-transform: uppercase;
+	.board {
+		position:relative;
+		z-index: 5;
+		@include dimensions(350px, 230px);
+		@extend %margin_auto;
+		@extend %sign-gradient;
 		-webkit-transform: rotateZ(-3deg);
-	}
-}
 
-.snowman {
-	/* width: 30%; */
-	@include scale(0.77);
-
-	& > div {
-		position: relative;
-	}
-
-	.hat {
-		@extend %margin_auto;
-		@include pos(5);
-		@include dimensions(160px, auto);
-		@include apply-origin(bottom, false);
-		@include rotateZ(5deg);
-
-		@include animation(tiphat_rotate_hat $tiphat_animation_props);/*2.5s, 10s);*/
-
-		.top {
-			position: relative;
-			@include pos(2);
-
-			@extend %margin_auto;
-			margin-bottom: -10px;
-
-			@include dimensions(70%, 20px);
-			background-color: black;
-			@include radius(100%);
-
-			@extend %snow_dusting;
-		}
-
-		.middle {
-			position: relative;
-			@include pos(1);
-
-			@extend %margin_auto;
-			margin-bottom: -10px;
-			@include dimensions(70%, 65px);
-			background-color: black;
-		}
-
-		.base {
-			position: relative;
-			@include pos(0);
-
-			@include dimensions(100%, 25px);
-			background-color: black;
-			@include radius(100%);
-			margin-bottom: -20px;
-
-			@extend %snow_dusting;
-		}
-	}
-
-	.head {
-		@include pos(4);
-		@extend %margin_auto;
-		margin-bottom: -28px;
-		@include snowball(115px, 92px);
-		@extend %filling;
-
-		/*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4); */
-
-		.eye {
-			@include dimensions(20px);
-			@extend %black_button;
-
-			position: absolute;
-			right: 55%;
-			top: 25%;
-			box-shadow: 36px 0px black;
-			
-			/* background-color: #1600e2;
-			@include filter-gradient(#1600e2, #000000, horizontal);
-			@include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%)); */
-		}
-
-		.nose {
-			position: absolute;
-			bottom: 27%;
-			left: 46%;
-			@include rotateZ(20deg);
-			border-style: solid;
-			@include radius(top-left, 10px);
-			@include radius(bottom-left, 10px);
-			/* border-top-left-radius: 10px;
-			border-bottom-left-radius: 10px; */
-			border-width: 10px 0px 10px 50px;
-			border-color: transparent transparent transparent #ff8c00;
-		}
-
-		.mouth {
-			@extend %margin_auto;
-			position: relative;
-			top: 50%;
-			
-			@include dimensions(44px, 20px);
-			border-bottom: 20px black solid;
-
-			@include radius(bottom, 154%, 113%);
-			/* border-bottom-left-radius: 154%;
-			border-bottom-right-radius: 113%; */
-		}
-	}
-
-	.scarf {
-		@include pos(3);
-		@extend %margin_auto;
-		margin-bottom: -32px;
-		@include dimensions(115px, 32px);
-		@include radius(100%);
-		@extend %green_scarf;
-
-		.end {
-			position: absolute;
-			right: 10px;
-			top: 18px;
-
-			@include apply-origin(top, false);
-			@include animation(scarf_in_wind 0.7s infinite linear);
-
-			@extend %green_scarf;
-			@include dimensions(15px, 75px);
-			
-			border-top-right-radius: 100%;
-
-			&:first-child {
-				right: 15px;
-				@include animation-delay(0.3s);
-			}
-
-			&:last-child {
-				box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
-				/* -webkit-transform: rotateZ(-25deg); */
-			}
-		}
-	}
-
-	.belly {
-		@include pos(2);
-		margin-bottom: -40px;
-		@extend %margin_auto;
-		@include snowball(185px, 130px);
-		/*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);*/
-		@extend %filling;
-
-		.arm {
-			.finger {
-				left: -20px;
-
-				&:nth-child(1) {
-					@include rotateZ(-135deg);
-					bottom: 150%;
-				}
-
-				&:nth-child(2) {
-					top: 1.5px;
-				}
-
-				&:nth-child(3) {
-					@include rotateZ(-225deg);
-					top: 150%;
-				}
-			}
-
-			&:first-child {
-				position: absolute;
-				right: 94%;
-				top: 50%;
-
-				.limb {
-					@include rotateZ(72deg);
-
-				}
-			}
-
-			&:nth-child(2) {
-				position: absolute;
-				left: 94%;
-				top: 50%;
-				@include rotateZ(180deg);
-
-				.limb {
-					@include rotateZ(-72deg);
-					@include animation(tiphat_rotate_arm $tiphat_animation_props);
-				}
-			}
-
-			.limb {
-				position: relative;
-
-				@include apply-origin(right, false);
-
-				@include dimensions(214px, 10px);
-				background-color: saddlebrown;
-
-				@include radius(top-right, 5px);
-				@include radius(bottom-right, 5px);
-
-				.finger {
-					position: absolute;
-					@include dimensions(30px, 6px);
-					background-color: saddlebrown;
-				}
-			}
-		}
-
-		.buttonz {
-			@include dimensions(16px);
-			@extend %black_button;
-			@extend %margin_auto;
-
-			position: relative;
-			top: 30%;
-			box-shadow: 0px 26px 0px black, 0px 52px 0 black;
-		}
-	}
-
-	.legs {
-		@include pos(1);
-		@extend %margin_auto;
-		@extend %pos_relative;
-		@include snowball(250px, 170px);
-		box-shadow: 0px 35px 120px;
-
-		@extend %filling;
-
+		box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.6);
+		@include radius(5px);
+		text-align: center;
+		padding-top: 10px;
 		
+
+		.hole{
+			@include dimensions(15px);
+			@include radius(50%);
+			@extend %margin_auto;
+			background-color: rgb(27, 46, 51);
+			border: 4px solid rgba(0, 0, 0, 0.2);
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+		}
+
+
+		.countdown-number {
+			font-size: 150px;
+			font-family: helvetica;
+			color: white;
+			text-shadow: -3px -3px 0px rgba(215, 215, 215, 0.5);
+			-webkit-transform: rotateZ(-1deg);
+		}
+		.countdown-description {
+			font-size: 40px;
+			font-family: helvetica;
+			color: black;
+			
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+			-webkit-transform: rotateZ(1deg);
+		}
 	}
 }
-
-/* @include keyframe(scarf) {
-	0% { -webkit-transform: rotateZ(0deg); }
-	20% { -webkit-transform: rotateZ(-40deg); }
-	60% { -webkit-transform: rotateZ(30deg); }
-	85% { -webkit-transform: rotateZ(-30deg); }
-	100% { -webkit-transform: rotateZ(0deg); }
-}
-
-
-.end:last-child {
-   @include animation(scarf, 15s, 2s);
-}
-
-.end:first-child {
-   @include animation(scarf, 25s, 5s);
-} */
-
-
-
-
-
-

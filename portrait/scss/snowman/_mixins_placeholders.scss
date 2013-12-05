@@ -114,3 +114,9 @@ background-color: #cedce7; // Old browsers
 @include background-image(radial-gradient(top left, ellipse cover,  #cedce7 0%,#cedce7 19%,#cedce7 30%,#596a72 100%));
 
 }
+
+%sign-gradient{
+background-color: #d6726f; // Old browsers
+@include filter-gradient(#d6726f, #db5752, vertical); // IE6-9
+@include background-image(linear-gradient(top,  #d6726f 0%,#db5752 100%));
+}
