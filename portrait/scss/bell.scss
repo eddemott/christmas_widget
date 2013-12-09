@@ -35,9 +35,19 @@ background-color: #ada20f; // Old browsers
 	z-index: $index;
 }
 
-.test{
-	@include dimensions(30px);
+
+.positioner{
+	
+	background-color: red;
+	float: left;
+}
+
+.holly{
+	
 	display: inline-block;
+	background-color: black;
+	position: relative;
+	left: 20px;
 }
 
 .bell{
