@@ -5,8 +5,8 @@
 
 // needs latest Compass, add '@import "compass"' to your scss
 background-color: #fce411; // Old browsers
-@include filter-gradient(#fce411, #998a0c, horizontal); // IE6-9
-@include background-image(linear-gradient(left,  #fce411 0%,#c6b40f 10%,#68680e 14%,#fce514 24%,#ddd533 62%,#d3c832 71%,#ddd533 81%,#ddd533 90%,#998a0c 100%));
+@include filter-gradient(#fce411, #998a0c, horizontal); // IE6-9 fallback on horizontal gradient
+@include background-image(linear-gradient(left,  #fce411 0%,#c6b40f 12%,#8e8a13 20%,#fce514 29%,#ddd533 55%,#bcb72d 71%,#998a0c 100%));
 
 }
 
@@ -28,20 +28,36 @@ background-color: #ada20f; // Old browsers
 	height: $height;
 }
 
-@mixin pos($top : 0px, $left : 0px, $index : false){
+@mixin pos($top : 0px, $index : false){
 	position: relative;
 	top: $top;
-	left: $left;
+	
 	z-index: $index;
 }
 
 .bell{
-	@include dimensions(50px);
+	display: inline-block;
 	background-color: white;
 	position: relative;
+	background-color: rgba(0,0,0,0);
+
+	
+	&.bell1{
+		z-index: 50;
+		-webkit-transform: rotatez(30deg) scale(0.7,1);
+		-webkit-transform-origin: top;
+	}
+
+	&.bell2{
+		z-index: 60;
+		-webkit-transform: rotatez(-30deg) scale(0.7,1);
+		-webkit-transform-origin: top;
+		margin-left: -16px;
+	}
+
 
 	.top{
-		@include dimensions(2px, 3px);
+		@include dimensions(2px, 2.5px);
 		border-radius: 50%;
 		@extend %topbell-gradient;
 		@extend %margin_auto;
@@ -89,15 +105,16 @@ background-color: #ada20f; // Old browsers
 
 
 
-	.bottom1{
+	.bottom{
 		@include dimensions(12px, 1.5px);
 		border-top-left-radius: 40%;
 		border-top-right-radius: 40%;
 		border-bottom-left-radius: 50%;
 		border-bottom-right-radius: 50%;
+		
 		background-color: #fce411; // Old browsers
 		@include filter-gradient(#fce411, #998a0c, horizontal); // IE6-9 fallback on horizontal gradient
-		@include background-image(linear-gradient(left top,  #fce411 0%,#c6b40f 15%,#68680e 20%,#fce514 25%,#ddd533 62%,#d3c832 71%,#ddd533 81%,#ddd533 90%,#998a0c 100%));
+		@include background-image(linear-gradient(left top,  #fce411 0%,#c6b40f 12%,#8e8a13 20%,#fce514 29%,#ddd533 55%,#bcb72d 71%,#998a0c 100%));
 
 		@extend %margin_auto;
 		@include pos(-5.5px, 11);
@@ -105,11 +122,14 @@ background-color: #ada20f; // Old browsers
 
 	}
 
-
-
-
-
-
+	.ding{
+		@include dimensions(1.5px, 5.2px);
+		border-radius: 40%;
+		background-color: saddlebrown;
+		@extend %margin_auto;
+		@include pos(-10px, 0);
+		
+	}
 
 }
 
