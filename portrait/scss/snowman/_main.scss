@@ -39,13 +39,9 @@
     }
 }
 
-@mixin animation ($animation_name, $duration, $delay : 0s, $iteration : infinite, $timing : ease-in-out) {
-    -webkit-animation-name: $animation_name;
-    -webkit-animation-duration: $duration;
-    -webkit-animation-delay: $delay;
-    -webkit-animation-iteration-count: $iteration;
-    -webkit-timing-function: $timing;
- 
+@mixin animation ($animation_name, $duration, $delay : 0s, $iteration : infinite, $timing : cubic-bezier(0.35, 0.1, 0.65, 0.9)) {
+    -webkit-animation: $animation_name $duration $delay $iteration $timing;
+    
     -moz-animation-name: $animation_name;
     -moz-animation-duration: $duration;
     -moz-animation-delay: $delay;
@@ -78,14 +74,14 @@
 }
 
 %sign-gradient{
-background-color: #d6726f; // Old browsers
-@include filter-gradient(#d6726f, #db5752, vertical); // IE6-9
-@include background-image(linear-gradient(top,  #d6726f 0%,#db5752 100%));
+background-color: #a43e35; // Old browsers
+@include filter-gradient(#a43e35, #88342c, vertical); // IE6-9
+@include background-image(linear-gradient(top,  #a43e35 0%,#88342c 100%));
 }
 
 /* ==animations */
 
-@include keyframe (tilt){
+@include keyframe (tilt) {
 	0%, 100%{
 		-webkit-transform: rotateZ(-3deg);
 		-webkit-transform-origin: 194px 0px;
@@ -100,8 +96,11 @@ background-color: #d6726f; // Old browsers
 /* ==sign styling */
 
 .sign{
+	position: relative;
+	right:30px;
 	@include dimensions(400px,300px);
-	@include animation(tilt,10s,2s);
+	@include animation(tilt,10s);
+
 		
 
 	.chain{
@@ -122,7 +121,7 @@ background-color: #d6726f; // Old browsers
 	.board {
 		position:relative;
 		z-index: 5;
-		@include dimensions(350px, 230px);
+		width:320px;
 		@extend %margin_auto;
 		@extend %sign-gradient;
 		-webkit-transform: rotateZ(-3deg);
@@ -131,6 +130,7 @@ background-color: #d6726f; // Old browsers
 		@include radius(5px);
 		text-align: center;
 		padding-top: 10px;
+		padding-bottom: 40px;
 		
 
 		.hole{
