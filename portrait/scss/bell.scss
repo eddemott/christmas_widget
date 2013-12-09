@@ -1,0 +1,115 @@
+@import 'compass/css3/images';
+
+
+%mainbell-gradient{
+
+// needs latest Compass, add '@import "compass"' to your scss
+background-color: #fce411; // Old browsers
+@include filter-gradient(#fce411, #998a0c, horizontal); // IE6-9
+@include background-image(linear-gradient(left,  #fce411 0%,#c6b40f 10%,#68680e 14%,#fce514 24%,#ddd533 62%,#d3c832 71%,#ddd533 81%,#ddd533 90%,#998a0c 100%));
+
+}
+
+%topbell-gradient{
+	// needs latest Compass, add '@import "compass"' to your scss
+background-color: #ada20f; // Old browsers
+@include filter-gradient(#ada20f, #fce514, horizontal); // IE6-9 fallback on horizontal gradient
+@include background-image(radial-gradient(top, ellipse cover,  #ada20f 0%,#fce514 100%));
+
+}
+
+%margin_auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin dimensions($width, $height : $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin pos($top : 0px, $left : 0px, $index : false){
+	position: relative;
+	top: $top;
+	left: $left;
+	z-index: $index;
+}
+
+.bell{
+	@include dimensions(50px);
+	background-color: white;
+	position: relative;
+
+	.top{
+		@include dimensions(2px, 3px);
+		border-radius: 50%;
+		@extend %topbell-gradient;
+		@extend %margin_auto;
+
+	}
+
+	.medup{
+		@include dimensions(8px, 2px);
+		border-radius: 50%;
+		@extend %mainbell-gradient;
+		@extend %margin_auto;
+		@include pos(-1px, 6);
+		box-shadow: 0 0 0.3px rgba(0,0,0,0.5);
+	}
+
+	.medsquare{
+		@include dimensions(9px, 8px);
+		border-top-left-radius: 30%;
+		border-top-right-radius: 30%;
+		@extend %mainbell-gradient;
+		@extend %margin_auto;
+		@include pos(-3px, 7);
+		box-shadow: 0 0 0.3px rgba(0,0,0,0.5);
+	}
+
+
+	.medoval1{
+		@include dimensions(9.5px, 1px);
+		border-top-left-radius: 40%;
+		border-top-right-radius: 40%;
+		@extend %mainbell-gradient;
+		@extend %margin_auto;
+		@include pos(-4px, 8);
+		box-shadow: 0 0 0.8px rgba(0,0,0,0.5);
+		}
+
+	.medoval2{
+		@include dimensions(10px, 1px);
+		border-radius: 40%;
+		@extend %mainbell-gradient;
+		@extend %margin_auto;
+		@include pos(-4.5px, 9);
+		box-shadow: 0 0 0.3px rgba(0,0,0,0.5);
+	}
+
+
+
+	.bottom1{
+		@include dimensions(12px, 1.5px);
+		border-top-left-radius: 40%;
+		border-top-right-radius: 40%;
+		border-bottom-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+		background-color: #fce411; // Old browsers
+		@include filter-gradient(#fce411, #998a0c, horizontal); // IE6-9 fallback on horizontal gradient
+		@include background-image(linear-gradient(left top,  #fce411 0%,#c6b40f 15%,#68680e 20%,#fce514 25%,#ddd533 62%,#d3c832 71%,#ddd533 81%,#ddd533 90%,#998a0c 100%));
+
+		@extend %margin_auto;
+		@include pos(-5.5px, 11);
+		box-shadow: 0 0 0.2px rgba(0,0,0,0.5), 0 1px 1px rgba(0,0,0,0.3);
+
+	}
+
+
+
+
+
+
+
+}
+
