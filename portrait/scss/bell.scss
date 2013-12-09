@@ -10,13 +10,7 @@ background-color: #fce411; // Old browsers
 
 }
 
-%topbell-gradient{
-	// needs latest Compass, add '@import "compass"' to your scss
-background-color: #ada20f; // Old browsers
-@include filter-gradient(#ada20f, #fce514, horizontal); // IE6-9 fallback on horizontal gradient
-@include background-image(radial-gradient(top, ellipse cover,  #ada20f 0%,#fce514 100%));
 
-}
 
 %margin_auto {
 	margin-left: auto;
@@ -31,23 +25,21 @@ background-color: #ada20f; // Old browsers
 @mixin pos($top : 0px, $index : false){
 	position: relative;
 	top: $top;
-	
 	z-index: $index;
 }
 
 
-.positioner{
-	
-	background-color: red;
-	float: left;
+.decoration{
+	position: relative;
+	top:100px;
+	background-color: white;
 }
 
-.holly{
-	
+
+.bells, .holly{
 	display: inline-block;
-	background-color: black;
-	position: relative;
-	left: 20px;
+	@include dimensions(100px, 100px);
+	position:relative;
 }
 
 .bell{
@@ -68,14 +60,18 @@ background-color: #ada20f; // Old browsers
 		z-index: 40;
 		-webkit-transform: rotatez(-40deg) scale(0.8,1) ;
 		-webkit-transform-origin: top;
-		margin-left: -52px;
+		margin-left: -55px;
 	}
 
 
 	.top{
-		@include dimensions(10px, 12.5px);
+		@include dimensions(10px, 8px);
 		border-radius: 50%;
-		@extend %topbell-gradient;
+
+		background-color: #ada20f; // Old browsers
+		@include filter-gradient(#ada20f, #fce514, horizontal); // IE6-9 fallback on horizontal gradient
+		@include background-image(radial-gradient(top, ellipse cover,  #ada20f 0%,#fce514 100%));
+
 		@extend %margin_auto;
 
 	}
@@ -123,10 +119,7 @@ background-color: #ada20f; // Old browsers
 
 	.bottom{
 		@include dimensions(48px, 6px);
-		border-top-left-radius: 40%;
-		border-top-right-radius: 40%;
-		border-bottom-left-radius: 40%;
-		border-bottom-right-radius: 40%;
+		border-radius: 40%;
 		
 		background-color: #fce411; // Old browsers
 		@include filter-gradient(#fce411, #998a0c, horizontal); // IE6-9 fallback on horizontal gradient
@@ -149,3 +142,78 @@ background-color: #ada20f; // Old browsers
 
 }
 
+
+
+
+
+
+.holly{
+
+	
+
+	.leaf {
+		
+		position: relative;
+		z-index: 45;
+		
+
+		&.leaf1{
+			-webkit-transform: rotatez(-71deg) scale(0.1,0.15);
+			top: 12px;
+			left: 48px;
+		}
+
+		
+
+		&.leaf2{
+			-webkit-transform: rotatez(134deg) scale(0.1,0.15);
+			top: 32px;
+			left: 98px;
+			
+		}	
+
+		.branch {
+			
+			border-color: #24B50E transparent;
+			border-style: inset;
+			height: 0;
+			width: 0;
+			position: absolute;
+		
+		
+			&.b1{
+				left:70px;
+				top: 20px;
+				border-width: 0 30px 65px;
+				
+				z-index:5;
+			}
+			
+			&.b2{
+				left: 40px;
+				top: 50px;
+				border-width: 0 60px 65px;
+				
+				z-index:3;
+			}
+
+		
+			&.b3{
+				left: 20px;
+				top: 70px;
+				border-width: 0 80px 85px;
+				
+				z-index:3;
+			}
+		
+			&.b4{
+				left: -20px;
+				top: 110px;
+				border-width: 0 120px 95px;
+				border-radius: 40%;
+				
+				z-index:1;
+			}
+		}
+	}
+}
