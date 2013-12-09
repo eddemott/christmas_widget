@@ -35,29 +35,35 @@ background-color: #ada20f; // Old browsers
 	z-index: $index;
 }
 
+.test{
+	@include dimensions(30px);
+	display: inline-block;
+}
+
 .bell{
 	display: inline-block;
 	background-color: white;
 	position: relative;
 	background-color: rgba(0,0,0,0);
 
+
 	
 	&.bell1{
 		z-index: 50;
-		-webkit-transform: rotatez(30deg) scale(0.7,1);
+		-webkit-transform: rotatez(40deg) scale(0.8,1);
 		-webkit-transform-origin: top;
 	}
 
 	&.bell2{
-		z-index: 60;
-		-webkit-transform: rotatez(-30deg) scale(0.7,1);
+		z-index: 40;
+		-webkit-transform: rotatez(-40deg) scale(0.8,1) ;
 		-webkit-transform-origin: top;
-		margin-left: -16px;
+		margin-left: -52px;
 	}
 
 
 	.top{
-		@include dimensions(2px, 2.5px);
+		@include dimensions(10px, 12.5px);
 		border-radius: 50%;
 		@extend %topbell-gradient;
 		@extend %margin_auto;
@@ -65,69 +71,69 @@ background-color: #ada20f; // Old browsers
 	}
 
 	.medup{
-		@include dimensions(8px, 2px);
+		@include dimensions(32px, 8px);
 		border-radius: 50%;
 		@extend %mainbell-gradient;
 		@extend %margin_auto;
-		@include pos(-1px, 6);
-		box-shadow: 0 0 0.3px rgba(0,0,0,0.5);
+		@include pos(-4px, 6);
+		box-shadow: 0 0 1px rgba(0,0,0,0.5);
 	}
 
 	.medsquare{
-		@include dimensions(9px, 8px);
+		@include dimensions(36px, 32px);
 		border-top-left-radius: 30%;
 		border-top-right-radius: 30%;
 		@extend %mainbell-gradient;
 		@extend %margin_auto;
-		@include pos(-3px, 7);
-		box-shadow: 0 0 0.3px rgba(0,0,0,0.5);
+		@include pos(-12px, 7);
+		box-shadow: 0 0 1px rgba(0,0,0,0.5);
 	}
 
 
 	.medoval1{
-		@include dimensions(9.5px, 1px);
+		@include dimensions(38px, 4px);
 		border-top-left-radius: 40%;
 		border-top-right-radius: 40%;
 		@extend %mainbell-gradient;
 		@extend %margin_auto;
-		@include pos(-4px, 8);
-		box-shadow: 0 0 0.8px rgba(0,0,0,0.5);
+		@include pos(-16px, 8);
+		
 		}
 
 	.medoval2{
-		@include dimensions(10px, 1px);
+		@include dimensions(40px, 4px);
 		border-radius: 40%;
 		@extend %mainbell-gradient;
 		@extend %margin_auto;
-		@include pos(-4.5px, 9);
-		box-shadow: 0 0 0.3px rgba(0,0,0,0.5);
+		@include pos(-18px, 9);
+		box-bottom-shadow: 0 0 3px rgba(0,0,0,0.5);
 	}
 
 
 
 	.bottom{
-		@include dimensions(12px, 1.5px);
+		@include dimensions(48px, 6px);
 		border-top-left-radius: 40%;
 		border-top-right-radius: 40%;
-		border-bottom-left-radius: 50%;
-		border-bottom-right-radius: 50%;
+		border-bottom-left-radius: 40%;
+		border-bottom-right-radius: 40%;
 		
 		background-color: #fce411; // Old browsers
 		@include filter-gradient(#fce411, #998a0c, horizontal); // IE6-9 fallback on horizontal gradient
 		@include background-image(linear-gradient(left top,  #fce411 0%,#c6b40f 12%,#8e8a13 20%,#fce514 29%,#ddd533 55%,#bcb72d 71%,#998a0c 100%));
 
 		@extend %margin_auto;
-		@include pos(-5.5px, 11);
-		box-shadow: 0 0 0.2px rgba(0,0,0,0.5), 0 1px 1px rgba(0,0,0,0.3);
+		@include pos(-20px, 12);
+		box-shadow: 0 0 1px rgba(0,0,0,0.5), 0 4px 4px rgba(0,0,0,0.3);
 
 	}
 
 	.ding{
-		@include dimensions(1.5px, 5.2px);
+		@include dimensions(6px, 23px);
 		border-radius: 40%;
 		background-color: saddlebrown;
 		@extend %margin_auto;
-		@include pos(-10px, 0);
+		@include pos(-40px, 0);
 		
 	}
 
