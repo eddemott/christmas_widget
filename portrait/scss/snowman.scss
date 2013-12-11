@@ -1,0 +1,440 @@
+@import 'compass/css3/images';
+
+/*mixins*/
+
+@mixin snowball($width, $height) {
+	@extend %snow_style;
+	@include dimensions($width, $height);
+}
+
+@mixin dimensions($width, $height : $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin pos($z-index) {
+	z-index: $z-index;
+}
+
+@mixin radius($side_0, $radius_0 : false, $radius_1 : false) {
+	@if $radius_0 == false {
+		border-radius: $side_0;
+	} @else if $radius_1 == false {
+		border-#{$side_0}-radius: $radius_0;
+	} @else {
+		border-#{$side_0}-left-radius: $radius_0;
+		border-#{$side_0}-right-radius: $radius_1;
+	}
+}
+
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-moz-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-o-keyframes $animation_name {
+        @content;
+    }
+ 
+    @keyframes $animation_name {
+        @content;
+    }
+}
+
+/* @mixin animation ($animation_name, $duration, $delay : 0s, $iteration : infinite, $timing : ease-in-out) {
+    -webkit-animation-name: $animation_name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-timing-function: $timing;
+ 
+    -moz-animation-name: $animation_name;
+    -moz-animation-duration: $duration;
+    -moz-animation-delay: $delay;
+    -moz-animation-iteration-count: $iteration;
+    -moz-timing-function: $timing;
+ 
+    -o-animation-name: $animation_name;
+    -o-animation-duration: $duration;
+    -o-animation-delay: $delay;
+    -o-animation-iteration-count: $iteration;
+    -o-timing-function: $timing;
+ 
+	animation-name: $animation_name;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-iteration-count: $iteration;
+	timing-function: $timing;
+} */
+
+/*placeholders */
+
+%sign-gradient{
+background-color: #a43e35; // Old browsers
+@include filter-gradient(#a43e35, #88342c, vertical); // IE6-9
+@include background-image(linear-gradient(top,  #a43e35 0%,#88342c 100%));
+}
+
+
+%margin_auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+%shift_down {
+	margin-bottom: -35px;
+}
+
+%pos_relative {
+	position: relative;
+}
+
+/* Styles */
+
+%snow_style {
+	background: #fff;
+	@include radius(50%);
+	/* box-shadow: inset 0px 0px 10px; */
+}
+
+%snow_dusting {
+	box-shadow: inset 0px 0px 13px rgba(255, 255, 255, 0.44);
+}
+
+%green_scarf {
+	background-color: green;
+	box-shadow: 0px 3px 0px darkgreen;
+}
+
+%black_button {
+	@include radius(100%);
+	background-color: black;
+}
+
+%filling {
+
+// needs latest Compass, add '@import "compass"' to your scss
+background-color: #cedce7; // Old browsers
+@include filter-gradient(#cedce7, #596a72, horizontal); // IE6-9 fallback on horizontal gradient
+@include background-image(radial-gradient(top left, ellipse cover,  #cedce7 0%,#cedce7 19%,#cedce7 30%,#596a72 100%));
+
+}
+
+@include keyframe(scarf_in_wind) {
+	0%, 100% {
+		/* @include rotateZ(5deg); */
+		-webkit-transform: rotateZ(5deg);
+	}
+
+	50% {
+		/* @include rotateZ(15deg); */
+		-webkit-transform: rotateZ(15deg);
+	}
+}
+
+@include keyframe(tiphat_rotate_hat) {
+	0%, 95%, 100% {
+		-webkit-transform-origin: 50% 100%;
+		-webkit-transform: rotateZ(8deg);
+	}
+
+	4% {
+		-webkit-transform-origin: 50% 100%;
+	}
+
+	5% {
+		-webkit-transform-origin: 150px 220px;
+	}
+
+	50% {
+		-webkit-transform: rotateZ(90deg);
+	}
+
+	94% {
+		-webkit-transform-origin: 150px 220px;
+	}
+}
+
+@include keyframe(tiphat_rotate_arm) {
+	0%, 100% {
+		width: 214px;
+		-webkit-transform: rotateZ(-72deg);
+	}
+
+	4% {
+		width: 116px;
+		-webkit-transform: rotateZ(-72deg);
+	}
+
+	50% {
+		-webkit-transform: rotateZ(0deg);
+	}
+
+	94% {
+		width: 116px;
+		-webkit-transform: rotateZ(-72deg);		
+	}
+
+	100% {
+		width: 214px;
+	}
+
+
+}
+
+
+// ==snowman style
+
+%snow_style {
+	background: #fff;
+	@include radius(50%);
+	/* box-shadow: inset 0px 0px 10px; */
+}
+
+%green_scarf {
+	background-color: green;
+	box-shadow: 0px 3px 0px darkgreen;
+}
+
+%black_button {
+	@include radius(100%);
+	background-color: black;
+}
+
+%filling {
+	background-color: #cedce7; // Old browsers
+	@include filter-gradient(#cedce7, #596a72, horizontal); // IE6-9 fallback on horizontal gradient
+	@include background-image(radial-gradient(top left, ellipse cover,  #cedce7 0%,#cedce7 19%,#cedce7 30%,#596a72 100%));
+}
+
+%round {
+	border-radius: 100%;
+}
+
+%scarf_pattern {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAF0lEQVQIW2P8P5PhPwMaYPwfSZkgFjMB5O4MOe2RF6UAAAAASUVORK5CYII=);
+}
+
+// ==snowman
+
+
+.snowman {
+	-webkit-transform: rotate(-15deg);
+	left: 301px;
+	bottom: 61px;
+	position: absolute;
+	z-index: 20;
+
+	& > div {
+		position: relative;
+	}
+
+	.headspace {
+		@include pos(4);
+		-webkit-transform: rotateZ(-12deg);
+		margin-bottom: -30px;
+		margin-left: -16px;
+		
+	}
+
+	.hat {
+		@extend %margin_auto;
+		@include pos(5);
+		@include dimensions(160px, auto);
+		-webkit-transform: rotateZ(5deg) scale(0.8, 0.9);
+	
+		margin-bottom: -25px;
+
+		.top {
+			position: relative;
+			@include pos(2);
+
+			@extend %margin_auto;
+			margin-bottom: -10px;
+
+			@include dimensions(70%, 20px);
+			background-color: #a43e35;
+			@include radius(100%);
+
+			@extend %snow_dusting;
+		}
+
+		.middle {
+			position: relative;
+			@include pos(1);
+
+			@extend %margin_auto;
+			margin-bottom: -10px;
+			@include dimensions(70%, 65px);
+			@extend %sign-gradient;
+		}
+
+		.base {
+			position: relative;
+			@include pos(0);
+
+			@include dimensions(100%, 25px);
+			background-color: #88342c;
+			@include radius(100%);
+			margin-bottom: -20px;
+
+			@extend %snow_dusting;
+		}
+	}
+
+	.head {
+		@extend %margin_auto;
+		@include snowball(120px, 120px);
+		@extend %filling;
+		@extend %round;
+		@include pos(0);
+
+		.eye {
+			@include dimensions(20px);
+			@extend %black_button;
+
+			position: absolute;
+			right: 59%;
+			top: 28%;
+			box-shadow: 42px 0px black;
+			
+			/* background-color: #1600e2;
+			@include filter-gradient(#1600e2, #000000, horizontal);
+			@include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%)); */
+		}
+
+		.nose {
+			position: absolute;
+			bottom: 29%;
+			left: 35%;
+			border-style: solid;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-width: 10px 0px 10px 39px;
+			border-color: transparent transparent transparent #ff8c00;
+			z-index: 19;
+			-webkit-transform: rotateZ(85deg);
+		}
+
+		.mouth {
+			@extend %margin_auto;
+			top: -79%;
+			background-color: transparent;
+			border-color: black;
+			border-style: solid;
+			border-width: 6px;
+			border-radius: 175px;
+			clip: rect(180px, 270px, 239px, -12px);
+			height: 200px;
+			margin-left: 16px;
+			position: absolute;
+			bottom: 300px;
+			width: 90px;
+			z-index: 18;
+		}
+	}
+
+	.scarf {
+		@include pos(3);
+		@extend %margin_auto;
+		margin-bottom: -32px;
+		@include dimensions(115px, 36px);
+		@include radius(100%);
+		/* @extend %green_scarf; */
+		@extend %scarf_pattern;
+
+		.end {
+			position: absolute;
+			left: 10px;
+			top: 10px;
+
+			@extend %scarf_pattern;
+
+			
+			/* @include animation(scarf_in_wind 0.7s infinite linear); */
+
+			/* @extend %green_scarf; */
+			@include dimensions(23px, 105px);
+			
+			box-shadow: -4px 3px orange, 0px 3px 0px orange, 1px 3px 0px darkgreen;
+			border-top-right-radius: 100%;
+
+			&:first-child {
+				left: 15px;
+				height: 120px;
+				z-index: 1;
+				/* @include animation-delay(0.3s); */
+			}
+
+			&:last-child {
+				-webkit-transform: rotateZ(17deg);
+			}
+		}
+	}
+
+	.torso {
+		@include pos(2);
+		margin-bottom: -40px;
+		@extend %margin_auto;
+		@include snowball(200px, 180px);
+		/*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);*/
+		@extend %filling;
+
+		.arm {
+			&:first-child {
+				position: absolute;
+				right: 94%;
+				top: 50%;
+
+				.limb {
+					-webkit-transform: rotateZ(72deg);
+
+				}
+			}
+
+			&:nth-child(2) {
+				position: absolute;
+				left: 94%;
+				top: 50%;
+				-webkit-transform: rotateZ(180deg);
+
+				.limb {
+					-webkit-transform: rotateZ(-72deg) rotateX(180deg);
+				}
+			}
+
+			.limb {
+				position: relative;
+	
+				
+
+				@include dimensions(150px, 25px);
+				border-color: transparent transparent saddlebrown transparent;
+				border-width: 0px 0px 5px 0px;
+				border-style: solid;
+
+				@include radius(100%);
+
+				.glove {
+					position: absolute;
+					@include dimensions(50px, 20px);
+					background-color: #a43e35;
+				}
+			}
+		}
+
+		.coal-buttons {
+			@include dimensions(20px);
+			@extend %black_button;
+			@extend %margin_auto;
+
+			position: relative;
+			top: 30%;
+			box-shadow: 0px 35px 0px black, 0px 70px 0 black;
+		}
+	}
+}
