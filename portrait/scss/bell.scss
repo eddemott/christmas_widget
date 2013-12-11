@@ -150,12 +150,13 @@ background-color: #998a0c; // Old browsers
 	}
 }
 
-
 body{
+	background-color: #1b2e33;
+}
+
+.decoration{
 	position: relative;
 	@include dimensions(100%);
-	background-color: #1b2e33;
-	background-color: pink;
 }
 
 
@@ -177,7 +178,7 @@ body{
 		z-index: 50;
 		-webkit-transform: rotatez(40deg) scale(0.8,1);
 		-webkit-transform-origin: top;
-		@include animation(drin1, 5s, 5s, infinite, linear);
+		@include animation(drin1, 5s, 2s, infinite, linear);
 	}
 
 	&.bell2{
@@ -185,7 +186,7 @@ body{
 		-webkit-transform: rotatez(-40deg) scale(0.8,1) ;
 		-webkit-transform-origin: top;
 		margin-left: -55px;
-		@include animation(drin2, 5s, 5s, infinite, linear);
+		@include animation(drin2, 5s, 2s, infinite, linear);
 	}
 
 
@@ -253,7 +254,7 @@ body{
 
 		@extend %margin_auto;
 		@include posit(-20px, 12);
-		box-shadow: 0 0 1px rgba(0,0,0,0.5);
+		box-shadow: 0 0 1px rgba(0,0,0,0.5), 0 6px 6px rgba(10,10,10,0.2);
 
 	}
 
@@ -269,11 +270,11 @@ body{
 }
 
 .bell1 .ding{
-	@include animation(ding1, 5s, 5s, infinite, linear);
+	@include animation(ding1, 5s, 2s, infinite, linear);
 }
 
 .bell2 .ding{
-	@include animation(ding2, 5s, 5s, infinite, linear);
+	@include animation(ding2, 5s, 2s, infinite, linear);
 }
 
 
@@ -281,7 +282,7 @@ body{
 
 .holly{
 
-	@include animation(hollyrot, 5s, 5s, infinite, linear);
+	@include animation(hollyrot, 5s, 2s, infinite, linear);
 
 	.leaf {
 		

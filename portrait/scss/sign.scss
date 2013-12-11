@@ -1,0 +1,149 @@
+@import 'compass/css3/images';
+
+
+@mixin dimensions($width, $height : $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin radius($side_0, $radius_0 : false, $radius_1 : false) {
+	@if $radius_0 == false {
+		border-radius: $side_0;
+	} @else if $radius_1 == false {
+		border-#{$side_0}-radius: $radius_0;
+	} @else {
+		border-#{$side_0}-left-radius: $radius_0;
+		border-#{$side_0}-right-radius: $radius_1;
+	}
+}
+
+
+@mixin keyframe ($animation_name) {
+	@-webkit-keyframes $animation_name {
+		@content;
+	}
+
+	@-moz-keyframes $animation_name {
+		@content;
+	}
+
+	@-o-keyframes $animation_name {
+		@content;
+	}
+
+	@keyframes $animation_name {
+		@content;
+	}
+}
+
+@mixin animation ($animation_name, $duration, $delay : 0s, $iteration : infinite, $timing : cubic-bezier(0.35, 0.1, 0.65, 0.9)) {
+    -webkit-animation: $animation_name $duration $delay $iteration $timing;
+    -moz-animation: $animation_name $duration $delay $iteration $timing;
+    -o-animation: $animation_name $duration $delay $iteration $timing;
+    animation: $animation_name $duration $delay $iteration $timing;
+}
+
+%sign-gradient{
+background-color: #a43e35; // Old browsers
+@include filter-gradient(#a43e35, #88342c, vertical); // IE6-9
+@include background-image(linear-gradient(top,  #a43e35 0%,#88342c 100%));
+}
+
+%margin_auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* ==animations */
+
+@include keyframe (tilt){
+	0%, 100%{
+		-webkit-transform: rotateZ(-3deg);
+		-webkit-transform-origin: 194px 0px;
+	}
+	
+	50%{
+		-webkit-transform: rotateZ(10deg);
+		-webkit-transform-origin: 194px 0px;
+	}
+}
+
+/*styling */
+
+body{
+	background-color: #1b2e33;
+}
+
+.sign{
+	@include dimensions(400px,300px);
+	@include animation(tilt,10s);
+	overflow: visible;
+	position: absolute;
+	left:-20px;
+	z-index: 10000;
+
+
+	-webkit-transform: translate3d(0, 0, 0);
+	
+	.chain{
+		position: relative;
+		@include dimensions(10px, 55px);
+		background-color: #e5e696;
+		border: 1px solid black;
+		margin-bottom: -30px;
+		margin-left: 189px;
+		z-index: 10002;
+		border-bottom-left-radius: 20%;
+		border-bottom-right-radius: 20%;
+		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+	}
+
+	
+
+	.board {
+		position:relative;
+		z-index: 5;
+		width: 320px;
+		@extend %margin_auto;
+		@extend %sign-gradient;
+		-webkit-transform: rotateZ(-3deg);
+		box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.6);
+		@include radius(5px);
+		text-align: center;
+		margin-top: 10px;
+		padding-top: 10px;
+		padding-bottom: 25px;
+		
+
+		.hole{
+			@include dimensions(15px);
+			@include radius(50%);
+			@extend %margin_auto;
+			background-color: rgb(27, 46, 51);
+			border: 4px solid rgba(0, 0, 0, 0.2);
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+		}
+
+
+		.countdown-number {
+			margin: 0;
+			font-size: 10em;
+			font-family: helvetica;
+			color: white;
+			text-shadow: -5px -5px 0px rgba(150, 150, 150, 0.4);
+			-webkit-transform: rotateZ(-1deg);
+			line-height: 0.8;
+			padding-top: 40px;
+		}
+		.countdown-description {
+			margin: 0;
+			font-size: 3em;
+			font-family: helvetica;
+			color: black;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+			-webkit-transform: rotateZ(1deg);
+
+		}
+	}
+}
