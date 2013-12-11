@@ -1,4 +1,9 @@
 @import 'compass/css3/images';
+@import 'compass/reset';
+@import 'compass/css3/transform';
+@import 'compass';
+@import 'animation';
+@import 'compass/css3/transition';
 
 /*mixins*/
 
@@ -73,13 +78,6 @@
 
 /*placeholders */
 
-%sign-gradient{
-background-color: #a43e35; // Old browsers
-@include filter-gradient(#a43e35, #88342c, vertical); // IE6-9
-@include background-image(linear-gradient(top,  #a43e35 0%,#88342c 100%));
-}
-
-
 %margin_auto {
 	margin-left: auto;
 	margin-right: auto;
@@ -124,7 +122,7 @@ background-color: #cedce7; // Old browsers
 
 }
 
-@include keyframe(scarf_in_wind) {
+@include keyframes(scarf_in_wind) {
 	0%, 100% {
 		/* @include rotateZ(5deg); */
 		-webkit-transform: rotateZ(5deg);
@@ -136,118 +134,62 @@ background-color: #cedce7; // Old browsers
 	}
 }
 
-@include keyframe(tiphat_rotate_hat) {
-	0%, 95%, 100% {
-		-webkit-transform-origin: 50% 100%;
-		-webkit-transform: rotateZ(8deg);
-	}
-
-	4% {
-		-webkit-transform-origin: 50% 100%;
-	}
-
-	5% {
+@include keyframes(tiphat_rotate_hat) {
+	0%, 30%, 70%, 100% {
 		-webkit-transform-origin: 150px 220px;
+		-webkit-transform: rotateZ(0deg);
 	}
-
+	
 	50% {
 		-webkit-transform: rotateZ(90deg);
 	}
 
-	94% {
-		-webkit-transform-origin: 150px 220px;
-	}
+
 }
 
-@include keyframe(tiphat_rotate_arm) {
-	0%, 100% {
-		width: 214px;
-		-webkit-transform: rotateZ(-72deg);
+@include keyframes(tiphat_rotate_arm) {
+	0%, 25%, 75%, 100%{
+		-webkit-transform: rotateZ(-70deg);
 	}
 
-	4% {
-		width: 116px;
-		-webkit-transform: rotateZ(-72deg);
+	30%, 70%{
+		-webkit-transform: rotateZ(-92deg);
 	}
 
+	
 	50% {
-		-webkit-transform: rotateZ(0deg);
+		-webkit-transform: rotateZ(10deg);
 	}
 
-	94% {
-		width: 116px;
-		-webkit-transform: rotateZ(-72deg);		
-	}
-
-	100% {
-		width: 214px;
-	}
-
-
 }
 
+$tiphat_animation_props: 8s infinite linear;
 
-// ==snowman style
-
-%snow_style {
-	background: #fff;
-	@include radius(50%);
-	/* box-shadow: inset 0px 0px 10px; */
+body {
+	width: 500px;
+	height: 700px;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0px 0px 1px red;
+	background-color: rgb(27, 46, 51);
 }
-
-%green_scarf {
-	background-color: green;
-	box-shadow: 0px 3px 0px darkgreen;
-}
-
-%black_button {
-	@include radius(100%);
-	background-color: black;
-}
-
-%filling {
-	background-color: #cedce7; // Old browsers
-	@include filter-gradient(#cedce7, #596a72, horizontal); // IE6-9 fallback on horizontal gradient
-	@include background-image(radial-gradient(top left, ellipse cover,  #cedce7 0%,#cedce7 19%,#cedce7 30%,#596a72 100%));
-}
-
-%round {
-	border-radius: 100%;
-}
-
-%scarf_pattern {
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAF0lEQVQIW2P8P5PhPwMaYPwfSZkgFjMB5O4MOe2RF6UAAAAASUVORK5CYII=);
-}
-
-// ==snowman
-
 
 .snowman {
-	-webkit-transform: rotate(-15deg);
-	left: 301px;
-	bottom: 61px;
-	position: absolute;
-	z-index: 20;
+	/* width: 30%; */
+	@include scale(0.77);
 
 	& > div {
 		position: relative;
-	}
-
-	.headspace {
-		@include pos(4);
-		-webkit-transform: rotateZ(-12deg);
-		margin-bottom: -30px;
-		margin-left: -16px;
-		
 	}
 
 	.hat {
 		@extend %margin_auto;
 		@include pos(5);
 		@include dimensions(160px, auto);
-		-webkit-transform: rotateZ(5deg) scale(0.8, 0.9);
-	
-		margin-bottom: -25px;
+		@include apply-origin(bottom, false);
+		@include rotateZ(5deg);
+
+		@include animation(tiphat_rotate_hat $tiphat_animation_props);/*2.5s, 10s);*/
 
 		.top {
 			position: relative;
@@ -257,7 +199,7 @@ background-color: #cedce7; // Old browsers
 			margin-bottom: -10px;
 
 			@include dimensions(70%, 20px);
-			background-color: #a43e35;
+			background-color: black;
 			@include radius(100%);
 
 			@extend %snow_dusting;
@@ -270,7 +212,7 @@ background-color: #cedce7; // Old browsers
 			@extend %margin_auto;
 			margin-bottom: -10px;
 			@include dimensions(70%, 65px);
-			@extend %sign-gradient;
+			background-color: black;
 		}
 
 		.base {
@@ -278,7 +220,7 @@ background-color: #cedce7; // Old browsers
 			@include pos(0);
 
 			@include dimensions(100%, 25px);
-			background-color: #88342c;
+			background-color: black;
 			@include radius(100%);
 			margin-bottom: -20px;
 
@@ -287,20 +229,22 @@ background-color: #cedce7; // Old browsers
 	}
 
 	.head {
+		@include pos(4);
 		@extend %margin_auto;
-		@include snowball(120px, 120px);
+		margin-bottom: -28px;
+		@include snowball(115px, 92px);
 		@extend %filling;
-		@extend %round;
-		@include pos(0);
+
+		/*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4); */
 
 		.eye {
 			@include dimensions(20px);
 			@extend %black_button;
 
 			position: absolute;
-			right: 59%;
-			top: 28%;
-			box-shadow: 42px 0px black;
+			right: 55%;
+			top: 25%;
+			box-shadow: 36px 0px black;
 			
 			/* background-color: #1600e2;
 			@include filter-gradient(#1600e2, #000000, horizontal);
@@ -309,32 +253,29 @@ background-color: #cedce7; // Old browsers
 
 		.nose {
 			position: absolute;
-			bottom: 29%;
-			left: 35%;
+			bottom: 27%;
+			left: 46%;
+			@include rotateZ(20deg);
 			border-style: solid;
-			border-top-left-radius: 10px;
-			border-bottom-left-radius: 10px;
-			border-width: 10px 0px 10px 39px;
+			@include radius(top-left, 10px);
+			@include radius(bottom-left, 10px);
+			/* border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px; */
+			border-width: 10px 0px 10px 50px;
 			border-color: transparent transparent transparent #ff8c00;
-			z-index: 19;
-			-webkit-transform: rotateZ(85deg);
 		}
 
 		.mouth {
 			@extend %margin_auto;
-			top: -79%;
-			background-color: transparent;
-			border-color: black;
-			border-style: solid;
-			border-width: 6px;
-			border-radius: 175px;
-			clip: rect(180px, 270px, 239px, -12px);
-			height: 200px;
-			margin-left: 16px;
-			position: absolute;
-			bottom: 300px;
-			width: 90px;
-			z-index: 18;
+			position: relative;
+			top: 50%;
+			
+			@include dimensions(44px, 20px);
+			border-bottom: 20px black solid;
+
+			@include radius(bottom, 154%, 113%);
+			/* border-bottom-left-radius: 154%;
+			border-bottom-right-radius: 113%; */
 		}
 	}
 
@@ -342,57 +283,70 @@ background-color: #cedce7; // Old browsers
 		@include pos(3);
 		@extend %margin_auto;
 		margin-bottom: -32px;
-		@include dimensions(115px, 36px);
+		@include dimensions(115px, 32px);
 		@include radius(100%);
-		/* @extend %green_scarf; */
-		@extend %scarf_pattern;
+		@extend %green_scarf;
 
 		.end {
 			position: absolute;
-			left: 10px;
-			top: 10px;
+			right: 10px;
+			top: 18px;
 
-			@extend %scarf_pattern;
+			@include apply-origin(top, false);
+			@include animation(scarf_in_wind 0.7s infinite linear);
 
+			@extend %green_scarf;
+			@include dimensions(15px, 75px);
 			
-			/* @include animation(scarf_in_wind 0.7s infinite linear); */
-
-			/* @extend %green_scarf; */
-			@include dimensions(23px, 105px);
-			
-			box-shadow: -4px 3px orange, 0px 3px 0px orange, 1px 3px 0px darkgreen;
 			border-top-right-radius: 100%;
 
 			&:first-child {
-				left: 15px;
-				height: 120px;
-				z-index: 1;
-				/* @include animation-delay(0.3s); */
+				right: 15px;
+				@include animation-delay(0.3s);
 			}
 
 			&:last-child {
-				-webkit-transform: rotateZ(17deg);
+				box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
+				/* -webkit-transform: rotateZ(-25deg); */
 			}
 		}
 	}
 
-	.torso {
+	.belly {
 		@include pos(2);
 		margin-bottom: -40px;
 		@extend %margin_auto;
-		@include snowball(200px, 180px);
+		@include snowball(185px, 130px);
 		/*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);*/
 		@extend %filling;
 
 		.arm {
+			.finger {
+				left: -20px;
+
+				&:nth-child(1) {
+					@include rotateZ(-135deg);
+					bottom: 150%;
+				}
+
+				&:nth-child(2) {
+					top: 1.5px;
+				}
+
+				&:nth-child(3) {
+					@include rotateZ(-225deg);
+					top: 150%;
+				}
+			}
+
 			&:first-child {
 				position: absolute;
 				right: 94%;
 				top: 50%;
 
 				.limb {
-					-webkit-transform: rotateZ(72deg);
-
+					@include rotateZ(72deg);
+					width: 116px;
 				}
 			}
 
@@ -400,41 +354,76 @@ background-color: #cedce7; // Old browsers
 				position: absolute;
 				left: 94%;
 				top: 50%;
-				-webkit-transform: rotateZ(180deg);
+				@include rotateZ(180deg);
 
 				.limb {
-					-webkit-transform: rotateZ(-72deg) rotateX(180deg);
+					width: 116px;
+					@include animation(tiphat_rotate_arm $tiphat_animation_props);
 				}
 			}
 
 			.limb {
 				position: relative;
-	
-				
 
-				@include dimensions(150px, 25px);
-				border-color: transparent transparent saddlebrown transparent;
-				border-width: 0px 0px 5px 0px;
-				border-style: solid;
+				@include apply-origin(right, false);
 
-				@include radius(100%);
+				@include dimensions(214px, 10px);
+				background-color: saddlebrown;
 
-				.glove {
+				@include radius(top-right, 5px);
+				@include radius(bottom-right, 5px);
+
+				.finger {
 					position: absolute;
-					@include dimensions(50px, 20px);
-					background-color: #a43e35;
+					@include dimensions(30px, 6px);
+					background-color: saddlebrown;
 				}
 			}
 		}
 
-		.coal-buttons {
-			@include dimensions(20px);
+		.buttonz {
+			@include dimensions(16px);
 			@extend %black_button;
 			@extend %margin_auto;
 
 			position: relative;
 			top: 30%;
-			box-shadow: 0px 35px 0px black, 0px 70px 0 black;
+			box-shadow: 0px 26px 0px black, 0px 52px 0 black;
 		}
 	}
+
+	.legs {
+		@include pos(1);
+		@extend %margin_auto;
+		@extend %pos_relative;
+		@include snowball(250px, 170px);
+		box-shadow: 0px 35px 120px;
+
+		@extend %filling;
+
+		
+	}
 }
+
+/* @include keyframe(scarf) {
+	0% { -webkit-transform: rotateZ(0deg); }
+	20% { -webkit-transform: rotateZ(-40deg); }
+	60% { -webkit-transform: rotateZ(30deg); }
+	85% { -webkit-transform: rotateZ(-30deg); }
+	100% { -webkit-transform: rotateZ(0deg); }
+}
+
+
+.end:last-child {
+   @include animation(scarf, 15s, 2s);
+}
+
+.end:first-child {
+   @include animation(scarf, 25s, 5s);
+} */
+
+
+
+
+
+
