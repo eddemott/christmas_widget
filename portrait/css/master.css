@@ -1,83 +1,20 @@
-/* line 17, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
 /* ==mixins */
+/* ==general styling */
+/* line 8, ../scss/snowman/_main.scss */
+.main-screen .widget.height-66.christmas-widget {
+  padding: 0;
+  overflow: visible;
+}
+
 /* ==placeholders */
-/* line 66, ../scss/snowman/_main.scss */
-.sign .board, .sign .board .hole {
+/* line 77, ../scss/snowman/_main.scss */
+.bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding, .sign .board, .sign .board .hole, .snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .head .mouth, .snowman .scarf, .snowman .torso, .snowman .torso .coal-buttons {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 72, ../scss/snowman/_main.scss */
-.christmas-widget {
-  overflow: visible;
-}
-
-/* line 76, ../scss/snowman/_main.scss */
-.sign .board {
+/* line 82, ../scss/snowman/_main.scss */
+.sign .board, .snowman .hat .middle {
   background-color: #a43e35;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFA43E35', endColorstr='#FF88342C');
@@ -90,86 +27,264 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* ==animations */
 @-webkit-keyframes tilt {
-  /* line 85, ../scss/snowman/_main.scss */
+  /* line 91, ../scss/snowman/_main.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 90, ../scss/snowman/_main.scss */
+  /* line 96, ../scss/snowman/_main.scss */
   50% {
-    -webkit-transform: rotateZ(8deg);
+    -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
   }
 }
 
 @-moz-keyframes tilt {
-  /* line 85, ../scss/snowman/_main.scss */
+  /* line 91, ../scss/snowman/_main.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 90, ../scss/snowman/_main.scss */
+  /* line 96, ../scss/snowman/_main.scss */
   50% {
-    -webkit-transform: rotateZ(8deg);
+    -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
   }
 }
 
 @-o-keyframes tilt {
-  /* line 85, ../scss/snowman/_main.scss */
+  /* line 91, ../scss/snowman/_main.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 90, ../scss/snowman/_main.scss */
+  /* line 96, ../scss/snowman/_main.scss */
   50% {
-    -webkit-transform: rotateZ(8deg);
+    -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
   }
 }
 
 @keyframes tilt {
-  /* line 85, ../scss/snowman/_main.scss */
+  /* line 91, ../scss/snowman/_main.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 90, ../scss/snowman/_main.scss */
+  /* line 96, ../scss/snowman/_main.scss */
   50% {
-    -webkit-transform: rotateZ(8deg);
+    -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
   }
 }
 
-/* ==sign styling */
-/* line 98, ../scss/snowman/_main.scss */
-.sign {
+/* ==bells styling */
+/* line 104, ../scss/snowman/_main.scss */
+.bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2 {
+  background-color: #998a0c;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF998A0C', endColorstr='#FF998A0C');
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #998a0c), color-stop(19%, #c6b40f), color-stop(33%, #fce514), color-stop(66%, #ddd533), color-stop(81%, #bcb72d), color-stop(100%, #998a0c));
+  background-image: -webkit-linear-gradient(left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: -moz-linear-gradient(left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: -o-linear-gradient(left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: linear-gradient(left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+}
+
+/* line 117, ../scss/snowman/_main.scss */
+.decoration {
+  position: absolute;
+  top: 0;
+  right: -33px;
+}
+
+/* line 124, ../scss/snowman/_main.scss */
+.bells, .holly {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
   position: relative;
-  right: 30px;
+}
+
+/* line 130, ../scss/snowman/_main.scss */
+.bell {
+  display: inline-block;
+  background-color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+/* line 138, ../scss/snowman/_main.scss */
+.bell.bell1 {
+  z-index: 50;
+  -webkit-transform: rotatez(40deg) scale(0.8, 1);
+  -webkit-transform-origin: top;
+}
+/* line 144, ../scss/snowman/_main.scss */
+.bell.bell2 {
+  z-index: 40;
+  -webkit-transform: rotatez(-40deg) scale(0.8, 1);
+  -webkit-transform-origin: top;
+  margin-left: -55px;
+}
+/* line 152, ../scss/snowman/_main.scss */
+.bell .top {
+  width: 10px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ada20f;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFADA20F', endColorstr='#FFFCE514');
+  background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 100, color-stop(0%, #ada20f), color-stop(100%, #fce514));
+  background-image: -webkit-radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
+  background-image: -moz-radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
+  background-image: -o-radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
+  background-image: radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
+}
+/* line 164, ../scss/snowman/_main.scss */
+.bell .medup {
+  width: 32px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+  top: -4px;
+  z-index: 6;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+/* line 173, ../scss/snowman/_main.scss */
+.bell .medsquare {
+  width: 36px;
+  height: 32px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  position: relative;
+  top: -12px;
+  z-index: 7;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+/* line 184, ../scss/snowman/_main.scss */
+.bell .medoval1 {
+  width: 38px;
+  height: 4px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  position: relative;
+  top: -16px;
+  z-index: 8;
+}
+/* line 194, ../scss/snowman/_main.scss */
+.bell .medoval2 {
+  width: 40px;
+  height: 4px;
+  border-radius: 40%;
+  position: relative;
+  top: -18px;
+  z-index: 9;
+  box-bottom-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+/* line 205, ../scss/snowman/_main.scss */
+.bell .bottom {
+  width: 48px;
+  height: 6px;
+  border-radius: 40%;
+  background-color: #998a0c;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF998A0C', endColorstr='#FF998A0C');
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #998a0c), color-stop(19%, #c6b40f), color-stop(33%, #fce514), color-stop(66%, #ddd533), color-stop(81%, #bcb72d), color-stop(100%, #998a0c));
+  background-image: -webkit-linear-gradient(top left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: -moz-linear-gradient(top left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: -o-linear-gradient(top left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: linear-gradient(top left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  position: relative;
+  top: -20px;
+  z-index: 12;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(10, 10, 10, 0.2);
+}
+/* line 220, ../scss/snowman/_main.scss */
+.bell .ding {
+  width: 6px;
+  height: 23px;
+  border-radius: 40%;
+  background-color: saddlebrown;
+  position: relative;
+  top: -40px;
+  z-index: 0;
+}
+
+/* line 235, ../scss/snowman/_main.scss */
+.holly .leaf {
+  position: relative;
+  z-index: 45;
+}
+/* line 241, ../scss/snowman/_main.scss */
+.holly .leaf.leaf1 {
+  -webkit-transform: rotatez(-71deg) scale(0.1, 0.15);
+  top: 12px;
+  left: 48px;
+}
+/* line 249, ../scss/snowman/_main.scss */
+.holly .leaf.leaf2 {
+  -webkit-transform: rotatez(134deg) scale(0.1, 0.15);
+  top: 32px;
+  left: 98px;
+}
+/* line 256, ../scss/snowman/_main.scss */
+.holly .leaf .branch {
+  border-color: #24B50E transparent;
+  border-style: inset;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+/* line 265, ../scss/snowman/_main.scss */
+.holly .leaf .branch.b1 {
+  left: 70px;
+  top: 20px;
+  border-width: 0 30px 65px;
+  z-index: 5;
+}
+/* line 273, ../scss/snowman/_main.scss */
+.holly .leaf .branch.b2 {
+  left: 40px;
+  top: 50px;
+  border-width: 0 60px 65px;
+  z-index: 3;
+}
+/* line 282, ../scss/snowman/_main.scss */
+.holly .leaf .branch.b3 {
+  left: 20px;
+  top: 70px;
+  border-width: 0 80px 85px;
+  z-index: 3;
+}
+/* line 290, ../scss/snowman/_main.scss */
+.holly .leaf .branch.b4 {
+  left: -20px;
+  top: 110px;
+  border-width: 0 120px 95px;
+  border-radius: 40%;
+  z-index: 1;
+}
+
+/* ==sign styling */
+/* line 305, ../scss/snowman/_main.scss */
+.sign {
   width: 400px;
   height: 300px;
   -webkit-animation: tilt 10s 0s infinite cubic-bezier(0.35, 0.1, 0.65, 0.9);
-  -moz-animation-name: tilt;
-  -moz-animation-duration: 10s;
-  -moz-animation-delay: 0s;
-  -moz-animation-iteration-count: infinite;
-  -moz-timing-function: cubic-bezier(0.35, 0.1, 0.65, 0.9);
-  -o-animation-name: tilt;
-  -o-animation-duration: 10s;
-  -o-animation-delay: 0s;
-  -o-animation-iteration-count: infinite;
-  -o-timing-function: cubic-bezier(0.35, 0.1, 0.65, 0.9);
-  animation-name: tilt;
-  animation-duration: 10s;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  timing-function: cubic-bezier(0.35, 0.1, 0.65, 0.9);
+  -moz-animation: tilt 10s 0s infinite cubic-bezier(0.35, 0.1, 0.65, 0.9);
+  -o-animation: tilt 10s 0s infinite cubic-bezier(0.35, 0.1, 0.65, 0.9);
+  animation: tilt 10s 0s infinite cubic-bezier(0.35, 0.1, 0.65, 0.9);
+  overflow: visible;
+  position: absolute;
+  left: -20px;
+  z-index: 10000;
+  -webkit-transform: translate3d(0, 0, 0);
 }
-/* line 106, ../scss/snowman/_main.scss */
+/* line 315, ../scss/snowman/_main.scss */
 .sign .chain {
   position: relative;
   width: 10px;
@@ -178,12 +293,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 1px solid black;
   margin-bottom: -30px;
   margin-left: 189px;
-  z-index: 6;
+  z-index: 10002;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
 }
-/* line 121, ../scss/snowman/_main.scss */
+/* line 330, ../scss/snowman/_main.scss */
 .sign .board {
   position: relative;
   z-index: 5;
@@ -192,10 +307,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   text-align: center;
+  margin-top: 10px;
   padding-top: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 }
-/* line 136, ../scss/snowman/_main.scss */
+/* line 345, ../scss/snowman/_main.scss */
 .sign .board .hole {
   width: 15px;
   height: 15px;
@@ -204,21 +320,862 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 4px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
 }
-/* line 146, ../scss/snowman/_main.scss */
+/* line 355, ../scss/snowman/_main.scss */
 .sign .board .countdown-number {
-  font-size: 150px;
+  margin: 0;
+  font-size: 10em;
   font-family: helvetica;
   color: white;
-  text-shadow: -3px -3px 0px rgba(215, 215, 215, 0.5);
+  text-shadow: -5px -5px 0px rgba(150, 150, 150, 0.4);
   -webkit-transform: rotateZ(-1deg);
+  line-height: 0.8;
+  padding-top: 40px;
 }
-/* line 153, ../scss/snowman/_main.scss */
+/* line 365, ../scss/snowman/_main.scss */
 .sign .board .countdown-description {
-  font-size: 40px;
+  margin: 0;
+  font-size: 3em;
   font-family: helvetica;
   color: black;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   -webkit-transform: rotateZ(1deg);
+}
+
+/* line 379, ../scss/snowman/_main.scss */
+.snowman .head, .snowman .torso {
+  background: #fff;
+  border-radius: 50%;
+  /* box-shadow: inset 0px 0px 10px; */
+}
+
+/* line 390, ../scss/snowman/_main.scss */
+.snowman .head .eye, .snowman .torso .coal-buttons {
+  border-radius: 100%;
+  background-color: black;
+}
+
+/* line 395, ../scss/snowman/_main.scss */
+.snowman .head, .snowman .torso {
+  background-color: #cedce7;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFCEDCE7', endColorstr='#FF596A72');
+  background-image: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 100, color-stop(0%, #cedce7), color-stop(19%, #cedce7), color-stop(30%, #cedce7), color-stop(100%, #596a72));
+  background-image: -webkit-radial-gradient(top left, ellipse cover, #cedce7 0%, #cedce7 19%, #cedce7 30%, #596a72 100%);
+  background-image: -moz-radial-gradient(top left, ellipse cover, #cedce7 0%, #cedce7 19%, #cedce7 30%, #596a72 100%);
+  background-image: -o-radial-gradient(top left, ellipse cover, #cedce7 0%, #cedce7 19%, #cedce7 30%, #596a72 100%);
+  background-image: radial-gradient(top left, ellipse cover, #cedce7 0%, #cedce7 19%, #cedce7 30%, #596a72 100%);
+}
+
+/* line 401, ../scss/snowman/_main.scss */
+.snowman .head {
+  border-radius: 100%;
+}
+
+/* line 405, ../scss/snowman/_main.scss */
+.snowman .scarf, .snowman .scarf .end {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAF0lEQVQIW2P8P5PhPwMaYPwfSZkgFjMB5O4MOe2RF6UAAAAASUVORK5CYII=);
+}
+
+/* line 412, ../scss/snowman/_main.scss */
+.snowman {
+  -webkit-transform: rotate(-15deg);
+  left: 301px;
+  bottom: 61px;
+  position: absolute;
+  z-index: 20;
+}
+/* line 419, ../scss/snowman/_main.scss */
+.snowman > div {
+  position: relative;
+}
+/* line 423, ../scss/snowman/_main.scss */
+.snowman .headspace {
+  z-index: 4;
+  position: relative;
+  -webkit-transform: rotate(-12deg);
+  -moz-transform: rotate(-12deg);
+  -ms-transform: rotate(-12deg);
+  -o-transform: rotate(-12deg);
+  transform: rotate(-12deg);
+  margin-bottom: -30px;
+  margin-left: -16px;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
+}
+/* line 431, ../scss/snowman/_main.scss */
+.snowman .hat {
+  z-index: 5;
+  position: relative;
+  width: 160px;
+  height: auto;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+  -webkit-transform: scale(0.8, 0.9);
+  -moz-transform: scale(0.8, 0.9);
+  -ms-transform: scale(0.8, 0.9);
+  -o-transform: scale(0.8, 0.9);
+  transform: scale(0.8, 0.9);
+  margin-bottom: -25px;
+}
+/* line 439, ../scss/snowman/_main.scss */
+.snowman .hat .top {
+  position: relative;
+  z-index: 2;
+  position: relative;
+  margin-bottom: -10px;
+  width: 70%;
+  height: 20px;
+  background-color: #a43e35;
+  border-radius: 100%;
+}
+/* line 453, ../scss/snowman/_main.scss */
+.snowman .hat .middle {
+  position: relative;
+  z-index: 1;
+  position: relative;
+  margin-bottom: -10px;
+  width: 70%;
+  height: 65px;
+}
+/* line 463, ../scss/snowman/_main.scss */
+.snowman .hat .base {
+  position: relative;
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 25px;
+  background-color: #88342c;
+  border-radius: 100%;
+  margin-bottom: -20px;
+}
+/* line 476, ../scss/snowman/_main.scss */
+.snowman .head {
+  width: 120px;
+  height: 120px;
+  z-index: 0;
+  position: relative;
+}
+/* line 483, ../scss/snowman/_main.scss */
+.snowman .head .eye {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 59%;
+  top: 28%;
+  box-shadow: 42px 0px black;
+  /* background-color: #1600e2;
+  @include filter-gradient(#1600e2, #000000, horizontal);
+  @include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%)); */
+}
+/* line 497, ../scss/snowman/_main.scss */
+.snowman .head .nose {
+  position: absolute;
+  bottom: 29%;
+  left: 35%;
+  border-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-width: 10px 0px 10px 39px;
+  border-color: transparent transparent transparent #ff8c00;
+  z-index: 19;
+  -webkit-transform: rotateZ(85deg);
+}
+/* line 510, ../scss/snowman/_main.scss */
+.snowman .head .mouth {
+  top: -79%;
+  background-color: transparent;
+  border-color: black;
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 175px;
+  clip: rect(180px, 270px, 239px, -12px);
+  height: 200px;
+  margin-left: 16px;
+  position: absolute;
+  bottom: 300px;
+  width: 90px;
+  z-index: 18;
+}
+/* line 528, ../scss/snowman/_main.scss */
+.snowman .scarf {
+  z-index: 3;
+  position: relative;
+  margin-bottom: -32px;
+  width: 115px;
+  height: 36px;
+  border-radius: 100%;
+  /* @extend %green_scarf; */
+}
+/* line 537, ../scss/snowman/_main.scss */
+.snowman .scarf .end {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  -ms-transform-origin: top;
+  -o-transform-origin: top;
+  transform-origin: top;
+  /* @include animation(scarf_in_wind 0.7s infinite linear); */
+  /* @extend %green_scarf; */
+  width: 23px;
+  height: 105px;
+  box-shadow: -4px 3px orange, 0px 3px 0px orange, 1px 3px 0px darkgreen;
+  border-top-right-radius: 100%;
+}
+/* line 553, ../scss/snowman/_main.scss */
+.snowman .scarf .end:first-child {
+  left: 15px;
+  height: 120px;
+  z-index: 1;
+  /* @include animation-delay(0.3s); */
+}
+/* line 560, ../scss/snowman/_main.scss */
+.snowman .scarf .end:last-child {
+  -webkit-transform: rotateZ(17deg);
+}
+/* line 566, ../scss/snowman/_main.scss */
+.snowman .torso {
+  z-index: 2;
+  position: relative;
+  margin-bottom: -40px;
+  width: 200px;
+  height: 180px;
+  /*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);*/
+}
+/* line 575, ../scss/snowman/_main.scss */
+.snowman .torso .arm:first-child {
+  position: absolute;
+  right: 94%;
+  top: 50%;
+}
+/* line 580, ../scss/snowman/_main.scss */
+.snowman .torso .arm:first-child .limb {
+  -webkit-transform: rotate(72deg);
+  -moz-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  -o-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+/* line 586, ../scss/snowman/_main.scss */
+.snowman .torso .arm:nth-child(2) {
+  position: absolute;
+  left: 94%;
+  top: 50%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 592, ../scss/snowman/_main.scss */
+.snowman .torso .arm:nth-child(2) .limb {
+  -webkit-transform: rotateZ(-72deg) rotateX(180deg);
+}
+/* line 597, ../scss/snowman/_main.scss */
+.snowman .torso .arm .limb {
+  position: relative;
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  -ms-transform-origin: right;
+  -o-transform-origin: right;
+  transform-origin: right;
+  width: 150px;
+  height: 25px;
+  border-color: transparent transparent saddlebrown transparent;
+  border-width: 0px 0px 5px 0px;
+  border-style: solid;
+  border-radius: 100%;
+}
+/* line 609, ../scss/snowman/_main.scss */
+.snowman .torso .arm .limb .glove {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-color: #a43e35;
+}
+/* line 617, ../scss/snowman/_main.scss */
+.snowman .torso .coal-buttons {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 30%;
+  box-shadow: 0px 35px 0px black, 0px 70px 0 black;
+}
+
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f1 {
+  opacity: 0.23;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 160%;
+  left: 9%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 34s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f2 {
+  opacity: 0.29;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 104%;
+  left: 61%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 24s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f3 {
+  opacity: 0.5;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 159%;
+  left: 51%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 44s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f4 {
+  opacity: 0.17;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 189%;
+  left: 93%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 29s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f5 {
+  opacity: 0.38;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 138%;
+  left: 26%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f6 {
+  opacity: 0.84;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 187%;
+  left: 17%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 19s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f7 {
+  opacity: 0.84;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 134%;
+  left: 44%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 29s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f8 {
+  opacity: 0.21;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 188%;
+  left: 78%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 28s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f9 {
+  opacity: 0.09;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 145%;
+  left: 67%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 32s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f10 {
+  opacity: 0.02;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 119%;
+  left: 91%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 44s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f11 {
+  opacity: 0.09;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 142%;
+  left: 78%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 23s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f12 {
+  opacity: 0.58;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 174%;
+  left: 87%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f13 {
+  opacity: 0.64;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 137%;
+  left: 99%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f14 {
+  opacity: 0.59;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 198%;
+  left: 41%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 633, ../scss/snowman/_main.scss */
+.snow .icon-snowflake.f15 {
+  opacity: 0.95;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  font-size: 178%;
+  left: 90%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 27s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes fall1 {
+  /* line 654, ../scss/snowman/_main.scss */
+  0% {
+    top: 0%;
+  }
+
+  /* line 657, ../scss/snowman/_main.scss */
+  100% {
+    top: 110%;
+  }
+}
+
+/* line 662, ../scss/snowman/_main.scss */
+.ground {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  background: #feffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #feffff 0%, #e8f3f7 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #feffff), color-stop(100%, #e8f3f7));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #feffff 0%, #e8f3f7 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #feffff 0%, #e8f3f7 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #feffff 0%, #e8f3f7 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #feffff 0%, #e8f3f7 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feffff', endColorstr='#e8f3f7',GradientType=0 );
+  /* IE6-9 */
+  z-index: 1;
+}
+
+/* line 678, ../scss/snowman/_main.scss */
+.ground:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 189% 50%;
+  clip: rect(0px, 311px, 50px, 0px);
+  width: 343px;
+  height: 107px;
+  left: 190px;
+  bottom: -29px;
+  background: -moz-linear-gradient(top, #feffff 0%, #e8f3f7 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #feffff), color-stop(100%, #e8f3f7));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #feffff 0%, #e8f3f7 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #feffff 0%, #e8f3f7 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #feffff 0%, #e8f3f7 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #feffff 0%, #e8f3f7 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feffff', endColorstr='#e8f3f7',GradientType=0 );
+  /* IE6-9 */
+  z-index: 1;
+}
+
+/* line 699, ../scss/snowman/_main.scss */
+.ground:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  clip: rect(0px, 300px, 300px, 2px);
+  width: 268px;
+  height: 65px;
+  background-color: #172123;
+  left: -2px;
+  bottom: 22px;
+  z-index: 1;
+}
+
+/* line 713, ../scss/snowman/_main.scss */
+.ctree {
+  position: absolute;
+  z-index: 100;
+  top: 446px;
+  left: 15px;
+}
+/* line 719, ../scss/snowman/_main.scss */
+.ctree .trunk {
+  border-color: #3b200f transparent;
+  border-style: solid;
+  border-width: 0 19px 208px;
+  bottom: 0;
+  height: 0px;
+  width: 0;
+  position: absolute;
+  z-index: 10;
+  left: 81px;
+  top: 11px;
+}
+/* line 732, ../scss/snowman/_main.scss */
+.ctree .branch {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-color: #336633 transparent;
+  border-style: inset;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+/* line 742, ../scss/snowman/_main.scss */
+.ctree .branch.b1 {
+  left: 60px;
+  top: 0px;
+  border-width: 0 40px 60px;
+  z-index: 11;
+}
+/* line 748, ../scss/snowman/_main.scss */
+.ctree .branch.b2 {
+  left: 40px;
+  top: 20px;
+  border-width: 0 60px 80px;
+  z-index: 11;
+}
+/* line 754, ../scss/snowman/_main.scss */
+.ctree .branch.b3 {
+  left: 20px;
+  top: 40px;
+  border-width: 0 80px 100px;
+  z-index: 11;
+}
+/* line 760, ../scss/snowman/_main.scss */
+.ctree .branch.b4 {
+  left: 0px;
+  top: 60px;
+  border-width: 0 100px 120px;
+  z-index: 11;
+}
+/* line 767, ../scss/snowman/_main.scss */
+.ctree .dec {
+  background: transparent;
+  border-style: dotted;
+  border-width: 8px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  z-index: 12;
+  position: absolute;
+  -webkit-animation-name: lights1;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 780, ../scss/snowman/_main.scss */
+.ctree .dec.d1 {
+  -webkit-transform: rotate(16deg);
+  clip: rect(42px, 74px, 65px, 33px);
+  width: 140px;
+  height: 64px;
+  top: -22px;
+  left: 59px;
+}
+/* line 788, ../scss/snowman/_main.scss */
+.ctree .dec.d2 {
+  -webkit-transform: rotate(-27deg);
+  clip: rect(61px, 86px, 87px, 19px);
+  width: 107px;
+  height: 76px;
+  top: 0px;
+  left: 25px;
+}
+/* line 796, ../scss/snowman/_main.scss */
+.ctree .dec.d3 {
+  -webkit-transform: rotate(20deg);
+  clip: rect(44px, 120px, 84px, 28px);
+  width: 138px;
+  height: 64px;
+  top: 45px;
+  left: 43px;
+}
+/* line 804, ../scss/snowman/_main.scss */
+.ctree .dec.d4 {
+  -webkit-transform: rotate(-5deg);
+  clip: rect(32px, 128px, 64px, 21px);
+  width: 139px;
+  height: 51px;
+  top: 92px;
+  left: 25px;
+}
+/* line 813, ../scss/snowman/_main.scss */
+.ctree .dec.d5 {
+  -webkit-transform: rotate(18deg);
+  clip: rect(36px, 106px, 100px, 16px);
+  width: 140px;
+  height: 84px;
+  top: 87px;
+  left: 26px;
+}
+/* line 822, ../scss/snowman/_main.scss */
+.ctree .ball_r {
+  width: 15px;
+  height: 15px;
+  background-color: #660000;
+  -webkit-box-shadow: 0px 0px 7px white;
+  -webkit-border-radius: 50px;
+  position: absolute;
+  z-index: 13;
+}
+/* line 832, ../scss/snowman/_main.scss */
+.ctree .ball_w {
+  width: 15px;
+  height: 15px;
+  background-color: #D4D4D4;
+  -webkit-box-shadow: 0px 0px 7px white;
+  -webkit-border-radius: 50px;
+  position: absolute;
+  z-index: 13;
+}
+/* line 842, ../scss/snowman/_main.scss */
+.ctree .ball_w.ba1 {
+  top: 34px;
+  left: 80px;
+}
+/* line 846, ../scss/snowman/_main.scss */
+.ctree .ball_w.ba2 {
+  top: 72px;
+  left: 122px;
+}
+/* line 850, ../scss/snowman/_main.scss */
+.ctree .ball_w.ba3 {
+  top: 112px;
+  left: 46px;
+}
+/* line 854, ../scss/snowman/_main.scss */
+.ctree .ball_w.ba4 {
+  top: 153px;
+  left: 156px;
+}
+/* line 858, ../scss/snowman/_main.scss */
+.ctree .ball_r.ba5 {
+  top: 34px;
+  left: 105px;
+}
+/* line 862, ../scss/snowman/_main.scss */
+.ctree .ball_r.ba6 {
+  top: 73px;
+  left: 64px;
+}
+/* line 866, ../scss/snowman/_main.scss */
+.ctree .ball_r.ba7 {
+  top: 112px;
+  left: 142px;
+}
+/* line 870, ../scss/snowman/_main.scss */
+.ctree .ball_r.ba8 {
+  top: 153px;
+  left: 26px;
+}
+/* line 874, ../scss/snowman/_main.scss */
+.ctree .ball_r.ba9 {
+  top: 100px;
+  left: 93px;
+}
+/* line 878, ../scss/snowman/_main.scss */
+.ctree .ball_w.ba10 {
+  top: 143px;
+  left: 93px;
+}
+/* line 883, ../scss/snowman/_main.scss */
+.ctree .star {
+  top: -1px;
+  left: 96px;
+  position: absolute;
+  z-index: 14;
+}
+/* line 889, ../scss/snowman/_main.scss */
+.ctree .star .point {
+  position: absolute;
+}
+/* line 893, ../scss/snowman/_main.scss */
+.ctree .star .middle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #ffd700;
+  height: 9px;
+  width: 9px;
+}
+/* line 902, ../scss/snowman/_main.scss */
+.ctree .star .point.p1 {
+  top: -8px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid #ffd700;
+}
+/* line 912, ../scss/snowman/_main.scss */
+.ctree .star .point.p2 {
+  top: 0px;
+  left: 7px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 8px solid #ffd700;
+  border-bottom: 4px solid transparent;
+}
+/* line 922, ../scss/snowman/_main.scss */
+.ctree .star .point.p3 {
+  top: 8px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 16px solid #ffd700;
+}
+/* line 932, ../scss/snowman/_main.scss */
+.ctree .star .point.p4 {
+  top: 0px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 8px solid #ffd700;
+  border-bottom: 4px solid transparent;
 }
 
 /* line 1, ../scss/snow_fall/_main.scss */
@@ -233,10 +1190,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 221%;
-  left: 70%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 14s;
+  font-size: 276%;
+  left: 11%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 21s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -246,10 +1203,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 236%;
-  left: 86%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 14s;
+  font-size: 252%;
+  left: 77%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -259,10 +1216,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 106%;
-  left: 43%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 18s;
+  font-size: 120%;
+  left: 1%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 21s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -272,10 +1229,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 237%;
-  left: 3%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 12s;
+  font-size: 157%;
+  left: 42%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 26s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -285,10 +1242,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 234%;
-  left: 69%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 8s;
+  font-size: 218%;
+  left: 34%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -298,10 +1255,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 293%;
-  left: 60%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 19s;
+  font-size: 205%;
+  left: 67%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 11s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -311,10 +1268,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 173%;
-  left: 40%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 19s;
+  font-size: 242%;
+  left: 91%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 15s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -324,10 +1281,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 256%;
-  left: 54%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 16s;
+  font-size: 138%;
+  left: 31%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -337,10 +1294,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 210%;
-  left: 41%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 8s;
+  font-size: 261%;
+  left: 54%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 21s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -350,10 +1307,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 210%;
-  left: 17%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 22s;
+  font-size: 154%;
+  left: 7%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 16s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -363,10 +1320,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 137%;
-  left: 27%;
+  font-size: 181%;
+  left: 7%;
   -webkit-animation: fall3;
-  -webkit-animation-duration: 8s;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -376,10 +1333,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 194%;
-  left: 20%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 17s;
+  font-size: 213%;
+  left: 36%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -389,10 +1346,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 176%;
-  left: 30%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 9s;
+  font-size: 183%;
+  left: 2%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -402,10 +1359,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 245%;
-  left: 14%;
+  font-size: 258%;
+  left: 82%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 19s;
+  -webkit-animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -415,10 +1372,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 279%;
-  left: 41%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 10s;
+  font-size: 270%;
+  left: 28%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -428,10 +1385,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 199%;
-  left: 11%;
+  font-size: 211%;
+  left: 51%;
   -webkit-animation: fall3;
-  -webkit-animation-duration: 25s;
+  -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -441,10 +1398,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 233%;
-  left: 63%;
+  font-size: 147%;
+  left: 17%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 17s;
+  -webkit-animation-duration: 21s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -454,10 +1411,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 254%;
-  left: 72%;
+  font-size: 237%;
+  left: 36%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 12s;
+  -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -467,10 +1424,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 170%;
-  left: 48%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 22s;
+  font-size: 183%;
+  left: 16%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 9s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -480,10 +1437,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 280%;
-  left: 82%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 17s;
+  font-size: 203%;
+  left: 24%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -493,10 +1450,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 173%;
-  left: 95%;
+  font-size: 258%;
+  left: 18%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 25s;
+  -webkit-animation-duration: 15s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -506,10 +1463,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 290%;
-  left: 41%;
+  font-size: 124%;
+  left: 7%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 24s;
+  -webkit-animation-duration: 22s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -519,10 +1476,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 112%;
-  left: 58%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 10s;
+  font-size: 216%;
+  left: 43%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 16s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -532,10 +1489,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 283%;
-  left: 77%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 18s;
+  font-size: 186%;
+  left: 89%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -545,10 +1502,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 107%;
-  left: 62%;
+  font-size: 234%;
+  left: 47%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 11s;
+  -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -558,10 +1515,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 177%;
-  left: 8%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 21s;
+  font-size: 165%;
+  left: 82%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 19s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -571,10 +1528,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 115%;
-  left: 95%;
+  font-size: 170%;
+  left: 73%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 20s;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -584,10 +1541,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 145%;
-  left: 2%;
+  font-size: 113%;
+  left: 28%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 13s;
+  -webkit-animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -597,8 +1554,8 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 123%;
-  left: 88%;
+  font-size: 147%;
+  left: 0%;
   -webkit-animation: fall2;
   -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
@@ -610,10 +1567,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 263%;
-  left: 32%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 12s;
+  font-size: 250%;
+  left: 66%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 22s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -623,10 +1580,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 164%;
-  left: 40%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 20s;
+  font-size: 168%;
+  left: 8%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 26s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -636,10 +1593,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 209%;
-  left: 60%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 14s;
+  font-size: 111%;
+  left: 30%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -649,10 +1606,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 243%;
-  left: 21%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 12s;
+  font-size: 290%;
+  left: 89%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 19s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -662,10 +1619,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 204%;
-  left: 28%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 8s;
+  font-size: 186%;
+  left: 89%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 9s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -675,10 +1632,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 152%;
-  left: 76%;
+  font-size: 298%;
+  left: 50%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 22s;
+  -webkit-animation-duration: 16s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -688,10 +1645,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 259%;
-  left: 32%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 9s;
+  font-size: 216%;
+  left: 95%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 19s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -701,9 +1658,9 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 136%;
-  left: 65%;
-  -webkit-animation: fall3;
+  font-size: 259%;
+  left: 70%;
+  -webkit-animation: fall1;
   -webkit-animation-duration: 11s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -714,10 +1671,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 106%;
-  left: 42%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 27s;
+  font-size: 288%;
+  left: 15%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -727,10 +1684,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 233%;
-  left: 34%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 24s;
+  font-size: 296%;
+  left: 16%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -740,10 +1697,10 @@ body {
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 179%;
-  left: 41%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 26s;
+  font-size: 107%;
+  left: 82%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }

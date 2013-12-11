@@ -1,0 +1,351 @@
+@import 'compass/css3/images';
+
+
+%mainbell-gradient{
+
+// needs latest Compass, add '@import "compass"' to your scss
+background-color: #998a0c; // Old browsers
+@include filter-gradient(#998a0c, #998a0c, horizontal); // IE6-9
+@include background-image(linear-gradient(left,  #998a0c 0%,#c6b40f 19%,#fce514 33%,#ddd533 66%,#bcb72d 81%,#998a0c 100%));
+
+}
+
+
+
+%margin_auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin dimensions($width, $height : $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin posit($top : 0px, $index : false){
+	position: relative;
+	top: $top;
+	z-index: $index;
+}
+
+@mixin keyframe ($animation_name) {
+	@-webkit-keyframes $animation_name {
+		@content;
+	}
+
+	@-moz-keyframes $animation_name {
+		@content;
+	}
+
+	@-o-keyframes $animation_name {
+		@content;
+	}
+
+	@keyframes $animation_name {
+		@content;
+	}
+}
+
+@mixin animation ($animation_name, $duration, $delay : 0s, $iteration : infinite, $timing : cubic-bezier(0.35, 0.1, 0.65, 0.9)) {
+    -webkit-animation: $animation_name $duration $delay $iteration $timing;
+    -moz-animation: $animation_name $duration $delay $iteration $timing;
+    -o-animation: $animation_name $duration $delay $iteration $timing;
+    animation: $animation_name $duration $delay $iteration $timing;
+}
+
+@include keyframe (drin1){
+	0%, 100%{
+		-webkit-transform: rotatez(40deg) scale(0.8,1);
+		-webkit-transform-origin: top;
+	}
+	
+	25%{
+		-webkit-transform: rotatez(-40deg) scale(0.8,1);
+		-webkit-transform-origin: top;
+	}
+
+	50%{
+		-webkit-transform: rotatez(50deg) scale(0.8,1);
+		-webkit-transform-origin: top;
+	}
+
+	75%{
+		-webkit-transform: rotatez(-70deg) scale(0.8,1);
+		-webkit-transform-origin: top;
+	}
+
+}
+
+@include keyframe (ding1){
+	0%, 100%{
+		-webkit-transform: rotatez(-40deg);
+	}
+	
+	25%{
+		-webkit-transform: rotatez(40deg);
+	}
+
+	50%{
+		-webkit-transform: rotatez(-50deg);
+	}
+
+	75%{
+		-webkit-transform: rotatez(70deg);
+	}
+
+}
+
+
+
+@include keyframe (drin2){
+	0%, 100%{
+		-webkit-transform: rotatez(-40deg) scale(0.8,1);
+		-webkit-transform-origin: top;
+	}
+	
+	25%{
+		-webkit-transform: rotatez(70deg) scale(0.8,1);
+		-webkit-transform-origin: top;
+	}
+
+	50%{
+		-webkit-transform: rotatez(-50deg) scale(0.8,1);
+		-webkit-transform-origin: top;
+	}
+
+	75%{
+		-webkit-transform: rotatez(50deg) scale(0.8,1);
+		-webkit-transform-origin: top;
+	}
+}
+
+@include keyframe (ding2){
+	0%, 100%{
+		-webkit-transform: rotatez(40deg);
+	}
+	
+	25%{
+		-webkit-transform: rotatez(-50deg);
+	}
+
+	50%{
+		-webkit-transform: rotatez(60deg);
+	}
+
+	75%{
+		-webkit-transform: rotatez(-70deg);
+	}
+
+}
+
+@include keyframe (hollyrot){
+	0%, 50%, 100%{
+		-webkit-transform: rotatez(0deg);
+		z-index: 45;
+	}
+	
+	25%,75%{
+		-webkit-transform: rotatez(1deg);
+		z-index: 45;
+	}
+}
+
+
+body{
+	position: relative;
+	@include dimensions(100%);
+	background-color: #1b2e33;
+	background-color: pink;
+}
+
+
+.bells, .holly{
+	display: inline-block;
+	@include dimensions(100px, 100px);
+	position:relative;
+}
+
+.bell{
+	display: inline-block;
+	background-color: white;
+	position: relative;
+	background-color: rgba(0,0,0,0);
+
+
+	
+	&.bell1{
+		z-index: 50;
+		-webkit-transform: rotatez(40deg) scale(0.8,1);
+		-webkit-transform-origin: top;
+		@include animation(drin1, 5s, 5s, infinite, linear);
+	}
+
+	&.bell2{
+		z-index: 40;
+		-webkit-transform: rotatez(-40deg) scale(0.8,1) ;
+		-webkit-transform-origin: top;
+		margin-left: -55px;
+		@include animation(drin2, 5s, 5s, infinite, linear);
+	}
+
+
+	.top{
+		@include dimensions(10px, 8px);
+		border-radius: 50%;
+
+		background-color: #ada20f; // Old browsers
+		@include filter-gradient(#ada20f, #fce514, horizontal); // IE6-9 fallback on horizontal gradient
+		@include background-image(radial-gradient(top, ellipse cover,  #ada20f 0%,#fce514 100%));
+
+		@extend %margin_auto;
+
+	}
+
+	.medup{
+		@include dimensions(32px, 8px);
+		border-radius: 50%;
+		@extend %mainbell-gradient;
+		@extend %margin_auto;
+		@include posit(-4px, 6);
+		box-shadow: 0 0 1px rgba(0,0,0,0.5);
+	}
+
+	.medsquare{
+		@include dimensions(36px, 32px);
+		border-top-left-radius: 30%;
+		border-top-right-radius: 30%;
+		@extend %mainbell-gradient;
+		@extend %margin_auto;
+		@include posit(-12px, 7);
+		box-shadow: 0 0 1px rgba(0,0,0,0.5);
+	}
+
+
+	.medoval1{
+		@include dimensions(38px, 4px);
+		border-top-left-radius: 40%;
+		border-top-right-radius: 40%;
+		@extend %mainbell-gradient;
+		@extend %margin_auto;
+		@include posit(-16px, 8);
+		
+		}
+
+	.medoval2{
+		@include dimensions(40px, 4px);
+		border-radius: 40%;
+		@extend %mainbell-gradient;
+		@extend %margin_auto;
+		@include posit(-18px, 9);
+		box-bottom-shadow: 0 0 3px rgba(0,0,0,0.5);
+	}
+
+
+
+	.bottom{
+		@include dimensions(48px, 6px);
+		border-radius: 40%;
+		
+
+		background-color: #998a0c; // Old browsers
+		@include filter-gradient(#998a0c, #998a0c, horizontal); // IE6-9
+		@include background-image(linear-gradient(top left,  #998a0c 0%,#c6b40f 19%,#fce514 33%,#ddd533 66%,#bcb72d 81%,#998a0c 100%));
+
+		@extend %margin_auto;
+		@include posit(-20px, 12);
+		box-shadow: 0 0 1px rgba(0,0,0,0.5);
+
+	}
+
+	.ding{
+		@include dimensions(6px, 25px);
+		border-radius: 40%;
+		background-color: saddlebrown;
+		@extend %margin_auto;
+		@include posit(-40px, 0);
+
+	}
+
+}
+
+.bell1 .ding{
+	@include animation(ding1, 5s, 5s, infinite, linear);
+}
+
+.bell2 .ding{
+	@include animation(ding2, 5s, 5s, infinite, linear);
+}
+
+
+
+
+.holly{
+
+	@include animation(hollyrot, 5s, 5s, infinite, linear);
+
+	.leaf {
+		
+		position: relative;
+		z-index: 45;
+		
+
+		&.leaf1{
+			-webkit-transform: rotatez(-71deg) scale(0.1,0.15);
+			top: 12px;
+			left: 48px;
+		}
+
+		
+
+		&.leaf2{
+			-webkit-transform: rotatez(134deg) scale(0.1,0.15);
+			top: 32px;
+			left: 98px;
+			
+		}	
+
+		.branch {
+			
+			border-color: #24B50E transparent;
+			border-style: inset;
+			height: 0;
+			width: 0;
+			position: absolute;
+		
+		
+			&.b1{
+				left:70px;
+				top: 20px;
+				border-width: 0 30px 65px;
+				
+				z-index:5;
+			}
+			
+			&.b2{
+				left: 40px;
+				top: 50px;
+				border-width: 0 60px 65px;
+				
+				z-index:3;
+			}
+
+		
+			&.b3{
+				left: 20px;
+				top: 70px;
+				border-width: 0 80px 85px;
+				
+				z-index:3;
+			}
+		
+			&.b4{
+				left: -20px;
+				top: 110px;
+				border-width: 0 120px 95px;
+				border-radius: 40%;
+				
+				z-index:1;
+			}
+		}
+	}
+}
