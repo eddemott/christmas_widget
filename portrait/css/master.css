@@ -1,4 +1,4 @@
-/* line 17, ../../../../../.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/rubies/ruby-2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -87,43 +87,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*mixins*/
 /*placeholders */
 /* line 65, ../scss/master.scss */
-.sign .board, .sign .board .hole, .bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding, .snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .head .mouth, .snowman .scarf, .snowman .belly, .snowman .belly .buttonz, .snowman .legs {
+.container .sign .board, .container .sign .board .hole, .container .bell .top, .container .bell .medup, .container .bell .medsquare, .container .bell .medoval1, .container .bell .medoval2, .container .bell .bottom, .container .bell .ding, .container .snowman .hat, .container .snowman .hat .top, .container .snowman .hat .middle, .container .snowman .head, .container .snowman .head .mouth, .container .snowman .scarf, .container .snowman .belly, .container .snowman .belly .buttonz, .container .snowman .legs {
   margin-left: auto;
   margin-right: auto;
 }
 
 /* line 74, ../scss/master.scss */
-.snowman .legs {
+.container .snowman .legs {
   position: relative;
 }
 
 /* Styles */
 /* line 80, ../scss/master.scss */
-.snowman .head, .snowman .belly, .snowman .legs {
+.container .snowman .head, .container .snowman .belly, .container .snowman .legs {
   background: #fff;
   border-radius: 50%;
   /* box-shadow: inset 0px 0px 10px; */
 }
 
 /* line 86, ../scss/master.scss */
-.snowman .hat .top, .snowman .hat .base {
+.container .snowman .hat .top, .container .snowman .hat .base {
   box-shadow: inset 0px 0px 13px rgba(255, 255, 255, 0.44);
 }
 
 /* line 90, ../scss/master.scss */
-.snowman .scarf, .snowman .scarf .end {
+.container .snowman .scarf, .container .snowman .scarf .end {
   background-color: green;
   box-shadow: 0px 3px 0px darkgreen;
 }
 
 /* line 95, ../scss/master.scss */
-.snowman .head .eye, .snowman .belly .buttonz {
+.container .snowman .head .eye, .container .snowman .belly .buttonz {
   border-radius: 100%;
   background-color: black;
 }
 
 /* line 100, ../scss/master.scss */
-.snowman .head, .snowman .belly, .snowman .legs {
+.container .snowman .head, .container .snowman .belly, .container .snowman .legs {
   background-color: #cedce7;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFCEDCE7', endColorstr='#FF596A72');
@@ -135,7 +135,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 108, ../scss/master.scss */
-.sign .board {
+.container .sign .board {
   background-color: #a43e35;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFA43E35', endColorstr='#FF88342C');
@@ -147,7 +147,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 114, ../scss/master.scss */
-.bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2 {
+.container .bell .medup, .container .bell .medsquare, .container .bell .medoval1, .container .bell .medoval2 {
   background-color: #998a0c;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF998A0C', endColorstr='#FF998A0C');
@@ -875,8 +875,162 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 }
 
+@-webkit-keyframes fall1 {
+  /* line 274, ../scss/master.scss */
+  0% {
+    top: -10%;
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  /* line 278, ../scss/master.scss */
+  100% {
+    top: 100%;
+    -webkit-transform: translate(100px, 150px) rotate(250deg);
+  }
+}
+
+@-webkit-keyframes fall3 {
+  /* line 285, ../scss/master.scss */
+  0% {
+    top: -10%;
+    -webkit-transform: rotate(-180deg) translate(0px, 0px);
+  }
+
+  /* line 289, ../scss/master.scss */
+  75% {
+    opacity: 0.8;
+  }
+
+  /* line 292, ../scss/master.scss */
+  100% {
+    top: 100%;
+    opacity: 0.0;
+    -webkit-transform: rotate(150deg) translate(10px, 75px);
+  }
+}
+
+@-webkit-keyframes fall2 {
+  /* line 300, ../scss/master.scss */
+  0% {
+    top: -10%;
+  }
+
+  /* line 303, ../scss/master.scss */
+  10% {
+    -webkit-transform: rotate(-180deg) translate(0px, 0px);
+  }
+
+  /* line 306, ../scss/master.scss */
+  100% {
+    top: 100%;
+    -webkit-transform: rotate(50deg) translate(100px, 80px);
+  }
+}
+
+@-webkit-keyframes fall4 {
+  /* line 313, ../scss/master.scss */
+  0% {
+    top: -10%;
+    -webkit-transform: rotate(-180deg);
+  }
+
+  /* line 317, ../scss/master.scss */
+  100% {
+    top: 100%;
+    -webkit-transform: rotate(180deg);
+    -webkit-transform: rotateY(160deg);
+  }
+}
+
+@-webkit-keyframes fall5 {
+  /* line 325, ../scss/master.scss */
+  0% {
+    top: -10%;
+    -webkit-transform: rotate(-180deg) translate(0px, 0px);
+  }
+
+  /* line 329, ../scss/master.scss */
+  70% {
+    -webkit-transform: rotate(200deg) translate(50px, 100px);
+  }
+
+  /* line 332, ../scss/master.scss */
+  100% {
+    top: 100%;
+    -webkit-transform: rotate(380deg) translate(80px, 100px);
+  }
+}
+
+@-webkit-keyframes flashw {
+  /* line 339, ../scss/master.scss */
+  0% {
+    -webkit-box-shadow: 0px 0px 0px white;
+  }
+
+  /* line 342, ../scss/master.scss */
+  50% {
+    -webkit-box-shadow: 0px 0px 7px white;
+  }
+
+  /* line 345, ../scss/master.scss */
+  100% {
+    -webkit-box-shadow: 0px 0px 0px white;
+  }
+}
+
+@-webkit-keyframes flashr {
+  /* line 351, ../scss/master.scss */
+  0% {
+    -webkit-box-shadow: 0px 0px 0px #660000;
+  }
+
+  /* line 354, ../scss/master.scss */
+  50% {
+    -webkit-box-shadow: 0px 0px 7px #660000;
+  }
+
+  /* line 357, ../scss/master.scss */
+  100% {
+    -webkit-box-shadow: 0px 0px 0px #660000;
+  }
+}
+
+@-webkit-keyframes changered {
+  /* line 363, ../scss/master.scss */
+  0% {
+    background-color: #660000;
+  }
+
+  /* line 366, ../scss/master.scss */
+  50% {
+    background-color: white;
+  }
+
+  /* line 369, ../scss/master.scss */
+  100% {
+    background-color: #660000;
+  }
+}
+
+@-webkit-keyframes changewhite {
+  /* line 375, ../scss/master.scss */
+  0% {
+    background-color: white;
+  }
+
+  /* line 378, ../scss/master.scss */
+  50% {
+    background-color: #660000;
+  }
+
+  /* line 381, ../scss/master.scss */
+  100% {
+    background-color: white;
+  }
+}
+
 /*general styles */
-/* line 283, ../scss/master.scss */
+/* line 395, ../scss/master.scss */
 .container {
   margin: 0;
   padding: 0;
@@ -885,9 +1039,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 100%;
   position: relative;
 }
-
-/* line 293, ../scss/master.scss */
-.sign {
+/* line 405, ../scss/master.scss */
+.container .sign {
   width: 400px;
   height: 300px;
   -webkit-animation: tilt 10s 0s infinite cubic-bezier(0.35, 0.1, 0.65, 0.9);
@@ -900,8 +1053,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
   left: 300px;
 }
-/* line 303, ../scss/master.scss */
-.sign .chain {
+/* line 415, ../scss/master.scss */
+.container .sign .chain {
   position: relative;
   width: 10px;
   height: 55px;
@@ -914,8 +1067,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-bottom-right-radius: 20%;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
 }
-/* line 318, ../scss/master.scss */
-.sign .board {
+/* line 430, ../scss/master.scss */
+.container .sign .board {
   position: relative;
   z-index: 5;
   width: 320px;
@@ -927,8 +1080,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-top: 10px;
   padding-bottom: 25px;
 }
-/* line 333, ../scss/master.scss */
-.sign .board .hole {
+/* line 445, ../scss/master.scss */
+.container .sign .board .hole {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -936,8 +1089,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 4px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
 }
-/* line 343, ../scss/master.scss */
-.sign .board .countdown-number {
+/* line 455, ../scss/master.scss */
+.container .sign .board .countdown-number {
   margin: 0;
   font-size: 10em;
   font-family: helvetica;
@@ -947,8 +1100,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 0.8;
   padding-top: 40px;
 }
-/* line 353, ../scss/master.scss */
-.sign .board .countdown-description {
+/* line 465, ../scss/master.scss */
+.container .sign .board .countdown-description {
   margin: 0;
   font-size: 3em;
   font-family: helvetica;
@@ -956,43 +1109,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   -webkit-transform: rotateZ(1deg);
 }
-
-/* line 367, ../scss/master.scss */
-.decoration {
+/* line 479, ../scss/master.scss */
+.container .decoration {
   display: inline-block;
   -webkit-transform: scale(1.5, 1.5);
   margin-top: 50px;
   z-index: 9;
 }
-/* line 372, ../scss/master.scss */
-.decoration.d1 {
+/* line 484, ../scss/master.scss */
+.container .decoration.d1 {
   float: left;
   margin-left: -50px;
 }
-/* line 376, ../scss/master.scss */
-.decoration.d2 {
+/* line 488, ../scss/master.scss */
+.container .decoration.d2 {
   float: right;
   position: relative;
   right: 20px;
 }
-
-/* line 384, ../scss/master.scss */
-.bells, .holly {
+/* line 496, ../scss/master.scss */
+.container .bells, .container .holly {
   display: inline-block;
   width: 100px;
   height: 100px;
   position: relative;
 }
-
-/* line 390, ../scss/master.scss */
-.bell {
+/* line 502, ../scss/master.scss */
+.container .bell {
   display: inline-block;
   background-color: white;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
 }
-/* line 398, ../scss/master.scss */
-.bell.bell1 {
+/* line 510, ../scss/master.scss */
+.container .bell.bell1 {
   z-index: 50;
   -webkit-transform: rotatez(40deg) scale(0.8, 1);
   -webkit-transform-origin: top;
@@ -1001,8 +1151,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation: drin1 5s 2s infinite linear;
   animation: drin1 5s 2s infinite linear;
 }
-/* line 405, ../scss/master.scss */
-.bell.bell2 {
+/* line 517, ../scss/master.scss */
+.container .bell.bell2 {
   z-index: 40;
   -webkit-transform: rotatez(-40deg) scale(0.8, 1);
   -webkit-transform-origin: top;
@@ -1012,8 +1162,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation: drin2 5s 2s infinite linear;
   animation: drin2 5s 2s infinite linear;
 }
-/* line 414, ../scss/master.scss */
-.bell .top {
+/* line 526, ../scss/master.scss */
+.container .bell .top {
   width: 10px;
   height: 8px;
   border-radius: 50%;
@@ -1026,8 +1176,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-image: -o-radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
   background-image: radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
 }
-/* line 426, ../scss/master.scss */
-.bell .medup {
+/* line 538, ../scss/master.scss */
+.container .bell .medup {
   width: 32px;
   height: 8px;
   border-radius: 50%;
@@ -1036,8 +1186,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 6;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
-/* line 435, ../scss/master.scss */
-.bell .medsquare {
+/* line 547, ../scss/master.scss */
+.container .bell .medsquare {
   width: 36px;
   height: 32px;
   border-top-left-radius: 30%;
@@ -1047,8 +1197,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 7;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
-/* line 446, ../scss/master.scss */
-.bell .medoval1 {
+/* line 558, ../scss/master.scss */
+.container .bell .medoval1 {
   width: 38px;
   height: 4px;
   border-top-left-radius: 40%;
@@ -1057,8 +1207,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -16px;
   z-index: 8;
 }
-/* line 456, ../scss/master.scss */
-.bell .medoval2 {
+/* line 568, ../scss/master.scss */
+.container .bell .medoval2 {
   width: 40px;
   height: 4px;
   border-radius: 40%;
@@ -1067,8 +1217,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 9;
   box-bottom-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
-/* line 467, ../scss/master.scss */
-.bell .bottom {
+/* line 579, ../scss/master.scss */
+.container .bell .bottom {
   width: 48px;
   height: 6px;
   border-radius: 40%;
@@ -1085,8 +1235,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 12;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(10, 10, 10, 0.2);
 }
-/* line 482, ../scss/master.scss */
-.bell .ding {
+/* line 594, ../scss/master.scss */
+.container .bell .ding {
   width: 6px;
   height: 25px;
   border-radius: 40%;
@@ -1095,87 +1245,83 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -40px;
   z-index: 0;
 }
-
-/* line 493, ../scss/master.scss */
-.bell1 .ding {
+/* line 605, ../scss/master.scss */
+.container .bell1 .ding {
   -webkit-animation: ding1 5s 2s infinite linear;
   -moz-animation: ding1 5s 2s infinite linear;
   -o-animation: ding1 5s 2s infinite linear;
   animation: ding1 5s 2s infinite linear;
 }
-
-/* line 497, ../scss/master.scss */
-.bell2 .ding {
+/* line 609, ../scss/master.scss */
+.container .bell2 .ding {
   -webkit-animation: ding2 5s 2s infinite linear;
   -moz-animation: ding2 5s 2s infinite linear;
   -o-animation: ding2 5s 2s infinite linear;
   animation: ding2 5s 2s infinite linear;
 }
-
-/* line 504, ../scss/master.scss */
-.holly {
+/* line 616, ../scss/master.scss */
+.container .holly {
   -webkit-animation: hollyrot 5s 2s infinite linear;
   -moz-animation: hollyrot 5s 2s infinite linear;
   -o-animation: hollyrot 5s 2s infinite linear;
   animation: hollyrot 5s 2s infinite linear;
 }
-/* line 508, ../scss/master.scss */
-.holly .leaf {
+/* line 620, ../scss/master.scss */
+.container .holly .leaf {
   position: relative;
   z-index: 45;
 }
-/* line 514, ../scss/master.scss */
-.holly .leaf.leaf1 {
+/* line 626, ../scss/master.scss */
+.container .holly .leaf.leaf1 {
   -webkit-transform: rotatez(-71deg) scale(0.1, 0.15);
   top: 12px;
   left: 48px;
 }
-/* line 522, ../scss/master.scss */
-.holly .leaf.leaf2 {
+/* line 634, ../scss/master.scss */
+.container .holly .leaf.leaf2 {
   -webkit-transform: rotatez(134deg) scale(0.1, 0.15);
   top: 32px;
   left: 98px;
 }
-/* line 529, ../scss/master.scss */
-.holly .leaf .branch {
+/* line 641, ../scss/master.scss */
+.container .holly .leaf .branch {
   border-color: #24B50E transparent;
   border-style: inset;
   height: 0;
   width: 0;
   position: absolute;
 }
-/* line 538, ../scss/master.scss */
-.holly .leaf .branch.b1 {
+/* line 650, ../scss/master.scss */
+.container .holly .leaf .branch.b1 {
   left: 70px;
   top: 20px;
   border-width: 0 30px 65px;
   z-index: 5;
 }
-/* line 546, ../scss/master.scss */
-.holly .leaf .branch.b2 {
+/* line 658, ../scss/master.scss */
+.container .holly .leaf .branch.b2 {
   left: 40px;
   top: 50px;
   border-width: 0 60px 65px;
   z-index: 3;
 }
-/* line 555, ../scss/master.scss */
-.holly .leaf .branch.b3 {
+/* line 667, ../scss/master.scss */
+.container .holly .leaf .branch.b3 {
   left: 20px;
   top: 70px;
   border-width: 0 80px 85px;
   z-index: 3;
 }
-/* line 563, ../scss/master.scss */
-.holly .leaf .branch.b4 {
+/* line 675, ../scss/master.scss */
+.container .holly .leaf .branch.b4 {
   left: -20px;
   top: 110px;
   border-width: 0 120px 95px;
   border-radius: 40%;
   z-index: 1;
 }
-
-/* line 579, ../scss/master.scss */
-.snowman {
+/* line 691, ../scss/master.scss */
+.container .snowman {
   /* width: 30%; */
   -webkit-transform: scale(0.77, 0.77);
   -moz-transform: scale(0.77, 0.77);
@@ -1187,12 +1333,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 400px;
   bottom: 50px;
 }
-/* line 587, ../scss/master.scss */
-.snowman > div {
+/* line 699, ../scss/master.scss */
+.container .snowman > div {
   position: relative;
 }
-/* line 591, ../scss/master.scss */
-.snowman .hat {
+/* line 703, ../scss/master.scss */
+.container .snowman .hat {
   z-index: 5;
   width: 160px;
   height: auto;
@@ -1212,8 +1358,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   animation: tiphat_rotate_hat 6s 0s infinite linear;
   /*2.5s, 10s);*/
 }
-/* line 600, ../scss/master.scss */
-.snowman .hat .top {
+/* line 712, ../scss/master.scss */
+.container .snowman .hat .top {
   position: relative;
   z-index: 2;
   margin-bottom: -10px;
@@ -1222,8 +1368,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: black;
   border-radius: 100%;
 }
-/* line 614, ../scss/master.scss */
-.snowman .hat .middle {
+/* line 726, ../scss/master.scss */
+.container .snowman .hat .middle {
   position: relative;
   z-index: 1;
   margin-bottom: -10px;
@@ -1231,8 +1377,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 65px;
   background-color: black;
 }
-/* line 624, ../scss/master.scss */
-.snowman .hat .base {
+/* line 736, ../scss/master.scss */
+.container .snowman .hat .base {
   position: relative;
   z-index: 0;
   width: 100%;
@@ -1241,16 +1387,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 100%;
   margin-bottom: -20px;
 }
-/* line 637, ../scss/master.scss */
-.snowman .head {
+/* line 749, ../scss/master.scss */
+.container .snowman .head {
   z-index: 4;
   margin-bottom: -28px;
   width: 115px;
   height: 92px;
   /*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4); */
 }
-/* line 646, ../scss/master.scss */
-.snowman .head .eye {
+/* line 758, ../scss/master.scss */
+.container .snowman .head .eye {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -1261,8 +1407,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   @include filter-gradient(#1600e2, #000000, horizontal);
   @include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%)); */
 }
-/* line 660, ../scss/master.scss */
-.snowman .head .nose {
+/* line 772, ../scss/master.scss */
+.container .snowman .head .nose {
   position: absolute;
   bottom: 27%;
   left: 46%;
@@ -1279,8 +1425,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-width: 10px 0px 10px 50px;
   border-color: transparent transparent transparent #ff8c00;
 }
-/* line 674, ../scss/master.scss */
-.snowman .head .mouth {
+/* line 786, ../scss/master.scss */
+.container .snowman .head .mouth {
   position: relative;
   top: 50%;
   width: 44px;
@@ -1291,16 +1437,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* border-bottom-left-radius: 154%;
   border-bottom-right-radius: 113%; */
 }
-/* line 688, ../scss/master.scss */
-.snowman .scarf {
+/* line 800, ../scss/master.scss */
+.container .snowman .scarf {
   z-index: 3;
   margin-bottom: -32px;
   width: 115px;
   height: 32px;
   border-radius: 100%;
 }
-/* line 696, ../scss/master.scss */
-.snowman .scarf .end {
+/* line 808, ../scss/master.scss */
+.container .snowman .scarf .end {
   position: absolute;
   right: 10px;
   top: 18px;
@@ -1317,8 +1463,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 75px;
   border-top-right-radius: 100%;
 }
-/* line 709, ../scss/master.scss */
-.snowman .scarf .end:first-child {
+/* line 821, ../scss/master.scss */
+.container .snowman .scarf .end:first-child {
   right: 15px;
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
@@ -1326,25 +1472,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 714, ../scss/master.scss */
-.snowman .scarf .end:last-child {
+/* line 826, ../scss/master.scss */
+.container .snowman .scarf .end:last-child {
   box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
   /* -webkit-transform: rotateZ(-25deg); */
 }
-/* line 721, ../scss/master.scss */
-.snowman .belly {
+/* line 833, ../scss/master.scss */
+.container .snowman .belly {
   z-index: 2;
   margin-bottom: -40px;
   width: 185px;
   height: 130px;
   /*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);*/
 }
-/* line 730, ../scss/master.scss */
-.snowman .belly .arm .finger {
+/* line 842, ../scss/master.scss */
+.container .snowman .belly .arm .finger {
   left: -20px;
 }
-/* line 733, ../scss/master.scss */
-.snowman .belly .arm .finger:nth-child(1) {
+/* line 845, ../scss/master.scss */
+.container .snowman .belly .arm .finger:nth-child(1) {
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
@@ -1352,12 +1498,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(-135deg);
   bottom: 150%;
 }
-/* line 738, ../scss/master.scss */
-.snowman .belly .arm .finger:nth-child(2) {
+/* line 850, ../scss/master.scss */
+.container .snowman .belly .arm .finger:nth-child(2) {
   top: 1.5px;
 }
-/* line 742, ../scss/master.scss */
-.snowman .belly .arm .finger:nth-child(3) {
+/* line 854, ../scss/master.scss */
+.container .snowman .belly .arm .finger:nth-child(3) {
   -webkit-transform: rotate(-225deg);
   -moz-transform: rotate(-225deg);
   -ms-transform: rotate(-225deg);
@@ -1365,14 +1511,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(-225deg);
   top: 150%;
 }
-/* line 748, ../scss/master.scss */
-.snowman .belly .arm:first-child {
+/* line 860, ../scss/master.scss */
+.container .snowman .belly .arm:first-child {
   position: absolute;
   right: 94%;
   top: 50%;
 }
-/* line 753, ../scss/master.scss */
-.snowman .belly .arm:first-child .limb {
+/* line 865, ../scss/master.scss */
+.container .snowman .belly .arm:first-child .limb {
   -webkit-transform: rotate(72deg);
   -moz-transform: rotate(72deg);
   -ms-transform: rotate(72deg);
@@ -1380,8 +1526,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(72deg);
   width: 116px;
 }
-/* line 759, ../scss/master.scss */
-.snowman .belly .arm:nth-child(2) {
+/* line 871, ../scss/master.scss */
+.container .snowman .belly .arm:nth-child(2) {
   position: absolute;
   left: 94%;
   top: 50%;
@@ -1391,16 +1537,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 765, ../scss/master.scss */
-.snowman .belly .arm:nth-child(2) .limb {
+/* line 877, ../scss/master.scss */
+.container .snowman .belly .arm:nth-child(2) .limb {
   width: 116px;
   -webkit-animation: tiphat_rotate_arm 6s 0s infinite linear;
   -moz-animation: tiphat_rotate_arm 6s 0s infinite linear;
   -o-animation: tiphat_rotate_arm 6s 0s infinite linear;
   animation: tiphat_rotate_arm 6s 0s infinite linear;
 }
-/* line 771, ../scss/master.scss */
-.snowman .belly .arm .limb {
+/* line 883, ../scss/master.scss */
+.container .snowman .belly .arm .limb {
   position: relative;
   -webkit-transform-origin: right;
   -moz-transform-origin: right;
@@ -1413,31 +1559,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 782, ../scss/master.scss */
-.snowman .belly .arm .limb .finger {
+/* line 894, ../scss/master.scss */
+.container .snowman .belly .arm .limb .finger {
   position: absolute;
   width: 30px;
   height: 6px;
   background-color: saddlebrown;
 }
-/* line 790, ../scss/master.scss */
-.snowman .belly .buttonz {
+/* line 902, ../scss/master.scss */
+.container .snowman .belly .buttonz {
   width: 16px;
   height: 16px;
   position: relative;
   top: 30%;
   box-shadow: 0px 26px 0px black, 0px 52px 0 black;
 }
-/* line 801, ../scss/master.scss */
-.snowman .legs {
+/* line 913, ../scss/master.scss */
+.container .snowman .legs {
   z-index: 1;
   width: 250px;
   height: 170px;
   box-shadow: 0px 35px 120px;
 }
-
-/* line 812, ../scss/master.scss */
-.ground {
+/* line 924, ../scss/master.scss */
+.container .ground {
   position: absolute;
   bottom: 0px;
   height: 50px;
@@ -1445,9 +1590,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: white;
   z-index: 1;
 }
-
-/* line 821, ../scss/master.scss */
-.ground:before {
+/* line 933, ../scss/master.scss */
+.container .ground:before {
   content: "";
   display: block;
   position: absolute;
@@ -1459,9 +1603,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: white;
   z-index: 1;
 }
-
-/* line 835, ../scss/master.scss */
-.ground:after {
+/* line 947, ../scss/master.scss */
+.container .ground:after {
   content: "";
   display: block;
   position: absolute;
@@ -1473,9 +1616,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   bottom: 15px;
   z-index: 1;
 }
-
-/* line 848, ../scss/master.scss */
-.ground_1 {
+/* line 960, ../scss/master.scss */
+.container .ground_1 {
   display: block;
   position: absolute;
   border-radius: 4% 100%;
@@ -1487,473 +1629,616 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: white;
   z-index: 1;
 }
-
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f1 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  opacity: 0.7;
-  font-size: 142%;
-  left: 69%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 41s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f2 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 6;
-  opacity: 0.05;
-  font-size: 183%;
-  left: 28%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 28s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f3 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.14;
-  font-size: 191%;
-  left: 60%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f4 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 6;
-  opacity: 0.91;
-  font-size: 146%;
-  left: 75%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 33s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f5 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.48;
-  font-size: 181%;
-  left: 20%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 21s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f6 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 6;
-  opacity: 0.88;
-  font-size: 189%;
-  left: 89%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 28s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f7 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 7;
-  opacity: 0.41;
-  font-size: 172%;
-  left: 75%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 36s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f8 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 4;
-  opacity: 0.31;
-  font-size: 170%;
-  left: 19%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 23s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f9 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 11;
-  opacity: 0.55;
-  font-size: 104%;
-  left: 82%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 29s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f10 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  opacity: 0.1;
-  font-size: 151%;
-  left: 11%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 19s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f11 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  opacity: 0.07;
-  font-size: 170%;
-  left: 54%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 25s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f12 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 3;
-  opacity: 0.53;
-  font-size: 178%;
-  left: 29%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 17s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f13 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.55;
-  font-size: 153%;
-  left: 85%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 24s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f14 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.69;
-  font-size: 111%;
-  left: 31%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 41s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f15 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 7;
-  opacity: 0.37;
-  font-size: 179%;
-  left: 55%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 18s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f16 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  opacity: 0.53;
-  font-size: 127%;
-  left: 63%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 41s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f17 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  opacity: 0.87;
-  font-size: 172%;
-  left: 82%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 16s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f18 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 3;
-  opacity: 0.4;
-  font-size: 108%;
-  left: 16%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 43s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f19 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.41;
-  font-size: 173%;
-  left: 12%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 23s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f20 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 9;
-  opacity: 0.6;
-  font-size: 123%;
-  left: 28%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 43s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f21 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  opacity: 0.01;
-  font-size: 185%;
-  left: 70%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 24s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f22 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f1 {
   -webkit-animation-delay: 8s;
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 8;
-  opacity: 0.19;
-  font-size: 169%;
-  left: 17%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 39s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f23 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 3;
-  opacity: 0.45;
-  font-size: 182%;
-  left: 5%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 35s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f24 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 11;
-  opacity: 0.22;
-  font-size: 118%;
-  left: 12%;
+  opacity: 0.77;
+  font-size: 155%;
+  left: 23%;
   -webkit-animation: fall3;
-  -webkit-animation-duration: 16s;
+  -webkit-animation-duration: 40s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f25 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  opacity: 0.79;
-  font-size: 150%;
-  left: 5%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f26 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f2 {
   -webkit-animation-delay: 8s;
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 11;
-  opacity: 0.21;
-  font-size: 140%;
-  left: 71%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 16s;
+  opacity: 0.5;
+  font-size: 100%;
+  left: 7%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f27 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f3 {
   -webkit-animation-delay: 8s;
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 4;
-  opacity: 0.07;
-  font-size: 162%;
-  left: 38%;
+  opacity: 0.2;
+  font-size: 148%;
+  left: 32%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 43s;
+  -webkit-animation-duration: 33s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f28 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f4 {
   -webkit-animation-delay: 8s;
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 7;
-  opacity: 0.56;
-  font-size: 167%;
-  left: 7%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 29s;
+  z-index: 2;
+  opacity: 0.81;
+  font-size: 134%;
+  left: 82%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 42s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f29 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f5 {
   -webkit-animation-delay: 8s;
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 3;
-  opacity: 0.47;
-  font-size: 185%;
-  left: 39%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 43s;
+  opacity: 0.88;
+  font-size: 108%;
+  left: 67%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 27s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f30 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f6 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.72;
+  font-size: 137%;
+  left: 69%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f7 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.25;
+  font-size: 150%;
+  left: 62%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f8 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.8;
+  font-size: 120%;
+  left: 96%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 38s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f9 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.19;
+  font-size: 174%;
+  left: 14%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 36s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f10 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.54;
+  font-size: 122%;
+  left: 66%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 34s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f11 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.66;
+  font-size: 100%;
+  left: 23%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 18s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f12 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  font-size: 198%;
+  left: 87%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 28s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f13 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.43;
+  font-size: 168%;
+  left: 51%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 17s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f14 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.08;
+  font-size: 113%;
+  left: 43%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 21s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f15 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.35;
+  font-size: 117%;
+  left: 37%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 19s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f16 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.21;
+  font-size: 174%;
+  left: 65%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 35s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f17 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.69;
+  font-size: 129%;
+  left: 9%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f18 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.26;
+  font-size: 166%;
+  left: 10%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 29s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f19 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.54;
+  font-size: 155%;
+  left: 66%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 24s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f20 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.39;
+  font-size: 151%;
+  left: 39%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 23s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f21 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.58;
+  font-size: 134%;
+  left: 44%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 42s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f22 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.18;
+  font-size: 149%;
+  left: 53%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 41s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f23 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.87;
+  font-size: 167%;
+  left: 68%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 28s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f24 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.42;
+  font-size: 163%;
+  left: 90%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 41s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f25 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.84;
+  font-size: 104%;
+  left: 41%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 18s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f26 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.18;
+  font-size: 106%;
+  left: 84%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 22s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f27 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.09;
+  font-size: 102%;
+  left: 87%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 21s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f28 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.07;
+  font-size: 198%;
+  left: 49%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f29 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.55;
+  font-size: 180%;
+  left: 49%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 37s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f30 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.71;
+  font-size: 142%;
+  left: 51%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 31s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f31 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.15;
+  font-size: 188%;
+  left: 60%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 23s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f32 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.24;
+  font-size: 175%;
+  left: 56%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f33 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.12;
+  font-size: 161%;
+  left: 13%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 24s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f34 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.83;
+  font-size: 179%;
+  left: 86%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 17s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f35 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.46;
+  font-size: 130%;
+  left: 68%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 27s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f36 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.99;
+  font-size: 176%;
+  left: 90%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 44s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f37 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.24;
+  font-size: 132%;
+  left: 79%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 39s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f38 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.83;
+  font-size: 170%;
+  left: 81%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 28s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f39 {
   -webkit-animation-delay: 8s;
   float: left;
   margin: auto;
@@ -1961,862 +2246,631 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   z-index: 6;
   opacity: 0.2;
-  font-size: 140%;
-  left: 86%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 23s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f31 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 4;
-  opacity: 0.28;
-  font-size: 199%;
-  left: 63%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 23s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f32 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 10;
-  opacity: 0.05;
-  font-size: 129%;
-  left: 2%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 32s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f33 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 3;
-  opacity: 0.65;
-  font-size: 163%;
-  left: 12%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 37s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f34 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 6;
-  opacity: 0.54;
-  font-size: 113%;
-  left: 5%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 35s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f35 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 6;
-  opacity: 0.98;
-  font-size: 194%;
-  left: 31%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 24s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f36 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 7;
-  opacity: 0.31;
-  font-size: 105%;
-  left: 64%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 27s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f37 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 9;
-  opacity: 0.13;
-  font-size: 108%;
-  left: 97%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 15s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f38 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 10;
-  opacity: 0.61;
-  font-size: 152%;
-  left: 34%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 23s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f39 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.34;
-  font-size: 177%;
-  left: 61%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 27s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f40 {
-  -webkit-animation-delay: 8s;
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 9;
-  opacity: 0.31;
-  font-size: 127%;
+  font-size: 131%;
   left: 38%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 19s;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 33s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f41 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.63;
-  font-size: 193%;
-  left: 49%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 15s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f42 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 3;
-  opacity: 0.76;
-  font-size: 198%;
-  left: 61%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 42s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f43 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 7;
-  opacity: 0.16;
-  font-size: 191%;
-  left: 29%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 28s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f44 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 7;
-  opacity: 0.18;
-  font-size: 184%;
-  left: 43%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 35s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f45 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 4;
-  opacity: 0.52;
-  font-size: 148%;
-  left: 47%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 27s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f46 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f40 {
+  -webkit-animation-delay: 8s;
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 9;
-  opacity: 0.86;
-  font-size: 133%;
-  left: 94%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 18s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f47 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.06;
-  font-size: 121%;
-  left: 17%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 25s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f48 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 7;
-  opacity: 0.48;
+  opacity: 0.8;
   font-size: 126%;
-  left: 79%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 38s;
+  left: 21%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 35s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f49 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f41 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.34;
+  font-size: 131%;
+  left: 7%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f42 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 3;
-  opacity: 0.08;
-  font-size: 185%;
-  left: 59%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 29s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f50 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 6;
-  opacity: 0.71;
-  font-size: 172%;
-  left: 87%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 17s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f51 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 11;
-  opacity: 0.58;
-  font-size: 141%;
-  left: 31%;
+  opacity: 0.3;
+  font-size: 173%;
+  left: 28%;
   -webkit-animation: fall5;
   -webkit-animation-duration: 22s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f52 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f43 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 3;
-  opacity: 0.69;
-  font-size: 158%;
-  left: 29%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 18s;
+  z-index: 8;
+  opacity: 0.47;
+  font-size: 190%;
+  left: 22%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 35s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f53 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f44 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.32;
+  font-size: 105%;
+  left: 75%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f45 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 5;
-  opacity: 0.57;
-  font-size: 186%;
-  left: 90%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 33s;
+  opacity: 0.47;
+  font-size: 123%;
+  left: 61%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 44s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f54 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  opacity: 0.67;
-  font-size: 154%;
-  left: 39%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 16s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f55 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f46 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 9;
-  opacity: 0.96;
-  font-size: 112%;
-  left: 27%;
+  opacity: 0.6;
+  font-size: 140%;
+  left: 39%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 44s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f47 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.5;
+  font-size: 114%;
+  left: 3%;
   -webkit-animation: fall1;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f48 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.54;
+  font-size: 180%;
+  left: 64%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 31s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f49 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.95;
+  font-size: 106%;
+  left: 57%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 38s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f50 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.44;
+  font-size: 128%;
+  left: 92%;
+  -webkit-animation: fall3;
   -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f56 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f51 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.92;
+  font-size: 126%;
+  left: 32%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 42s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f52 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.42;
+  font-size: 116%;
+  left: 40%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 22s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f53 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.79;
+  font-size: 118%;
+  left: 98%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 37s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f54 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.33;
+  font-size: 114%;
+  left: 20%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 21s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f55 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.73;
+  font-size: 165%;
+  left: 51%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 29s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f56 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.85;
+  font-size: 189%;
+  left: 40%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 27s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f57 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 2;
-  opacity: 0.8;
-  font-size: 132%;
-  left: 56%;
+  opacity: 0.39;
+  font-size: 158%;
+  left: 61%;
   -webkit-animation: fall1;
+  -webkit-animation-duration: 17s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f58 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.37;
+  font-size: 178%;
+  left: 70%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 35s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f59 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.27;
+  font-size: 181%;
+  left: 24%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f60 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.64;
+  font-size: 157%;
+  left: 95%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f61 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.51;
+  font-size: 192%;
+  left: 29%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f62 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.77;
+  font-size: 100%;
+  left: 9%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 41s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f63 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.41;
+  font-size: 110%;
+  left: 50%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 19s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f64 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.29;
+  font-size: 193%;
+  left: 54%;
+  -webkit-animation: fall4;
   -webkit-animation-duration: 27s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f57 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f65 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.9;
+  font-size: 194%;
+  left: 71%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 23s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f66 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.98;
+  font-size: 107%;
+  left: 80%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f67 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.88;
+  font-size: 118%;
+  left: 39%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f68 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.18;
+  font-size: 156%;
+  left: 76%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f69 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.04;
+  font-size: 119%;
+  left: 23%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f70 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.4;
+  font-size: 156%;
+  left: 58%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 27s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f71 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.38;
+  font-size: 129%;
+  left: 71%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 32s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f72 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.13;
+  font-size: 180%;
+  left: 49%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 28s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f73 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 11;
+  opacity: 0.34;
+  font-size: 104%;
+  left: 44%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 41s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f74 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.72;
+  font-size: 144%;
+  left: 20%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 21s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f75 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.13;
+  font-size: 144%;
+  left: 13%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 19s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f76 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.59;
+  font-size: 146%;
+  left: 66%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 39s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f77 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.92;
+  font-size: 133%;
+  left: 70%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 24s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f78 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 7;
   opacity: 0.44;
-  font-size: 102%;
-  left: 53%;
+  font-size: 128%;
+  left: 41%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 25s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f58 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 10;
-  opacity: 0.64;
-  font-size: 195%;
-  left: 11%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f59 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 11;
-  opacity: 0.43;
-  font-size: 183%;
-  left: 46%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 29s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f60 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 9;
-  opacity: 0.64;
-  font-size: 126%;
-  left: 50%;
-  -webkit-animation: fall4;
   -webkit-animation-duration: 35s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f61 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 6;
-  opacity: 0.15;
-  font-size: 160%;
-  left: 46%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 33s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f62 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 10;
-  opacity: 0.86;
-  font-size: 195%;
-  left: 95%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 22s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f63 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 6;
-  opacity: 0;
-  font-size: 109%;
-  left: 86%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 24s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f64 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 10;
-  opacity: 0.41;
-  font-size: 141%;
-  left: 97%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 18s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f65 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 8;
-  opacity: 0.16;
-  font-size: 152%;
-  left: 70%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 17s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f66 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 7;
-  opacity: 0.31;
-  font-size: 116%;
-  left: 67%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 24s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f67 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 4;
-  opacity: 0.3;
-  font-size: 118%;
-  left: 95%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 18s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f68 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 8;
-  opacity: 0.64;
-  font-size: 129%;
-  left: 62%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 37s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f69 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f79 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 2;
-  opacity: 0.69;
-  font-size: 161%;
-  left: 35%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 29s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f70 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 3;
-  opacity: 0.34;
-  font-size: 122%;
-  left: 2%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 26s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f71 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 8;
-  opacity: 0.82;
-  font-size: 133%;
-  left: 1%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 28s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f72 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.53;
-  font-size: 169%;
-  left: 21%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f73 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 10;
-  opacity: 0.41;
-  font-size: 165%;
-  left: 76%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 43s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f74 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 9;
-  opacity: 0.13;
-  font-size: 106%;
-  left: 35%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 39s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f75 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.39;
-  font-size: 102%;
-  left: 98%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 32s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f76 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.92;
-  font-size: 123%;
+  opacity: 0.19;
+  font-size: 194%;
   left: 0%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 31s;
+  -webkit-animation-duration: 38s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f77 {
+/* line 975, ../scss/master.scss */
+.container .snow .icon-snowflake.f80 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
   z-index: 11;
-  opacity: 0.07;
-  font-size: 139%;
-  left: 68%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 26s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f78 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 10;
-  opacity: 0.95;
-  font-size: 125%;
-  left: 71%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 37s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f79 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  opacity: 0.18;
-  font-size: 126%;
-  left: 57%;
+  opacity: 0.22;
+  font-size: 178%;
+  left: 70%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 22s;
+  -webkit-animation-duration: 44s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 863, ../scss/master.scss */
-.snow .icon-snowflake.f80 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  z-index: 10;
-  opacity: 0.73;
-  font-size: 179%;
-  left: 80%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 26s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-
-@-webkit-keyframes fall1 {
-  /* line 883, ../scss/master.scss */
-  0% {
-    top: -10%;
-    -webkit-transform: translate(0px, 0px) rotate(0deg);
-  }
-
-  /* line 887, ../scss/master.scss */
-  100% {
-    top: 100%;
-    -webkit-transform: translate(100px, 150px) rotate(250deg);
-  }
-}
-
-@-webkit-keyframes fall3 {
-  /* line 894, ../scss/master.scss */
-  0% {
-    top: -10%;
-    -webkit-transform: rotate(-180deg) translate(0px, 0px);
-  }
-
-  /* line 898, ../scss/master.scss */
-  75% {
-    opacity: 0.8;
-  }
-
-  /* line 901, ../scss/master.scss */
-  100% {
-    top: 100%;
-    opacity: 0.0;
-    -webkit-transform: rotate(150deg) translate(10px, 75px);
-  }
-}
-
-@-webkit-keyframes fall2 {
-  /* line 909, ../scss/master.scss */
-  0% {
-    top: -10%;
-  }
-
-  /* line 912, ../scss/master.scss */
-  10% {
-    -webkit-transform: rotate(-180deg) translate(0px, 0px);
-  }
-
-  /* line 915, ../scss/master.scss */
-  100% {
-    top: 100%;
-    -webkit-transform: rotate(50deg) translate(100px, 80px);
-  }
-}
-
-@-webkit-keyframes fall4 {
-  /* line 922, ../scss/master.scss */
-  0% {
-    top: -10%;
-    -webkit-transform: rotate(-180deg);
-  }
-
-  /* line 926, ../scss/master.scss */
-  100% {
-    top: 100%;
-    -webkit-transform: rotate(180deg);
-    -webkit-transform: rotateY(160deg);
-  }
-}
-
-@-webkit-keyframes fall5 {
-  /* line 934, ../scss/master.scss */
-  0% {
-    top: -10%;
-    -webkit-transform: rotate(-180deg) translate(0px, 0px);
-  }
-
-  /* line 938, ../scss/master.scss */
-  70% {
-    -webkit-transform: rotate(200deg) translate(50px, 100px);
-  }
-
-  /* line 941, ../scss/master.scss */
-  100% {
-    top: 100%;
-    -webkit-transform: rotate(380deg) translate(80px, 100px);
-  }
-}
-
-/* line 947, ../scss/master.scss */
-[class*="icon-"] {
+/* line 996, ../scss/master.scss */
+.container [class*="icon-"] {
   font-family: 'SED';
   speak: none;
   font-style: normal;
@@ -2828,26 +2882,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* line 961, ../scss/master.scss */
-.icon-snow:before {
+/* line 1010, ../scss/master.scss */
+.container .icon-snow:before {
   content: "\e60d";
 }
-
-/* line 965, ../scss/master.scss */
-.icon-snowflake:before {
+/* line 1014, ../scss/master.scss */
+.container .icon-snowflake:before {
   content: "\e61b";
 }
-
-/* line 971, ../scss/master.scss */
-.ctree {
+/* line 1020, ../scss/master.scss */
+.container .ctree {
   position: absolute;
   z-index: 100;
   left: 71px;
   bottom: 238px;
 }
-/* line 977, ../scss/master.scss */
-.ctree .trunk {
+/* line 1026, ../scss/master.scss */
+.container .ctree .trunk {
   border-color: #3b200f transparent;
   border-style: solid;
   border-width: 0 19px 208px;
@@ -2859,14 +2910,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 81px;
   top: 11px;
 }
-/* line 990, ../scss/master.scss */
-.ctree .branch {
+/* line 1039, ../scss/master.scss */
+.container .ctree .branch {
   position: absolute;
   border-style: solid;
   border-color: transparent transparent #336633;
 }
-/* line 996, ../scss/master.scss */
-.ctree .branch.b1 {
+/* line 1045, ../scss/master.scss */
+.container .ctree .branch.b1 {
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
   left: 60px;
@@ -2874,8 +2925,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-width: 0px 40px 60px 40px;
   z-index: 11;
 }
-/* line 1004, ../scss/master.scss */
-.ctree .branch.b2 {
+/* line 1053, ../scss/master.scss */
+.container .ctree .branch.b2 {
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
   left: 40px;
@@ -2883,8 +2934,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-width: 0px 60px 80px 60px;
   z-index: 11;
 }
-/* line 1012, ../scss/master.scss */
-.ctree .branch.b3 {
+/* line 1061, ../scss/master.scss */
+.container .ctree .branch.b3 {
   border-bottom-right-radius: 60px;
   border-bottom-left-radius: 60px;
   left: 20px;
@@ -2892,8 +2943,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-width: 0px 80px 100px 80px;
   z-index: 11;
 }
-/* line 1020, ../scss/master.scss */
-.ctree .branch.b4 {
+/* line 1069, ../scss/master.scss */
+.container .ctree .branch.b4 {
   border-bottom-right-radius: 80px;
   border-bottom-left-radius: 80px;
   left: 0px;
@@ -2901,8 +2952,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-width: 0px 100px 120px 100px;
   z-index: 11;
 }
-/* line 1029, ../scss/master.scss */
-.ctree .dec {
+/* line 1078, ../scss/master.scss */
+.container .ctree .dec {
   background: transparent;
   border-style: dotted;
   border-width: 8px;
@@ -2915,8 +2966,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 1042, ../scss/master.scss */
-.ctree .dec.d1 {
+/* line 1091, ../scss/master.scss */
+.container .ctree .dec.d1 {
   -webkit-transform: rotate(16deg);
   clip: rect(42px, 74px, 65px, 33px);
   width: 140px;
@@ -2924,8 +2975,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -22px;
   left: 59px;
 }
-/* line 1050, ../scss/master.scss */
-.ctree .dec.d2 {
+/* line 1099, ../scss/master.scss */
+.container .ctree .dec.d2 {
   -webkit-transform: rotate(-27deg);
   clip: rect(61px, 86px, 87px, 19px);
   width: 107px;
@@ -2933,8 +2984,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 0px;
   left: 25px;
 }
-/* line 1058, ../scss/master.scss */
-.ctree .dec.d3 {
+/* line 1107, ../scss/master.scss */
+.container .ctree .dec.d3 {
   -webkit-transform: rotate(20deg);
   clip: rect(44px, 120px, 84px, 28px);
   width: 138px;
@@ -2942,8 +2993,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 45px;
   left: 43px;
 }
-/* line 1066, ../scss/master.scss */
-.ctree .dec.d4 {
+/* line 1115, ../scss/master.scss */
+.container .ctree .dec.d4 {
   -webkit-transform: rotate(-5deg);
   clip: rect(32px, 128px, 64px, 21px);
   width: 139px;
@@ -2951,8 +3002,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 92px;
   left: 25px;
 }
-/* line 1075, ../scss/master.scss */
-.ctree .dec.d5 {
+/* line 1124, ../scss/master.scss */
+.container .ctree .dec.d5 {
   -webkit-transform: rotate(18deg);
   clip: rect(36px, 106px, 100px, 16px);
   width: 140px;
@@ -2960,8 +3011,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 87px;
   left: 26px;
 }
-/* line 1084, ../scss/master.scss */
-.ctree .ball_r {
+/* line 1133, ../scss/master.scss */
+.container .ctree .ball_r {
   width: 15px;
   height: 15px;
   -webkit-box-shadow: 0px 0px 7px white;
@@ -2973,8 +3024,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 1099, ../scss/master.scss */
-.ctree .ball_w {
+/* line 1148, ../scss/master.scss */
+.container .ctree .ball_w {
   width: 15px;
   height: 15px;
   -webkit-box-shadow: 0px 0px 7px white;
@@ -2986,69 +3037,69 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 1113, ../scss/master.scss */
-.ctree .ball_w.ba1 {
+/* line 1162, ../scss/master.scss */
+.container .ctree .ball_w.ba1 {
   top: 34px;
   left: 80px;
 }
-/* line 1117, ../scss/master.scss */
-.ctree .ball_w.ba2 {
+/* line 1166, ../scss/master.scss */
+.container .ctree .ball_w.ba2 {
   top: 72px;
   left: 122px;
 }
-/* line 1121, ../scss/master.scss */
-.ctree .ball_w.ba3 {
+/* line 1170, ../scss/master.scss */
+.container .ctree .ball_w.ba3 {
   top: 112px;
   left: 46px;
 }
-/* line 1125, ../scss/master.scss */
-.ctree .ball_w.ba4 {
+/* line 1174, ../scss/master.scss */
+.container .ctree .ball_w.ba4 {
   top: 148px;
   left: 147px;
 }
-/* line 1129, ../scss/master.scss */
-.ctree .ball_r.ba5 {
+/* line 1178, ../scss/master.scss */
+.container .ctree .ball_r.ba5 {
   top: 34px;
   left: 105px;
 }
-/* line 1133, ../scss/master.scss */
-.ctree .ball_r.ba6 {
+/* line 1182, ../scss/master.scss */
+.container .ctree .ball_r.ba6 {
   top: 73px;
   left: 64px;
 }
-/* line 1137, ../scss/master.scss */
-.ctree .ball_r.ba7 {
+/* line 1186, ../scss/master.scss */
+.container .ctree .ball_r.ba7 {
   top: 112px;
   left: 142px;
 }
-/* line 1141, ../scss/master.scss */
-.ctree .ball_r.ba8 {
+/* line 1190, ../scss/master.scss */
+.container .ctree .ball_r.ba8 {
   top: 144px;
   left: 30px;
 }
-/* line 1145, ../scss/master.scss */
-.ctree .ball_r.ba9 {
+/* line 1194, ../scss/master.scss */
+.container .ctree .ball_r.ba9 {
   top: 100px;
   left: 93px;
 }
-/* line 1149, ../scss/master.scss */
-.ctree .ball_w.ba10 {
+/* line 1198, ../scss/master.scss */
+.container .ctree .ball_w.ba10 {
   top: 143px;
   left: 93px;
 }
-/* line 1154, ../scss/master.scss */
-.ctree .star {
+/* line 1203, ../scss/master.scss */
+.container .ctree .star {
   top: -1px;
   left: 96px;
   position: absolute;
   z-index: 14;
 }
-/* line 1160, ../scss/master.scss */
-.ctree .star .point {
+/* line 1209, ../scss/master.scss */
+.container .ctree .star .point {
   position: absolute;
 }
-/* line 1164, ../scss/master.scss */
-.ctree .star .middle {
+/* line 1213, ../scss/master.scss */
+.container .ctree .star .middle {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3056,8 +3107,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 9px;
   width: 9px;
 }
-/* line 1173, ../scss/master.scss */
-.ctree .star .point.p1 {
+/* line 1222, ../scss/master.scss */
+.container .ctree .star .point.p1 {
   top: -8px;
   left: 0px;
   width: 0;
@@ -3066,8 +3117,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-right: 4px solid transparent;
   border-bottom: 8px solid #ffd700;
 }
-/* line 1183, ../scss/master.scss */
-.ctree .star .point.p2 {
+/* line 1232, ../scss/master.scss */
+.container .ctree .star .point.p2 {
   top: 0px;
   left: 7px;
   width: 0;
@@ -3076,8 +3127,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-left: 8px solid #ffd700;
   border-bottom: 4px solid transparent;
 }
-/* line 1193, ../scss/master.scss */
-.ctree .star .point.p3 {
+/* line 1242, ../scss/master.scss */
+.container .ctree .star .point.p3 {
   top: 8px;
   left: 0px;
   width: 0;
@@ -3086,8 +3137,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-right: 4px solid transparent;
   border-top: 16px solid #ffd700;
 }
-/* line 1203, ../scss/master.scss */
-.ctree .star .point.p4 {
+/* line 1252, ../scss/master.scss */
+.container .ctree .star .point.p4 {
   top: 0px;
   left: -7px;
   width: 0;
@@ -3095,72 +3146,4 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-top: 4px solid transparent;
   border-right: 8px solid #ffd700;
   border-bottom: 4px solid transparent;
-}
-
-@-webkit-keyframes flashw {
-  /* line 1216, ../scss/master.scss */
-  0% {
-    -webkit-box-shadow: 0px 0px 0px white;
-  }
-
-  /* line 1219, ../scss/master.scss */
-  50% {
-    -webkit-box-shadow: 0px 0px 7px white;
-  }
-
-  /* line 1222, ../scss/master.scss */
-  100% {
-    -webkit-box-shadow: 0px 0px 0px white;
-  }
-}
-
-@-webkit-keyframes flashr {
-  /* line 1228, ../scss/master.scss */
-  0% {
-    -webkit-box-shadow: 0px 0px 0px #660000;
-  }
-
-  /* line 1231, ../scss/master.scss */
-  50% {
-    -webkit-box-shadow: 0px 0px 7px #660000;
-  }
-
-  /* line 1234, ../scss/master.scss */
-  100% {
-    -webkit-box-shadow: 0px 0px 0px #660000;
-  }
-}
-
-@-webkit-keyframes changered {
-  /* line 1240, ../scss/master.scss */
-  0% {
-    background-color: #660000;
-  }
-
-  /* line 1243, ../scss/master.scss */
-  50% {
-    background-color: white;
-  }
-
-  /* line 1246, ../scss/master.scss */
-  100% {
-    background-color: #660000;
-  }
-}
-
-@-webkit-keyframes changewhite {
-  /* line 1252, ../scss/master.scss */
-  0% {
-    background-color: white;
-  }
-
-  /* line 1255, ../scss/master.scss */
-  50% {
-    background-color: #660000;
-  }
-
-  /* line 1258, ../scss/master.scss */
-  100% {
-    background-color: white;
-  }
 }
