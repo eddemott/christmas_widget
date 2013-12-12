@@ -63,45 +63,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+@font-face {
+  font-family: 'SED';
+  src: url("../fonts/SED/SED.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/SED/SED.eot?#iefix") format("embedded-opentype"), url("../fonts/SED/SED.woff") format("woff"), url("../fonts/SED/SED.ttf") format("truetype"), url("../fonts/SED/SED.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'gill_sans_light';
+  src: url("../fonts/light/gill_sans.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/light/gill_sans.eot?#iefix") format("embedded-opentype"), url("../fonts/light/gill_sans.woff") format("woff"), url("../fonts/light/gill_sans.ttf") format("truetype"), url("../fonts/light/gill_sans.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'old_press';
+  src: url("../fonts/oldpress/old_press.ttf");
+}
+
 /*mixins*/
 /*placeholders */
-/* line 64, ../scss/master.scss */
+/* line 65, ../scss/master.scss */
 .sign .board, .sign .board .hole, .bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding, .snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .head .mouth, .snowman .scarf, .snowman .belly, .snowman .belly .buttonz, .snowman .legs {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 73, ../scss/master.scss */
+/* line 74, ../scss/master.scss */
 .snowman .legs {
   position: relative;
 }
 
 /* Styles */
-/* line 79, ../scss/master.scss */
+/* line 80, ../scss/master.scss */
 .snowman .head, .snowman .belly, .snowman .legs {
   background: #fff;
   border-radius: 50%;
   /* box-shadow: inset 0px 0px 10px; */
 }
 
-/* line 85, ../scss/master.scss */
+/* line 86, ../scss/master.scss */
 .snowman .hat .top, .snowman .hat .base {
   box-shadow: inset 0px 0px 13px rgba(255, 255, 255, 0.44);
 }
 
-/* line 89, ../scss/master.scss */
+/* line 90, ../scss/master.scss */
 .snowman .scarf, .snowman .scarf .end {
   background-color: green;
   box-shadow: 0px 3px 0px darkgreen;
 }
 
-/* line 94, ../scss/master.scss */
+/* line 95, ../scss/master.scss */
 .snowman .head .eye, .snowman .belly .buttonz {
   border-radius: 100%;
   background-color: black;
 }
 
-/* line 99, ../scss/master.scss */
+/* line 100, ../scss/master.scss */
 .snowman .head, .snowman .belly, .snowman .legs {
   background-color: #cedce7;
   *zoom: 1;
@@ -113,7 +134,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-image: radial-gradient(top left, ellipse cover, #cedce7 0%, #cedce7 19%, #cedce7 30%, #596a72 100%);
 }
 
-/* line 107, ../scss/master.scss */
+/* line 108, ../scss/master.scss */
 .sign .board {
   background-color: #a43e35;
   *zoom: 1;
@@ -125,7 +146,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-image: linear-gradient(top, #a43e35 0%, #88342c 100%);
 }
 
-/* line 113, ../scss/master.scss */
+/* line 114, ../scss/master.scss */
 .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2 {
   background-color: #998a0c;
   *zoom: 1;
@@ -139,13 +160,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /*animations */
 @-moz-keyframes scarf_in_wind {
-  /* line 123, ../scss/master.scss */
+  /* line 124, ../scss/master.scss */
   0%, 100% {
     /* @include rotateZ(5deg); */
     -webkit-transform: rotateZ(5deg);
   }
 
-  /* line 128, ../scss/master.scss */
+  /* line 129, ../scss/master.scss */
   50% {
     /* @include rotateZ(15deg); */
     -webkit-transform: rotateZ(15deg);
@@ -153,13 +174,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-webkit-keyframes scarf_in_wind {
-  /* line 123, ../scss/master.scss */
+  /* line 124, ../scss/master.scss */
   0%, 100% {
     /* @include rotateZ(5deg); */
     -webkit-transform: rotateZ(5deg);
   }
 
-  /* line 128, ../scss/master.scss */
+  /* line 129, ../scss/master.scss */
   50% {
     /* @include rotateZ(15deg); */
     -webkit-transform: rotateZ(15deg);
@@ -167,13 +188,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-o-keyframes scarf_in_wind {
-  /* line 123, ../scss/master.scss */
+  /* line 124, ../scss/master.scss */
   0%, 100% {
     /* @include rotateZ(5deg); */
     -webkit-transform: rotateZ(5deg);
   }
 
-  /* line 128, ../scss/master.scss */
+  /* line 129, ../scss/master.scss */
   50% {
     /* @include rotateZ(15deg); */
     -webkit-transform: rotateZ(15deg);
@@ -181,13 +202,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-ms-keyframes scarf_in_wind {
-  /* line 123, ../scss/master.scss */
+  /* line 124, ../scss/master.scss */
   0%, 100% {
     /* @include rotateZ(5deg); */
     -webkit-transform: rotateZ(5deg);
   }
 
-  /* line 128, ../scss/master.scss */
+  /* line 129, ../scss/master.scss */
   50% {
     /* @include rotateZ(15deg); */
     -webkit-transform: rotateZ(15deg);
@@ -195,13 +216,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes scarf_in_wind {
-  /* line 123, ../scss/master.scss */
+  /* line 124, ../scss/master.scss */
   0%, 100% {
     /* @include rotateZ(5deg); */
     -webkit-transform: rotateZ(5deg);
   }
 
-  /* line 128, ../scss/master.scss */
+  /* line 129, ../scss/master.scss */
   50% {
     /* @include rotateZ(15deg); */
     -webkit-transform: rotateZ(15deg);
@@ -209,163 +230,163 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-moz-keyframes tiphat_rotate_hat {
-  /* line 135, ../scss/master.scss */
+  /* line 136, ../scss/master.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform-origin: 150px 220px;
     -webkit-transform: rotateZ(0deg);
   }
 
-  /* line 140, ../scss/master.scss */
+  /* line 141, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(90deg);
   }
 }
 
 @-webkit-keyframes tiphat_rotate_hat {
-  /* line 135, ../scss/master.scss */
+  /* line 136, ../scss/master.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform-origin: 150px 220px;
     -webkit-transform: rotateZ(0deg);
   }
 
-  /* line 140, ../scss/master.scss */
+  /* line 141, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(90deg);
   }
 }
 
 @-o-keyframes tiphat_rotate_hat {
-  /* line 135, ../scss/master.scss */
+  /* line 136, ../scss/master.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform-origin: 150px 220px;
     -webkit-transform: rotateZ(0deg);
   }
 
-  /* line 140, ../scss/master.scss */
+  /* line 141, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(90deg);
   }
 }
 
 @-ms-keyframes tiphat_rotate_hat {
-  /* line 135, ../scss/master.scss */
+  /* line 136, ../scss/master.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform-origin: 150px 220px;
     -webkit-transform: rotateZ(0deg);
   }
 
-  /* line 140, ../scss/master.scss */
+  /* line 141, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(90deg);
   }
 }
 
 @keyframes tiphat_rotate_hat {
-  /* line 135, ../scss/master.scss */
+  /* line 136, ../scss/master.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform-origin: 150px 220px;
     -webkit-transform: rotateZ(0deg);
   }
 
-  /* line 140, ../scss/master.scss */
+  /* line 141, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(90deg);
   }
 }
 
 @-moz-keyframes tiphat_rotate_arm {
-  /* line 148, ../scss/master.scss */
+  /* line 149, ../scss/master.scss */
   0%, 25%, 75%, 100% {
     -webkit-transform: rotateZ(-70deg);
   }
 
-  /* line 152, ../scss/master.scss */
+  /* line 153, ../scss/master.scss */
   30%, 70% {
     -webkit-transform: rotateZ(-92deg);
   }
 
-  /* line 157, ../scss/master.scss */
+  /* line 158, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
   }
 }
 
 @-webkit-keyframes tiphat_rotate_arm {
-  /* line 148, ../scss/master.scss */
+  /* line 149, ../scss/master.scss */
   0%, 25%, 75%, 100% {
     -webkit-transform: rotateZ(-70deg);
   }
 
-  /* line 152, ../scss/master.scss */
+  /* line 153, ../scss/master.scss */
   30%, 70% {
     -webkit-transform: rotateZ(-92deg);
   }
 
-  /* line 157, ../scss/master.scss */
+  /* line 158, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
   }
 }
 
 @-o-keyframes tiphat_rotate_arm {
-  /* line 148, ../scss/master.scss */
+  /* line 149, ../scss/master.scss */
   0%, 25%, 75%, 100% {
     -webkit-transform: rotateZ(-70deg);
   }
 
-  /* line 152, ../scss/master.scss */
+  /* line 153, ../scss/master.scss */
   30%, 70% {
     -webkit-transform: rotateZ(-92deg);
   }
 
-  /* line 157, ../scss/master.scss */
+  /* line 158, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
   }
 }
 
 @-ms-keyframes tiphat_rotate_arm {
-  /* line 148, ../scss/master.scss */
+  /* line 149, ../scss/master.scss */
   0%, 25%, 75%, 100% {
     -webkit-transform: rotateZ(-70deg);
   }
 
-  /* line 152, ../scss/master.scss */
+  /* line 153, ../scss/master.scss */
   30%, 70% {
     -webkit-transform: rotateZ(-92deg);
   }
 
-  /* line 157, ../scss/master.scss */
+  /* line 158, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
   }
 }
 
 @keyframes tiphat_rotate_arm {
-  /* line 148, ../scss/master.scss */
+  /* line 149, ../scss/master.scss */
   0%, 25%, 75%, 100% {
     -webkit-transform: rotateZ(-70deg);
   }
 
-  /* line 152, ../scss/master.scss */
+  /* line 153, ../scss/master.scss */
   30%, 70% {
     -webkit-transform: rotateZ(-92deg);
   }
 
-  /* line 157, ../scss/master.scss */
+  /* line 158, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
   }
 }
 
 @-webkit-keyframes tilt {
-  /* line 164, ../scss/master.scss */
+  /* line 165, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 169, ../scss/master.scss */
+  /* line 170, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
@@ -373,13 +394,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-moz-keyframes tilt {
-  /* line 164, ../scss/master.scss */
+  /* line 165, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 169, ../scss/master.scss */
+  /* line 170, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
@@ -387,13 +408,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-o-keyframes tilt {
-  /* line 164, ../scss/master.scss */
+  /* line 165, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 169, ../scss/master.scss */
+  /* line 170, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
@@ -401,13 +422,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes tilt {
-  /* line 164, ../scss/master.scss */
+  /* line 165, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 169, ../scss/master.scss */
+  /* line 170, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
@@ -415,25 +436,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-webkit-keyframes drin1 {
-  /* line 176, ../scss/master.scss */
+  /* line 177, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 181, ../scss/master.scss */
+  /* line 182, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 186, ../scss/master.scss */
+  /* line 187, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 191, ../scss/master.scss */
+  /* line 192, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -441,25 +462,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-moz-keyframes drin1 {
-  /* line 176, ../scss/master.scss */
+  /* line 177, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 181, ../scss/master.scss */
+  /* line 182, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 186, ../scss/master.scss */
+  /* line 187, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 191, ../scss/master.scss */
+  /* line 192, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -467,25 +488,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-o-keyframes drin1 {
-  /* line 176, ../scss/master.scss */
+  /* line 177, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 181, ../scss/master.scss */
+  /* line 182, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 186, ../scss/master.scss */
+  /* line 187, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 191, ../scss/master.scss */
+  /* line 192, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -493,25 +514,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes drin1 {
-  /* line 176, ../scss/master.scss */
+  /* line 177, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 181, ../scss/master.scss */
+  /* line 182, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 186, ../scss/master.scss */
+  /* line 187, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 191, ../scss/master.scss */
+  /* line 192, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -519,113 +540,113 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-webkit-keyframes ding1 {
-  /* line 199, ../scss/master.scss */
+  /* line 200, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg);
   }
 
-  /* line 203, ../scss/master.scss */
+  /* line 204, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 207, ../scss/master.scss */
+  /* line 208, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 211, ../scss/master.scss */
+  /* line 212, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(70deg);
   }
 }
 
 @-moz-keyframes ding1 {
-  /* line 199, ../scss/master.scss */
+  /* line 200, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg);
   }
 
-  /* line 203, ../scss/master.scss */
+  /* line 204, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 207, ../scss/master.scss */
+  /* line 208, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 211, ../scss/master.scss */
+  /* line 212, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(70deg);
   }
 }
 
 @-o-keyframes ding1 {
-  /* line 199, ../scss/master.scss */
+  /* line 200, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg);
   }
 
-  /* line 203, ../scss/master.scss */
+  /* line 204, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 207, ../scss/master.scss */
+  /* line 208, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 211, ../scss/master.scss */
+  /* line 212, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(70deg);
   }
 }
 
 @keyframes ding1 {
-  /* line 199, ../scss/master.scss */
+  /* line 200, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg);
   }
 
-  /* line 203, ../scss/master.scss */
+  /* line 204, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 207, ../scss/master.scss */
+  /* line 208, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 211, ../scss/master.scss */
+  /* line 212, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(70deg);
   }
 }
 
 @-webkit-keyframes drin2 {
-  /* line 220, ../scss/master.scss */
+  /* line 221, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 225, ../scss/master.scss */
+  /* line 226, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 230, ../scss/master.scss */
+  /* line 231, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 235, ../scss/master.scss */
+  /* line 236, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -633,25 +654,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-moz-keyframes drin2 {
-  /* line 220, ../scss/master.scss */
+  /* line 221, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 225, ../scss/master.scss */
+  /* line 226, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 230, ../scss/master.scss */
+  /* line 231, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 235, ../scss/master.scss */
+  /* line 236, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -659,25 +680,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-o-keyframes drin2 {
-  /* line 220, ../scss/master.scss */
+  /* line 221, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 225, ../scss/master.scss */
+  /* line 226, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 230, ../scss/master.scss */
+  /* line 231, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 235, ../scss/master.scss */
+  /* line 236, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -685,25 +706,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes drin2 {
-  /* line 220, ../scss/master.scss */
+  /* line 221, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 225, ../scss/master.scss */
+  /* line 226, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 230, ../scss/master.scss */
+  /* line 231, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 235, ../scss/master.scss */
+  /* line 236, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -711,101 +732,101 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-webkit-keyframes ding2 {
-  /* line 242, ../scss/master.scss */
+  /* line 243, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 246, ../scss/master.scss */
+  /* line 247, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 250, ../scss/master.scss */
+  /* line 251, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(60deg);
   }
 
-  /* line 254, ../scss/master.scss */
+  /* line 255, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg);
   }
 }
 
 @-moz-keyframes ding2 {
-  /* line 242, ../scss/master.scss */
+  /* line 243, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 246, ../scss/master.scss */
+  /* line 247, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 250, ../scss/master.scss */
+  /* line 251, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(60deg);
   }
 
-  /* line 254, ../scss/master.scss */
+  /* line 255, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg);
   }
 }
 
 @-o-keyframes ding2 {
-  /* line 242, ../scss/master.scss */
+  /* line 243, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 246, ../scss/master.scss */
+  /* line 247, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 250, ../scss/master.scss */
+  /* line 251, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(60deg);
   }
 
-  /* line 254, ../scss/master.scss */
+  /* line 255, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg);
   }
 }
 
 @keyframes ding2 {
-  /* line 242, ../scss/master.scss */
+  /* line 243, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 246, ../scss/master.scss */
+  /* line 247, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 250, ../scss/master.scss */
+  /* line 251, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(60deg);
   }
 
-  /* line 254, ../scss/master.scss */
+  /* line 255, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg);
   }
 }
 
 @-webkit-keyframes hollyrot {
-  /* line 261, ../scss/master.scss */
+  /* line 262, ../scss/master.scss */
   0%, 50%, 100% {
     -webkit-transform: rotatez(0deg);
     z-index: 45;
   }
 
-  /* line 266, ../scss/master.scss */
+  /* line 267, ../scss/master.scss */
   25%,75% {
     -webkit-transform: rotatez(1deg);
     z-index: 45;
@@ -813,13 +834,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-moz-keyframes hollyrot {
-  /* line 261, ../scss/master.scss */
+  /* line 262, ../scss/master.scss */
   0%, 50%, 100% {
     -webkit-transform: rotatez(0deg);
     z-index: 45;
   }
 
-  /* line 266, ../scss/master.scss */
+  /* line 267, ../scss/master.scss */
   25%,75% {
     -webkit-transform: rotatez(1deg);
     z-index: 45;
@@ -827,13 +848,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-o-keyframes hollyrot {
-  /* line 261, ../scss/master.scss */
+  /* line 262, ../scss/master.scss */
   0%, 50%, 100% {
     -webkit-transform: rotatez(0deg);
     z-index: 45;
   }
 
-  /* line 266, ../scss/master.scss */
+  /* line 267, ../scss/master.scss */
   25%,75% {
     -webkit-transform: rotatez(1deg);
     z-index: 45;
@@ -841,13 +862,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes hollyrot {
-  /* line 261, ../scss/master.scss */
+  /* line 262, ../scss/master.scss */
   0%, 50%, 100% {
     -webkit-transform: rotatez(0deg);
     z-index: 45;
   }
 
-  /* line 266, ../scss/master.scss */
+  /* line 267, ../scss/master.scss */
   25%,75% {
     -webkit-transform: rotatez(1deg);
     z-index: 45;
@@ -855,7 +876,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /*general styles */
-/* line 282, ../scss/master.scss */
+/* line 283, ../scss/master.scss */
 .container {
   margin: 0;
   padding: 0;
@@ -865,7 +886,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
 }
 
-/* line 292, ../scss/master.scss */
+/* line 293, ../scss/master.scss */
 .sign {
   width: 400px;
   height: 300px;
@@ -879,7 +900,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
   left: 300px;
 }
-/* line 302, ../scss/master.scss */
+/* line 303, ../scss/master.scss */
 .sign .chain {
   position: relative;
   width: 10px;
@@ -893,7 +914,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-bottom-right-radius: 20%;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
 }
-/* line 317, ../scss/master.scss */
+/* line 318, ../scss/master.scss */
 .sign .board {
   position: relative;
   z-index: 5;
@@ -906,7 +927,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-top: 10px;
   padding-bottom: 25px;
 }
-/* line 332, ../scss/master.scss */
+/* line 333, ../scss/master.scss */
 .sign .board .hole {
   width: 15px;
   height: 15px;
@@ -915,7 +936,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 4px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
 }
-/* line 342, ../scss/master.scss */
+/* line 343, ../scss/master.scss */
 .sign .board .countdown-number {
   margin: 0;
   font-size: 10em;
@@ -926,7 +947,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 0.8;
   padding-top: 40px;
 }
-/* line 352, ../scss/master.scss */
+/* line 353, ../scss/master.scss */
 .sign .board .countdown-description {
   margin: 0;
   font-size: 3em;
@@ -936,25 +957,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-transform: rotateZ(1deg);
 }
 
-/* line 366, ../scss/master.scss */
+/* line 367, ../scss/master.scss */
 .decoration {
   display: inline-block;
   -webkit-transform: scale(1.5, 1.5);
   margin-top: 50px;
+  z-index: 9;
 }
-/* line 370, ../scss/master.scss */
+/* line 372, ../scss/master.scss */
 .decoration.d1 {
   float: left;
   margin-left: -50px;
 }
-/* line 374, ../scss/master.scss */
+/* line 376, ../scss/master.scss */
 .decoration.d2 {
   float: right;
   position: relative;
   right: 20px;
 }
 
-/* line 382, ../scss/master.scss */
+/* line 384, ../scss/master.scss */
 .bells, .holly {
   display: inline-block;
   width: 100px;
@@ -962,14 +984,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
 }
 
-/* line 388, ../scss/master.scss */
+/* line 390, ../scss/master.scss */
 .bell {
   display: inline-block;
   background-color: white;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
 }
-/* line 396, ../scss/master.scss */
+/* line 398, ../scss/master.scss */
 .bell.bell1 {
   z-index: 50;
   -webkit-transform: rotatez(40deg) scale(0.8, 1);
@@ -979,7 +1001,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation: drin1 5s 2s infinite linear;
   animation: drin1 5s 2s infinite linear;
 }
-/* line 403, ../scss/master.scss */
+/* line 405, ../scss/master.scss */
 .bell.bell2 {
   z-index: 40;
   -webkit-transform: rotatez(-40deg) scale(0.8, 1);
@@ -990,7 +1012,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation: drin2 5s 2s infinite linear;
   animation: drin2 5s 2s infinite linear;
 }
-/* line 412, ../scss/master.scss */
+/* line 414, ../scss/master.scss */
 .bell .top {
   width: 10px;
   height: 8px;
@@ -1004,7 +1026,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-image: -o-radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
   background-image: radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
 }
-/* line 424, ../scss/master.scss */
+/* line 426, ../scss/master.scss */
 .bell .medup {
   width: 32px;
   height: 8px;
@@ -1014,7 +1036,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 6;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
-/* line 433, ../scss/master.scss */
+/* line 435, ../scss/master.scss */
 .bell .medsquare {
   width: 36px;
   height: 32px;
@@ -1025,7 +1047,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 7;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
-/* line 444, ../scss/master.scss */
+/* line 446, ../scss/master.scss */
 .bell .medoval1 {
   width: 38px;
   height: 4px;
@@ -1035,7 +1057,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -16px;
   z-index: 8;
 }
-/* line 454, ../scss/master.scss */
+/* line 456, ../scss/master.scss */
 .bell .medoval2 {
   width: 40px;
   height: 4px;
@@ -1045,7 +1067,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 9;
   box-bottom-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
-/* line 465, ../scss/master.scss */
+/* line 467, ../scss/master.scss */
 .bell .bottom {
   width: 48px;
   height: 6px;
@@ -1063,7 +1085,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 12;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(10, 10, 10, 0.2);
 }
-/* line 480, ../scss/master.scss */
+/* line 482, ../scss/master.scss */
 .bell .ding {
   width: 6px;
   height: 25px;
@@ -1074,7 +1096,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 0;
 }
 
-/* line 491, ../scss/master.scss */
+/* line 493, ../scss/master.scss */
 .bell1 .ding {
   -webkit-animation: ding1 5s 2s infinite linear;
   -moz-animation: ding1 5s 2s infinite linear;
@@ -1082,7 +1104,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   animation: ding1 5s 2s infinite linear;
 }
 
-/* line 495, ../scss/master.scss */
+/* line 497, ../scss/master.scss */
 .bell2 .ding {
   -webkit-animation: ding2 5s 2s infinite linear;
   -moz-animation: ding2 5s 2s infinite linear;
@@ -1090,31 +1112,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   animation: ding2 5s 2s infinite linear;
 }
 
-/* line 502, ../scss/master.scss */
+/* line 504, ../scss/master.scss */
 .holly {
   -webkit-animation: hollyrot 5s 2s infinite linear;
   -moz-animation: hollyrot 5s 2s infinite linear;
   -o-animation: hollyrot 5s 2s infinite linear;
   animation: hollyrot 5s 2s infinite linear;
 }
-/* line 506, ../scss/master.scss */
+/* line 508, ../scss/master.scss */
 .holly .leaf {
   position: relative;
   z-index: 45;
 }
-/* line 512, ../scss/master.scss */
+/* line 514, ../scss/master.scss */
 .holly .leaf.leaf1 {
   -webkit-transform: rotatez(-71deg) scale(0.1, 0.15);
   top: 12px;
   left: 48px;
 }
-/* line 520, ../scss/master.scss */
+/* line 522, ../scss/master.scss */
 .holly .leaf.leaf2 {
   -webkit-transform: rotatez(134deg) scale(0.1, 0.15);
   top: 32px;
   left: 98px;
 }
-/* line 527, ../scss/master.scss */
+/* line 529, ../scss/master.scss */
 .holly .leaf .branch {
   border-color: #24B50E transparent;
   border-style: inset;
@@ -1122,28 +1144,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 0;
   position: absolute;
 }
-/* line 536, ../scss/master.scss */
+/* line 538, ../scss/master.scss */
 .holly .leaf .branch.b1 {
   left: 70px;
   top: 20px;
   border-width: 0 30px 65px;
   z-index: 5;
 }
-/* line 544, ../scss/master.scss */
+/* line 546, ../scss/master.scss */
 .holly .leaf .branch.b2 {
   left: 40px;
   top: 50px;
   border-width: 0 60px 65px;
   z-index: 3;
 }
-/* line 553, ../scss/master.scss */
+/* line 555, ../scss/master.scss */
 .holly .leaf .branch.b3 {
   left: 20px;
   top: 70px;
   border-width: 0 80px 85px;
   z-index: 3;
 }
-/* line 561, ../scss/master.scss */
+/* line 563, ../scss/master.scss */
 .holly .leaf .branch.b4 {
   left: -20px;
   top: 110px;
@@ -1152,7 +1174,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 1;
 }
 
-/* line 577, ../scss/master.scss */
+/* line 579, ../scss/master.scss */
 .snowman {
   /* width: 30%; */
   -webkit-transform: scale(0.77, 0.77);
@@ -1165,11 +1187,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 400px;
   bottom: 50px;
 }
-/* line 585, ../scss/master.scss */
+/* line 587, ../scss/master.scss */
 .snowman > div {
   position: relative;
 }
-/* line 589, ../scss/master.scss */
+/* line 591, ../scss/master.scss */
 .snowman .hat {
   z-index: 5;
   width: 160px;
@@ -1190,7 +1212,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   animation: tiphat_rotate_hat 6s 0s infinite linear;
   /*2.5s, 10s);*/
 }
-/* line 598, ../scss/master.scss */
+/* line 600, ../scss/master.scss */
 .snowman .hat .top {
   position: relative;
   z-index: 2;
@@ -1200,7 +1222,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: black;
   border-radius: 100%;
 }
-/* line 612, ../scss/master.scss */
+/* line 614, ../scss/master.scss */
 .snowman .hat .middle {
   position: relative;
   z-index: 1;
@@ -1209,7 +1231,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 65px;
   background-color: black;
 }
-/* line 622, ../scss/master.scss */
+/* line 624, ../scss/master.scss */
 .snowman .hat .base {
   position: relative;
   z-index: 0;
@@ -1219,7 +1241,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 100%;
   margin-bottom: -20px;
 }
-/* line 635, ../scss/master.scss */
+/* line 637, ../scss/master.scss */
 .snowman .head {
   z-index: 4;
   margin-bottom: -28px;
@@ -1227,7 +1249,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 92px;
   /*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4); */
 }
-/* line 644, ../scss/master.scss */
+/* line 646, ../scss/master.scss */
 .snowman .head .eye {
   width: 20px;
   height: 20px;
@@ -1239,7 +1261,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   @include filter-gradient(#1600e2, #000000, horizontal);
   @include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%)); */
 }
-/* line 658, ../scss/master.scss */
+/* line 660, ../scss/master.scss */
 .snowman .head .nose {
   position: absolute;
   bottom: 27%;
@@ -1257,7 +1279,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-width: 10px 0px 10px 50px;
   border-color: transparent transparent transparent #ff8c00;
 }
-/* line 672, ../scss/master.scss */
+/* line 674, ../scss/master.scss */
 .snowman .head .mouth {
   position: relative;
   top: 50%;
@@ -1269,7 +1291,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* border-bottom-left-radius: 154%;
   border-bottom-right-radius: 113%; */
 }
-/* line 686, ../scss/master.scss */
+/* line 688, ../scss/master.scss */
 .snowman .scarf {
   z-index: 3;
   margin-bottom: -32px;
@@ -1277,7 +1299,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 32px;
   border-radius: 100%;
 }
-/* line 694, ../scss/master.scss */
+/* line 696, ../scss/master.scss */
 .snowman .scarf .end {
   position: absolute;
   right: 10px;
@@ -1295,7 +1317,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 75px;
   border-top-right-radius: 100%;
 }
-/* line 707, ../scss/master.scss */
+/* line 709, ../scss/master.scss */
 .snowman .scarf .end:first-child {
   right: 15px;
   -webkit-animation-delay: 0.3s;
@@ -1304,12 +1326,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 712, ../scss/master.scss */
+/* line 714, ../scss/master.scss */
 .snowman .scarf .end:last-child {
   box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
   /* -webkit-transform: rotateZ(-25deg); */
 }
-/* line 719, ../scss/master.scss */
+/* line 721, ../scss/master.scss */
 .snowman .belly {
   z-index: 2;
   margin-bottom: -40px;
@@ -1317,11 +1339,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 130px;
   /*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);*/
 }
-/* line 728, ../scss/master.scss */
+/* line 730, ../scss/master.scss */
 .snowman .belly .arm .finger {
   left: -20px;
 }
-/* line 731, ../scss/master.scss */
+/* line 733, ../scss/master.scss */
 .snowman .belly .arm .finger:nth-child(1) {
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
@@ -1330,11 +1352,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(-135deg);
   bottom: 150%;
 }
-/* line 736, ../scss/master.scss */
+/* line 738, ../scss/master.scss */
 .snowman .belly .arm .finger:nth-child(2) {
   top: 1.5px;
 }
-/* line 740, ../scss/master.scss */
+/* line 742, ../scss/master.scss */
 .snowman .belly .arm .finger:nth-child(3) {
   -webkit-transform: rotate(-225deg);
   -moz-transform: rotate(-225deg);
@@ -1343,13 +1365,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(-225deg);
   top: 150%;
 }
-/* line 746, ../scss/master.scss */
+/* line 748, ../scss/master.scss */
 .snowman .belly .arm:first-child {
   position: absolute;
   right: 94%;
   top: 50%;
 }
-/* line 751, ../scss/master.scss */
+/* line 753, ../scss/master.scss */
 .snowman .belly .arm:first-child .limb {
   -webkit-transform: rotate(72deg);
   -moz-transform: rotate(72deg);
@@ -1358,7 +1380,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(72deg);
   width: 116px;
 }
-/* line 757, ../scss/master.scss */
+/* line 759, ../scss/master.scss */
 .snowman .belly .arm:nth-child(2) {
   position: absolute;
   left: 94%;
@@ -1369,7 +1391,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 763, ../scss/master.scss */
+/* line 765, ../scss/master.scss */
 .snowman .belly .arm:nth-child(2) .limb {
   width: 116px;
   -webkit-animation: tiphat_rotate_arm 6s 0s infinite linear;
@@ -1377,7 +1399,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation: tiphat_rotate_arm 6s 0s infinite linear;
   animation: tiphat_rotate_arm 6s 0s infinite linear;
 }
-/* line 769, ../scss/master.scss */
+/* line 771, ../scss/master.scss */
 .snowman .belly .arm .limb {
   position: relative;
   -webkit-transform-origin: right;
@@ -1391,14 +1413,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 780, ../scss/master.scss */
+/* line 782, ../scss/master.scss */
 .snowman .belly .arm .limb .finger {
   position: absolute;
   width: 30px;
   height: 6px;
   background-color: saddlebrown;
 }
-/* line 788, ../scss/master.scss */
+/* line 790, ../scss/master.scss */
 .snowman .belly .buttonz {
   width: 16px;
   height: 16px;
@@ -1406,7 +1428,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 30%;
   box-shadow: 0px 26px 0px black, 0px 52px 0 black;
 }
-/* line 799, ../scss/master.scss */
+/* line 801, ../scss/master.scss */
 .snowman .legs {
   z-index: 1;
   width: 250px;
@@ -1414,7 +1436,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-shadow: 0px 35px 120px;
 }
 
-/* line 810, ../scss/master.scss */
+/* line 812, ../scss/master.scss */
 .ground {
   position: absolute;
   bottom: 0px;
@@ -1439,7 +1461,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 1;
 }
 
-/* line 826, ../scss/master.scss */
+/* line 828, ../scss/master.scss */
 .ground:before {
   content: "";
   display: block;
@@ -1467,7 +1489,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 1;
 }
 
-/* line 847, ../scss/master.scss */
+/* line 849, ../scss/master.scss */
 .ground:after {
   content: "";
   display: block;
@@ -1480,4 +1502,1607 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: -2px;
   bottom: 22px;
   z-index: 1;
+}
+
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f1 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.15;
+  font-size: 132%;
+  left: 66%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f2 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.57;
+  font-size: 148%;
+  left: 41%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 36s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f3 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.81;
+  font-size: 185%;
+  left: 10%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f4 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.42;
+  font-size: 102%;
+  left: 22%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 17s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f5 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.73;
+  font-size: 176%;
+  left: 33%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 36s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f6 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.66;
+  font-size: 176%;
+  left: 67%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 32s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f7 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.75;
+  font-size: 153%;
+  left: 34%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 43s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f8 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.17;
+  font-size: 100%;
+  left: 37%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f9 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.8;
+  font-size: 177%;
+  left: 4%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 43s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f10 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+  font-size: 170%;
+  left: 0%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f11 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.33;
+  font-size: 158%;
+  left: 39%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f12 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.99;
+  font-size: 164%;
+  left: 65%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 24s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f13 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.32;
+  font-size: 139%;
+  left: 46%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f14 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.56;
+  font-size: 147%;
+  left: 28%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 29s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f15 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.14;
+  font-size: 182%;
+  left: 0%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f16 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.37;
+  font-size: 192%;
+  left: 34%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 19s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f17 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.17;
+  font-size: 166%;
+  left: 91%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f18 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.2;
+  font-size: 154%;
+  left: 69%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f19 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.53;
+  font-size: 192%;
+  left: 94%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f20 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.36;
+  font-size: 133%;
+  left: 77%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f21 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.28;
+  font-size: 197%;
+  left: 93%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 35s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f22 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  font-size: 106%;
+  left: 94%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 31s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f23 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.21;
+  font-size: 117%;
+  left: 95%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 37s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f24 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.9;
+  font-size: 152%;
+  left: 72%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 17s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f25 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.33;
+  font-size: 104%;
+  left: 34%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 21s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f26 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.04;
+  font-size: 110%;
+  left: 57%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 41s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f27 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.5;
+  font-size: 140%;
+  left: 17%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 31s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f28 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.68;
+  font-size: 116%;
+  left: 88%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 39s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f29 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.58;
+  font-size: 144%;
+  left: 85%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 41s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f30 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.71;
+  font-size: 110%;
+  left: 45%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 38s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f31 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.78;
+  font-size: 162%;
+  left: 87%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 34s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f32 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.03;
+  font-size: 142%;
+  left: 84%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f33 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.26;
+  font-size: 174%;
+  left: 52%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 35s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f34 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.94;
+  font-size: 150%;
+  left: 55%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f35 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.35;
+  font-size: 153%;
+  left: 5%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 42s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f36 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.84;
+  font-size: 129%;
+  left: 69%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f37 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.99;
+  font-size: 109%;
+  left: 56%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 35s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f38 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.84;
+  font-size: 199%;
+  left: 31%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 18s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f39 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.56;
+  font-size: 155%;
+  left: 34%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 41s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f40 {
+  -webkit-animation-delay: 8s;
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.6;
+  font-size: 185%;
+  left: 68%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f41 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.71;
+  font-size: 158%;
+  left: 92%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 31s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f42 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.68;
+  font-size: 184%;
+  left: 17%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 41s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f43 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.28;
+  font-size: 120%;
+  left: 59%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 22s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f44 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.77;
+  font-size: 191%;
+  left: 41%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 21s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f45 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.7;
+  font-size: 148%;
+  left: 53%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f46 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.92;
+  font-size: 143%;
+  left: 19%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 34s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f47 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.13;
+  font-size: 111%;
+  left: 58%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 22s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f48 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.32;
+  font-size: 140%;
+  left: 1%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 21s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f49 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.6;
+  font-size: 167%;
+  left: 92%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 23s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f50 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.34;
+  font-size: 190%;
+  left: 23%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 34s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f51 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.37;
+  font-size: 141%;
+  left: 98%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 36s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f52 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.26;
+  font-size: 175%;
+  left: 14%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 37s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f53 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.09;
+  font-size: 129%;
+  left: 27%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f54 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.42;
+  font-size: 136%;
+  left: 69%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 23s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f55 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.93;
+  font-size: 182%;
+  left: 12%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f56 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.15;
+  font-size: 170%;
+  left: 98%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f57 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.87;
+  font-size: 156%;
+  left: 50%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 18s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f58 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.56;
+  font-size: 128%;
+  left: 1%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 39s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f59 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.77;
+  font-size: 111%;
+  left: 75%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f60 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.18;
+  font-size: 112%;
+  left: 45%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 43s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f61 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.62;
+  font-size: 154%;
+  left: 89%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f62 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.7;
+  font-size: 107%;
+  left: 17%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 27s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f63 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.49;
+  font-size: 161%;
+  left: 55%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 21s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f64 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 6;
+  opacity: 0.1;
+  font-size: 101%;
+  left: 11%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f65 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.85;
+  font-size: 165%;
+  left: 52%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 38s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f66 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 7;
+  opacity: 0.55;
+  font-size: 167%;
+  left: 82%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 29s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f67 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.1;
+  font-size: 137%;
+  left: 73%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f68 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.77;
+  font-size: 132%;
+  left: 86%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 42s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f69 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.84;
+  font-size: 162%;
+  left: 75%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f70 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.09;
+  font-size: 133%;
+  left: 60%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 19s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f71 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  opacity: 0.94;
+  font-size: 175%;
+  left: 75%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 29s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f72 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.39;
+  font-size: 184%;
+  left: 79%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 35s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f73 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.2;
+  font-size: 183%;
+  left: 3%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 42s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f74 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.79;
+  font-size: 171%;
+  left: 25%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f75 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.86;
+  font-size: 125%;
+  left: 78%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f76 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.24;
+  font-size: 128%;
+  left: 58%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 41s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f77 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.38;
+  font-size: 130%;
+  left: 4%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 18s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f78 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.64;
+  font-size: 158%;
+  left: 0%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 35s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f79 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 8;
+  opacity: 0.14;
+  font-size: 149%;
+  left: 91%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 865, ../scss/master.scss */
+.snow .icon-snowflake.f80 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.94;
+  font-size: 198%;
+  left: 69%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 23s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fall1 {
+  /* line 885, ../scss/master.scss */
+  0% {
+    top: -10%;
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  /* line 889, ../scss/master.scss */
+  100% {
+    top: 100%;
+    -webkit-transform: translate(100px, 150px) rotate(250deg);
+  }
+}
+
+@-webkit-keyframes fall3 {
+  /* line 896, ../scss/master.scss */
+  0% {
+    top: -10%;
+    -webkit-transform: rotate(-180deg) translate(0px, 0px);
+  }
+
+  /* line 900, ../scss/master.scss */
+  75% {
+    opacity: 0.8;
+  }
+
+  /* line 903, ../scss/master.scss */
+  100% {
+    top: 100%;
+    opacity: 0.0;
+    -webkit-transform: rotate(150deg) translate(10px, 75px);
+  }
+}
+
+@-webkit-keyframes fall2 {
+  /* line 911, ../scss/master.scss */
+  0% {
+    top: -10%;
+  }
+
+  /* line 914, ../scss/master.scss */
+  10% {
+    -webkit-transform: rotate(-180deg) translate(0px, 0px);
+  }
+
+  /* line 917, ../scss/master.scss */
+  100% {
+    top: 100%;
+    -webkit-transform: rotate(50deg) translate(100px, 80px);
+  }
+}
+
+@-webkit-keyframes fall4 {
+  /* line 924, ../scss/master.scss */
+  0% {
+    top: -10%;
+    -webkit-transform: rotate(-180deg);
+  }
+
+  /* line 928, ../scss/master.scss */
+  100% {
+    top: 100%;
+    -webkit-transform: rotate(180deg);
+    -webkit-transform: rotateY(160deg);
+  }
+}
+
+@-webkit-keyframes fall5 {
+  /* line 936, ../scss/master.scss */
+  0% {
+    top: -10%;
+    -webkit-transform: rotate(-180deg) translate(0px, 0px);
+  }
+
+  /* line 940, ../scss/master.scss */
+  70% {
+    -webkit-transform: rotate(200deg) translate(50px, 100px);
+  }
+
+  /* line 943, ../scss/master.scss */
+  100% {
+    top: 100%;
+    -webkit-transform: rotate(380deg) translate(80px, 100px);
+  }
+}
+
+/* line 949, ../scss/master.scss */
+[class*="icon-"] {
+  font-family: 'SED';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 963, ../scss/master.scss */
+.icon-snow:before {
+  content: "\e60d";
+}
+
+/* line 967, ../scss/master.scss */
+.icon-snowflake:before {
+  content: "\e61b";
+}
+
+/* line 973, ../scss/master.scss */
+.ctree {
+  position: relative;
+  z-index: 7;
+  bottom: -70px;
+  left: 200px;
+}
+/* line 979, ../scss/master.scss */
+.ctree .trunk {
+  border-color: #3b200f transparent;
+  border-style: solid;
+  border-width: 0 19px 208px;
+  bottom: 0;
+  height: 0px;
+  width: 0;
+  position: absolute;
+  z-index: 10;
+  left: 81px;
+  top: 11px;
+}
+/* line 992, ../scss/master.scss */
+.ctree .branch {
+  position: absolute;
+  border-style: solid;
+  border-color: transparent transparent #336633;
+}
+/* line 998, ../scss/master.scss */
+.ctree .branch.b1 {
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  left: 60px;
+  top: 0px;
+  border-width: 0px 40px 60px 40px;
+  z-index: 11;
+}
+/* line 1006, ../scss/master.scss */
+.ctree .branch.b2 {
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  left: 40px;
+  top: 20px;
+  border-width: 0px 60px 80px 60px;
+  z-index: 11;
+}
+/* line 1014, ../scss/master.scss */
+.ctree .branch.b3 {
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  left: 20px;
+  top: 40px;
+  border-width: 0px 80px 100px 80px;
+  z-index: 11;
+}
+/* line 1022, ../scss/master.scss */
+.ctree .branch.b4 {
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  left: 0px;
+  top: 60px;
+  border-width: 0px 100px 120px 100px;
+  z-index: 11;
+}
+/* line 1031, ../scss/master.scss */
+.ctree .dec {
+  background: transparent;
+  border-style: dotted;
+  border-width: 8px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  z-index: 12;
+  position: absolute;
+  -webkit-animation-name: lights1;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 1044, ../scss/master.scss */
+.ctree .dec.d1 {
+  -webkit-transform: rotate(16deg);
+  clip: rect(42px, 74px, 65px, 33px);
+  width: 140px;
+  height: 64px;
+  top: -22px;
+  left: 59px;
+}
+/* line 1052, ../scss/master.scss */
+.ctree .dec.d2 {
+  -webkit-transform: rotate(-27deg);
+  clip: rect(61px, 86px, 87px, 19px);
+  width: 107px;
+  height: 76px;
+  top: 0px;
+  left: 25px;
+}
+/* line 1060, ../scss/master.scss */
+.ctree .dec.d3 {
+  -webkit-transform: rotate(20deg);
+  clip: rect(44px, 120px, 84px, 28px);
+  width: 138px;
+  height: 64px;
+  top: 45px;
+  left: 43px;
+}
+/* line 1068, ../scss/master.scss */
+.ctree .dec.d4 {
+  -webkit-transform: rotate(-5deg);
+  clip: rect(32px, 128px, 64px, 21px);
+  width: 139px;
+  height: 51px;
+  top: 92px;
+  left: 25px;
+}
+/* line 1077, ../scss/master.scss */
+.ctree .dec.d5 {
+  -webkit-transform: rotate(18deg);
+  clip: rect(36px, 106px, 100px, 16px);
+  width: 140px;
+  height: 84px;
+  top: 87px;
+  left: 26px;
+}
+/* line 1086, ../scss/master.scss */
+.ctree .ball_r {
+  width: 15px;
+  height: 15px;
+  background-color: #660000;
+  -webkit-box-shadow: 0px 0px 7px white;
+  -webkit-border-radius: 50px;
+  position: absolute;
+  z-index: 13;
+}
+/* line 1096, ../scss/master.scss */
+.ctree .ball_w {
+  width: 15px;
+  height: 15px;
+  background-color: #D4D4D4;
+  -webkit-box-shadow: 0px 0px 7px white;
+  -webkit-border-radius: 50px;
+  position: absolute;
+  z-index: 13;
+}
+/* line 1106, ../scss/master.scss */
+.ctree .ball_w.ba1 {
+  top: 34px;
+  left: 80px;
+}
+/* line 1110, ../scss/master.scss */
+.ctree .ball_w.ba2 {
+  top: 72px;
+  left: 122px;
+}
+/* line 1114, ../scss/master.scss */
+.ctree .ball_w.ba3 {
+  top: 112px;
+  left: 46px;
+}
+/* line 1118, ../scss/master.scss */
+.ctree .ball_w.ba4 {
+  top: 148px;
+  left: 147px;
+}
+/* line 1122, ../scss/master.scss */
+.ctree .ball_r.ba5 {
+  top: 34px;
+  left: 105px;
+}
+/* line 1126, ../scss/master.scss */
+.ctree .ball_r.ba6 {
+  top: 73px;
+  left: 64px;
+}
+/* line 1130, ../scss/master.scss */
+.ctree .ball_r.ba7 {
+  top: 112px;
+  left: 142px;
+}
+/* line 1134, ../scss/master.scss */
+.ctree .ball_r.ba8 {
+  top: 144px;
+  left: 30px;
+}
+/* line 1138, ../scss/master.scss */
+.ctree .ball_r.ba9 {
+  top: 100px;
+  left: 93px;
+}
+/* line 1142, ../scss/master.scss */
+.ctree .ball_w.ba10 {
+  top: 143px;
+  left: 93px;
+}
+/* line 1147, ../scss/master.scss */
+.ctree .star {
+  top: -1px;
+  left: 96px;
+  position: absolute;
+  z-index: 14;
+}
+/* line 1153, ../scss/master.scss */
+.ctree .star .point {
+  position: absolute;
+}
+/* line 1157, ../scss/master.scss */
+.ctree .star .middle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #ffd700;
+  height: 9px;
+  width: 9px;
+}
+/* line 1166, ../scss/master.scss */
+.ctree .star .point.p1 {
+  top: -8px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid #ffd700;
+}
+/* line 1176, ../scss/master.scss */
+.ctree .star .point.p2 {
+  top: 0px;
+  left: 7px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 8px solid #ffd700;
+  border-bottom: 4px solid transparent;
+}
+/* line 1186, ../scss/master.scss */
+.ctree .star .point.p3 {
+  top: 8px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 16px solid #ffd700;
+}
+/* line 1196, ../scss/master.scss */
+.ctree .star .point.p4 {
+  top: 0px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 8px solid #ffd700;
+  border-bottom: 4px solid transparent;
 }
