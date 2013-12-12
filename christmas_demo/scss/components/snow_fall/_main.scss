@@ -1,4 +1,6 @@
 .snow{
+	list-style: none;
+
 	@for $i from 1 through 40 {
 		.icon-snowflake.f#{$i}{
 			float: left;
