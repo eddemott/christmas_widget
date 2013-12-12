@@ -1,0 +1,109 @@
+body{
+	background-color: #1b2e33;
+}
+.snow {
+	@for $i from 1 through 80 {
+		.icon-snowflake.f#{$i}{
+			@if $i < 41 {
+				-webkit-animation-delay:8s;
+			}
+			float: left;
+			margin: auto;
+			color: white;
+			position:absolute;
+			opacity:(random(100)/100);
+			font-size: ((percentage(random(100))/100)+ 100);
+			left: (percentage(random())/100);
+			-webkit-animation:fall + (random(5)+1);
+			-webkit-animation-duration: (random(30)+15) + s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+		}
+	}
+}
+@-webkit-keyframes fall1 {
+	0% {
+		top: -10%;
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+	}
+	100% {
+		top: 100%;
+		-webkit-transform: translate(100px,150px) rotate(250deg);
+	}
+}
+
+@-webkit-keyframes fall3 {
+	0% {
+		top: -10%;
+		-webkit-transform: rotate(-180deg) translate(0px, 0px);
+	}
+	75% {
+		opacity: 0.8;
+	}
+	100% {
+		top: 100%;
+		opacity: 0.0;
+		-webkit-transform: rotate(150deg) translate(10px, 75px);
+	}
+}
+
+@-webkit-keyframes fall2 {
+  0% {
+  	top: -10%;
+  }
+  10% {
+  	-webkit-transform: rotate(-180deg) translate(0px, 0px);
+  }
+  100% { 
+  	top: 100%;
+  	-webkit-transform: rotate(50deg) translate(100px, 80px);
+  }
+}
+
+@-webkit-keyframes fall4 {
+	0% { 
+		top: -10%;
+		-webkit-transform: rotate(-180deg);
+	}
+	100% { 
+		top: 100%;
+		-webkit-transform: rotate(180deg);
+		-webkit-transform: rotateY(160deg);
+	}
+}
+
+@-webkit-keyframes fall5 {
+	0% {
+		top: -10%;
+		-webkit-transform: rotate(-180deg) translate(0px, 0px);
+	}
+	70% {
+		-webkit-transform: rotate(200deg) translate(50px, 100px);
+	}
+	100% {
+		top: 100%;
+		-webkit-transform: rotate(380deg) translate(80px, 100px);
+	}
+}
+
+[class*="icon-"] {
+	font-family: 'SED';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-snow:before {
+	content: "\e60d";
+}
+
+.icon-snowflake:before {
+	content: "\e61b";
+}
