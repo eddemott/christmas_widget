@@ -969,10 +969,10 @@ z-index: 1;
 //tree 
 
 .ctree {
-	position: relative;
-	z-index: 7;
-	bottom: -70px;
-	left: 200px;
+	position: absolute;
+	z-index: 100;
+	left: 71px;
+	bottom: 238px;
 
 	.trunk {
 		border-color: #3b200f transparent;
@@ -988,9 +988,9 @@ z-index: 1;
 	}
 
 	.branch {
-	position: absolute;
-	border-style: solid;
-	border-color: transparent transparent #336633;
+		position: absolute;
+		border-style: solid;
+		border-color: transparent transparent #336633;
 		
 	}
 	.branch.b1{
@@ -1084,21 +1084,30 @@ z-index: 1;
 	.ball_r {
 		width: 15px;
 		height: 15px;
-		background-color: #660000;
+		// background-color: #660000;
 		-webkit-box-shadow: 0px 0px 7px white;
 		-webkit-border-radius: 50px;
 		position: absolute;
 		z-index: 13;
+		-webkit-animation-name: changered;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function:linear;
+
 	}
 
 	.ball_w{
 		width: 15px;
 		height: 15px;
-		background-color: #D4D4D4;
+		// background-color: #D4D4D4;
 		-webkit-box-shadow: 0px 0px 7px white;
 		-webkit-border-radius: 50px;
 		position: absolute;
 		z-index: 13;
+		-webkit-animation-name: changewhite;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function:linear;
 	}
 
 	.ball_w.ba1 {
@@ -1200,5 +1209,53 @@ z-index: 1;
 			border-right: 8px solid #ffd700;
 			border-bottom: 4px solid transparent;
 		}
+	}
+}
+
+@-webkit-keyframes flashw {
+	0% {
+		-webkit-box-shadow: 0px 0px 0px white;
+	}
+	50% {
+		-webkit-box-shadow: 0px 0px 7px white;
+	}
+	100% {
+		-webkit-box-shadow: 0px 0px 0px white;
+	}
+}
+
+@-webkit-keyframes flashr {
+	0% {
+		-webkit-box-shadow: 0px 0px 0px #660000;
+	}
+	50% {
+		-webkit-box-shadow: 0px 0px 7px #660000;
+	}
+	100% {
+		-webkit-box-shadow: 0px 0px 0px #660000;
+	}
+}
+
+@-webkit-keyframes changered {
+	0% {
+		background-color: #660000;
+	}
+	50% {
+		background-color: white;
+	}
+	100% {
+		background-color: #660000;
+	}
+}
+
+@-webkit-keyframes changewhite {
+	0% {
+		background-color: white;
+	}
+	50% {
+		background-color: #660000;
+	}
+	100% {
+		background-color: white;
 	}
 }

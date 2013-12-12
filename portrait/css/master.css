@@ -1495,12 +1495,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.42;
-  font-size: 159%;
-  left: 84%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 29s;
+  z-index: 2;
+  opacity: 0.7;
+  font-size: 142%;
+  left: 69%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 41s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1511,12 +1511,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 10;
-  opacity: 0.47;
-  font-size: 121%;
-  left: 21%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 40s;
+  z-index: 6;
+  opacity: 0.05;
+  font-size: 183%;
+  left: 28%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 28s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1527,12 +1527,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 8;
-  opacity: 0.04;
-  font-size: 103%;
-  left: 45%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 29s;
+  z-index: 5;
+  opacity: 0.14;
+  font-size: 191%;
+  left: 60%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 30s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1543,12 +1543,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 8;
-  opacity: 0.64;
-  font-size: 129%;
-  left: 86%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 42s;
+  z-index: 6;
+  opacity: 0.91;
+  font-size: 146%;
+  left: 75%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 33s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1559,10 +1559,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 6;
-  opacity: 0.95;
-  font-size: 195%;
-  left: 34%;
+  z-index: 5;
+  opacity: 0.48;
+  font-size: 181%;
+  left: 20%;
   -webkit-animation: fall4;
   -webkit-animation-duration: 21s;
   -webkit-animation-iteration-count: infinite;
@@ -1575,12 +1575,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 5;
-  opacity: 0.03;
-  font-size: 167%;
-  left: 64%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 21s;
+  z-index: 6;
+  opacity: 0.88;
+  font-size: 189%;
+  left: 89%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 28s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1591,12 +1591,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.55;
-  font-size: 176%;
-  left: 16%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 27s;
+  z-index: 7;
+  opacity: 0.41;
+  font-size: 172%;
+  left: 75%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 36s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1607,10 +1607,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 2;
-  opacity: 0.17;
-  font-size: 104%;
-  left: 71%;
+  z-index: 4;
+  opacity: 0.31;
+  font-size: 170%;
+  left: 19%;
   -webkit-animation: fall4;
   -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
@@ -1623,12 +1623,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.36;
-  font-size: 149%;
-  left: 20%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 38s;
+  z-index: 11;
+  opacity: 0.55;
+  font-size: 104%;
+  left: 82%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 29s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1639,12 +1639,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.15;
-  font-size: 194%;
-  left: 71%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 21s;
+  z-index: 2;
+  opacity: 0.1;
+  font-size: 151%;
+  left: 11%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 19s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1655,11 +1655,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.91;
-  font-size: 111%;
-  left: 94%;
-  -webkit-animation: fall4;
+  z-index: 2;
+  opacity: 0.07;
+  font-size: 170%;
+  left: 54%;
+  -webkit-animation: fall5;
   -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -1671,12 +1671,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 6;
-  opacity: 0.68;
-  font-size: 126%;
-  left: 64%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 40s;
+  z-index: 3;
+  opacity: 0.53;
+  font-size: 178%;
+  left: 29%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 17s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1688,11 +1688,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 5;
-  opacity: 0.38;
-  font-size: 188%;
-  left: 73%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 22s;
+  opacity: 0.55;
+  font-size: 153%;
+  left: 85%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1704,11 +1704,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 5;
-  opacity: 0.82;
-  font-size: 185%;
-  left: 99%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 27s;
+  opacity: 0.69;
+  font-size: 111%;
+  left: 31%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 41s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1719,12 +1719,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 5;
-  opacity: 0.13;
-  font-size: 194%;
-  left: 1%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 43s;
+  z-index: 7;
+  opacity: 0.37;
+  font-size: 179%;
+  left: 55%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1736,11 +1736,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 2;
-  opacity: 0.73;
-  font-size: 117%;
-  left: 90%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 42s;
+  opacity: 0.53;
+  font-size: 127%;
+  left: 63%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 41s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1751,12 +1751,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 10;
-  opacity: 0.23;
-  font-size: 109%;
-  left: 78%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 26s;
+  z-index: 2;
+  opacity: 0.87;
+  font-size: 172%;
+  left: 82%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 16s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1767,12 +1767,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 5;
-  opacity: 0.43;
-  font-size: 124%;
-  left: 7%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 24s;
+  z-index: 3;
+  opacity: 0.4;
+  font-size: 108%;
+  left: 16%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 43s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1783,12 +1783,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 4;
-  opacity: 0.37;
-  font-size: 120%;
-  left: 63%;
+  z-index: 5;
+  opacity: 0.41;
+  font-size: 173%;
+  left: 12%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 28s;
+  -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1799,12 +1799,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 11;
-  opacity: 0.18;
-  font-size: 120%;
-  left: 61%;
+  z-index: 9;
+  opacity: 0.6;
+  font-size: 123%;
+  left: 28%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 22s;
+  -webkit-animation-duration: 43s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1815,12 +1815,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.83;
-  font-size: 193%;
-  left: 64%;
+  z-index: 2;
+  opacity: 0.01;
+  font-size: 185%;
+  left: 70%;
   -webkit-animation: fall3;
-  -webkit-animation-duration: 19s;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1831,12 +1831,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.62;
-  font-size: 187%;
-  left: 51%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 29s;
+  z-index: 8;
+  opacity: 0.19;
+  font-size: 169%;
+  left: 17%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 39s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1847,12 +1847,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   opacity: 0.45;
-  font-size: 166%;
-  left: 15%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 19s;
+  font-size: 182%;
+  left: 5%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 35s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1863,12 +1863,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 4;
-  opacity: 0.35;
-  font-size: 198%;
-  left: 2%;
+  z-index: 11;
+  opacity: 0.22;
+  font-size: 118%;
+  left: 12%;
   -webkit-animation: fall3;
-  -webkit-animation-duration: 40s;
+  -webkit-animation-duration: 16s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1879,12 +1879,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 11;
-  opacity: 0.35;
-  font-size: 128%;
-  left: 28%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 17s;
+  z-index: 2;
+  opacity: 0.79;
+  font-size: 150%;
+  left: 5%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1895,12 +1895,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 3;
-  opacity: 0.62;
-  font-size: 182%;
-  left: 29%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 38s;
+  z-index: 11;
+  opacity: 0.21;
+  font-size: 140%;
+  left: 71%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 16s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1911,12 +1911,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 5;
-  opacity: 0.48;
-  font-size: 147%;
-  left: 89%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 16s;
+  z-index: 4;
+  opacity: 0.07;
+  font-size: 162%;
+  left: 38%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 43s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1927,12 +1927,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.88;
-  font-size: 128%;
-  left: 29%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 24s;
+  z-index: 7;
+  opacity: 0.56;
+  font-size: 167%;
+  left: 7%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 29s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1943,12 +1943,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 11;
-  opacity: 0.31;
-  font-size: 168%;
-  left: 42%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 15s;
+  z-index: 3;
+  opacity: 0.47;
+  font-size: 185%;
+  left: 39%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 43s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1959,12 +1959,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 2;
-  opacity: 0.73;
-  font-size: 192%;
-  left: 81%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 20s;
+  z-index: 6;
+  opacity: 0.2;
+  font-size: 140%;
+  left: 86%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1975,12 +1975,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 6;
-  opacity: 0.65;
-  font-size: 197%;
-  left: 19%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 29s;
+  z-index: 4;
+  opacity: 0.28;
+  font-size: 199%;
+  left: 63%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -1991,12 +1991,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 2;
-  opacity: 0.27;
-  font-size: 187%;
-  left: 77%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 17s;
+  z-index: 10;
+  opacity: 0.05;
+  font-size: 129%;
+  left: 2%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 32s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2007,12 +2007,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 5;
-  opacity: 0.02;
-  font-size: 183%;
-  left: 29%;
+  z-index: 3;
+  opacity: 0.65;
+  font-size: 163%;
+  left: 12%;
   -webkit-animation: fall5;
-  -webkit-animation-duration: 23s;
+  -webkit-animation-duration: 37s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2023,12 +2023,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 7;
-  opacity: 0.56;
-  font-size: 105%;
-  left: 28%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 21s;
+  z-index: 6;
+  opacity: 0.54;
+  font-size: 113%;
+  left: 5%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 35s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2039,12 +2039,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 11;
+  z-index: 6;
   opacity: 0.98;
-  font-size: 140%;
-  left: 58%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 16s;
+  font-size: 194%;
+  left: 31%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2055,12 +2055,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.93;
-  font-size: 172%;
-  left: 34%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 28s;
+  z-index: 7;
+  opacity: 0.31;
+  font-size: 105%;
+  left: 64%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 27s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2072,11 +2072,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 9;
-  opacity: 0.8;
-  font-size: 128%;
+  opacity: 0.13;
+  font-size: 108%;
   left: 97%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 18s;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 15s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2087,12 +2087,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 7;
-  opacity: 0.81;
-  font-size: 136%;
-  left: 44%;
+  z-index: 10;
+  opacity: 0.61;
+  font-size: 152%;
+  left: 34%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 25s;
+  -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2103,12 +2103,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 2;
-  opacity: 0.18;
-  font-size: 196%;
-  left: 2%;
+  z-index: 5;
+  opacity: 0.34;
+  font-size: 177%;
+  left: 61%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 32s;
+  -webkit-animation-duration: 27s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2119,12 +2119,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 4;
-  opacity: 0.14;
-  font-size: 177%;
-  left: 30%;
+  z-index: 9;
+  opacity: 0.31;
+  font-size: 127%;
+  left: 38%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 39s;
+  -webkit-animation-duration: 19s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2135,11 +2135,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 5;
-  opacity: 0.29;
-  font-size: 176%;
-  left: 9%;
+  opacity: 0.63;
+  font-size: 193%;
+  left: 49%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 25s;
+  -webkit-animation-duration: 15s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2149,12 +2149,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 2;
-  opacity: 0.03;
+  z-index: 3;
+  opacity: 0.76;
   font-size: 198%;
-  left: 3%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 15s;
+  left: 61%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 42s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2164,12 +2164,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 6;
-  opacity: 0.46;
-  font-size: 129%;
-  left: 9%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 39s;
+  z-index: 7;
+  opacity: 0.16;
+  font-size: 191%;
+  left: 29%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 28s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2179,12 +2179,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.87;
-  font-size: 115%;
-  left: 45%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 43s;
+  z-index: 7;
+  opacity: 0.18;
+  font-size: 184%;
+  left: 43%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 35s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2194,12 +2194,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.76;
-  font-size: 184%;
-  left: 23%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 25s;
+  z-index: 4;
+  opacity: 0.52;
+  font-size: 148%;
+  left: 47%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 27s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2209,12 +2209,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 10;
-  opacity: 0.4;
-  font-size: 172%;
-  left: 18%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 33s;
+  z-index: 9;
+  opacity: 0.86;
+  font-size: 133%;
+  left: 94%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2224,12 +2224,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 8;
-  opacity: 0.67;
-  font-size: 128%;
-  left: 99%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 17s;
+  z-index: 5;
+  opacity: 0.06;
+  font-size: 121%;
+  left: 17%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2240,11 +2240,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 7;
-  opacity: 0.65;
-  font-size: 122%;
-  left: 14%;
+  opacity: 0.48;
+  font-size: 126%;
+  left: 79%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 19s;
+  -webkit-animation-duration: 38s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2254,12 +2254,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 7;
-  opacity: 0.74;
+  z-index: 3;
+  opacity: 0.08;
   font-size: 185%;
-  left: 41%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 23s;
+  left: 59%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 29s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2269,11 +2269,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 10;
-  opacity: 0.45;
-  font-size: 188%;
-  left: 54%;
-  -webkit-animation: fall4;
+  z-index: 6;
+  opacity: 0.71;
+  font-size: 172%;
+  left: 87%;
+  -webkit-animation: fall2;
   -webkit-animation-duration: 17s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -2284,12 +2284,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 10;
-  opacity: 0.23;
-  font-size: 198%;
-  left: 82%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 41s;
+  z-index: 11;
+  opacity: 0.58;
+  font-size: 141%;
+  left: 31%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 22s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2300,11 +2300,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 3;
-  opacity: 0.25;
-  font-size: 172%;
-  left: 27%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 35s;
+  opacity: 0.69;
+  font-size: 158%;
+  left: 29%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2315,11 +2315,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 5;
-  opacity: 0.53;
-  font-size: 156%;
-  left: 66%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 31s;
+  opacity: 0.57;
+  font-size: 186%;
+  left: 90%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 33s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2329,12 +2329,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 6;
-  opacity: 0.78;
-  font-size: 126%;
-  left: 7%;
+  z-index: 2;
+  opacity: 0.67;
+  font-size: 154%;
+  left: 39%;
   -webkit-animation: fall3;
-  -webkit-animation-duration: 23s;
+  -webkit-animation-duration: 16s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2344,12 +2344,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 3;
-  opacity: 0.05;
-  font-size: 106%;
-  left: 37%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 16s;
+  z-index: 9;
+  opacity: 0.96;
+  font-size: 112%;
+  left: 27%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2360,11 +2360,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 2;
-  opacity: 0.92;
-  font-size: 113%;
-  left: 98%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 23s;
+  opacity: 0.8;
+  font-size: 132%;
+  left: 56%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 27s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2374,12 +2374,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 10;
-  opacity: 0.09;
-  font-size: 194%;
-  left: 6%;
+  z-index: 7;
+  opacity: 0.44;
+  font-size: 102%;
+  left: 53%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 39s;
+  -webkit-animation-duration: 25s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2389,12 +2389,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 7;
-  opacity: 0.08;
-  font-size: 111%;
-  left: 43%;
+  z-index: 10;
+  opacity: 0.64;
+  font-size: 195%;
+  left: 11%;
   -webkit-animation: fall5;
-  -webkit-animation-duration: 19s;
+  -webkit-animation-duration: 30s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2405,11 +2405,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 11;
-  opacity: 0.69;
-  font-size: 140%;
-  left: 82%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 34s;
+  opacity: 0.43;
+  font-size: 183%;
+  left: 46%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 29s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2419,12 +2419,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 8;
-  opacity: 0.15;
-  font-size: 151%;
-  left: 7%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 44s;
+  z-index: 9;
+  opacity: 0.64;
+  font-size: 126%;
+  left: 50%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 35s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2434,12 +2434,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 4;
-  opacity: 0;
-  font-size: 195%;
-  left: 19%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 30s;
+  z-index: 6;
+  opacity: 0.15;
+  font-size: 160%;
+  left: 46%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 33s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2449,12 +2449,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 6;
-  opacity: 0.38;
-  font-size: 107%;
-  left: 17%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 24s;
+  z-index: 10;
+  opacity: 0.86;
+  font-size: 195%;
+  left: 95%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 22s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2464,12 +2464,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 4;
-  opacity: 0.96;
-  font-size: 135%;
-  left: 80%;
+  z-index: 6;
+  opacity: 0;
+  font-size: 109%;
+  left: 86%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 39s;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2479,12 +2479,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 8;
-  opacity: 0.89;
-  font-size: 126%;
-  left: 81%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 17s;
+  z-index: 10;
+  opacity: 0.41;
+  font-size: 141%;
+  left: 97%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2494,12 +2494,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.69;
-  font-size: 137%;
+  z-index: 8;
+  opacity: 0.16;
+  font-size: 152%;
   left: 70%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 36s;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 17s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2509,12 +2509,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 3;
-  opacity: 0.07;
-  font-size: 138%;
-  left: 37%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 15s;
+  z-index: 7;
+  opacity: 0.31;
+  font-size: 116%;
+  left: 67%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2524,12 +2524,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 8;
-  opacity: 0.66;
-  font-size: 176%;
-  left: 56%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 20s;
+  z-index: 4;
+  opacity: 0.3;
+  font-size: 118%;
+  left: 95%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2540,11 +2540,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 8;
-  opacity: 0.12;
-  font-size: 188%;
-  left: 37%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 26s;
+  opacity: 0.64;
+  font-size: 129%;
+  left: 62%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 37s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2554,12 +2554,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 5;
-  opacity: 0.35;
-  font-size: 156%;
-  left: 93%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 19s;
+  z-index: 2;
+  opacity: 0.69;
+  font-size: 161%;
+  left: 35%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 29s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2569,12 +2569,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 2;
-  opacity: 0.37;
-  font-size: 149%;
-  left: 59%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 31s;
+  z-index: 3;
+  opacity: 0.34;
+  font-size: 122%;
+  left: 2%;
+  -webkit-animation: fall5;
+  -webkit-animation-duration: 26s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2585,11 +2585,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 8;
-  opacity: 0.69;
-  font-size: 156%;
-  left: 59%;
+  opacity: 0.82;
+  font-size: 133%;
+  left: 1%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 39s;
+  -webkit-animation-duration: 28s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2599,12 +2599,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 6;
-  opacity: 0.47;
-  font-size: 176%;
-  left: 75%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 39s;
+  z-index: 5;
+  opacity: 0.53;
+  font-size: 169%;
+  left: 21%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2614,12 +2614,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 5;
-  opacity: 0.88;
-  font-size: 192%;
-  left: 48%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 27s;
+  z-index: 10;
+  opacity: 0.41;
+  font-size: 165%;
+  left: 76%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 43s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2629,12 +2629,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 6;
-  opacity: 0.16;
-  font-size: 196%;
-  left: 0%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 34s;
+  z-index: 9;
+  opacity: 0.13;
+  font-size: 106%;
+  left: 35%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 39s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2644,12 +2644,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 9;
-  opacity: 0.78;
-  font-size: 152%;
-  left: 2%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 37s;
+  z-index: 5;
+  opacity: 0.39;
+  font-size: 102%;
+  left: 98%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 32s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2659,12 +2659,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 3;
-  opacity: 0.01;
-  font-size: 185%;
-  left: 51%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 40s;
+  z-index: 5;
+  opacity: 0.92;
+  font-size: 123%;
+  left: 0%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 31s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2674,12 +2674,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 5;
-  opacity: 0.76;
-  font-size: 178%;
-  left: 35%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 23s;
+  z-index: 11;
+  opacity: 0.07;
+  font-size: 139%;
+  left: 68%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 26s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2690,11 +2690,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   position: absolute;
   z-index: 10;
-  opacity: 0.37;
-  font-size: 127%;
-  left: 2%;
-  -webkit-animation: fall5;
-  -webkit-animation-duration: 25s;
+  opacity: 0.95;
+  font-size: 125%;
+  left: 71%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 37s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2704,12 +2704,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 6;
-  opacity: 0.58;
-  font-size: 136%;
-  left: 34%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 25s;
+  z-index: 2;
+  opacity: 0.18;
+  font-size: 126%;
+  left: 57%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 22s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2719,12 +2719,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   color: white;
   position: absolute;
-  z-index: 6;
-  opacity: 0.7;
-  font-size: 172%;
-  left: 52%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 41s;
+  z-index: 10;
+  opacity: 0.73;
+  font-size: 179%;
+  left: 80%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 26s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
@@ -2841,10 +2841,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 971, ../scss/master.scss */
 .ctree {
-  position: relative;
-  z-index: 7;
-  bottom: -70px;
-  left: 200px;
+  position: absolute;
+  z-index: 100;
+  left: 71px;
+  bottom: 238px;
 }
 /* line 977, ../scss/master.scss */
 .ctree .trunk {
@@ -2964,84 +2964,90 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .ctree .ball_r {
   width: 15px;
   height: 15px;
-  background-color: #660000;
   -webkit-box-shadow: 0px 0px 7px white;
   -webkit-border-radius: 50px;
   position: absolute;
   z-index: 13;
+  -webkit-animation-name: changered;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
 }
-/* line 1094, ../scss/master.scss */
+/* line 1099, ../scss/master.scss */
 .ctree .ball_w {
   width: 15px;
   height: 15px;
-  background-color: #D4D4D4;
   -webkit-box-shadow: 0px 0px 7px white;
   -webkit-border-radius: 50px;
   position: absolute;
   z-index: 13;
+  -webkit-animation-name: changewhite;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
 }
-/* line 1104, ../scss/master.scss */
+/* line 1113, ../scss/master.scss */
 .ctree .ball_w.ba1 {
   top: 34px;
   left: 80px;
 }
-/* line 1108, ../scss/master.scss */
+/* line 1117, ../scss/master.scss */
 .ctree .ball_w.ba2 {
   top: 72px;
   left: 122px;
 }
-/* line 1112, ../scss/master.scss */
+/* line 1121, ../scss/master.scss */
 .ctree .ball_w.ba3 {
   top: 112px;
   left: 46px;
 }
-/* line 1116, ../scss/master.scss */
+/* line 1125, ../scss/master.scss */
 .ctree .ball_w.ba4 {
   top: 148px;
   left: 147px;
 }
-/* line 1120, ../scss/master.scss */
+/* line 1129, ../scss/master.scss */
 .ctree .ball_r.ba5 {
   top: 34px;
   left: 105px;
 }
-/* line 1124, ../scss/master.scss */
+/* line 1133, ../scss/master.scss */
 .ctree .ball_r.ba6 {
   top: 73px;
   left: 64px;
 }
-/* line 1128, ../scss/master.scss */
+/* line 1137, ../scss/master.scss */
 .ctree .ball_r.ba7 {
   top: 112px;
   left: 142px;
 }
-/* line 1132, ../scss/master.scss */
+/* line 1141, ../scss/master.scss */
 .ctree .ball_r.ba8 {
   top: 144px;
   left: 30px;
 }
-/* line 1136, ../scss/master.scss */
+/* line 1145, ../scss/master.scss */
 .ctree .ball_r.ba9 {
   top: 100px;
   left: 93px;
 }
-/* line 1140, ../scss/master.scss */
+/* line 1149, ../scss/master.scss */
 .ctree .ball_w.ba10 {
   top: 143px;
   left: 93px;
 }
-/* line 1145, ../scss/master.scss */
+/* line 1154, ../scss/master.scss */
 .ctree .star {
   top: -1px;
   left: 96px;
   position: absolute;
   z-index: 14;
 }
-/* line 1151, ../scss/master.scss */
+/* line 1160, ../scss/master.scss */
 .ctree .star .point {
   position: absolute;
 }
-/* line 1155, ../scss/master.scss */
+/* line 1164, ../scss/master.scss */
 .ctree .star .middle {
   position: absolute;
   top: 0px;
@@ -3050,7 +3056,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 9px;
   width: 9px;
 }
-/* line 1164, ../scss/master.scss */
+/* line 1173, ../scss/master.scss */
 .ctree .star .point.p1 {
   top: -8px;
   left: 0px;
@@ -3060,7 +3066,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-right: 4px solid transparent;
   border-bottom: 8px solid #ffd700;
 }
-/* line 1174, ../scss/master.scss */
+/* line 1183, ../scss/master.scss */
 .ctree .star .point.p2 {
   top: 0px;
   left: 7px;
@@ -3070,7 +3076,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-left: 8px solid #ffd700;
   border-bottom: 4px solid transparent;
 }
-/* line 1184, ../scss/master.scss */
+/* line 1193, ../scss/master.scss */
 .ctree .star .point.p3 {
   top: 8px;
   left: 0px;
@@ -3080,7 +3086,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-right: 4px solid transparent;
   border-top: 16px solid #ffd700;
 }
-/* line 1194, ../scss/master.scss */
+/* line 1203, ../scss/master.scss */
 .ctree .star .point.p4 {
   top: 0px;
   left: -7px;
@@ -3089,4 +3095,72 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-top: 4px solid transparent;
   border-right: 8px solid #ffd700;
   border-bottom: 4px solid transparent;
+}
+
+@-webkit-keyframes flashw {
+  /* line 1216, ../scss/master.scss */
+  0% {
+    -webkit-box-shadow: 0px 0px 0px white;
+  }
+
+  /* line 1219, ../scss/master.scss */
+  50% {
+    -webkit-box-shadow: 0px 0px 7px white;
+  }
+
+  /* line 1222, ../scss/master.scss */
+  100% {
+    -webkit-box-shadow: 0px 0px 0px white;
+  }
+}
+
+@-webkit-keyframes flashr {
+  /* line 1228, ../scss/master.scss */
+  0% {
+    -webkit-box-shadow: 0px 0px 0px #660000;
+  }
+
+  /* line 1231, ../scss/master.scss */
+  50% {
+    -webkit-box-shadow: 0px 0px 7px #660000;
+  }
+
+  /* line 1234, ../scss/master.scss */
+  100% {
+    -webkit-box-shadow: 0px 0px 0px #660000;
+  }
+}
+
+@-webkit-keyframes changered {
+  /* line 1240, ../scss/master.scss */
+  0% {
+    background-color: #660000;
+  }
+
+  /* line 1243, ../scss/master.scss */
+  50% {
+    background-color: white;
+  }
+
+  /* line 1246, ../scss/master.scss */
+  100% {
+    background-color: #660000;
+  }
+}
+
+@-webkit-keyframes changewhite {
+  /* line 1252, ../scss/master.scss */
+  0% {
+    background-color: white;
+  }
+
+  /* line 1255, ../scss/master.scss */
+  50% {
+    background-color: #660000;
+  }
+
+  /* line 1258, ../scss/master.scss */
+  100% {
+    background-color: white;
+  }
 }
