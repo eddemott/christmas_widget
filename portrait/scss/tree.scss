@@ -9,6 +9,30 @@
 	}
 }
 
+@-webkit-keyframes flashw {
+	0% {-webkit-box-shadow: 0px 0px 0px white;}
+	50% {-webkit-box-shadow: 0px 0px 7px white;}
+	100% {-webkit-box-shadow: 0px 0px 0px white;}
+}
+
+@-webkit-keyframes flashr {
+	0% {-webkit-box-shadow: 0px 0px 0px #660000;}
+	50% {-webkit-box-shadow: 0px 0px 7px #660000;}
+	100% {-webkit-box-shadow: 0px 0px 0px #660000;}
+}
+
+@-webkit-keyframes changered {
+	0% {background-color: #660000;}
+	50% {background-color: white;}
+	100% {background-color: #660000}
+}
+
+@-webkit-keyframes changewhite {
+	0% {background-color: white;}
+	50% {background-color: #660000;}
+	100% {background-color: white;}
+}
+
 .ctree {
 	position: absolute;
 	z-index: 100;
@@ -125,21 +149,31 @@
 	.ball_r {
 		width: 15px;
 		height: 15px;
-		background-color: #660000;
+		// background-color: #660000;
 		-webkit-box-shadow: 0px 0px 7px white;
 		-webkit-border-radius: 50px;
 		position: absolute;
 		z-index: 13;
+		-webkit-animation-name: changered;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function:linear;
+
 	}
 
 	.ball_w{
 		width: 15px;
 		height: 15px;
-		background-color: #D4D4D4;
+		// background-color: #D4D4D4;
 		-webkit-box-shadow: 0px 0px 7px white;
 		-webkit-border-radius: 50px;
 		position: absolute;
 		z-index: 13;
+		-webkit-animation-name: changewhite;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function:linear;
+
 	}
 
 	.ball_w.ba1 {
