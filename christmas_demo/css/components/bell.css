@@ -1,0 +1,667 @@
+/* line 4, ../../scss/components/bell.scss */
+.bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2 {
+  background-color: #998a0c;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF998A0C', endColorstr='#FF998A0C');
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #998a0c), color-stop(19%, #c6b40f), color-stop(33%, #fce514), color-stop(66%, #ddd533), color-stop(81%, #bcb72d), color-stop(100%, #998a0c));
+  background-image: -webkit-linear-gradient(left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: -moz-linear-gradient(left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: -o-linear-gradient(left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: linear-gradient(left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+}
+
+/* line 15, ../../scss/components/bell.scss */
+.bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@-webkit-keyframes drin1 {
+  /* line 57, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 62, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(-40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 67, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 72, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(-70deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+}
+
+@-moz-keyframes drin1 {
+  /* line 57, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 62, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(-40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 67, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 72, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(-70deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+}
+
+@-o-keyframes drin1 {
+  /* line 57, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 62, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(-40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 67, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 72, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(-70deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+}
+
+@keyframes drin1 {
+  /* line 57, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 62, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(-40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 67, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 72, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(-70deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+}
+
+@-webkit-keyframes ding1 {
+  /* line 80, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(-40deg);
+  }
+
+  /* line 84, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(40deg);
+  }
+
+  /* line 88, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(-50deg);
+  }
+
+  /* line 92, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(70deg);
+  }
+}
+
+@-moz-keyframes ding1 {
+  /* line 80, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(-40deg);
+  }
+
+  /* line 84, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(40deg);
+  }
+
+  /* line 88, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(-50deg);
+  }
+
+  /* line 92, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(70deg);
+  }
+}
+
+@-o-keyframes ding1 {
+  /* line 80, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(-40deg);
+  }
+
+  /* line 84, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(40deg);
+  }
+
+  /* line 88, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(-50deg);
+  }
+
+  /* line 92, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(70deg);
+  }
+}
+
+@keyframes ding1 {
+  /* line 80, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(-40deg);
+  }
+
+  /* line 84, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(40deg);
+  }
+
+  /* line 88, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(-50deg);
+  }
+
+  /* line 92, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(70deg);
+  }
+}
+
+@-webkit-keyframes drin2 {
+  /* line 101, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(-40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 106, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(70deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 111, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(-50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 116, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+}
+
+@-moz-keyframes drin2 {
+  /* line 101, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(-40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 106, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(70deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 111, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(-50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 116, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+}
+
+@-o-keyframes drin2 {
+  /* line 101, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(-40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 106, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(70deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 111, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(-50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 116, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+}
+
+@keyframes drin2 {
+  /* line 101, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(-40deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 106, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(70deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 111, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(-50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+
+  /* line 116, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(50deg) scale(0.8, 1);
+    -webkit-transform-origin: top;
+  }
+}
+
+@-webkit-keyframes ding2 {
+  /* line 123, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(40deg);
+  }
+
+  /* line 127, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(-50deg);
+  }
+
+  /* line 131, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(60deg);
+  }
+
+  /* line 135, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(-70deg);
+  }
+}
+
+@-moz-keyframes ding2 {
+  /* line 123, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(40deg);
+  }
+
+  /* line 127, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(-50deg);
+  }
+
+  /* line 131, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(60deg);
+  }
+
+  /* line 135, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(-70deg);
+  }
+}
+
+@-o-keyframes ding2 {
+  /* line 123, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(40deg);
+  }
+
+  /* line 127, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(-50deg);
+  }
+
+  /* line 131, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(60deg);
+  }
+
+  /* line 135, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(-70deg);
+  }
+}
+
+@keyframes ding2 {
+  /* line 123, ../../scss/components/bell.scss */
+  0%, 100% {
+    -webkit-transform: rotatez(40deg);
+  }
+
+  /* line 127, ../../scss/components/bell.scss */
+  25% {
+    -webkit-transform: rotatez(-50deg);
+  }
+
+  /* line 131, ../../scss/components/bell.scss */
+  50% {
+    -webkit-transform: rotatez(60deg);
+  }
+
+  /* line 135, ../../scss/components/bell.scss */
+  75% {
+    -webkit-transform: rotatez(-70deg);
+  }
+}
+
+@-webkit-keyframes hollyrot {
+  /* line 142, ../../scss/components/bell.scss */
+  0%, 50%, 100% {
+    -webkit-transform: rotatez(0deg);
+    z-index: 45;
+  }
+
+  /* line 147, ../../scss/components/bell.scss */
+  25%,75% {
+    -webkit-transform: rotatez(1deg);
+    z-index: 45;
+  }
+}
+
+@-moz-keyframes hollyrot {
+  /* line 142, ../../scss/components/bell.scss */
+  0%, 50%, 100% {
+    -webkit-transform: rotatez(0deg);
+    z-index: 45;
+  }
+
+  /* line 147, ../../scss/components/bell.scss */
+  25%,75% {
+    -webkit-transform: rotatez(1deg);
+    z-index: 45;
+  }
+}
+
+@-o-keyframes hollyrot {
+  /* line 142, ../../scss/components/bell.scss */
+  0%, 50%, 100% {
+    -webkit-transform: rotatez(0deg);
+    z-index: 45;
+  }
+
+  /* line 147, ../../scss/components/bell.scss */
+  25%,75% {
+    -webkit-transform: rotatez(1deg);
+    z-index: 45;
+  }
+}
+
+@keyframes hollyrot {
+  /* line 142, ../../scss/components/bell.scss */
+  0%, 50%, 100% {
+    -webkit-transform: rotatez(0deg);
+    z-index: 45;
+  }
+
+  /* line 147, ../../scss/components/bell.scss */
+  25%,75% {
+    -webkit-transform: rotatez(1deg);
+    z-index: 45;
+  }
+}
+
+/* line 153, ../../scss/components/bell.scss */
+body {
+  background-color: #1b2e33;
+}
+
+/* line 157, ../../scss/components/bell.scss */
+.decoration {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 163, ../../scss/components/bell.scss */
+.bells, .holly {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+/* line 169, ../../scss/components/bell.scss */
+.bell {
+  display: inline-block;
+  background-color: white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+/* line 177, ../../scss/components/bell.scss */
+.bell.bell1 {
+  z-index: 50;
+  -webkit-transform: rotatez(40deg) scale(0.8, 1);
+  -webkit-transform-origin: top;
+  -webkit-animation: drin1 5s 2s infinite linear;
+  -moz-animation: drin1 5s 2s infinite linear;
+  -o-animation: drin1 5s 2s infinite linear;
+  animation: drin1 5s 2s infinite linear;
+}
+/* line 184, ../../scss/components/bell.scss */
+.bell.bell2 {
+  z-index: 40;
+  -webkit-transform: rotatez(-40deg) scale(0.8, 1);
+  -webkit-transform-origin: top;
+  margin-left: -55px;
+  -webkit-animation: drin2 5s 2s infinite linear;
+  -moz-animation: drin2 5s 2s infinite linear;
+  -o-animation: drin2 5s 2s infinite linear;
+  animation: drin2 5s 2s infinite linear;
+}
+/* line 193, ../../scss/components/bell.scss */
+.bell .top {
+  width: 10px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ada20f;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFADA20F', endColorstr='#FFFCE514');
+  background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 100, color-stop(0%, #ada20f), color-stop(100%, #fce514));
+  background-image: -webkit-radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
+  background-image: -moz-radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
+  background-image: -o-radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
+  background-image: radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
+}
+/* line 205, ../../scss/components/bell.scss */
+.bell .medup {
+  width: 32px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+  top: -4px;
+  z-index: 6;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+/* line 214, ../../scss/components/bell.scss */
+.bell .medsquare {
+  width: 36px;
+  height: 32px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  position: relative;
+  top: -12px;
+  z-index: 7;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+/* line 225, ../../scss/components/bell.scss */
+.bell .medoval1 {
+  width: 38px;
+  height: 4px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  position: relative;
+  top: -16px;
+  z-index: 8;
+}
+/* line 235, ../../scss/components/bell.scss */
+.bell .medoval2 {
+  width: 40px;
+  height: 4px;
+  border-radius: 40%;
+  position: relative;
+  top: -18px;
+  z-index: 9;
+  box-bottom-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+/* line 246, ../../scss/components/bell.scss */
+.bell .bottom {
+  width: 48px;
+  height: 6px;
+  border-radius: 40%;
+  background-color: #998a0c;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF998A0C', endColorstr='#FF998A0C');
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #998a0c), color-stop(19%, #c6b40f), color-stop(33%, #fce514), color-stop(66%, #ddd533), color-stop(81%, #bcb72d), color-stop(100%, #998a0c));
+  background-image: -webkit-linear-gradient(top left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: -moz-linear-gradient(top left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: -o-linear-gradient(top left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  background-image: linear-gradient(top left, #998a0c 0%, #c6b40f 19%, #fce514 33%, #ddd533 66%, #bcb72d 81%, #998a0c 100%);
+  position: relative;
+  top: -20px;
+  z-index: 12;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(10, 10, 10, 0.2);
+}
+/* line 261, ../../scss/components/bell.scss */
+.bell .ding {
+  width: 6px;
+  height: 25px;
+  border-radius: 40%;
+  background-color: saddlebrown;
+  position: relative;
+  top: -40px;
+  z-index: 0;
+}
+
+/* line 272, ../../scss/components/bell.scss */
+.bell1 .ding {
+  -webkit-animation: ding1 5s 2s infinite linear;
+  -moz-animation: ding1 5s 2s infinite linear;
+  -o-animation: ding1 5s 2s infinite linear;
+  animation: ding1 5s 2s infinite linear;
+}
+
+/* line 276, ../../scss/components/bell.scss */
+.bell2 .ding {
+  -webkit-animation: ding2 5s 2s infinite linear;
+  -moz-animation: ding2 5s 2s infinite linear;
+  -o-animation: ding2 5s 2s infinite linear;
+  animation: ding2 5s 2s infinite linear;
+}
+
+/* line 283, ../../scss/components/bell.scss */
+.holly {
+  -webkit-animation: hollyrot 5s 2s infinite linear;
+  -moz-animation: hollyrot 5s 2s infinite linear;
+  -o-animation: hollyrot 5s 2s infinite linear;
+  animation: hollyrot 5s 2s infinite linear;
+}
+/* line 287, ../../scss/components/bell.scss */
+.holly .leaf {
+  position: relative;
+  z-index: 45;
+}
+/* line 293, ../../scss/components/bell.scss */
+.holly .leaf.leaf1 {
+  -webkit-transform: rotatez(-71deg) scale(0.1, 0.15);
+  top: 12px;
+  left: 48px;
+}
+/* line 301, ../../scss/components/bell.scss */
+.holly .leaf.leaf2 {
+  -webkit-transform: rotatez(134deg) scale(0.1, 0.15);
+  top: 32px;
+  left: 98px;
+}
+/* line 308, ../../scss/components/bell.scss */
+.holly .leaf .branch {
+  border-color: #24B50E transparent;
+  border-style: inset;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+/* line 317, ../../scss/components/bell.scss */
+.holly .leaf .branch.b1 {
+  left: 70px;
+  top: 20px;
+  border-width: 0 30px 65px;
+  z-index: 5;
+}
+/* line 325, ../../scss/components/bell.scss */
+.holly .leaf .branch.b2 {
+  left: 40px;
+  top: 50px;
+  border-width: 0 60px 65px;
+  z-index: 3;
+}
+/* line 334, ../../scss/components/bell.scss */
+.holly .leaf .branch.b3 {
+  left: 20px;
+  top: 70px;
+  border-width: 0 80px 85px;
+  z-index: 3;
+}
+/* line 342, ../../scss/components/bell.scss */
+.holly .leaf .branch.b4 {
+  left: -20px;
+  top: 110px;
+  border-width: 0 120px 95px;
+  border-radius: 40%;
+  z-index: 1;
+}
