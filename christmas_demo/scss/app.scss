@@ -3,3 +3,11 @@
 
 @import 'components/master';
 
+.projects li div {
+	background-image: url(attr(preview));
+	height: 222px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #1b2e33;
+	background-position-x: 50%;
+}
