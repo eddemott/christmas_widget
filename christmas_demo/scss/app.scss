@@ -3,6 +3,10 @@
 
 @import 'components/master';
 
+body {
+	overflow: hidden;
+}
+
 .projects li div {
 	background-image: url(attr(preview));
 	height: 222px;
@@ -10,4 +14,12 @@
 	background-repeat: no-repeat;
 	background-color: #1b2e33;
 	background-position-x: 50%;
+}
+
+.reveal-modal {
+	background-color: #1b2e33;
+
+	h1 {
+		color: white;
+	}
 }
