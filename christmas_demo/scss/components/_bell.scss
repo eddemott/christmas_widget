@@ -153,6 +153,8 @@ background-color: #998a0c; // Old browsers
 .decoration{
 	position: relative;
 	@include dimensions(100%);
+	-webkit-transform: scale(1.8,1.8);
+	left: 700px;
 }
 
 
@@ -174,7 +176,7 @@ background-color: #998a0c; // Old browsers
 		z-index: 50;
 		-webkit-transform: rotatez(40deg) scale(0.8,1);
 		-webkit-transform-origin: top;
-		@include animation(drin1, 5s, 2s, infinite, linear);
+		@include animation(drin1, 5s, 0s, infinite, linear);
 	}
 
 	&.bell2{
@@ -182,7 +184,7 @@ background-color: #998a0c; // Old browsers
 		-webkit-transform: rotatez(-40deg) scale(0.8,1) ;
 		-webkit-transform-origin: top;
 		margin-left: -55px;
-		@include animation(drin2, 5s, 2s, infinite, linear);
+		@include animation(drin2, 5s, 0s, infinite, linear);
 	}
 
 
@@ -266,11 +268,11 @@ background-color: #998a0c; // Old browsers
 }
 
 .bell1 .ding{
-	@include animation(ding1, 5s, 2s, infinite, linear);
+	@include animation(ding1, 5s, 0s, infinite, linear);
 }
 
 .bell2 .ding{
-	@include animation(ding2, 5s, 2s, infinite, linear);
+	@include animation(ding2, 5s, 0s, infinite, linear);
 }
 
 
@@ -278,7 +280,7 @@ background-color: #998a0c; // Old browsers
 
 .holly{
 
-	@include animation(hollyrot, 5s, 2s, infinite, linear);
+	@include animation(hollyrot, 5s, 0s, infinite, linear);
 
 	.leaf {
 		
