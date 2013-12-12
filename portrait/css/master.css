@@ -65,43 +65,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /*mixins*/
 /*placeholders */
-/* line 63, ../scss/master.scss */
+/* line 64, ../scss/master.scss */
 .sign .board, .sign .board .hole, .bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding, .snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .head .mouth, .snowman .scarf, .snowman .belly, .snowman .belly .buttonz, .snowman .legs {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 72, ../scss/master.scss */
+/* line 73, ../scss/master.scss */
 .snowman .legs {
   position: relative;
 }
 
 /* Styles */
-/* line 78, ../scss/master.scss */
+/* line 79, ../scss/master.scss */
 .snowman .head, .snowman .belly, .snowman .legs {
   background: #fff;
   border-radius: 50%;
   /* box-shadow: inset 0px 0px 10px; */
 }
 
-/* line 84, ../scss/master.scss */
+/* line 85, ../scss/master.scss */
 .snowman .hat .top, .snowman .hat .base {
   box-shadow: inset 0px 0px 13px rgba(255, 255, 255, 0.44);
 }
 
-/* line 88, ../scss/master.scss */
+/* line 89, ../scss/master.scss */
 .snowman .scarf, .snowman .scarf .end {
   background-color: green;
   box-shadow: 0px 3px 0px darkgreen;
 }
 
-/* line 93, ../scss/master.scss */
+/* line 94, ../scss/master.scss */
 .snowman .head .eye, .snowman .belly .buttonz {
   border-radius: 100%;
   background-color: black;
 }
 
-/* line 98, ../scss/master.scss */
+/* line 99, ../scss/master.scss */
 .snowman .head, .snowman .belly, .snowman .legs {
   background-color: #cedce7;
   *zoom: 1;
@@ -113,7 +113,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-image: radial-gradient(top left, ellipse cover, #cedce7 0%, #cedce7 19%, #cedce7 30%, #596a72 100%);
 }
 
-/* line 106, ../scss/master.scss */
+/* line 107, ../scss/master.scss */
 .sign .board {
   background-color: #a43e35;
   *zoom: 1;
@@ -125,7 +125,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-image: linear-gradient(top, #a43e35 0%, #88342c 100%);
 }
 
-/* line 112, ../scss/master.scss */
+/* line 113, ../scss/master.scss */
 .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2 {
   background-color: #998a0c;
   *zoom: 1;
@@ -139,13 +139,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /*animations */
 @-moz-keyframes scarf_in_wind {
-  /* line 122, ../scss/master.scss */
+  /* line 123, ../scss/master.scss */
   0%, 100% {
     /* @include rotateZ(5deg); */
     -webkit-transform: rotateZ(5deg);
   }
 
-  /* line 127, ../scss/master.scss */
+  /* line 128, ../scss/master.scss */
   50% {
     /* @include rotateZ(15deg); */
     -webkit-transform: rotateZ(15deg);
@@ -153,13 +153,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-webkit-keyframes scarf_in_wind {
-  /* line 122, ../scss/master.scss */
+  /* line 123, ../scss/master.scss */
   0%, 100% {
     /* @include rotateZ(5deg); */
     -webkit-transform: rotateZ(5deg);
   }
 
-  /* line 127, ../scss/master.scss */
+  /* line 128, ../scss/master.scss */
   50% {
     /* @include rotateZ(15deg); */
     -webkit-transform: rotateZ(15deg);
@@ -167,13 +167,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-o-keyframes scarf_in_wind {
-  /* line 122, ../scss/master.scss */
+  /* line 123, ../scss/master.scss */
   0%, 100% {
     /* @include rotateZ(5deg); */
     -webkit-transform: rotateZ(5deg);
   }
 
-  /* line 127, ../scss/master.scss */
+  /* line 128, ../scss/master.scss */
   50% {
     /* @include rotateZ(15deg); */
     -webkit-transform: rotateZ(15deg);
@@ -181,13 +181,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-ms-keyframes scarf_in_wind {
-  /* line 122, ../scss/master.scss */
+  /* line 123, ../scss/master.scss */
   0%, 100% {
     /* @include rotateZ(5deg); */
     -webkit-transform: rotateZ(5deg);
   }
 
-  /* line 127, ../scss/master.scss */
+  /* line 128, ../scss/master.scss */
   50% {
     /* @include rotateZ(15deg); */
     -webkit-transform: rotateZ(15deg);
@@ -195,13 +195,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes scarf_in_wind {
-  /* line 122, ../scss/master.scss */
+  /* line 123, ../scss/master.scss */
   0%, 100% {
     /* @include rotateZ(5deg); */
     -webkit-transform: rotateZ(5deg);
   }
 
-  /* line 127, ../scss/master.scss */
+  /* line 128, ../scss/master.scss */
   50% {
     /* @include rotateZ(15deg); */
     -webkit-transform: rotateZ(15deg);
@@ -209,163 +209,163 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-moz-keyframes tiphat_rotate_hat {
-  /* line 134, ../scss/master.scss */
+  /* line 135, ../scss/master.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform-origin: 150px 220px;
     -webkit-transform: rotateZ(0deg);
   }
 
-  /* line 139, ../scss/master.scss */
+  /* line 140, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(90deg);
   }
 }
 
 @-webkit-keyframes tiphat_rotate_hat {
-  /* line 134, ../scss/master.scss */
+  /* line 135, ../scss/master.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform-origin: 150px 220px;
     -webkit-transform: rotateZ(0deg);
   }
 
-  /* line 139, ../scss/master.scss */
+  /* line 140, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(90deg);
   }
 }
 
 @-o-keyframes tiphat_rotate_hat {
-  /* line 134, ../scss/master.scss */
+  /* line 135, ../scss/master.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform-origin: 150px 220px;
     -webkit-transform: rotateZ(0deg);
   }
 
-  /* line 139, ../scss/master.scss */
+  /* line 140, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(90deg);
   }
 }
 
 @-ms-keyframes tiphat_rotate_hat {
-  /* line 134, ../scss/master.scss */
+  /* line 135, ../scss/master.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform-origin: 150px 220px;
     -webkit-transform: rotateZ(0deg);
   }
 
-  /* line 139, ../scss/master.scss */
+  /* line 140, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(90deg);
   }
 }
 
 @keyframes tiphat_rotate_hat {
-  /* line 134, ../scss/master.scss */
+  /* line 135, ../scss/master.scss */
   0%, 30%, 70%, 100% {
     -webkit-transform-origin: 150px 220px;
     -webkit-transform: rotateZ(0deg);
   }
 
-  /* line 139, ../scss/master.scss */
+  /* line 140, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(90deg);
   }
 }
 
 @-moz-keyframes tiphat_rotate_arm {
-  /* line 147, ../scss/master.scss */
+  /* line 148, ../scss/master.scss */
   0%, 25%, 75%, 100% {
     -webkit-transform: rotateZ(-70deg);
   }
 
-  /* line 151, ../scss/master.scss */
+  /* line 152, ../scss/master.scss */
   30%, 70% {
     -webkit-transform: rotateZ(-92deg);
   }
 
-  /* line 156, ../scss/master.scss */
+  /* line 157, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
   }
 }
 
 @-webkit-keyframes tiphat_rotate_arm {
-  /* line 147, ../scss/master.scss */
+  /* line 148, ../scss/master.scss */
   0%, 25%, 75%, 100% {
     -webkit-transform: rotateZ(-70deg);
   }
 
-  /* line 151, ../scss/master.scss */
+  /* line 152, ../scss/master.scss */
   30%, 70% {
     -webkit-transform: rotateZ(-92deg);
   }
 
-  /* line 156, ../scss/master.scss */
+  /* line 157, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
   }
 }
 
 @-o-keyframes tiphat_rotate_arm {
-  /* line 147, ../scss/master.scss */
+  /* line 148, ../scss/master.scss */
   0%, 25%, 75%, 100% {
     -webkit-transform: rotateZ(-70deg);
   }
 
-  /* line 151, ../scss/master.scss */
+  /* line 152, ../scss/master.scss */
   30%, 70% {
     -webkit-transform: rotateZ(-92deg);
   }
 
-  /* line 156, ../scss/master.scss */
+  /* line 157, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
   }
 }
 
 @-ms-keyframes tiphat_rotate_arm {
-  /* line 147, ../scss/master.scss */
+  /* line 148, ../scss/master.scss */
   0%, 25%, 75%, 100% {
     -webkit-transform: rotateZ(-70deg);
   }
 
-  /* line 151, ../scss/master.scss */
+  /* line 152, ../scss/master.scss */
   30%, 70% {
     -webkit-transform: rotateZ(-92deg);
   }
 
-  /* line 156, ../scss/master.scss */
+  /* line 157, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
   }
 }
 
 @keyframes tiphat_rotate_arm {
-  /* line 147, ../scss/master.scss */
+  /* line 148, ../scss/master.scss */
   0%, 25%, 75%, 100% {
     -webkit-transform: rotateZ(-70deg);
   }
 
-  /* line 151, ../scss/master.scss */
+  /* line 152, ../scss/master.scss */
   30%, 70% {
     -webkit-transform: rotateZ(-92deg);
   }
 
-  /* line 156, ../scss/master.scss */
+  /* line 157, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
   }
 }
 
 @-webkit-keyframes tilt {
-  /* line 163, ../scss/master.scss */
+  /* line 164, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 168, ../scss/master.scss */
+  /* line 169, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
@@ -373,13 +373,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-moz-keyframes tilt {
-  /* line 163, ../scss/master.scss */
+  /* line 164, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 168, ../scss/master.scss */
+  /* line 169, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
@@ -387,13 +387,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-o-keyframes tilt {
-  /* line 163, ../scss/master.scss */
+  /* line 164, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 168, ../scss/master.scss */
+  /* line 169, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
@@ -401,13 +401,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes tilt {
-  /* line 163, ../scss/master.scss */
+  /* line 164, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotateZ(-3deg);
     -webkit-transform-origin: 194px 0px;
   }
 
-  /* line 168, ../scss/master.scss */
+  /* line 169, ../scss/master.scss */
   50% {
     -webkit-transform: rotateZ(10deg);
     -webkit-transform-origin: 194px 0px;
@@ -415,25 +415,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-webkit-keyframes drin1 {
-  /* line 175, ../scss/master.scss */
+  /* line 176, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 180, ../scss/master.scss */
+  /* line 181, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 185, ../scss/master.scss */
+  /* line 186, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 190, ../scss/master.scss */
+  /* line 191, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -441,25 +441,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-moz-keyframes drin1 {
-  /* line 175, ../scss/master.scss */
+  /* line 176, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 180, ../scss/master.scss */
+  /* line 181, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 185, ../scss/master.scss */
+  /* line 186, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 190, ../scss/master.scss */
+  /* line 191, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -467,25 +467,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-o-keyframes drin1 {
-  /* line 175, ../scss/master.scss */
+  /* line 176, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 180, ../scss/master.scss */
+  /* line 181, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 185, ../scss/master.scss */
+  /* line 186, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 190, ../scss/master.scss */
+  /* line 191, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -493,25 +493,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes drin1 {
-  /* line 175, ../scss/master.scss */
+  /* line 176, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 180, ../scss/master.scss */
+  /* line 181, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 185, ../scss/master.scss */
+  /* line 186, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 190, ../scss/master.scss */
+  /* line 191, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -519,113 +519,113 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-webkit-keyframes ding1 {
-  /* line 198, ../scss/master.scss */
+  /* line 199, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg);
   }
 
-  /* line 202, ../scss/master.scss */
+  /* line 203, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 206, ../scss/master.scss */
+  /* line 207, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 210, ../scss/master.scss */
+  /* line 211, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(70deg);
   }
 }
 
 @-moz-keyframes ding1 {
-  /* line 198, ../scss/master.scss */
+  /* line 199, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg);
   }
 
-  /* line 202, ../scss/master.scss */
+  /* line 203, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 206, ../scss/master.scss */
+  /* line 207, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 210, ../scss/master.scss */
+  /* line 211, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(70deg);
   }
 }
 
 @-o-keyframes ding1 {
-  /* line 198, ../scss/master.scss */
+  /* line 199, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg);
   }
 
-  /* line 202, ../scss/master.scss */
+  /* line 203, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 206, ../scss/master.scss */
+  /* line 207, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 210, ../scss/master.scss */
+  /* line 211, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(70deg);
   }
 }
 
 @keyframes ding1 {
-  /* line 198, ../scss/master.scss */
+  /* line 199, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg);
   }
 
-  /* line 202, ../scss/master.scss */
+  /* line 203, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 206, ../scss/master.scss */
+  /* line 207, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 210, ../scss/master.scss */
+  /* line 211, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(70deg);
   }
 }
 
 @-webkit-keyframes drin2 {
-  /* line 219, ../scss/master.scss */
+  /* line 220, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 224, ../scss/master.scss */
+  /* line 225, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 229, ../scss/master.scss */
+  /* line 230, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 234, ../scss/master.scss */
+  /* line 235, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -633,25 +633,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-moz-keyframes drin2 {
-  /* line 219, ../scss/master.scss */
+  /* line 220, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 224, ../scss/master.scss */
+  /* line 225, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 229, ../scss/master.scss */
+  /* line 230, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 234, ../scss/master.scss */
+  /* line 235, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -659,25 +659,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-o-keyframes drin2 {
-  /* line 219, ../scss/master.scss */
+  /* line 220, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 224, ../scss/master.scss */
+  /* line 225, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 229, ../scss/master.scss */
+  /* line 230, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 234, ../scss/master.scss */
+  /* line 235, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -685,25 +685,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes drin2 {
-  /* line 219, ../scss/master.scss */
+  /* line 220, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(-40deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 224, ../scss/master.scss */
+  /* line 225, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(70deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 229, ../scss/master.scss */
+  /* line 230, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(-50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
   }
 
-  /* line 234, ../scss/master.scss */
+  /* line 235, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(50deg) scale(0.8, 1);
     -webkit-transform-origin: top;
@@ -711,101 +711,101 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-webkit-keyframes ding2 {
-  /* line 241, ../scss/master.scss */
+  /* line 242, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 245, ../scss/master.scss */
+  /* line 246, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 249, ../scss/master.scss */
+  /* line 250, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(60deg);
   }
 
-  /* line 253, ../scss/master.scss */
+  /* line 254, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg);
   }
 }
 
 @-moz-keyframes ding2 {
-  /* line 241, ../scss/master.scss */
+  /* line 242, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 245, ../scss/master.scss */
+  /* line 246, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 249, ../scss/master.scss */
+  /* line 250, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(60deg);
   }
 
-  /* line 253, ../scss/master.scss */
+  /* line 254, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg);
   }
 }
 
 @-o-keyframes ding2 {
-  /* line 241, ../scss/master.scss */
+  /* line 242, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 245, ../scss/master.scss */
+  /* line 246, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 249, ../scss/master.scss */
+  /* line 250, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(60deg);
   }
 
-  /* line 253, ../scss/master.scss */
+  /* line 254, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg);
   }
 }
 
 @keyframes ding2 {
-  /* line 241, ../scss/master.scss */
+  /* line 242, ../scss/master.scss */
   0%, 100% {
     -webkit-transform: rotatez(40deg);
   }
 
-  /* line 245, ../scss/master.scss */
+  /* line 246, ../scss/master.scss */
   25% {
     -webkit-transform: rotatez(-50deg);
   }
 
-  /* line 249, ../scss/master.scss */
+  /* line 250, ../scss/master.scss */
   50% {
     -webkit-transform: rotatez(60deg);
   }
 
-  /* line 253, ../scss/master.scss */
+  /* line 254, ../scss/master.scss */
   75% {
     -webkit-transform: rotatez(-70deg);
   }
 }
 
 @-webkit-keyframes hollyrot {
-  /* line 260, ../scss/master.scss */
+  /* line 261, ../scss/master.scss */
   0%, 50%, 100% {
     -webkit-transform: rotatez(0deg);
     z-index: 45;
   }
 
-  /* line 265, ../scss/master.scss */
+  /* line 266, ../scss/master.scss */
   25%,75% {
     -webkit-transform: rotatez(1deg);
     z-index: 45;
@@ -813,13 +813,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-moz-keyframes hollyrot {
-  /* line 260, ../scss/master.scss */
+  /* line 261, ../scss/master.scss */
   0%, 50%, 100% {
     -webkit-transform: rotatez(0deg);
     z-index: 45;
   }
 
-  /* line 265, ../scss/master.scss */
+  /* line 266, ../scss/master.scss */
   25%,75% {
     -webkit-transform: rotatez(1deg);
     z-index: 45;
@@ -827,13 +827,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @-o-keyframes hollyrot {
-  /* line 260, ../scss/master.scss */
+  /* line 261, ../scss/master.scss */
   0%, 50%, 100% {
     -webkit-transform: rotatez(0deg);
     z-index: 45;
   }
 
-  /* line 265, ../scss/master.scss */
+  /* line 266, ../scss/master.scss */
   25%,75% {
     -webkit-transform: rotatez(1deg);
     z-index: 45;
@@ -841,13 +841,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes hollyrot {
-  /* line 260, ../scss/master.scss */
+  /* line 261, ../scss/master.scss */
   0%, 50%, 100% {
     -webkit-transform: rotatez(0deg);
     z-index: 45;
   }
 
-  /* line 265, ../scss/master.scss */
+  /* line 266, ../scss/master.scss */
   25%,75% {
     -webkit-transform: rotatez(1deg);
     z-index: 45;
@@ -855,7 +855,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /*general styles */
-/* line 281, ../scss/master.scss */
+/* line 282, ../scss/master.scss */
 .container {
   margin: 0;
   padding: 0;
@@ -865,7 +865,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
 }
 
-/* line 291, ../scss/master.scss */
+/* line 292, ../scss/master.scss */
 .sign {
   width: 400px;
   height: 300px;
@@ -879,7 +879,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
   left: 300px;
 }
-/* line 301, ../scss/master.scss */
+/* line 302, ../scss/master.scss */
 .sign .chain {
   position: relative;
   width: 10px;
@@ -893,7 +893,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-bottom-right-radius: 20%;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
 }
-/* line 316, ../scss/master.scss */
+/* line 317, ../scss/master.scss */
 .sign .board {
   position: relative;
   z-index: 5;
@@ -906,7 +906,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-top: 10px;
   padding-bottom: 25px;
 }
-/* line 331, ../scss/master.scss */
+/* line 332, ../scss/master.scss */
 .sign .board .hole {
   width: 15px;
   height: 15px;
@@ -915,7 +915,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: 4px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
 }
-/* line 341, ../scss/master.scss */
+/* line 342, ../scss/master.scss */
 .sign .board .countdown-number {
   margin: 0;
   font-size: 10em;
@@ -926,7 +926,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 0.8;
   padding-top: 40px;
 }
-/* line 351, ../scss/master.scss */
+/* line 352, ../scss/master.scss */
 .sign .board .countdown-description {
   margin: 0;
   font-size: 3em;
@@ -936,25 +936,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-transform: rotateZ(1deg);
 }
 
-/* line 365, ../scss/master.scss */
+/* line 366, ../scss/master.scss */
 .decoration {
   display: inline-block;
   -webkit-transform: scale(1.5, 1.5);
   margin-top: 50px;
 }
-/* line 369, ../scss/master.scss */
+/* line 370, ../scss/master.scss */
 .decoration.d1 {
   float: left;
   margin-left: -50px;
 }
-/* line 373, ../scss/master.scss */
+/* line 374, ../scss/master.scss */
 .decoration.d2 {
   float: right;
   position: relative;
   right: 20px;
 }
 
-/* line 381, ../scss/master.scss */
+/* line 382, ../scss/master.scss */
 .bells, .holly {
   display: inline-block;
   width: 100px;
@@ -962,14 +962,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
 }
 
-/* line 387, ../scss/master.scss */
+/* line 388, ../scss/master.scss */
 .bell {
   display: inline-block;
   background-color: white;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
 }
-/* line 395, ../scss/master.scss */
+/* line 396, ../scss/master.scss */
 .bell.bell1 {
   z-index: 50;
   -webkit-transform: rotatez(40deg) scale(0.8, 1);
@@ -979,7 +979,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation: drin1 5s 2s infinite linear;
   animation: drin1 5s 2s infinite linear;
 }
-/* line 402, ../scss/master.scss */
+/* line 403, ../scss/master.scss */
 .bell.bell2 {
   z-index: 40;
   -webkit-transform: rotatez(-40deg) scale(0.8, 1);
@@ -990,7 +990,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation: drin2 5s 2s infinite linear;
   animation: drin2 5s 2s infinite linear;
 }
-/* line 411, ../scss/master.scss */
+/* line 412, ../scss/master.scss */
 .bell .top {
   width: 10px;
   height: 8px;
@@ -1004,7 +1004,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-image: -o-radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
   background-image: radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
 }
-/* line 423, ../scss/master.scss */
+/* line 424, ../scss/master.scss */
 .bell .medup {
   width: 32px;
   height: 8px;
@@ -1014,7 +1014,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 6;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
-/* line 432, ../scss/master.scss */
+/* line 433, ../scss/master.scss */
 .bell .medsquare {
   width: 36px;
   height: 32px;
@@ -1025,7 +1025,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 7;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
-/* line 443, ../scss/master.scss */
+/* line 444, ../scss/master.scss */
 .bell .medoval1 {
   width: 38px;
   height: 4px;
@@ -1035,7 +1035,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -16px;
   z-index: 8;
 }
-/* line 453, ../scss/master.scss */
+/* line 454, ../scss/master.scss */
 .bell .medoval2 {
   width: 40px;
   height: 4px;
@@ -1045,7 +1045,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 9;
   box-bottom-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
-/* line 464, ../scss/master.scss */
+/* line 465, ../scss/master.scss */
 .bell .bottom {
   width: 48px;
   height: 6px;
@@ -1063,7 +1063,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 12;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(10, 10, 10, 0.2);
 }
-/* line 479, ../scss/master.scss */
+/* line 480, ../scss/master.scss */
 .bell .ding {
   width: 6px;
   height: 25px;
@@ -1074,7 +1074,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 0;
 }
 
-/* line 490, ../scss/master.scss */
+/* line 491, ../scss/master.scss */
 .bell1 .ding {
   -webkit-animation: ding1 5s 2s infinite linear;
   -moz-animation: ding1 5s 2s infinite linear;
@@ -1082,7 +1082,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   animation: ding1 5s 2s infinite linear;
 }
 
-/* line 494, ../scss/master.scss */
+/* line 495, ../scss/master.scss */
 .bell2 .ding {
   -webkit-animation: ding2 5s 2s infinite linear;
   -moz-animation: ding2 5s 2s infinite linear;
@@ -1090,31 +1090,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   animation: ding2 5s 2s infinite linear;
 }
 
-/* line 501, ../scss/master.scss */
+/* line 502, ../scss/master.scss */
 .holly {
   -webkit-animation: hollyrot 5s 2s infinite linear;
   -moz-animation: hollyrot 5s 2s infinite linear;
   -o-animation: hollyrot 5s 2s infinite linear;
   animation: hollyrot 5s 2s infinite linear;
 }
-/* line 505, ../scss/master.scss */
+/* line 506, ../scss/master.scss */
 .holly .leaf {
   position: relative;
   z-index: 45;
 }
-/* line 511, ../scss/master.scss */
+/* line 512, ../scss/master.scss */
 .holly .leaf.leaf1 {
   -webkit-transform: rotatez(-71deg) scale(0.1, 0.15);
   top: 12px;
   left: 48px;
 }
-/* line 519, ../scss/master.scss */
+/* line 520, ../scss/master.scss */
 .holly .leaf.leaf2 {
   -webkit-transform: rotatez(134deg) scale(0.1, 0.15);
   top: 32px;
   left: 98px;
 }
-/* line 526, ../scss/master.scss */
+/* line 527, ../scss/master.scss */
 .holly .leaf .branch {
   border-color: #24B50E transparent;
   border-style: inset;
@@ -1122,28 +1122,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 0;
   position: absolute;
 }
-/* line 535, ../scss/master.scss */
+/* line 536, ../scss/master.scss */
 .holly .leaf .branch.b1 {
   left: 70px;
   top: 20px;
   border-width: 0 30px 65px;
   z-index: 5;
 }
-/* line 543, ../scss/master.scss */
+/* line 544, ../scss/master.scss */
 .holly .leaf .branch.b2 {
   left: 40px;
   top: 50px;
   border-width: 0 60px 65px;
   z-index: 3;
 }
-/* line 552, ../scss/master.scss */
+/* line 553, ../scss/master.scss */
 .holly .leaf .branch.b3 {
   left: 20px;
   top: 70px;
   border-width: 0 80px 85px;
   z-index: 3;
 }
-/* line 560, ../scss/master.scss */
+/* line 561, ../scss/master.scss */
 .holly .leaf .branch.b4 {
   left: -20px;
   top: 110px;
@@ -1152,7 +1152,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 1;
 }
 
-/* line 576, ../scss/master.scss */
+/* line 577, ../scss/master.scss */
 .snowman {
   /* width: 30%; */
   -webkit-transform: scale(0.77, 0.77);
@@ -1165,11 +1165,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 400px;
   bottom: 50px;
 }
-/* line 584, ../scss/master.scss */
+/* line 585, ../scss/master.scss */
 .snowman > div {
   position: relative;
 }
-/* line 588, ../scss/master.scss */
+/* line 589, ../scss/master.scss */
 .snowman .hat {
   z-index: 5;
   width: 160px;
@@ -1190,7 +1190,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   animation: tiphat_rotate_hat 6s 0s infinite linear;
   /*2.5s, 10s);*/
 }
-/* line 597, ../scss/master.scss */
+/* line 598, ../scss/master.scss */
 .snowman .hat .top {
   position: relative;
   z-index: 2;
@@ -1200,7 +1200,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: black;
   border-radius: 100%;
 }
-/* line 611, ../scss/master.scss */
+/* line 612, ../scss/master.scss */
 .snowman .hat .middle {
   position: relative;
   z-index: 1;
@@ -1209,7 +1209,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 65px;
   background-color: black;
 }
-/* line 621, ../scss/master.scss */
+/* line 622, ../scss/master.scss */
 .snowman .hat .base {
   position: relative;
   z-index: 0;
@@ -1219,7 +1219,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 100%;
   margin-bottom: -20px;
 }
-/* line 634, ../scss/master.scss */
+/* line 635, ../scss/master.scss */
 .snowman .head {
   z-index: 4;
   margin-bottom: -28px;
@@ -1227,7 +1227,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 92px;
   /*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4); */
 }
-/* line 643, ../scss/master.scss */
+/* line 644, ../scss/master.scss */
 .snowman .head .eye {
   width: 20px;
   height: 20px;
@@ -1239,7 +1239,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   @include filter-gradient(#1600e2, #000000, horizontal);
   @include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%)); */
 }
-/* line 657, ../scss/master.scss */
+/* line 658, ../scss/master.scss */
 .snowman .head .nose {
   position: absolute;
   bottom: 27%;
@@ -1257,7 +1257,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-width: 10px 0px 10px 50px;
   border-color: transparent transparent transparent #ff8c00;
 }
-/* line 671, ../scss/master.scss */
+/* line 672, ../scss/master.scss */
 .snowman .head .mouth {
   position: relative;
   top: 50%;
@@ -1269,7 +1269,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* border-bottom-left-radius: 154%;
   border-bottom-right-radius: 113%; */
 }
-/* line 685, ../scss/master.scss */
+/* line 686, ../scss/master.scss */
 .snowman .scarf {
   z-index: 3;
   margin-bottom: -32px;
@@ -1277,7 +1277,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 32px;
   border-radius: 100%;
 }
-/* line 693, ../scss/master.scss */
+/* line 694, ../scss/master.scss */
 .snowman .scarf .end {
   position: absolute;
   right: 10px;
@@ -1295,7 +1295,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 75px;
   border-top-right-radius: 100%;
 }
-/* line 706, ../scss/master.scss */
+/* line 707, ../scss/master.scss */
 .snowman .scarf .end:first-child {
   right: 15px;
   -webkit-animation-delay: 0.3s;
@@ -1304,12 +1304,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 711, ../scss/master.scss */
+/* line 712, ../scss/master.scss */
 .snowman .scarf .end:last-child {
   box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
   /* -webkit-transform: rotateZ(-25deg); */
 }
-/* line 718, ../scss/master.scss */
+/* line 719, ../scss/master.scss */
 .snowman .belly {
   z-index: 2;
   margin-bottom: -40px;
@@ -1317,11 +1317,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 130px;
   /*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);*/
 }
-/* line 727, ../scss/master.scss */
+/* line 728, ../scss/master.scss */
 .snowman .belly .arm .finger {
   left: -20px;
 }
-/* line 730, ../scss/master.scss */
+/* line 731, ../scss/master.scss */
 .snowman .belly .arm .finger:nth-child(1) {
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
@@ -1330,11 +1330,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(-135deg);
   bottom: 150%;
 }
-/* line 735, ../scss/master.scss */
+/* line 736, ../scss/master.scss */
 .snowman .belly .arm .finger:nth-child(2) {
   top: 1.5px;
 }
-/* line 739, ../scss/master.scss */
+/* line 740, ../scss/master.scss */
 .snowman .belly .arm .finger:nth-child(3) {
   -webkit-transform: rotate(-225deg);
   -moz-transform: rotate(-225deg);
@@ -1343,13 +1343,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(-225deg);
   top: 150%;
 }
-/* line 745, ../scss/master.scss */
+/* line 746, ../scss/master.scss */
 .snowman .belly .arm:first-child {
   position: absolute;
   right: 94%;
   top: 50%;
 }
-/* line 750, ../scss/master.scss */
+/* line 751, ../scss/master.scss */
 .snowman .belly .arm:first-child .limb {
   -webkit-transform: rotate(72deg);
   -moz-transform: rotate(72deg);
@@ -1358,7 +1358,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(72deg);
   width: 116px;
 }
-/* line 756, ../scss/master.scss */
+/* line 757, ../scss/master.scss */
 .snowman .belly .arm:nth-child(2) {
   position: absolute;
   left: 94%;
@@ -1369,7 +1369,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 762, ../scss/master.scss */
+/* line 763, ../scss/master.scss */
 .snowman .belly .arm:nth-child(2) .limb {
   width: 116px;
   -webkit-animation: tiphat_rotate_arm 6s 0s infinite linear;
@@ -1377,7 +1377,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation: tiphat_rotate_arm 6s 0s infinite linear;
   animation: tiphat_rotate_arm 6s 0s infinite linear;
 }
-/* line 768, ../scss/master.scss */
+/* line 769, ../scss/master.scss */
 .snowman .belly .arm .limb {
   position: relative;
   -webkit-transform-origin: right;
@@ -1391,14 +1391,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 779, ../scss/master.scss */
+/* line 780, ../scss/master.scss */
 .snowman .belly .arm .limb .finger {
   position: absolute;
   width: 30px;
   height: 6px;
   background-color: saddlebrown;
 }
-/* line 787, ../scss/master.scss */
+/* line 788, ../scss/master.scss */
 .snowman .belly .buttonz {
   width: 16px;
   height: 16px;
@@ -1406,7 +1406,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 30%;
   box-shadow: 0px 26px 0px black, 0px 52px 0 black;
 }
-/* line 798, ../scss/master.scss */
+/* line 799, ../scss/master.scss */
 .snowman .legs {
   z-index: 1;
   width: 250px;
@@ -1414,7 +1414,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-shadow: 0px 35px 120px;
 }
 
-/* line 809, ../scss/master.scss */
+/* line 810, ../scss/master.scss */
 .ground {
   position: absolute;
   bottom: 0px;
@@ -1439,7 +1439,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 1;
 }
 
-/* line 825, ../scss/master.scss */
+/* line 826, ../scss/master.scss */
 .ground:before {
   content: "";
   display: block;
@@ -1467,7 +1467,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 1;
 }
 
-/* line 846, ../scss/master.scss */
+/* line 847, ../scss/master.scss */
 .ground:after {
   content: "";
   display: block;
