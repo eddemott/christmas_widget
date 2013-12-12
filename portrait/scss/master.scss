@@ -815,6 +815,7 @@ bottom: 0px;
 height: 50px;
 width: 100%;
 background-color: white;
+z-index: 1;
 }
 
 .ground:before {
@@ -827,6 +828,7 @@ background-color: white;
 	bottom: -41px;
 	right: -3;
 	background-color: white;
+	z-index: 1;
 
 }
 
@@ -844,15 +846,16 @@ background-color: white;
 }
 
 .ground_1 {
-display: block;
-position: absolute;
-border-radius: 4% 100%;
-width: 25%;
-height: 87px;
-left: -188px;
-bottom: 15px;
-z-index: 110;
-background-color: white;
+	display: block;
+	position: absolute;
+	border-radius: 4% 100%;
+	width: 25%;
+	height: 87px;
+	left: -188px;
+	bottom: 15px;
+	z-index: 110;
+	background-color: white;
+	z-index: 1;
 }
 
 .snow {
@@ -865,7 +868,7 @@ background-color: white;
 			margin: auto;
 			color: white;
 			position:absolute;
-			z-index: (random(10));
+			z-index: (random(10)+2);
 			opacity:(random(100)/100);
 			font-size: ((percentage(random(100))/100)+ 100);
 			left: (percentage(random())/100);
