@@ -810,54 +810,49 @@ background-color: #998a0c; // Old browsers
 }
 
 .ground {
-  position: absolute;
-  bottom: 0px;
-  height: 40px;
-  width: 100%;
-  background: #feffff; /* Old browsers */
-  background: -moz-linear-gradient(top,  #feffff 0%, #e8f3f7 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(100%,#e8f3f7)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #feffff 0%,#e8f3f7 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #feffff 0%,#e8f3f7 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #feffff 0%,#e8f3f7 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #feffff 0%,#e8f3f7 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#e8f3f7',GradientType=0 ); /* IE6-9 */
-  z-index: 1;
+position: absolute;
+bottom: 0px;
+height: 50px;
+width: 100%;
+background-color: white;
 }
 
 .ground:before {
 	content: "";
 	display: block;
 	position: absolute;
-	border-radius: 189% 50%;
-	clip: rect(0px, 310px, 50px, 0px);
-	width: 343px;
-	height: 107px;
-	left: 190px;
-	bottom: -29px;
-  background: -moz-linear-gradient(top,  #feffff 0%, #e8f3f7 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(100%,#e8f3f7)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #feffff 0%,#e8f3f7 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #feffff 0%,#e8f3f7 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #feffff 0%,#e8f3f7 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #feffff 0%,#e8f3f7 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#e8f3f7',GradientType=0 ); /* IE6-9 */
-	z-index: 1;
+	border-radius: 189% 58%;
+	width: 50%;
+	height: 132px;
+	bottom: -41px;
+	right: -3;
+	background-color: white;
 
 }
 
 .ground:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  clip: rect(0px, 300px, 300px, 2px);
-  width: 268px;
-  height: 65px;
-  background-color: #1b2e33;
-  left: -2px;
-  bottom: 22px;
-  z-index: 1;
+	content: "";
+	display: block;
+	position: absolute;
+	border-radius: 66% 50%;
+	width: 50%;
+	height: 89px;
+	background-color: #1b2e33;
+	left: 111px;
+	bottom: 15px;
+	z-index: 1;
+}
+
+.ground_1 {
+display: block;
+position: absolute;
+border-radius: 4% 100%;
+width: 25%;
+height: 87px;
+left: -188px;
+bottom: 15px;
+z-index: 110;
+background-color: white;
 }
 
 .snow {
