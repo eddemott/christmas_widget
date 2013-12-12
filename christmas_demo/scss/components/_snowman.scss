@@ -1,0 +1,419 @@
+@import 'compass';
+@import 'compass/css3/images';
+@import 'compass/css3/transform';
+@import 'animation';
+@import 'compass/css3/transition';
+
+/*mixins*/
+
+@mixin snowball($width, $height) {
+	@extend %snow_style;
+	@include dimensions($width, $height);
+}
+
+@mixin dimensions($width, $height : $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin pos($z-index) {
+	z-index: $z-index;
+}
+
+@mixin radius($side_0, $radius_0 : false, $radius_1 : false) {
+	@if $radius_0 == false {
+		border-radius: $side_0;
+	} @else if $radius_1 == false {
+		border-#{$side_0}-radius: $radius_0;
+	} @else {
+		border-#{$side_0}-left-radius: $radius_0;
+		border-#{$side_0}-right-radius: $radius_1;
+	}
+}
+
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-moz-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-o-keyframes $animation_name {
+        @content;
+    }
+ 
+    @keyframes $animation_name {
+        @content;
+    }
+}
+
+/* @mixin animation ($animation_name, $duration, $delay : 0s, $iteration : infinite, $timing : ease-in-out) {
+    -webkit-animation-name: $animation_name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-timing-function: $timing;
+ 
+    -moz-animation-name: $animation_name;
+    -moz-animation-duration: $duration;
+    -moz-animation-delay: $delay;
+    -moz-animation-iteration-count: $iteration;
+    -moz-timing-function: $timing;
+ 
+    -o-animation-name: $animation_name;
+    -o-animation-duration: $duration;
+    -o-animation-delay: $delay;
+    -o-animation-iteration-count: $iteration;
+    -o-timing-function: $timing;
+ 
+	animation-name: $animation_name;
+	animation-duration: $duration;
+	animation-delay: $delay;
+	animation-iteration-count: $iteration;
+	timing-function: $timing;
+} */
+
+/*placeholders */
+
+%margin_auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+%shift_down {
+	margin-bottom: -35px;
+}
+
+%pos_relative {
+	position: relative;
+}
+
+/* Styles */
+
+%snow_style {
+	background: #fff;
+	@include radius(50%);
+	/* box-shadow: inset 0px 0px 10px; */
+}
+
+%snow_dusting {
+	box-shadow: inset 0px 0px 13px rgba(255, 255, 255, 0.44);
+}
+
+%green_scarf {
+	background-color: green;
+	box-shadow: 0px 3px 0px darkgreen;
+}
+
+%black_button {
+	@include radius(100%);
+	background-color: black;
+}
+
+%filling {
+
+// needs latest Compass, add '@import "compass"' to your scss
+background-color: #cedce7; // Old browsers
+@include filter-gradient(#cedce7, #596a72, horizontal); // IE6-9 fallback on horizontal gradient
+@include background-image(radial-gradient(top left, ellipse cover,  #cedce7 0%,#cedce7 19%,#cedce7 30%,#596a72 100%));
+
+}
+
+@include keyframes(scarf_in_wind) {
+	0%, 100% {
+		/* @include rotateZ(5deg); */
+		-webkit-transform: rotateZ(5deg);
+	}
+
+	50% {
+		/* @include rotateZ(15deg); */
+		-webkit-transform: rotateZ(15deg);
+	}
+}
+
+@include keyframes(tiphat_rotate_hat) {
+	0%, 30%, 70%, 100% {
+		-webkit-transform-origin: 150px 220px;
+		-webkit-transform: rotateZ(0deg);
+	}
+	
+	50% {
+		-webkit-transform: rotateZ(90deg);
+	}
+
+
+}
+
+@include keyframes(tiphat_rotate_arm) {
+	0%, 25%, 75%, 100%{
+		-webkit-transform: rotateZ(-70deg);
+	}
+
+	30%, 70%{
+		-webkit-transform: rotateZ(-92deg);
+	}
+
+	
+	50% {
+		-webkit-transform: rotateZ(10deg);
+	}
+
+}
+
+$tiphat_animation_props: 8s infinite linear;
+
+.snowman {
+	/* width: 30%; */
+	@include scale(0.77);
+
+	& > div {
+		position: relative;
+	}
+
+	.hat {
+		@extend %margin_auto;
+		@include pos(5);
+		@include dimensions(160px, auto);
+		@include apply-origin(bottom, false);
+		@include rotateZ(5deg);
+
+		@include animation(tiphat_rotate_hat $tiphat_animation_props);/*2.5s, 10s);*/
+
+		.top {
+			position: relative;
+			@include pos(2);
+
+			@extend %margin_auto;
+			margin-bottom: -10px;
+
+			@include dimensions(70%, 20px);
+			background-color: black;
+			@include radius(100%);
+
+			@extend %snow_dusting;
+		}
+
+		.middle {
+			position: relative;
+			@include pos(1);
+
+			@extend %margin_auto;
+			margin-bottom: -10px;
+			@include dimensions(70%, 65px);
+			background-color: black;
+		}
+
+		.base {
+			position: relative;
+			@include pos(0);
+
+			@include dimensions(100%, 25px);
+			background-color: black;
+			@include radius(100%);
+			margin-bottom: -20px;
+
+			@extend %snow_dusting;
+		}
+	}
+
+	.head {
+		@include pos(4);
+		@extend %margin_auto;
+		margin-bottom: -28px;
+		@include snowball(115px, 92px);
+		@extend %filling;
+
+		/*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4); */
+
+		.eye {
+			@include dimensions(20px);
+			@extend %black_button;
+
+			position: absolute;
+			right: 55%;
+			top: 25%;
+			box-shadow: 36px 0px black;
+			
+			/* background-color: #1600e2;
+			@include filter-gradient(#1600e2, #000000, horizontal);
+			@include background-image(radial-gradient(center, ellipse cover,  #1600e2 1%,#000000 62%)); */
+		}
+
+		.nose {
+			position: absolute;
+			bottom: 27%;
+			left: 46%;
+			@include rotateZ(20deg);
+			border-style: solid;
+			@include radius(top-left, 10px);
+			@include radius(bottom-left, 10px);
+			/* border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px; */
+			border-width: 10px 0px 10px 50px;
+			border-color: transparent transparent transparent #ff8c00;
+		}
+
+		.mouth {
+			@extend %margin_auto;
+			position: relative;
+			top: 50%;
+			
+			@include dimensions(44px, 20px);
+			border-bottom: 20px black solid;
+
+			@include radius(bottom, 154%, 113%);
+			/* border-bottom-left-radius: 154%;
+			border-bottom-right-radius: 113%; */
+		}
+	}
+
+	.scarf {
+		@include pos(3);
+		@extend %margin_auto;
+		margin-bottom: -32px;
+		@include dimensions(115px, 32px);
+		@include radius(100%);
+		@extend %green_scarf;
+
+		.end {
+			position: absolute;
+			right: 10px;
+			top: 18px;
+
+			@include apply-origin(top, false);
+			@include animation(scarf_in_wind 0.7s infinite linear);
+
+			@extend %green_scarf;
+			@include dimensions(15px, 75px);
+			
+			border-top-right-radius: 100%;
+
+			&:first-child {
+				right: 15px;
+				@include animation-delay(0.3s);
+			}
+
+			&:last-child {
+				box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
+				/* -webkit-transform: rotateZ(-25deg); */
+			}
+		}
+	}
+
+	.belly {
+		@include pos(2);
+		margin-bottom: -40px;
+		@extend %margin_auto;
+		@include snowball(185px, 130px);
+		/*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);*/
+		@extend %filling;
+
+		.arm {
+			.finger {
+				left: -20px;
+
+				&:nth-child(1) {
+					@include rotateZ(-135deg);
+					bottom: 150%;
+				}
+
+				&:nth-child(2) {
+					top: 1.5px;
+				}
+
+				&:nth-child(3) {
+					@include rotateZ(-225deg);
+					top: 150%;
+				}
+			}
+
+			&:first-child {
+				position: absolute;
+				right: 94%;
+				top: 50%;
+
+				.limb {
+					@include rotateZ(72deg);
+					width: 116px;
+				}
+			}
+
+			&:nth-child(2) {
+				position: absolute;
+				left: 94%;
+				top: 50%;
+				@include rotateZ(180deg);
+
+				.limb {
+					width: 116px;
+					@include animation(tiphat_rotate_arm $tiphat_animation_props);
+				}
+			}
+
+			.limb {
+				position: relative;
+
+				@include apply-origin(right, false);
+
+				@include dimensions(214px, 10px);
+				background-color: saddlebrown;
+
+				@include radius(top-right, 5px);
+				@include radius(bottom-right, 5px);
+
+				.finger {
+					position: absolute;
+					@include dimensions(30px, 6px);
+					background-color: saddlebrown;
+				}
+			}
+		}
+
+		.buttonz {
+			@include dimensions(16px);
+			@extend %black_button;
+			@extend %margin_auto;
+
+			position: relative;
+			top: 30%;
+			box-shadow: 0px 26px 0px black, 0px 52px 0 black;
+		}
+	}
+
+	.legs {
+		@include pos(1);
+		@extend %margin_auto;
+		@extend %pos_relative;
+		@include snowball(250px, 170px);
+		box-shadow: 0px 35px 120px;
+
+		@extend %filling;
+
+		
+	}
+}
+
+/* @include keyframe(scarf) {
+	0% { -webkit-transform: rotateZ(0deg); }
+	20% { -webkit-transform: rotateZ(-40deg); }
+	60% { -webkit-transform: rotateZ(30deg); }
+	85% { -webkit-transform: rotateZ(-30deg); }
+	100% { -webkit-transform: rotateZ(0deg); }
+}
+
+
+.end:last-child {
+   @include animation(scarf, 15s, 2s);
+}
+
+.end:first-child {
+   @include animation(scarf, 25s, 5s);
+} */
+
+
+
+
+
+
