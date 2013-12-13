@@ -7732,7 +7732,7 @@ th.hide-for-touch {
 } */
 /*placeholders */
 /* line 80, ../scss/components/_snowman.scss */
-.snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .head .mouth, .snowman .scarf, .snowman .belly, .snowman .belly .buttonz, .snowman .legs, .sign .board, .sign .board .hole, .bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding {
+.snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .scarf, .snowman .belly, .snowman .belly .buttonz, .snowman .legs, .sign .board, .sign .board .hole, .bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding {
   margin-left: auto;
   margin-right: auto;
 }
@@ -8103,17 +8103,22 @@ th.hide-for-touch {
 }
 /* line 258, ../scss/components/_snowman.scss */
 .snowman .head .mouth {
-  position: relative;
-  top: 50%;
-  width: 44px;
-  height: 20px;
-  border-bottom: 20px black solid;
-  border-bottom-left-radius: 154%;
-  border-bottom-right-radius: 113%;
-  /* border-bottom-left-radius: 154%;
-  border-bottom-right-radius: 113%; */
+  margin: auto;
+  top: 196%;
+  background-color: transparent;
+  border-color: black;
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 175px;
+  clip: rect(186px, 270px, 239px, -12px);
+  height: 200px;
+  margin-left: 16px;
+  position: absolute;
+  bottom: 300px;
+  width: 90px;
+  z-index: 18;
 }
-/* line 272, ../scss/components/_snowman.scss */
+/* line 276, ../scss/components/_snowman.scss */
 .snowman .scarf {
   z-index: 3;
   margin-bottom: -32px;
@@ -8121,7 +8126,7 @@ th.hide-for-touch {
   height: 32px;
   border-radius: 100%;
 }
-/* line 280, ../scss/components/_snowman.scss */
+/* line 284, ../scss/components/_snowman.scss */
 .snowman .scarf .end {
   position: absolute;
   right: 10px;
@@ -8140,7 +8145,7 @@ th.hide-for-touch {
   height: 75px;
   border-top-right-radius: 100%;
 }
-/* line 293, ../scss/components/_snowman.scss */
+/* line 297, ../scss/components/_snowman.scss */
 .snowman .scarf .end:first-child {
   right: 15px;
   -webkit-animation-delay: 0.3s;
@@ -8149,12 +8154,12 @@ th.hide-for-touch {
   -o-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 298, ../scss/components/_snowman.scss */
+/* line 302, ../scss/components/_snowman.scss */
 .snowman .scarf .end:last-child {
   box-shadow: -4px 3px darkgreen, 0px 3px 0px darkgreen, 1px 3px 0px darkgreen;
   /* -webkit-transform: rotateZ(-25deg); */
 }
-/* line 305, ../scss/components/_snowman.scss */
+/* line 309, ../scss/components/_snowman.scss */
 .snowman .belly {
   z-index: 2;
   margin-bottom: -40px;
@@ -8162,11 +8167,11 @@ th.hide-for-touch {
   height: 130px;
   /*box-shadow: inset 0px -3px 10px rgba(0, 0, 0, 0.4), 0px 6px 5px rgba(0, 0, 0, 0.1);*/
 }
-/* line 314, ../scss/components/_snowman.scss */
+/* line 318, ../scss/components/_snowman.scss */
 .snowman .belly .arm .finger {
   left: -20px;
 }
-/* line 317, ../scss/components/_snowman.scss */
+/* line 321, ../scss/components/_snowman.scss */
 .snowman .belly .arm .finger:nth-child(1) {
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
@@ -8175,11 +8180,11 @@ th.hide-for-touch {
   transform: rotate(-135deg);
   bottom: 150%;
 }
-/* line 322, ../scss/components/_snowman.scss */
+/* line 326, ../scss/components/_snowman.scss */
 .snowman .belly .arm .finger:nth-child(2) {
   top: 1.5px;
 }
-/* line 326, ../scss/components/_snowman.scss */
+/* line 330, ../scss/components/_snowman.scss */
 .snowman .belly .arm .finger:nth-child(3) {
   -webkit-transform: rotate(-225deg);
   -moz-transform: rotate(-225deg);
@@ -8188,13 +8193,13 @@ th.hide-for-touch {
   transform: rotate(-225deg);
   top: 150%;
 }
-/* line 332, ../scss/components/_snowman.scss */
+/* line 336, ../scss/components/_snowman.scss */
 .snowman .belly .arm:first-child {
   position: absolute;
   right: 94%;
   top: 50%;
 }
-/* line 337, ../scss/components/_snowman.scss */
+/* line 341, ../scss/components/_snowman.scss */
 .snowman .belly .arm:first-child .limb {
   -webkit-transform: rotate(72deg);
   -moz-transform: rotate(72deg);
@@ -8203,7 +8208,7 @@ th.hide-for-touch {
   transform: rotate(72deg);
   width: 116px;
 }
-/* line 343, ../scss/components/_snowman.scss */
+/* line 347, ../scss/components/_snowman.scss */
 .snowman .belly .arm:nth-child(2) {
   position: absolute;
   left: 94%;
@@ -8214,7 +8219,7 @@ th.hide-for-touch {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 349, ../scss/components/_snowman.scss */
+/* line 353, ../scss/components/_snowman.scss */
 .snowman .belly .arm:nth-child(2) .limb {
   width: 116px;
   -webkit-animation: tiphat_rotate_arm 8s infinite linear;
@@ -8223,7 +8228,7 @@ th.hide-for-touch {
   -o-animation: tiphat_rotate_arm 8s infinite linear;
   animation: tiphat_rotate_arm 8s infinite linear;
 }
-/* line 355, ../scss/components/_snowman.scss */
+/* line 359, ../scss/components/_snowman.scss */
 .snowman .belly .arm .limb {
   position: relative;
   -webkit-transform-origin: right;
@@ -8237,14 +8242,14 @@ th.hide-for-touch {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 366, ../scss/components/_snowman.scss */
+/* line 370, ../scss/components/_snowman.scss */
 .snowman .belly .arm .limb .finger {
   position: absolute;
   width: 30px;
   height: 6px;
   background-color: saddlebrown;
 }
-/* line 374, ../scss/components/_snowman.scss */
+/* line 378, ../scss/components/_snowman.scss */
 .snowman .belly .buttonz {
   width: 16px;
   height: 16px;
@@ -8252,7 +8257,7 @@ th.hide-for-touch {
   top: 30%;
   box-shadow: 0px 26px 0px black, 0px 52px 0 black;
 }
-/* line 385, ../scss/components/_snowman.scss */
+/* line 389, ../scss/components/_snowman.scss */
 .snowman .legs {
   z-index: 1;
   width: 250px;
@@ -8289,7 +8294,7 @@ th.hide-for-touch {
 }
 
 /* line 52, ../scss/components/_sign.scss */
-.snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .head .mouth, .snowman .scarf, .snowman .belly, .snowman .belly .buttonz, .snowman .legs, .sign .board, .sign .board .hole, .bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding {
+.snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .scarf, .snowman .belly, .snowman .belly .buttonz, .snowman .legs, .sign .board, .sign .board .hole, .bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding {
   margin-left: auto;
   margin-right: auto;
 }
@@ -8362,7 +8367,7 @@ th.hide-for-touch {
   animation: tilt 10s 0s infinite cubic-bezier(0.35, 0.1, 0.65, 0.9);
   overflow: visible;
   position: absolute;
-  left: -20px;
+  left: 30%;
   z-index: 10000;
   -webkit-transform: translate3d(0, 0, 0);
 }
@@ -8436,7 +8441,7 @@ th.hide-for-touch {
 }
 
 /* line 15, ../scss/components/_bell.scss */
-.snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .head .mouth, .snowman .scarf, .snowman .belly, .snowman .belly .buttonz, .snowman .legs, .sign .board, .sign .board .hole, .bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding {
+.snowman .hat, .snowman .hat .top, .snowman .hat .middle, .snowman .head, .snowman .scarf, .snowman .belly, .snowman .belly .buttonz, .snowman .legs, .sign .board, .sign .board .hole, .bell .top, .bell .medup, .bell .medsquare, .bell .medoval1, .bell .medoval2, .bell .bottom, .bell .ding {
   margin-left: auto;
   margin-right: auto;
 }
@@ -8886,9 +8891,11 @@ th.hide-for-touch {
   position: relative;
   width: 100%;
   height: 100%;
+  -webkit-transform: scale(1.8, 1.8);
+  left: 700px;
 }
 
-/* line 159, ../scss/components/_bell.scss */
+/* line 161, ../scss/components/_bell.scss */
 .bells, .holly {
   display: inline-block;
   width: 100px;
@@ -8896,35 +8903,35 @@ th.hide-for-touch {
   position: relative;
 }
 
-/* line 165, ../scss/components/_bell.scss */
+/* line 167, ../scss/components/_bell.scss */
 .bell {
   display: inline-block;
   background-color: white;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
 }
-/* line 173, ../scss/components/_bell.scss */
+/* line 175, ../scss/components/_bell.scss */
 .bell.bell1 {
   z-index: 50;
   -webkit-transform: rotatez(40deg) scale(0.8, 1);
   -webkit-transform-origin: top;
-  -webkit-animation: drin1 5s 2s infinite linear;
-  -moz-animation: drin1 5s 2s infinite linear;
-  -o-animation: drin1 5s 2s infinite linear;
-  animation: drin1 5s 2s infinite linear;
+  -webkit-animation: drin1 5s 0s infinite linear;
+  -moz-animation: drin1 5s 0s infinite linear;
+  -o-animation: drin1 5s 0s infinite linear;
+  animation: drin1 5s 0s infinite linear;
 }
-/* line 180, ../scss/components/_bell.scss */
+/* line 182, ../scss/components/_bell.scss */
 .bell.bell2 {
   z-index: 40;
   -webkit-transform: rotatez(-40deg) scale(0.8, 1);
   -webkit-transform-origin: top;
   margin-left: -55px;
-  -webkit-animation: drin2 5s 2s infinite linear;
-  -moz-animation: drin2 5s 2s infinite linear;
-  -o-animation: drin2 5s 2s infinite linear;
-  animation: drin2 5s 2s infinite linear;
+  -webkit-animation: drin2 5s 0s infinite linear;
+  -moz-animation: drin2 5s 0s infinite linear;
+  -o-animation: drin2 5s 0s infinite linear;
+  animation: drin2 5s 0s infinite linear;
 }
-/* line 189, ../scss/components/_bell.scss */
+/* line 191, ../scss/components/_bell.scss */
 .bell .top {
   width: 10px;
   height: 8px;
@@ -8938,7 +8945,7 @@ th.hide-for-touch {
   background-image: -o-radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
   background-image: radial-gradient(top, ellipse cover, #ada20f 0%, #fce514 100%);
 }
-/* line 201, ../scss/components/_bell.scss */
+/* line 203, ../scss/components/_bell.scss */
 .bell .medup {
   width: 32px;
   height: 8px;
@@ -8948,7 +8955,7 @@ th.hide-for-touch {
   z-index: 6;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
-/* line 210, ../scss/components/_bell.scss */
+/* line 212, ../scss/components/_bell.scss */
 .bell .medsquare {
   width: 36px;
   height: 32px;
@@ -8959,7 +8966,7 @@ th.hide-for-touch {
   z-index: 7;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
-/* line 221, ../scss/components/_bell.scss */
+/* line 223, ../scss/components/_bell.scss */
 .bell .medoval1 {
   width: 38px;
   height: 4px;
@@ -8969,7 +8976,7 @@ th.hide-for-touch {
   top: -16px;
   z-index: 8;
 }
-/* line 231, ../scss/components/_bell.scss */
+/* line 233, ../scss/components/_bell.scss */
 .bell .medoval2 {
   width: 40px;
   height: 4px;
@@ -8979,7 +8986,7 @@ th.hide-for-touch {
   z-index: 9;
   box-bottom-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
-/* line 242, ../scss/components/_bell.scss */
+/* line 244, ../scss/components/_bell.scss */
 .bell .bottom {
   width: 48px;
   height: 6px;
@@ -8997,7 +9004,7 @@ th.hide-for-touch {
   z-index: 12;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(10, 10, 10, 0.2);
 }
-/* line 257, ../scss/components/_bell.scss */
+/* line 259, ../scss/components/_bell.scss */
 .bell .ding {
   width: 6px;
   height: 25px;
@@ -9008,47 +9015,47 @@ th.hide-for-touch {
   z-index: 0;
 }
 
-/* line 268, ../scss/components/_bell.scss */
+/* line 270, ../scss/components/_bell.scss */
 .bell1 .ding {
-  -webkit-animation: ding1 5s 2s infinite linear;
-  -moz-animation: ding1 5s 2s infinite linear;
-  -o-animation: ding1 5s 2s infinite linear;
-  animation: ding1 5s 2s infinite linear;
+  -webkit-animation: ding1 5s 0s infinite linear;
+  -moz-animation: ding1 5s 0s infinite linear;
+  -o-animation: ding1 5s 0s infinite linear;
+  animation: ding1 5s 0s infinite linear;
 }
 
-/* line 272, ../scss/components/_bell.scss */
+/* line 274, ../scss/components/_bell.scss */
 .bell2 .ding {
-  -webkit-animation: ding2 5s 2s infinite linear;
-  -moz-animation: ding2 5s 2s infinite linear;
-  -o-animation: ding2 5s 2s infinite linear;
-  animation: ding2 5s 2s infinite linear;
+  -webkit-animation: ding2 5s 0s infinite linear;
+  -moz-animation: ding2 5s 0s infinite linear;
+  -o-animation: ding2 5s 0s infinite linear;
+  animation: ding2 5s 0s infinite linear;
 }
 
-/* line 279, ../scss/components/_bell.scss */
+/* line 281, ../scss/components/_bell.scss */
 .holly {
-  -webkit-animation: hollyrot 5s 2s infinite linear;
-  -moz-animation: hollyrot 5s 2s infinite linear;
-  -o-animation: hollyrot 5s 2s infinite linear;
-  animation: hollyrot 5s 2s infinite linear;
+  -webkit-animation: hollyrot 5s 0s infinite linear;
+  -moz-animation: hollyrot 5s 0s infinite linear;
+  -o-animation: hollyrot 5s 0s infinite linear;
+  animation: hollyrot 5s 0s infinite linear;
 }
-/* line 283, ../scss/components/_bell.scss */
+/* line 285, ../scss/components/_bell.scss */
 .holly .leaf {
   position: relative;
   z-index: 45;
 }
-/* line 289, ../scss/components/_bell.scss */
+/* line 291, ../scss/components/_bell.scss */
 .holly .leaf.leaf1 {
   -webkit-transform: rotatez(-71deg) scale(0.1, 0.15);
   top: 12px;
   left: 48px;
 }
-/* line 297, ../scss/components/_bell.scss */
+/* line 299, ../scss/components/_bell.scss */
 .holly .leaf.leaf2 {
   -webkit-transform: rotatez(134deg) scale(0.1, 0.15);
   top: 32px;
   left: 98px;
 }
-/* line 304, ../scss/components/_bell.scss */
+/* line 306, ../scss/components/_bell.scss */
 .holly .leaf .branch {
   border-color: #24B50E transparent;
   border-style: inset;
@@ -9056,28 +9063,28 @@ th.hide-for-touch {
   width: 0;
   position: absolute;
 }
-/* line 313, ../scss/components/_bell.scss */
+/* line 315, ../scss/components/_bell.scss */
 .holly .leaf .branch.b1 {
   left: 70px;
   top: 20px;
   border-width: 0 30px 65px;
   z-index: 5;
 }
-/* line 321, ../scss/components/_bell.scss */
+/* line 323, ../scss/components/_bell.scss */
 .holly .leaf .branch.b2 {
   left: 40px;
   top: 50px;
   border-width: 0 60px 65px;
   z-index: 3;
 }
-/* line 330, ../scss/components/_bell.scss */
+/* line 332, ../scss/components/_bell.scss */
 .holly .leaf .branch.b3 {
   left: 20px;
   top: 70px;
   border-width: 0 80px 85px;
   z-index: 3;
 }
-/* line 338, ../scss/components/_bell.scss */
+/* line 340, ../scss/components/_bell.scss */
 .holly .leaf .branch.b4 {
   left: -20px;
   top: 110px;
@@ -9086,535 +9093,539 @@ th.hide-for-touch {
   z-index: 1;
 }
 
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 1, ../scss/components/snow_fall/_main.scss */
+.snow {
+  list-style: none;
+}
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f1 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 205%;
-  left: 47%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 27s;
+  font-size: 280%;
+  left: 66%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 22s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f2 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 147%;
-  left: 84%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 22s;
+  font-size: 167%;
+  left: 97%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 17s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f3 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 218%;
-  left: 46%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 14s;
+  font-size: 163%;
+  left: 17%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 11s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f4 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 217%;
-  left: 4%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 23s;
+  font-size: 161%;
+  left: 35%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 15s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f5 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 181%;
-  left: 22%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 10s;
+  font-size: 265%;
+  left: 42%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 18s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f6 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 101%;
-  left: 9%;
+  font-size: 153%;
+  left: 21%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 8s;
+  -webkit-animation-duration: 9s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f7 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 284%;
-  left: 36%;
+  font-size: 162%;
+  left: 17%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 9s;
+  -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f8 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 176%;
-  left: 68%;
+  font-size: 264%;
+  left: 77%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 9s;
+  -webkit-animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f9 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 160%;
-  left: 56%;
+  font-size: 259%;
+  left: 35%;
   -webkit-animation: fall4;
-  -webkit-animation-duration: 18s;
+  -webkit-animation-duration: 9s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f10 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 255%;
-  left: 21%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 15s;
+  font-size: 287%;
+  left: 85%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 19s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f11 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 283%;
-  left: 63%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 13s;
+  font-size: 129%;
+  left: 70%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f12 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 224%;
-  left: 91%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 23s;
+  font-size: 223%;
+  left: 10%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f13 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 298%;
-  left: 83%;
+  font-size: 299%;
+  left: 33%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 24s;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f14 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 262%;
-  left: 69%;
+  font-size: 217%;
+  left: 53%;
   -webkit-animation: fall2;
-  -webkit-animation-duration: 13s;
+  -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f15 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 124%;
-  left: 99%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 24s;
+  font-size: 146%;
+  left: 81%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f16 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 213%;
-  left: 51%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 25s;
+  font-size: 124%;
+  left: 97%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f17 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 164%;
-  left: 67%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 13s;
+  font-size: 257%;
+  left: 42%;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 24s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f18 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 133%;
-  left: 13%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 20s;
+  font-size: 164%;
+  left: 39%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 27s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f19 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 244%;
-  left: 89%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 16s;
+  font-size: 116%;
+  left: 12%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f20 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 204%;
-  left: 60%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 13s;
+  font-size: 211%;
+  left: 43%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 11s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f21 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 296%;
-  left: 56%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 22s;
+  font-size: 150%;
+  left: 43%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 13s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f22 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 181%;
-  left: 39%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 13s;
+  font-size: 250%;
+  left: 95%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 19s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f23 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 299%;
-  left: 27%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 23s;
+  font-size: 249%;
+  left: 14%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 16s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f24 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 211%;
-  left: 59%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 23s;
+  font-size: 131%;
+  left: 36%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f25 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 294%;
-  left: 79%;
-  -webkit-animation: fall4;
+  font-size: 288%;
+  left: 53%;
+  -webkit-animation: fall2;
   -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f26 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 198%;
-  left: 37%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 24s;
+  font-size: 182%;
+  left: 48%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 27s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f27 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 153%;
-  left: 37%;
-  -webkit-animation: fall4;
+  font-size: 239%;
+  left: 85%;
+  -webkit-animation: fall2;
   -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f28 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 178%;
-  left: 7%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 24s;
+  font-size: 195%;
+  left: 77%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f29 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 290%;
-  left: 68%;
-  -webkit-animation: fall2;
+  font-size: 164%;
+  left: 96%;
+  -webkit-animation: fall4;
   -webkit-animation-duration: 14s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f30 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 187%;
-  left: 37%;
+  font-size: 266%;
+  left: 18%;
   -webkit-animation: fall1;
-  -webkit-animation-duration: 12s;
+  -webkit-animation-duration: 9s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f31 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 198%;
-  left: 20%;
-  -webkit-animation: fall4;
-  -webkit-animation-duration: 24s;
+  font-size: 258%;
+  left: 40%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 9s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
+/* line 5, ../scss/components/snow_fall/_main.scss */
 .snow .icon-snowflake.f32 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 168%;
-  left: 39%;
-  -webkit-animation: fall3;
-  -webkit-animation-duration: 24s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 3, ../scss/components/snow_fall/_main.scss */
-.snow .icon-snowflake.f33 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  font-size: 126%;
-  left: 83%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 15s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 3, ../scss/components/snow_fall/_main.scss */
-.snow .icon-snowflake.f34 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  font-size: 113%;
-  left: 81%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 15s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 3, ../scss/components/snow_fall/_main.scss */
-.snow .icon-snowflake.f35 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  font-size: 220%;
-  left: 25%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 3, ../scss/components/snow_fall/_main.scss */
-.snow .icon-snowflake.f36 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  font-size: 285%;
-  left: 74%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 3, ../scss/components/snow_fall/_main.scss */
-.snow .icon-snowflake.f37 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  font-size: 281%;
-  left: 57%;
+  font-size: 197%;
+  left: 97%;
   -webkit-animation: fall3;
   -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
-.snow .icon-snowflake.f38 {
+/* line 5, ../scss/components/snow_fall/_main.scss */
+.snow .icon-snowflake.f33 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 110%;
-  left: 50%;
-  -webkit-animation: fall1;
-  -webkit-animation-duration: 17s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-/* line 3, ../scss/components/snow_fall/_main.scss */
-.snow .icon-snowflake.f39 {
-  float: left;
-  margin: auto;
-  color: white;
-  position: absolute;
-  font-size: 172%;
+  font-size: 240%;
   left: 76%;
-  -webkit-animation: fall2;
-  -webkit-animation-duration: 16s;
+  -webkit-animation: fall3;
+  -webkit-animation-duration: 27s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 3, ../scss/components/snow_fall/_main.scss */
-.snow .icon-snowflake.f40 {
+/* line 5, ../scss/components/snow_fall/_main.scss */
+.snow .icon-snowflake.f34 {
   float: left;
   margin: auto;
   color: white;
   position: absolute;
-  font-size: 290%;
-  left: 8%;
+  font-size: 210%;
+  left: 83%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 5, ../scss/components/snow_fall/_main.scss */
+.snow .icon-snowflake.f35 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  font-size: 293%;
+  left: 7%;
+  -webkit-animation: fall2;
+  -webkit-animation-duration: 22s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 5, ../scss/components/snow_fall/_main.scss */
+.snow .icon-snowflake.f36 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  font-size: 174%;
+  left: 11%;
+  -webkit-animation: fall4;
+  -webkit-animation-duration: 23s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 5, ../scss/components/snow_fall/_main.scss */
+.snow .icon-snowflake.f37 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  font-size: 115%;
+  left: 27%;
   -webkit-animation: fall3;
   -webkit-animation-duration: 26s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
+/* line 5, ../scss/components/snow_fall/_main.scss */
+.snow .icon-snowflake.f38 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  font-size: 299%;
+  left: 98%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 5, ../scss/components/snow_fall/_main.scss */
+.snow .icon-snowflake.f39 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  font-size: 151%;
+  left: 60%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/* line 5, ../scss/components/snow_fall/_main.scss */
+.snow .icon-snowflake.f40 {
+  float: left;
+  margin: auto;
+  color: white;
+  position: absolute;
+  font-size: 144%;
+  left: 60%;
+  -webkit-animation: fall1;
+  -webkit-animation-duration: 16s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
 
 @-webkit-keyframes fall1 {
-  /* line 19, ../scss/components/snow_fall/_main.scss */
+  /* line 21, ../scss/components/snow_fall/_main.scss */
   0% {
     top: -50px;
     -webkit-transform: translate(0px, 0px) rotate(0deg);
   }
 
-  /* line 24, ../scss/components/snow_fall/_main.scss */
+  /* line 26, ../scss/components/snow_fall/_main.scss */
   100% {
     top: 500px;
     -webkit-transform: translate(100px, 150px) rotate(250deg);
@@ -9622,18 +9633,18 @@ th.hide-for-touch {
 }
 
 @-webkit-keyframes fall2 {
-  /* line 31, ../scss/components/snow_fall/_main.scss */
+  /* line 33, ../scss/components/snow_fall/_main.scss */
   0% {
     top: -50px;
     -webkit-transform: rotate(-180deg) translate(0px, 0px);
   }
 
-  /* line 35, ../scss/components/snow_fall/_main.scss */
+  /* line 37, ../scss/components/snow_fall/_main.scss */
   75% {
     opacity: 0.8;
   }
 
-  /* line 38, ../scss/components/snow_fall/_main.scss */
+  /* line 40, ../scss/components/snow_fall/_main.scss */
   100% {
     top: 500px;
     opacity: 0.0;
@@ -9642,13 +9653,13 @@ th.hide-for-touch {
 }
 
 @-webkit-keyframes fall3 {
-  /* line 46, ../scss/components/snow_fall/_main.scss */
+  /* line 48, ../scss/components/snow_fall/_main.scss */
   0% {
     top: -50px;
     -webkit-transform: rotate(-180deg);
   }
 
-  /* line 51, ../scss/components/snow_fall/_main.scss */
+  /* line 53, ../scss/components/snow_fall/_main.scss */
   100% {
     top: 500px;
     -webkit-transform: rotate(180deg);
@@ -9657,18 +9668,18 @@ th.hide-for-touch {
 }
 
 @-webkit-keyframes fall4 {
-  /* line 59, ../scss/components/snow_fall/_main.scss */
+  /* line 61, ../scss/components/snow_fall/_main.scss */
   0% {
     top: -50px;
     -webkit-transform: rotate(-180deg) translate(0px, 0px);
   }
 
-  /* line 63, ../scss/components/snow_fall/_main.scss */
+  /* line 65, ../scss/components/snow_fall/_main.scss */
   70% {
     -webkit-transform: rotate(200deg) translate(50px, 100px);
   }
 
-  /* line 66, ../scss/components/snow_fall/_main.scss */
+  /* line 68, ../scss/components/snow_fall/_main.scss */
   100% {
     top: 500px;
     -webkit-transform: rotate(380deg) translate(80px, 100px);
@@ -9676,24 +9687,24 @@ th.hide-for-touch {
 }
 
 @-webkit-keyframes fall5 {
-  /* line 73, ../scss/components/snow_fall/_main.scss */
+  /* line 75, ../scss/components/snow_fall/_main.scss */
   0% {
     top: -50px;
   }
 
-  /* line 76, ../scss/components/snow_fall/_main.scss */
+  /* line 78, ../scss/components/snow_fall/_main.scss */
   10% {
     -webkit-transform: rotate(-180deg) translate(0px, 0px);
   }
 
-  /* line 79, ../scss/components/snow_fall/_main.scss */
+  /* line 81, ../scss/components/snow_fall/_main.scss */
   100% {
     top: 500px;
     -webkit-transform: rotate(50deg) translate(100px, 80px);
   }
 }
 
-/* line 85, ../scss/components/snow_fall/_main.scss */
+/* line 87, ../scss/components/snow_fall/_main.scss */
 [class*="icon-"] {
   font-family: 'SED';
   speak: none;
@@ -9707,12 +9718,12 @@ th.hide-for-touch {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 99, ../scss/components/snow_fall/_main.scss */
+/* line 101, ../scss/components/snow_fall/_main.scss */
 .icon-snow:before {
   content: "\e60d";
 }
 
-/* line 103, ../scss/components/snow_fall/_main.scss */
+/* line 105, ../scss/components/snow_fall/_main.scss */
 .icon-snowflake:before {
   content: "\e61b";
 }
@@ -9722,8 +9733,9 @@ th.hide-for-touch {
   position: relative;
   z-index: 100;
   min-height: 225px;
+  left: 400px;
 }
-/* line 17, ../scss/components/_tree.scss */
+/* line 18, ../scss/components/_tree.scss */
 .ctree .trunk {
   border-color: #3b200f transparent;
   border-style: solid;
@@ -9736,13 +9748,13 @@ th.hide-for-touch {
   left: 81px;
   top: 11px;
 }
-/* line 30, ../scss/components/_tree.scss */
+/* line 31, ../scss/components/_tree.scss */
 .ctree .branch {
   position: absolute;
   border-style: solid;
   border-color: transparent transparent #336633;
 }
-/* line 36, ../scss/components/_tree.scss */
+/* line 37, ../scss/components/_tree.scss */
 .ctree .branch.b1 {
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -9751,7 +9763,7 @@ th.hide-for-touch {
   border-width: 0px 40px 60px 40px;
   z-index: 11;
 }
-/* line 44, ../scss/components/_tree.scss */
+/* line 45, ../scss/components/_tree.scss */
 .ctree .branch.b2 {
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -9760,7 +9772,7 @@ th.hide-for-touch {
   border-width: 0px 60px 80px 60px;
   z-index: 11;
 }
-/* line 52, ../scss/components/_tree.scss */
+/* line 53, ../scss/components/_tree.scss */
 .ctree .branch.b3 {
   border-bottom-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -9769,7 +9781,7 @@ th.hide-for-touch {
   border-width: 0px 80px 100px 80px;
   z-index: 11;
 }
-/* line 60, ../scss/components/_tree.scss */
+/* line 61, ../scss/components/_tree.scss */
 .ctree .branch.b4 {
   border-bottom-right-radius: 80px;
   border-bottom-left-radius: 80px;
@@ -9778,7 +9790,7 @@ th.hide-for-touch {
   border-width: 0px 100px 120px 100px;
   z-index: 11;
 }
-/* line 69, ../scss/components/_tree.scss */
+/* line 70, ../scss/components/_tree.scss */
 .ctree .dec {
   background: transparent;
   border-style: dotted;
@@ -9792,7 +9804,7 @@ th.hide-for-touch {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 82, ../scss/components/_tree.scss */
+/* line 83, ../scss/components/_tree.scss */
 .ctree .dec.d1 {
   -webkit-transform: rotate(16deg);
   clip: rect(42px, 74px, 65px, 33px);
@@ -9801,7 +9813,7 @@ th.hide-for-touch {
   top: -22px;
   left: 59px;
 }
-/* line 90, ../scss/components/_tree.scss */
+/* line 91, ../scss/components/_tree.scss */
 .ctree .dec.d2 {
   -webkit-transform: rotate(-27deg);
   clip: rect(61px, 86px, 87px, 19px);
@@ -9810,7 +9822,7 @@ th.hide-for-touch {
   top: 0px;
   left: 25px;
 }
-/* line 98, ../scss/components/_tree.scss */
+/* line 99, ../scss/components/_tree.scss */
 .ctree .dec.d3 {
   -webkit-transform: rotate(20deg);
   clip: rect(44px, 120px, 84px, 28px);
@@ -9819,7 +9831,7 @@ th.hide-for-touch {
   top: 45px;
   left: 43px;
 }
-/* line 106, ../scss/components/_tree.scss */
+/* line 107, ../scss/components/_tree.scss */
 .ctree .dec.d4 {
   -webkit-transform: rotate(-5deg);
   clip: rect(32px, 128px, 64px, 21px);
@@ -9828,7 +9840,7 @@ th.hide-for-touch {
   top: 92px;
   left: 25px;
 }
-/* line 115, ../scss/components/_tree.scss */
+/* line 116, ../scss/components/_tree.scss */
 .ctree .dec.d5 {
   -webkit-transform: rotate(18deg);
   clip: rect(36px, 106px, 100px, 16px);
@@ -9837,7 +9849,7 @@ th.hide-for-touch {
   top: 87px;
   left: 26px;
 }
-/* line 124, ../scss/components/_tree.scss */
+/* line 125, ../scss/components/_tree.scss */
 .ctree .ball_r {
   width: 15px;
   height: 15px;
@@ -9850,7 +9862,7 @@ th.hide-for-touch {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 139, ../scss/components/_tree.scss */
+/* line 140, ../scss/components/_tree.scss */
 .ctree .ball_w {
   width: 15px;
   height: 15px;
@@ -9863,68 +9875,68 @@ th.hide-for-touch {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-/* line 154, ../scss/components/_tree.scss */
+/* line 155, ../scss/components/_tree.scss */
 .ctree .ball_w.ba1 {
   top: 34px;
   left: 80px;
 }
-/* line 158, ../scss/components/_tree.scss */
+/* line 159, ../scss/components/_tree.scss */
 .ctree .ball_w.ba2 {
   top: 72px;
   left: 122px;
 }
-/* line 162, ../scss/components/_tree.scss */
+/* line 163, ../scss/components/_tree.scss */
 .ctree .ball_w.ba3 {
   top: 112px;
   left: 46px;
 }
-/* line 166, ../scss/components/_tree.scss */
+/* line 167, ../scss/components/_tree.scss */
 .ctree .ball_w.ba4 {
   top: 148px;
   left: 147px;
 }
-/* line 170, ../scss/components/_tree.scss */
+/* line 171, ../scss/components/_tree.scss */
 .ctree .ball_r.ba5 {
   top: 34px;
   left: 105px;
 }
-/* line 174, ../scss/components/_tree.scss */
+/* line 175, ../scss/components/_tree.scss */
 .ctree .ball_r.ba6 {
   top: 73px;
   left: 64px;
 }
-/* line 178, ../scss/components/_tree.scss */
+/* line 179, ../scss/components/_tree.scss */
 .ctree .ball_r.ba7 {
   top: 112px;
   left: 142px;
 }
-/* line 182, ../scss/components/_tree.scss */
+/* line 183, ../scss/components/_tree.scss */
 .ctree .ball_r.ba8 {
   top: 144px;
   left: 30px;
 }
-/* line 186, ../scss/components/_tree.scss */
+/* line 187, ../scss/components/_tree.scss */
 .ctree .ball_r.ba9 {
   top: 100px;
   left: 93px;
 }
-/* line 190, ../scss/components/_tree.scss */
+/* line 191, ../scss/components/_tree.scss */
 .ctree .ball_w.ba10 {
   top: 143px;
   left: 93px;
 }
-/* line 195, ../scss/components/_tree.scss */
+/* line 196, ../scss/components/_tree.scss */
 .ctree .star {
   top: -1px;
   left: 96px;
   position: absolute;
   z-index: 14;
 }
-/* line 201, ../scss/components/_tree.scss */
+/* line 202, ../scss/components/_tree.scss */
 .ctree .star .point {
   position: absolute;
 }
-/* line 205, ../scss/components/_tree.scss */
+/* line 206, ../scss/components/_tree.scss */
 .ctree .star .middle {
   position: absolute;
   top: 0px;
@@ -9933,7 +9945,7 @@ th.hide-for-touch {
   height: 9px;
   width: 9px;
 }
-/* line 214, ../scss/components/_tree.scss */
+/* line 215, ../scss/components/_tree.scss */
 .ctree .star .point.p1 {
   top: -8px;
   left: 0px;
@@ -9943,7 +9955,7 @@ th.hide-for-touch {
   border-right: 4px solid transparent;
   border-bottom: 8px solid #ffd700;
 }
-/* line 224, ../scss/components/_tree.scss */
+/* line 225, ../scss/components/_tree.scss */
 .ctree .star .point.p2 {
   top: 0px;
   left: 7px;
@@ -9953,7 +9965,7 @@ th.hide-for-touch {
   border-left: 8px solid #ffd700;
   border-bottom: 4px solid transparent;
 }
-/* line 234, ../scss/components/_tree.scss */
+/* line 235, ../scss/components/_tree.scss */
 .ctree .star .point.p3 {
   top: 8px;
   left: 0px;
@@ -9963,7 +9975,7 @@ th.hide-for-touch {
   border-right: 4px solid transparent;
   border-top: 16px solid #ffd700;
 }
-/* line 244, ../scss/components/_tree.scss */
+/* line 245, ../scss/components/_tree.scss */
 .ctree .star .point.p4 {
   top: 0px;
   left: -7px;
@@ -9975,68 +9987,68 @@ th.hide-for-touch {
 }
 
 @-webkit-keyframes flashw {
-  /* line 257, ../scss/components/_tree.scss */
+  /* line 258, ../scss/components/_tree.scss */
   0% {
     -webkit-box-shadow: 0px 0px 0px white;
   }
 
-  /* line 260, ../scss/components/_tree.scss */
+  /* line 261, ../scss/components/_tree.scss */
   50% {
     -webkit-box-shadow: 0px 0px 7px white;
   }
 
-  /* line 263, ../scss/components/_tree.scss */
+  /* line 264, ../scss/components/_tree.scss */
   100% {
     -webkit-box-shadow: 0px 0px 0px white;
   }
 }
 
 @-webkit-keyframes flashr {
-  /* line 269, ../scss/components/_tree.scss */
+  /* line 270, ../scss/components/_tree.scss */
   0% {
     -webkit-box-shadow: 0px 0px 0px #660000;
   }
 
-  /* line 272, ../scss/components/_tree.scss */
+  /* line 273, ../scss/components/_tree.scss */
   50% {
     -webkit-box-shadow: 0px 0px 7px #660000;
   }
 
-  /* line 275, ../scss/components/_tree.scss */
+  /* line 276, ../scss/components/_tree.scss */
   100% {
     -webkit-box-shadow: 0px 0px 0px #660000;
   }
 }
 
 @-webkit-keyframes changered {
-  /* line 281, ../scss/components/_tree.scss */
+  /* line 282, ../scss/components/_tree.scss */
   0% {
     background-color: #660000;
   }
 
-  /* line 284, ../scss/components/_tree.scss */
+  /* line 285, ../scss/components/_tree.scss */
   50% {
     background-color: white;
   }
 
-  /* line 287, ../scss/components/_tree.scss */
+  /* line 288, ../scss/components/_tree.scss */
   100% {
     background-color: #660000;
   }
 }
 
 @-webkit-keyframes changewhite {
-  /* line 293, ../scss/components/_tree.scss */
+  /* line 294, ../scss/components/_tree.scss */
   0% {
     background-color: white;
   }
 
-  /* line 296, ../scss/components/_tree.scss */
+  /* line 297, ../scss/components/_tree.scss */
   50% {
     background-color: #660000;
   }
 
-  /* line 299, ../scss/components/_tree.scss */
+  /* line 300, ../scss/components/_tree.scss */
   100% {
     background-color: white;
   }

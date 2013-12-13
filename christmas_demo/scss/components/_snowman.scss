@@ -256,16 +256,20 @@ $tiphat_animation_props: 8s infinite linear;
 		}
 
 		.mouth {
-			@extend %margin_auto;
-			position: relative;
-			top: 50%;
-			
-			@include dimensions(44px, 20px);
-			border-bottom: 20px black solid;
-
-			@include radius(bottom, 154%, 113%);
-			/* border-bottom-left-radius: 154%;
-			border-bottom-right-radius: 113%; */
+			margin: auto;
+			top: 196%;
+			background-color: transparent;
+			border-color: black;
+			border-style: solid;
+			border-width: 6px;
+			border-radius: 175px;
+			clip: rect(186px, 270px, 239px, -12px);
+			height: 200px;
+			margin-left: 16px;
+			position: absolute;
+			bottom: 300px;
+			width: 90px;
+			z-index: 18;
 		}
 	}
 
